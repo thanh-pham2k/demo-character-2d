@@ -92,10 +92,34 @@ public class MVPFlowController : MonoBehaviour
     private bool isHoldingUninstall = false;
     private float uninstallProgress = 0f;
     private Coroutine currentDialogueRoutine;
+    private PlayerInteractionStateController playerInteractionState;
+    private bool storyPoseActive;
 
     private void Awake()
     {
         Instance = this;
+        ResolvePlayerInteractionState();
+    }
+
+    private PlayerInteractionStateController ResolvePlayerInteractionState()
+    {
+        if (playerInteractionState == null)
+            playerInteractionState = PlayerInteractionStateController.GetOrCreate(playerObj);
+        return playerInteractionState;
+    }
+
+    private void ReleaseStoryPose()
+    {
+        if (!storyPoseActive) return;
+        if (playerInteractionState != null && playerInteractionState.CurrentState == PlayerInteractionState.Sitting &&
+            playerInteractionState.ActiveInteractable == null)
+            playerInteractionState.ExitInteraction();
+        storyPoseActive = false;
+    }
+
+    private void OnDisable()
+    {
+        ReleaseStoryPose();
     }
 
     private void Start()
@@ -345,11 +369,12 @@ public class MVPFlowController : MonoBehaviour
 
     private IEnumerator AwakeningSequenceRoutine()
     {
-        // Sit at desk
-        if (playerObj != null && deskSeatTransform != null)
+        // The story requests a pose; the player foundation owns positioning, visual and movement locks.
+        if (!storyPoseActive && deskSeatTransform != null)
         {
-            playerObj.transform.position = deskSeatTransform.position;
-            if (playerVisual != null) playerVisual.SetSitting(true);
+            var interaction = ResolvePlayerInteractionState();
+            if (interaction != null)
+                storyPoseActive = interaction.TryEnterState(PlayerInteractionState.Sitting, deskSeatTransform);
         }
 
         yield return StartDialogue("Lê Văn Lươn", portraitLuon, "Mấy đứa tụi nó đi làm hết rồi... Giờ chỉ còn mỗi mình ở lại căn phòng 404 này cày nợ môn.");
@@ -365,7 +390,7 @@ public class MVPFlowController : MonoBehaviour
     private void OnUninstallCompleted()
     {
         uninstallModal.SetActive(false);
-        if (playerVisual != null) playerVisual.SetSitting(false);
+        ReleaseStoryPose();
 
         StartCoroutine(PostUninstallRoutine());
     }

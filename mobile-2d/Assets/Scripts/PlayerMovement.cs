@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement Settings")]
@@ -19,14 +20,37 @@ public class PlayerMovement : MonoBehaviour
     private bool isDodging;
     private float dodgeTimer;
     private float dodgeCooldownTimer;
+    private bool interactionMovementLocked;
 
     public bool IsDodging => isDodging;
     public Vector2 LastMoveDirection => lastMoveDirection;
+    public bool IsInteractionMovementLocked => interactionMovementLocked;
 
     private void Awake()
     {
+        ResolveComponents();
+    }
+
+    private void ResolveComponents()
+    {
         if (rb == null) rb = GetComponent<Rigidbody2D>();
-        if (spriteRenderer == null) spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        if (spriteRenderer == null)
+        {
+            var visual = GetComponentInChildren<LuonCharacterVisual>();
+            spriteRenderer = visual != null ? visual.GetComponent<SpriteRenderer>() : GetComponentInChildren<SpriteRenderer>();
+        }
+    }
+
+    public void SetInteractionMovementLocked(bool locked)
+    {
+        ResolveComponents();
+        if (!locked && !interactionMovementLocked) return;
+        interactionMovementLocked = locked;
+        inputVector = Vector2.zero;
+        simulatedInputVector = Vector2.zero;
+        isDodging = false;
+        dodgeTimer = 0f;
+        if (rb != null) rb.linearVelocity = Vector2.zero;
     }
 
     public void SetSimulatedInput(Vector2 simInput)
@@ -39,6 +63,12 @@ public class PlayerMovement : MonoBehaviour
         if (dodgeCooldownTimer > 0)
             dodgeCooldownTimer -= Time.deltaTime;
 
+        if (interactionMovementLocked)
+        {
+            inputVector = Vector2.zero;
+            if (rb != null) rb.linearVelocity = Vector2.zero;
+            return;
+        }
         if (isDodging)
         {
             dodgeTimer -= Time.deltaTime;
@@ -101,6 +131,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (rb == null) return;
+        if (interactionMovementLocked)
+        {
+            rb.linearVelocity = Vector2.zero;
+            return;
+        }
         if (isDodging)
         {
             rb.linearVelocity = lastMoveDirection * dodgeSpeed;
@@ -119,7 +155,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void TryDodge()
     {
-        if (isDodging || dodgeCooldownTimer > 0) return;
+        if (!isActiveAndEnabled || interactionMovementLocked || isDodging || dodgeCooldownTimer > 0) return;
 
         isDodging = true;
         dodgeTimer = dodgeDuration;

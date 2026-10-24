@@ -51,3 +51,14 @@ No AI image generation was used. All existing artwork, camera and room pixels ar
 
 
 Editor menu cleanup: `KTX404` exposes only `Build Room 404 Scene`, which builds the latest layout. Incremental layout helpers and review captures are no longer menu entries; their methods remain available for development and verification.
+
+
+## luon_interaction_sheet.png — 2026-10-25
+
+- Output: `assets/mvp_sprites/interaction/poses-sheet-alpha.png` (1774 × 887 RGBA, transparent background).
+- Sliced sub-images:
+  1. `mobile-2d/Assets/Sprites/MVP/characters/interaction/luon_sitting_chair.png` (385 × 762, unitHeight 1.9, custom pivot [0.5, 0.22])
+  2. `mobile-2d/Assets/Sprites/MVP/characters/interaction/luon_lying.png` (701 × 745, unitHeight 1.8, custom pivot [0.5, 0.5])
+- Design & Reference: Character Lươn from `luon_idle_0.png`, `luon_walk_*.png`, `luon_sitting_laptop.png`.
+- Batch Layout: 2 columns × 1 row (equal cell width 887, cell height 887). Single image generation with 2 poses, sliced via Python and imported with Point filter, Uncompressed, 100 PPU equivalent scale.
+- Adheres strictly to `AGENTS.md` and `.agents/rules/image_generation.md` (no single image generated alone, generated as batch grid and sliced).

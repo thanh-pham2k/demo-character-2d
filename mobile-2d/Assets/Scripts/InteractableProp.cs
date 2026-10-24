@@ -5,9 +5,10 @@ public class InteractableProp : MonoBehaviour, IInteractable
 {
     [SerializeField] private string interactionPrompt = "Tương tác [E]";
     [SerializeField] private bool isInteractable = true;
-    public UnityEvent onInteract;
+    public UnityEvent onInteract = new UnityEvent();
 
     public string InteractionPrompt => interactionPrompt;
+    public bool CanInteract => isActiveAndEnabled && isInteractable;
 
     public void SetPrompt(string newPrompt)
     {
@@ -23,7 +24,7 @@ public class InteractableProp : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        if (!isInteractable) return;
+        if (!CanInteract) return;
         onInteract?.Invoke();
     }
 

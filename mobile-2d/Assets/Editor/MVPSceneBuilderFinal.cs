@@ -258,6 +258,7 @@ public static class MVPSceneBuilderFinal
         playerVisual.sitLaptopSprite = luonSit;
 
         playerObj.AddComponent<PlayerMovement>();
+        playerObj.AddComponent<PlayerInteractionStateController>();
         playerObj.AddComponent<PlayerInteractionDetector>();
 
         GameObject deskSeat = new GameObject("Desk_Seat_Marker");
@@ -443,6 +444,7 @@ public static class MVPSceneBuilderFinal
         flow.portraitLong = portraitLong;
         flow.portraitTo = portraitTo;
 
+        RoomInteractionSceneSetup.Configure(scene);
         string scenePath = "Assets/Scenes/Room404_MVP.unity";
         EditorSceneManager.SaveScene(scene, scenePath);
         Debug.Log("Room404_MVP scene fully corrected and saved at " + scenePath);
