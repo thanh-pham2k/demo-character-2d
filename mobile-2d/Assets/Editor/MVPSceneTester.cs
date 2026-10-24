@@ -5,7 +5,6 @@ using System.IO;
 
 public static class MVPSceneTester
 {
-    [MenuItem("KTX404/Test MVP Scene Simulation")]
     public static void SimulateMVP()
     {
         string scenePath = "Assets/Scenes/Room404_MVP.unity";
