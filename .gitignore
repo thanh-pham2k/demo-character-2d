@@ -1,0 +1,27 @@
+# Unity-generated data and local editor state
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+
+# Generated IDE/project files
+.vs/
+.idea/
+*.csproj
+*.sln
+*.slnx
+*.user
+*.suo
+
+# Local diagnostic logs can contain machine identifiers and network addresses
+/*.log
+
+# Operating system noise
+.DS_Store
+Thumbs.db
+Desktop.ini
