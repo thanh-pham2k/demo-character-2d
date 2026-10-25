@@ -11,7 +11,7 @@ Trang này là nơi duy nhất để xác định **việc kế tiếp**. Tài l
 | T-003 | Author thời điểm sự kiện và làm transition event-driven | Production campaign | Chờ T-001, T-002 |
 | T-004 | Nối tiếp M10–M45 theo baseline | Production campaign | Chờ các gate trước |
 
-Mở [T-001](active/T-001-audit-m01-m09.md) để bắt đầu. T-002–T-004 được mô tả ở [backlog](backlog/README.md).
+Mở [T-001](active/T-001-audit-m01-m09.md) để bắt đầu; xem [T-002](backlog/T-002-vertical-slice-playtest.md), [T-003](backlog/T-003-event-driven-transitions.md) và [T-004](backlog/T-004-expand-m10-m45.md).
 
 ## Nguồn chuẩn và phạm vi
 
@@ -30,8 +30,6 @@ Thứ tự này khớp production gates: audit M01–M09 → slice và playtest 
 - `Room404_MVP` chạy flow Năm 1 v2 riêng. `NEXT_STEPS_HANDOVER.md` và `MANUAL_CHECKPOINTS.md` chỉ áp dụng cho scene/runtime đó; F8 không phải checkpoint production mặc định.
 - `30 ngày` là ví dụ trong mockup, không phải giới hạn transition. Campaign M10–M45 chưa có timestamp đầy đủ; cần author mốc event đích rồi mới có thể hiển thị đúng ngày/giờ và thời lượng trôi.
 
-## Cách cập nhật tracker
+## Format task
 
-- Task đang làm phải có ID, runtime, nguồn chuẩn, điều kiện hoàn tất và nhật ký kết quả.
-- Không đánh dấu task hoàn thành chỉ vì model hoặc một fixture kiểm tra pass; ghi đúng phạm vi bằng chứng.
-- Khi task xong, chuyển file sang `done/` và cập nhật bảng này. Không để handover theo scene cũ quyết định thứ tự production.
+Mỗi file task chỉ có ba phần: **TLDR**, **Sơ đồ ASCII**, **Definition of Done**. Cập nhật trạng thái ở bảng tracker; giữ evidence/kết quả ở artifact review riêng khi task hoàn thành.
