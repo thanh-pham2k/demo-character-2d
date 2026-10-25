@@ -1,0 +1,293 @@
+{
+  "batch": {
+    "id": "C00",
+    "kind": "character",
+    "columns": 4,
+    "rows": 2,
+    "requested_canvas": [
+      2048,
+      1024
+    ],
+    "cell": [
+      512,
+      512
+    ],
+    "read_order": "left_to_right_top_to_bottom",
+    "margin": 32,
+    "status": "planned_not_generated",
+    "source_file": null,
+    "asset_ids": [
+      "npc_dorm_manager",
+      "npc_station_tout",
+      "npc_canteen_vendor",
+      "npc_h6_classmate_writing",
+      "npc_repair_customer",
+      "npc_freshman_1",
+      "npc_freshman_2",
+      "npc_freshman_3"
+    ]
+  },
+  "assets": [
+    {
+      "id": "npc_dorm_manager",
+      "production": "generate_batch",
+      "kind": "character",
+      "missions": [
+        2,
+        44
+      ],
+      "description": "Cô quản lý đứng tại quầy; hai tay để nhận giấy/chìa khóa, không bake quầy vào người.",
+      "batch": "C00",
+      "cell_index": 1,
+      "row": 0,
+      "column": 0,
+      "planned_crop_xywh": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "actual_crop_xywh": null,
+      "source_file": null,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C00/npc_dorm_manager.png",
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "qa_status": "pending_generation",
+      "reference_group": "character_existing"
+    },
+    {
+      "id": "npc_station_tout",
+      "production": "generate_batch",
+      "kind": "character",
+      "missions": [
+        1
+      ],
+      "description": "NPC mời xe đứng; tay ra hiệu; nhân bản bằng palette và vị trí cho đoạn né.",
+      "batch": "C00",
+      "cell_index": 2,
+      "row": 0,
+      "column": 1,
+      "planned_crop_xywh": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "actual_crop_xywh": null,
+      "source_file": null,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C00/npc_station_tout.png",
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "qa_status": "pending_generation",
+      "reference_group": "character_existing"
+    },
+    {
+      "id": "npc_canteen_vendor",
+      "production": "generate_batch",
+      "kind": "character",
+      "missions": [
+        4,
+        5
+      ],
+      "description": "Người bán ở căn tin, pose đứng sau quầy.",
+      "batch": "C00",
+      "cell_index": 3,
+      "row": 0,
+      "column": 2,
+      "planned_crop_xywh": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "actual_crop_xywh": null,
+      "source_file": null,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C00/npc_canteen_vendor.png",
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "qa_status": "pending_generation",
+      "reference_group": "character_existing"
+    },
+    {
+      "id": "npc_h6_classmate_writing",
+      "production": "generate_batch",
+      "kind": "character",
+      "missions": [
+        6
+      ],
+      "description": "Bạn cùng lớp Bách Khoa đang viết; thiết kế khác Đạm, ngồi đúng góc bàn H6.",
+      "batch": "C00",
+      "cell_index": 4,
+      "row": 0,
+      "column": 3,
+      "planned_crop_xywh": [
+        1536,
+        0,
+        512,
+        512
+      ],
+      "actual_crop_xywh": null,
+      "source_file": null,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C00/npc_h6_classmate_writing.png",
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "qa_status": "pending_generation",
+      "reference_group": "character_existing"
+    },
+    {
+      "id": "npc_repair_customer",
+      "production": "generate_batch",
+      "kind": "character",
+      "missions": [
+        17,
+        18,
+        19
+      ],
+      "description": "Sinh viên khách hàng đứng; laptop là prop tách rời.",
+      "batch": "C00",
+      "cell_index": 5,
+      "row": 1,
+      "column": 0,
+      "planned_crop_xywh": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "actual_crop_xywh": null,
+      "source_file": null,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C00/npc_repair_customer.png",
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "qa_status": "pending_generation",
+      "reference_group": "character_existing"
+    },
+    {
+      "id": "npc_freshman_1",
+      "production": "generate_batch",
+      "kind": "character",
+      "missions": [
+        7,
+        29,
+        33,
+        44
+      ],
+      "description": "Người mới 1, cùng độ tuổi nhưng nhận diện khác ba bạn cũ.",
+      "batch": "C00",
+      "cell_index": 6,
+      "row": 1,
+      "column": 1,
+      "planned_crop_xywh": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "actual_crop_xywh": null,
+      "source_file": null,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C00/npc_freshman_1.png",
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "qa_status": "pending_generation",
+      "reference_group": "character_existing"
+    },
+    {
+      "id": "npc_freshman_2",
+      "production": "generate_batch",
+      "kind": "character",
+      "missions": [
+        7,
+        30,
+        33,
+        44
+      ],
+      "description": "Người mới 2, phục trang khác người mới 1.",
+      "batch": "C00",
+      "cell_index": 7,
+      "row": 1,
+      "column": 2,
+      "planned_crop_xywh": [
+        1024,
+        512,
+        512,
+        512
+      ],
+      "actual_crop_xywh": null,
+      "source_file": null,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C00/npc_freshman_2.png",
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "qa_status": "pending_generation",
+      "reference_group": "character_existing"
+    },
+    {
+      "id": "npc_freshman_3",
+      "production": "generate_batch",
+      "kind": "character",
+      "missions": [
+        7,
+        31,
+        33,
+        44
+      ],
+      "description": "Người mới 3; không để ba giường thành chỉ hai người mới.",
+      "batch": "C00",
+      "cell_index": 8,
+      "row": 1,
+      "column": 3,
+      "planned_crop_xywh": [
+        1536,
+        512,
+        512,
+        512
+      ],
+      "actual_crop_xywh": null,
+      "source_file": null,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C00/npc_freshman_3.png",
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "qa_status": "pending_generation",
+      "reference_group": "character_existing"
+    }
+  ],
+  "reference_files": [
+    "mobile-2d/Assets/Sprites/MVP/characters/luon_idle_0.png",
+    "mobile-2d/Assets/Sprites/MVP/characters/luon_walk_0.png",
+    "mobile-2d/Assets/Sprites/MVP/characters/dam_standing.png",
+    "mobile-2d/Assets/Sprites/MVP/characters/long_standing.png",
+    "mobile-2d/Assets/Sprites/MVP/characters/to_standing.png"
+  ],
+  "provenance": "planned_batch_not_yet_generated",
+  "gate": {
+    "blockout": "spatial_actor_board_reviewed; gameplay_route_pending",
+    "generation": "generated_composite_batch",
+    "slicing": "actual_crops_and_hashes_verified",
+    "visual_qa": "pass_source_and_sliced_preview_review",
+    "unity_import": "pass_current_hashes",
+    "integration": "pending"
+  }
+}

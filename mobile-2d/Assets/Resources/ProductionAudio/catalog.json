@@ -1,0 +1,1894 @@
+{
+  "version": 1,
+  "cues": [
+    {
+      "id": "water",
+      "group": "A_AMBIENCE",
+      "source": "DormSound.CreateWater",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 1,
+      "volume": 0.28,
+      "loop": true,
+      "status": "existing_procedural"
+    },
+    {
+      "id": "typing",
+      "group": "A_STUDY",
+      "source": "DormSound.CreateTyping",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 1,
+      "volume": 0.28,
+      "loop": true,
+      "status": "existing_procedural"
+    },
+    {
+      "id": "writing",
+      "group": "A_STUDY",
+      "source": "DormSound.CreateWriting",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 1,
+      "volume": 0.32,
+      "loop": true,
+      "status": "existing_procedural"
+    },
+    {
+      "id": "footsteps",
+      "group": "A_TRAVEL",
+      "source": "DormSound.CreateFootsteps",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 1,
+      "volume": 0.35,
+      "loop": true,
+      "status": "existing_procedural"
+    },
+    {
+      "id": "bus_engine",
+      "group": "A_TRAVEL",
+      "source": "DormSound.CreateBusEngine",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 1,
+      "volume": 0.3,
+      "loop": true,
+      "status": "existing_procedural"
+    },
+    {
+      "id": "hotpot",
+      "group": "A_FRIENDS",
+      "source": "DormSound.CreateHotpot",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 1,
+      "volume": 0.3,
+      "loop": true,
+      "status": "existing_procedural"
+    },
+    {
+      "id": "glass_clink",
+      "group": "A_FRIENDS",
+      "source": "DormSound.CreateGlassClink",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 1,
+      "volume": 0.4,
+      "loop": false,
+      "status": "existing_procedural"
+    },
+    {
+      "id": "amb_station",
+      "group": "A_AMBIENCE",
+      "source": "synth:crowd",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 4,
+      "volume": 0.25,
+      "loop": true,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "amb_dorm",
+      "group": "A_AMBIENCE",
+      "source": "synth:fan",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 4,
+      "volume": 0.25,
+      "loop": true,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "amb_classroom",
+      "group": "A_AMBIENCE",
+      "source": "synth:hum",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 4,
+      "volume": 0.25,
+      "loop": true,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "amb_canteen",
+      "group": "A_AMBIENCE",
+      "source": "synth:crowd",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 4,
+      "volume": 0.25,
+      "loop": true,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "amb_lab",
+      "group": "A_AMBIENCE",
+      "source": "synth:hum",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 4,
+      "volume": 0.25,
+      "loop": true,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "amb_street",
+      "group": "A_AMBIENCE",
+      "source": "synth:wind",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 4,
+      "volume": 0.25,
+      "loop": true,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "amb_lake",
+      "group": "A_AMBIENCE",
+      "source": "synth:wind",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 4,
+      "volume": 0.25,
+      "loop": true,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "amb_ceremony",
+      "group": "A_AMBIENCE",
+      "source": "synth:crowd",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 4,
+      "volume": 0.25,
+      "loop": true,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "amb_binh_dong",
+      "group": "A_AMBIENCE",
+      "source": "synth:wind",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 4,
+      "volume": 0.25,
+      "loop": true,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "step",
+      "group": "A_TRAVEL",
+      "source": "synth:door",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.16,
+      "volume": 0.18,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "stairs_step",
+      "group": "A_TRAVEL",
+      "source": "synth:door",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.18,
+      "volume": 0.22,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "bag",
+      "group": "A_TRAVEL",
+      "source": "synth:cloth",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.55,
+      "volume": 0.45,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "door",
+      "group": "A_TRAVEL",
+      "source": "synth:door",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.65,
+      "volume": 0.4,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "key",
+      "group": "A_TRAVEL",
+      "source": "synth:keys",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.4,
+      "volume": 0.3,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "bus_arrival",
+      "group": "A_TRAVEL",
+      "source": "synth:hum",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 1.2,
+      "volume": 0.3,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "paper",
+      "group": "A_STUDY",
+      "source": "synth:cloth",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.35,
+      "volume": 0.3,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "click",
+      "group": "A_STUDY",
+      "source": "synth:click",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.08,
+      "volume": 0.28,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "compile",
+      "group": "A_STUDY",
+      "source": "synth:click",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.18,
+      "volume": 0.3,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "test_pass",
+      "group": "A_STUDY",
+      "source": "synth:success",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.4,
+      "volume": 0.35,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "error",
+      "group": "A_STUDY",
+      "source": "synth:error",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.35,
+      "volume": 0.35,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "submit",
+      "group": "A_STUDY",
+      "source": "synth:success",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.45,
+      "volume": 0.35,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "fan_switch",
+      "group": "A_LIFE",
+      "source": "synth:click",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.12,
+      "volume": 0.3,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "wipe",
+      "group": "A_LIFE",
+      "source": "synth:cloth",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.65,
+      "volume": 0.4,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "alarm",
+      "group": "A_LIFE",
+      "source": "synth:alarm",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 2,
+      "volume": 0.35,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "snooze",
+      "group": "A_LIFE",
+      "source": "synth:click",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.15,
+      "volume": 0.3,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "phone_vibrate",
+      "group": "A_LIFE",
+      "source": "synth:phone",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 1.2,
+      "volume": 0.35,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "phone_accept",
+      "group": "A_LIFE",
+      "source": "synth:click",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.15,
+      "volume": 0.3,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "phone_end",
+      "group": "A_LIFE",
+      "source": "synth:error",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.2,
+      "volume": 0.2,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "money",
+      "group": "A_LIFE",
+      "source": "synth:cloth",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.3,
+      "volume": 0.35,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "usb",
+      "group": "A_LIFE",
+      "source": "synth:click",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.15,
+      "volume": 0.3,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "screwdriver",
+      "group": "A_LIFE",
+      "source": "synth:keys",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.6,
+      "volume": 0.25,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "guard_keys",
+      "group": "A_STEALTH",
+      "source": "synth:keys",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.9,
+      "volume": 0.4,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "unplug",
+      "group": "A_STEALTH",
+      "source": "synth:click",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.15,
+      "volume": 0.35,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "lift_pot",
+      "group": "A_STEALTH",
+      "source": "synth:door",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.3,
+      "volume": 0.25,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "cupboard",
+      "group": "A_STEALTH",
+      "source": "synth:door",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.5,
+      "volume": 0.3,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "timer",
+      "group": "A_STEALTH",
+      "source": "synth:click",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.08,
+      "volume": 0.25,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "knock",
+      "group": "A_FRIENDS",
+      "source": "synth:knock",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.8,
+      "volume": 0.4,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "food_package",
+      "group": "A_FRIENDS",
+      "source": "synth:cloth",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.55,
+      "volume": 0.4,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "camera",
+      "group": "A_FRIENDS",
+      "source": "synth:click",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.18,
+      "volume": 0.45,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "greeting_cloth",
+      "group": "A_FRIENDS",
+      "source": "synth:cloth",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.7,
+      "volume": 0.35,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "printer",
+      "group": "A_THESIS_END",
+      "source": "synth:printer",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 2,
+      "volume": 0.35,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "projector",
+      "group": "A_THESIS_END",
+      "source": "synth:hum",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 1,
+      "volume": 0.3,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "applause",
+      "group": "A_THESIS_END",
+      "source": "synth:applause",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 2,
+      "volume": 0.3,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "degree_paper",
+      "group": "A_THESIS_END",
+      "source": "synth:cloth",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.5,
+      "volume": 0.35,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "light_switch",
+      "group": "A_THESIS_END",
+      "source": "synth:click",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.12,
+      "volume": 0.4,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "final_door",
+      "group": "A_THESIS_END",
+      "source": "synth:door",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.8,
+      "volume": 0.35,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "ui_hover",
+      "group": "A_UI",
+      "source": "synth:click",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.05,
+      "volume": 0.15,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "ui_confirm",
+      "group": "A_UI",
+      "source": "synth:click",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.1,
+      "volume": 0.3,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "ui_cancel",
+      "group": "A_UI",
+      "source": "synth:error",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.12,
+      "volume": 0.2,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "ui_error",
+      "group": "A_UI",
+      "source": "synth:error",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.3,
+      "volume": 0.3,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "ui_complete",
+      "group": "A_UI",
+      "source": "synth:success",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.45,
+      "volume": 0.35,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "ui_reward",
+      "group": "A_UI",
+      "source": "synth:success",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.5,
+      "volume": 0.35,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "ui_lock",
+      "group": "A_UI",
+      "source": "synth:click",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.15,
+      "volume": 0.25,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "ui_unlock",
+      "group": "A_UI",
+      "source": "synth:success",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.25,
+      "volume": 0.3,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "patrol_step",
+      "group": "A_STEALTH",
+      "source": "synth:door",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 0.2,
+      "volume": 0.22,
+      "loop": false,
+      "status": "procedural_placeholder"
+    },
+    {
+      "id": "bgm_student",
+      "group": "A_BGM",
+      "source": "pending",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 1,
+      "volume": 0.5,
+      "loop": true,
+      "status": "pending_music"
+    },
+    {
+      "id": "bgm_gaming",
+      "group": "A_BGM",
+      "source": "pending",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 1,
+      "volume": 0.5,
+      "loop": true,
+      "status": "pending_music"
+    },
+    {
+      "id": "bgm_decline",
+      "group": "A_BGM",
+      "source": "pending",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 1,
+      "volume": 0.5,
+      "loop": true,
+      "status": "pending_music"
+    },
+    {
+      "id": "bgm_livelihood",
+      "group": "A_BGM",
+      "source": "pending",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 1,
+      "volume": 0.5,
+      "loop": true,
+      "status": "pending_music"
+    },
+    {
+      "id": "bgm_lake",
+      "group": "A_BGM",
+      "source": "pending",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 1,
+      "volume": 0.5,
+      "loop": true,
+      "status": "pending_music"
+    },
+    {
+      "id": "bgm_farewell",
+      "group": "A_BGM",
+      "source": "pending",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 1,
+      "volume": 0.5,
+      "loop": true,
+      "status": "pending_music"
+    },
+    {
+      "id": "bgm_recovery",
+      "group": "A_BGM",
+      "source": "pending",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 1,
+      "volume": 0.5,
+      "loop": true,
+      "status": "pending_music"
+    },
+    {
+      "id": "bgm_thesis",
+      "group": "A_BGM",
+      "source": "pending",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 1,
+      "volume": 0.5,
+      "loop": true,
+      "status": "pending_music"
+    },
+    {
+      "id": "bgm_defense",
+      "group": "A_BGM",
+      "source": "pending",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 1,
+      "volume": 0.5,
+      "loop": true,
+      "status": "pending_music"
+    },
+    {
+      "id": "bgm_graduation",
+      "group": "A_BGM",
+      "source": "pending",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 1,
+      "volume": 0.5,
+      "loop": true,
+      "status": "pending_music"
+    },
+    {
+      "id": "bgm_acoustic_credits",
+      "group": "A_BGM",
+      "source": "pending",
+      "rights": "Original project procedural synthesis; no external samples, no third-party recording license.",
+      "duration": 1,
+      "volume": 0.5,
+      "loop": true,
+      "status": "pending_music"
+    }
+  ],
+  "events": [
+    {
+      "mission": 1,
+      "step": "decline_tout",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 1,
+      "step": "buy_ticket",
+      "cue": "money"
+    },
+    {
+      "mission": 1,
+      "step": "arrive_dorm",
+      "cue": "bus_arrival"
+    },
+    {
+      "mission": 2,
+      "step": "present_documents",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 2,
+      "step": "receive_room_key",
+      "cue": "key"
+    },
+    {
+      "mission": 2,
+      "step": "reach_room",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 3,
+      "step": "unlock_room",
+      "cue": "key"
+    },
+    {
+      "mission": 3,
+      "step": "claim_bed",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 3,
+      "step": "place_backpack",
+      "cue": "bag"
+    },
+    {
+      "mission": 3,
+      "step": "repair_fan",
+      "cue": "screwdriver"
+    },
+    {
+      "mission": 4,
+      "step": "buy_cleaning_kit",
+      "cue": "money"
+    },
+    {
+      "mission": 4,
+      "step": "clean_four_spots",
+      "cue": "wipe"
+    },
+    {
+      "mission": 4,
+      "step": "meet_roommates",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 5,
+      "step": "choose_meal",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 5,
+      "step": "eat_together",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 5,
+      "step": "receive_schedule",
+      "cue": "phone_vibrate"
+    },
+    {
+      "mission": 5,
+      "step": "return_sleep",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 6,
+      "step": "equip_backpack",
+      "cue": "bag"
+    },
+    {
+      "mission": 6,
+      "step": "wash_before_class",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 6,
+      "step": "take_bus",
+      "cue": "bus_arrival"
+    },
+    {
+      "mission": 6,
+      "step": "enter_class",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 6,
+      "step": "solve_warmup",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 6,
+      "step": "finish_lesson",
+      "cue": "paper"
+    },
+    {
+      "mission": 6,
+      "step": "return_room",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 6,
+      "step": "tell_dam",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 7,
+      "step": "join_wc_queue",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 7,
+      "step": "catch_bus",
+      "cue": "bus_arrival"
+    },
+    {
+      "mission": 7,
+      "step": "attend_class",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 7,
+      "step": "review_commute_ledger",
+      "cue": "money"
+    },
+    {
+      "mission": 7,
+      "step": "study_y1_calculus1",
+      "cue": "paper"
+    },
+    {
+      "mission": 7,
+      "step": "exam_y1_calculus1",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 7,
+      "step": "study_y1_algebra",
+      "cue": "paper"
+    },
+    {
+      "mission": 7,
+      "step": "exam_y1_algebra",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 7,
+      "step": "study_y1_computing",
+      "cue": "paper"
+    },
+    {
+      "mission": 7,
+      "step": "exam_y1_computing",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 7,
+      "step": "study_y1_mechanics",
+      "cue": "paper"
+    },
+    {
+      "mission": 7,
+      "step": "exam_y1_mechanics",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 7,
+      "step": "study_y1_english1",
+      "cue": "paper"
+    },
+    {
+      "mission": 7,
+      "step": "exam_y1_english1",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 7,
+      "step": "study_y1_study_skills",
+      "cue": "paper"
+    },
+    {
+      "mission": 7,
+      "step": "exam_y1_study_skills",
+      "cue": "paper"
+    },
+    {
+      "mission": 7,
+      "step": "finish_year_exams",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 7,
+      "step": "read_year_results",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 8,
+      "step": "get_cooker",
+      "cue": "lift_pot"
+    },
+    {
+      "mission": 8,
+      "step": "plug_cooker",
+      "cue": "fan_switch"
+    },
+    {
+      "mission": 8,
+      "step": "add_ingredients",
+      "cue": "food_package"
+    },
+    {
+      "mission": 8,
+      "step": "share_feast",
+      "cue": "food_package"
+    },
+    {
+      "mission": 8,
+      "step": "toast",
+      "cue": "glass_clink"
+    },
+    {
+      "mission": 8,
+      "step": "sleep_new_term",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 9,
+      "step": "refresh_registration",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 9,
+      "step": "select_classes",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 9,
+      "step": "confirm_schedule",
+      "cue": "ui_complete"
+    },
+    {
+      "mission": 10,
+      "step": "choose_night",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 10,
+      "step": "end_night",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 11,
+      "step": "choose_alarm",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 11,
+      "step": "show_morning_consequence",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 12,
+      "step": "hear_guard",
+      "cue": "guard_keys"
+    },
+    {
+      "mission": 12,
+      "step": "unplug_cooker",
+      "cue": "unplug"
+    },
+    {
+      "mission": 12,
+      "step": "hide_pot",
+      "cue": "cupboard"
+    },
+    {
+      "mission": 12,
+      "step": "pretend_sleep",
+      "cue": "greeting_cloth"
+    },
+    {
+      "mission": 12,
+      "step": "resolve_inspection",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 13,
+      "step": "compile_assignment",
+      "cue": "compile"
+    },
+    {
+      "mission": 13,
+      "step": "find_error",
+      "cue": "error"
+    },
+    {
+      "mission": 13,
+      "step": "patch_assignment",
+      "cue": "click"
+    },
+    {
+      "mission": 13,
+      "step": "test_assignment",
+      "cue": "test_pass"
+    },
+    {
+      "mission": 13,
+      "step": "submit_assignment",
+      "cue": "submit"
+    },
+    {
+      "mission": 14,
+      "step": "arrive_exam",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 14,
+      "step": "answer_known_sections",
+      "cue": "paper"
+    },
+    {
+      "mission": 14,
+      "step": "submit_exam",
+      "cue": "submit"
+    },
+    {
+      "mission": 15,
+      "step": "open_grade_portal",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 15,
+      "step": "read_failed_courses",
+      "cue": "ui_error"
+    },
+    {
+      "mission": 15,
+      "step": "read_prerequisite_graph",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 15,
+      "step": "open_retaking_invoice",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 16,
+      "step": "answer_mother",
+      "cue": "phone_accept"
+    },
+    {
+      "mission": 16,
+      "step": "finish_call",
+      "cue": "phone_end"
+    },
+    {
+      "mission": 16,
+      "step": "receive_first_job",
+      "cue": "phone_vibrate"
+    },
+    {
+      "mission": 17,
+      "step": "receive_laptop",
+      "cue": "bag"
+    },
+    {
+      "mission": 17,
+      "step": "backup_data",
+      "cue": "click"
+    },
+    {
+      "mission": 17,
+      "step": "boot_usb",
+      "cue": "usb"
+    },
+    {
+      "mission": 17,
+      "step": "install_system",
+      "cue": "click"
+    },
+    {
+      "mission": 17,
+      "step": "handover_laptop",
+      "cue": "bag"
+    },
+    {
+      "mission": 18,
+      "step": "post_service_sign",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 18,
+      "step": "accept_next_jobs",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 19,
+      "step": "complete_job_a",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 19,
+      "step": "rest_and_eat",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 19,
+      "step": "complete_job_b",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 19,
+      "step": "review_weekly_ledger",
+      "cue": "money"
+    },
+    {
+      "mission": 19,
+      "step": "pay_retaking_fee",
+      "cue": "money"
+    },
+    {
+      "mission": 19,
+      "step": "pass_programming",
+      "cue": "test_pass"
+    },
+    {
+      "mission": 19,
+      "step": "pass_physics",
+      "cue": "test_pass"
+    },
+    {
+      "mission": 19,
+      "step": "enroll_data_structures",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 20,
+      "step": "receive_crush_laptop",
+      "cue": "bag"
+    },
+    {
+      "mission": 20,
+      "step": "scan_virus",
+      "cue": "click"
+    },
+    {
+      "mission": 20,
+      "step": "repair_crush_laptop",
+      "cue": "screwdriver"
+    },
+    {
+      "mission": 20,
+      "step": "waive_labor",
+      "cue": "money"
+    },
+    {
+      "mission": 20,
+      "step": "receive_cafe_invite",
+      "cue": "phone_vibrate"
+    },
+    {
+      "mission": 21,
+      "step": "borrow_jacket",
+      "cue": "bag"
+    },
+    {
+      "mission": 21,
+      "step": "arrive_cafe",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 21,
+      "step": "meet_boyfriend",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 21,
+      "step": "repair_second_laptop",
+      "cue": "screwdriver"
+    },
+    {
+      "mission": 21,
+      "step": "return_jacket",
+      "cue": "bag"
+    },
+    {
+      "mission": 21,
+      "step": "accept_lake_invite",
+      "cue": "phone_vibrate"
+    },
+    {
+      "mission": 22,
+      "step": "sit_with_friends",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 22,
+      "step": "share_tea",
+      "cue": "glass_clink"
+    },
+    {
+      "mission": 22,
+      "step": "finish_conversation",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 22,
+      "step": "return_sleep",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 23,
+      "step": "open_year3_results",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 23,
+      "step": "pass_calculus2",
+      "cue": "test_pass"
+    },
+    {
+      "mission": 23,
+      "step": "read_data_structures_fail",
+      "cue": "ui_error"
+    },
+    {
+      "mission": 23,
+      "step": "read_78_credits",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 23,
+      "step": "receive_lab_request",
+      "cue": "phone_vibrate"
+    },
+    {
+      "mission": 24,
+      "step": "take_book",
+      "cue": "paper"
+    },
+    {
+      "mission": 24,
+      "step": "travel_hcmus",
+      "cue": "bus_arrival"
+    },
+    {
+      "mission": 24,
+      "step": "deliver_book",
+      "cue": "paper"
+    },
+    {
+      "mission": 24,
+      "step": "listen_lab_talk",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 24,
+      "step": "return_room",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 25,
+      "step": "edit_cv",
+      "cue": "click"
+    },
+    {
+      "mission": 25,
+      "step": "export_cv_pdf",
+      "cue": "submit"
+    },
+    {
+      "mission": 25,
+      "step": "send_cv",
+      "cue": "submit"
+    },
+    {
+      "mission": 25,
+      "step": "receive_job_email",
+      "cue": "phone_vibrate"
+    },
+    {
+      "mission": 26,
+      "step": "see_to_to_work",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 26,
+      "step": "read_friend_schedules",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 26,
+      "step": "receive_eligibility_notice",
+      "cue": "phone_vibrate"
+    },
+    {
+      "mission": 27,
+      "step": "apply_thesis",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 27,
+      "step": "read_rejection",
+      "cue": "ui_error"
+    },
+    {
+      "mission": 27,
+      "step": "receive_photo_invite",
+      "cue": "phone_vibrate"
+    },
+    {
+      "mission": 28,
+      "step": "meet_graduate_friends",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 28,
+      "step": "take_group_photo",
+      "cue": "camera"
+    },
+    {
+      "mission": 28,
+      "step": "answer_parents",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 28,
+      "step": "return_room",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 29,
+      "step": "carry_longs_boxes",
+      "cue": "bag"
+    },
+    {
+      "mission": 29,
+      "step": "say_goodbye_long",
+      "cue": "greeting_cloth"
+    },
+    {
+      "mission": 29,
+      "step": "long_leaves",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 29,
+      "step": "freshman1_moves_in",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 30,
+      "step": "receive_to_gift",
+      "cue": "food_package"
+    },
+    {
+      "mission": 30,
+      "step": "say_goodbye_to",
+      "cue": "greeting_cloth"
+    },
+    {
+      "mission": 30,
+      "step": "to_leaves",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 30,
+      "step": "freshman2_moves_in",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 31,
+      "step": "hear_dams_plan",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 31,
+      "step": "say_goodbye_dam",
+      "cue": "greeting_cloth"
+    },
+    {
+      "mission": 31,
+      "step": "dam_leaves_dorm",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 31,
+      "step": "freshman3_moves_in",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 32,
+      "step": "select_uninstall",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 32,
+      "step": "hold_uninstall",
+      "cue": "ui_complete"
+    },
+    {
+      "mission": 32,
+      "step": "set_alarm",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 32,
+      "step": "write_recovery_plan",
+      "cue": "paper"
+    },
+    {
+      "mission": 33,
+      "step": "wake_immediately",
+      "cue": "snooze"
+    },
+    {
+      "mission": 33,
+      "step": "morning_wc",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 33,
+      "step": "arrive_class_on_time",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 33,
+      "step": "study_days",
+      "cue": "paper"
+    },
+    {
+      "mission": 33,
+      "step": "hear_knock",
+      "cue": "knock"
+    },
+    {
+      "mission": 34,
+      "step": "open_for_friends",
+      "cue": "door"
+    },
+    {
+      "mission": 34,
+      "step": "receive_supplies",
+      "cue": "food_package"
+    },
+    {
+      "mission": 34,
+      "step": "share_hotpot",
+      "cue": "food_package"
+    },
+    {
+      "mission": 34,
+      "step": "receive_study_notes",
+      "cue": "paper"
+    },
+    {
+      "mission": 34,
+      "step": "say_goodbye_visitors",
+      "cue": "greeting_cloth"
+    },
+    {
+      "mission": 34,
+      "step": "read_flight_message",
+      "cue": "phone_vibrate"
+    },
+    {
+      "mission": 35,
+      "step": "revise_data_structures",
+      "cue": "paper"
+    },
+    {
+      "mission": 35,
+      "step": "pass_data_structures",
+      "cue": "test_pass"
+    },
+    {
+      "mission": 35,
+      "step": "enroll_operating_systems",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 35,
+      "step": "pass_operating_systems",
+      "cue": "test_pass"
+    },
+    {
+      "mission": 35,
+      "step": "read_debt_cleared",
+      "cue": "ui_complete"
+    },
+    {
+      "mission": 36,
+      "step": "open_eligibility_portal",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 36,
+      "step": "confirm_136_credits",
+      "cue": "ui_complete"
+    },
+    {
+      "mission": 36,
+      "step": "receive_advisor_appointment",
+      "cue": "phone_vibrate"
+    },
+    {
+      "mission": 37,
+      "step": "meet_advisor",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 37,
+      "step": "choose_network_topic",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 37,
+      "step": "register_topic",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 37,
+      "step": "receive_research_checklist",
+      "cue": "phone_vibrate"
+    },
+    {
+      "mission": 38,
+      "step": "search_references",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 38,
+      "step": "assemble_network_design",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 38,
+      "step": "validate_design",
+      "cue": "test_pass"
+    },
+    {
+      "mission": 38,
+      "step": "write_backlog",
+      "cue": "paper"
+    },
+    {
+      "mission": 39,
+      "step": "implement_modules",
+      "cue": "click"
+    },
+    {
+      "mission": 39,
+      "step": "run_project_tests",
+      "cue": "test_pass"
+    },
+    {
+      "mission": 39,
+      "step": "run_first_demo",
+      "cue": "compile"
+    },
+    {
+      "mission": 39,
+      "step": "book_demo1",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 40,
+      "step": "present_demo1",
+      "cue": "compile"
+    },
+    {
+      "mission": 40,
+      "step": "record_security_feedback",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 40,
+      "step": "patch_security",
+      "cue": "click"
+    },
+    {
+      "mission": 40,
+      "step": "pass_security_tests",
+      "cue": "test_pass"
+    },
+    {
+      "mission": 40,
+      "step": "book_demo2",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 41,
+      "step": "pass_demo2",
+      "cue": "test_pass"
+    },
+    {
+      "mission": 41,
+      "step": "format_report",
+      "cue": "click"
+    },
+    {
+      "mission": 41,
+      "step": "print_report",
+      "cue": "printer"
+    },
+    {
+      "mission": 41,
+      "step": "bind_thesis",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 41,
+      "step": "review_submission_deadline",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 42,
+      "step": "reproduce_crash",
+      "cue": "error"
+    },
+    {
+      "mission": 42,
+      "step": "read_crash_log",
+      "cue": "error"
+    },
+    {
+      "mission": 42,
+      "step": "patch_final_bug",
+      "cue": "click"
+    },
+    {
+      "mission": 42,
+      "step": "pass_final_tests",
+      "cue": "test_pass"
+    },
+    {
+      "mission": 42,
+      "step": "submit_project",
+      "cue": "submit"
+    },
+    {
+      "mission": 42,
+      "step": "save_receipt_backup",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 42,
+      "step": "receive_defense_schedule",
+      "cue": "phone_vibrate"
+    },
+    {
+      "mission": 43,
+      "step": "change_to_shirt",
+      "cue": "bag"
+    },
+    {
+      "mission": 43,
+      "step": "connect_projector",
+      "cue": "projector"
+    },
+    {
+      "mission": 43,
+      "step": "present_thesis",
+      "cue": "ui_confirm"
+    },
+    {
+      "mission": 43,
+      "step": "pass_defense_qa",
+      "cue": "test_pass"
+    },
+    {
+      "mission": 43,
+      "step": "receive_grade_a",
+      "cue": "applause"
+    },
+    {
+      "mission": 44,
+      "step": "call_mother",
+      "cue": "phone_accept"
+    },
+    {
+      "mission": 44,
+      "step": "pack_own_belongings",
+      "cue": "bag"
+    },
+    {
+      "mission": 44,
+      "step": "turn_off_light",
+      "cue": "light_switch"
+    },
+    {
+      "mission": 44,
+      "step": "close_room_door",
+      "cue": "final_door"
+    },
+    {
+      "mission": 44,
+      "step": "return_key",
+      "cue": "key"
+    },
+    {
+      "mission": 44,
+      "step": "receive_ceremony_invitation",
+      "cue": "phone_vibrate"
+    },
+    {
+      "mission": 45,
+      "step": "receive_degree",
+      "cue": "degree_paper"
+    },
+    {
+      "mission": 45,
+      "step": "meet_family",
+      "cue": "greeting_cloth"
+    },
+    {
+      "mission": 45,
+      "step": "read_dam_return_message",
+      "cue": "phone_vibrate"
+    },
+    {
+      "mission": 45,
+      "step": "reunite_friends",
+      "cue": "greeting_cloth"
+    },
+    {
+      "mission": 45,
+      "step": "travel_binh_dong",
+      "cue": "bus_arrival"
+    },
+    {
+      "mission": 45,
+      "step": "link_shoulders",
+      "cue": "greeting_cloth"
+    },
+    {
+      "mission": 45,
+      "step": "finish_credits",
+      "cue": "ui_complete"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "Station",
+      "ambience": "amb_station",
+      "music": "bgm_student"
+    },
+    {
+      "id": "Reception",
+      "ambience": "amb_dorm",
+      "music": "bgm_student"
+    },
+    {
+      "id": "RoomDay",
+      "ambience": "amb_dorm",
+      "music": "bgm_student"
+    },
+    {
+      "id": "RoomNight",
+      "ambience": "amb_dorm",
+      "music": "bgm_gaming"
+    },
+    {
+      "id": "Restroom",
+      "ambience": "",
+      "music": ""
+    },
+    {
+      "id": "Classroom",
+      "ambience": "amb_classroom",
+      "music": "bgm_recovery"
+    },
+    {
+      "id": "Canteen",
+      "ambience": "amb_canteen",
+      "music": "bgm_student"
+    },
+    {
+      "id": "Lab",
+      "ambience": "amb_lab",
+      "music": "bgm_thesis"
+    },
+    {
+      "id": "Street",
+      "ambience": "amb_street",
+      "music": "bgm_livelihood"
+    },
+    {
+      "id": "Lake",
+      "ambience": "amb_lake",
+      "music": "bgm_lake"
+    },
+    {
+      "id": "Farewell",
+      "ambience": "amb_dorm",
+      "music": "bgm_farewell"
+    },
+    {
+      "id": "Recovery",
+      "ambience": "amb_dorm",
+      "music": "bgm_recovery"
+    },
+    {
+      "id": "Thesis",
+      "ambience": "amb_lab",
+      "music": "bgm_thesis"
+    },
+    {
+      "id": "Defense",
+      "ambience": "amb_classroom",
+      "music": "bgm_defense"
+    },
+    {
+      "id": "Ceremony",
+      "ambience": "amb_ceremony",
+      "music": "bgm_graduation"
+    },
+    {
+      "id": "BinhDong",
+      "ambience": "amb_binh_dong",
+      "music": "bgm_graduation"
+    },
+    {
+      "id": "Credits",
+      "ambience": "",
+      "music": "bgm_acoustic_credits"
+    },
+    {
+      "id": "GradesSilence",
+      "ambience": "",
+      "music": ""
+    },
+    {
+      "id": "PhoneSilence",
+      "ambience": "",
+      "music": ""
+    }
+  ]
+}

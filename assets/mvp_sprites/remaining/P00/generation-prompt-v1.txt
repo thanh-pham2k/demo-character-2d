@@ -1,0 +1,13 @@
+Create ONE composite production GAME PROP SPRITE SHEET for Room404, a Vietnamese student life narrative game. Attached image is a STYLE REFERENCE ONLY: match hand-painted pixel-art-inspired 2.5D sprites with crisp dark outlines, warm earthy colors and readable shading. Not photorealistic. Slightly elevated 3/4 view, consistent perspective across all props. Do not redraw the reference broom.
+EXACTLY 4 COLUMNS x2 ROWS, equal square invisible cells, target2048x1024, cell512. TRUE TRANSPARENT alpha background. No floor, shadows, text, numbers, labels, borders, dividers or checkerboard. Keep every item FULLY inside its own cell with large transparent safety margins: at least12% of the cell blank on ALL sides. Never fill a cell to its boundaries. Objects occupy no more than70% of cell height/width; common sensible perspective, not all objects same real-world size.
+ROW1, left to right:
+1. A small slightly worn cardboard box containing Vietnamese nem chua hometown gifts wrapped in banana leaves, partly open top, no writing/logos; isolated whole box.
+2. A blue plastic cleaning bucket with a metal or plastic carrying handle and a little water inside; isolated.
+3. A folded slightly crumpled gray-beige cleaning rag; isolated, no bucket or broom.
+4. A compact old Vietnamese student desk fan, green plastic cage and base, small visible power cord coiled neatly beside its base within the same cell; fan off, no motion blur.
+ROW2, left to right:
+5. An EMPTY rectangular stainless steel cafeteria tray with three food recesses, viewed slightly from above, isolated. No rice or food in this cell.
+6. A single portion of white steamed rice formed into a small mound, no plate, no tray, isolated.
+7. A single serving of Vietnamese caramelized pork pieces with a little brown sauce, no plate or tray, isolated.
+8. A single serving of stir-fried leafy green vegetables with a few carrot strips, no plate or tray, isolated.
+Food portions 6–8 must share exactly the same top/3/4 angle and be ready to composite into the empty tray's separate recesses. No steam or floating garnish. Exactly eight separated prop groups, one per cell, with true alpha and generous margins. Output only one finished4x2 sheet.

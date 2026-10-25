@@ -1,0 +1,24 @@
+{
+  "scope": "Existing interaction foundation and six-day Year1 campaign, not full45mission production game",
+  "report_source": "mobile-2d/PlayModeInteractionReports/report.json",
+  "finishedUtc": "2026-10-25T10:55:36.0886730Z",
+  "success": true,
+  "passed": 506,
+  "errors": [],
+  "h6_checks": [
+    "Scheduled lesson sits player beside classmate",
+    "Scheduled lesson sits player beside classmate",
+    "First return to404 starts Dam reaction after room arrival fade",
+    "Dorm reaction commits once after conversation",
+    "Scheduled lesson sits player beside classmate",
+    "Scheduled lesson sits player beside classmate",
+    "Scheduled lesson sits player beside classmate",
+    "Scheduled lesson sits player beside classmate",
+    "Scheduled lesson sits player beside classmate",
+    "Scheduled lesson sits player beside classmate",
+    "Scheduled lesson sits player beside classmate",
+    "Scheduled lesson sits player beside classmate",
+    "Scheduled lesson sits player beside classmate",
+    "Scheduled lesson sits player beside classmate"
+  ]
+}

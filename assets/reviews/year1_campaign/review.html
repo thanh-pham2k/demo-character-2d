@@ -1,0 +1,5 @@
+<!doctype html><meta charset="utf-8"><title>Year 1 Play Mode motion review</title>
+<style>body{background:#17212b;color:white;font:18px system-ui;margin:20px}video{width:960px;max-width:100%;display:block}a{color:#88d7ff;margin-right:18px}</style>
+<h1>Actual Play Mode motion</h1><nav><a href="?clip=bus-outbound">Bus outbound</a><a href="?clip=bus-homebound">Bus homebound</a><a href="?clip=two-gaming">Two gaming</a><a href="?clip=night-lights-off">Lights off</a><a href="?clip=two-sleepers">Two sleepers</a></nav>
+<h2 id="title"></h2><video controls autoplay muted loop></video><p>Real Unity camera capture; silent video. Audio tested in Play Mode separately.</p>
+<script>const allowed=['bus-outbound','bus-homebound','two-gaming','night-lights-off','two-sleepers'];const clip=new URLSearchParams(location.search).get('clip')||allowed[0];if(allowed.includes(clip)){document.querySelector('video').src=clip+'.mp4';document.querySelector('#title').textContent=clip;}</script>

@@ -1,0 +1,362 @@
+{
+  "batch": "P02",
+  "provenance": "generated_composite_batch",
+  "source_file": "assets/mvp_sprites/remaining/P02/source.png",
+  "source_sha256": "c2db54638f3b34abda538e212e4c9f283de079863ff073f1158596f525c7daff",
+  "source_dimensions": [
+    1774,
+    887
+  ],
+  "grid": [
+    4,
+    2
+  ],
+  "crop_format": "x_y_width_height_top_left",
+  "tool": "built_in_imagegen",
+  "outputs": [
+    {
+      "id": "screwdriver_kit",
+      "missions": [
+        3,
+        17,
+        19,
+        20,
+        21,
+        44
+      ],
+      "source_crop_xywh": [
+        0,
+        0,
+        440,
+        442
+      ],
+      "normalization": {
+        "mode": "tight_alpha_preserve_source_scale",
+        "source_bbox": [
+          44,
+          35,
+          429,
+          435
+        ],
+        "canvas": [
+          385,
+          400
+        ],
+        "floor_at_output_bottom": true
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/P02/screwdriver_kit.png",
+      "alpha_bounds": [
+        44,
+        35,
+        429,
+        435
+      ],
+      "touches_cell_edge": false,
+      "sha256": "266ccbd92ece2e24eee7d9ee1ddaa6fb7ed5a4c2fedbbef7887f5125c016dbcc",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "laptop_open_case",
+      "missions": [
+        18,
+        19,
+        21
+      ],
+      "source_crop_xywh": [
+        440,
+        0,
+        459,
+        442
+      ],
+      "normalization": {
+        "mode": "tight_alpha_preserve_source_scale",
+        "source_bbox": [
+          2,
+          81,
+          447,
+          428
+        ],
+        "canvas": [
+          445,
+          347
+        ],
+        "floor_at_output_bottom": true
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/P02/laptop_open_case.png",
+      "alpha_bounds": [
+        2,
+        81,
+        447,
+        428
+      ],
+      "touches_cell_edge": false,
+      "sha256": "d6787f54e6c0fb6d1e741919de31b42865636963a6f749fe45797709761fcccd",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "savings_jar",
+      "missions": [
+        17,
+        19
+      ],
+      "source_crop_xywh": [
+        899,
+        0,
+        431,
+        442
+      ],
+      "normalization": {
+        "mode": "tight_alpha_preserve_source_scale",
+        "source_bbox": [
+          45,
+          82,
+          418,
+          398
+        ],
+        "canvas": [
+          373,
+          316
+        ],
+        "floor_at_output_bottom": true
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/P02/savings_jar.png",
+      "alpha_bounds": [
+        45,
+        82,
+        418,
+        398
+      ],
+      "touches_cell_edge": false,
+      "sha256": "9d21d8e9c5803067ce5015c79eda0c6ab44db8a167ae5e7bd3598357306c1929",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "cash_notes_blank",
+      "missions": [
+        17,
+        19
+      ],
+      "source_crop_xywh": [
+        1330,
+        0,
+        444,
+        442
+      ],
+      "normalization": {
+        "mode": "tight_alpha_preserve_source_scale",
+        "source_bbox": [
+          41,
+          126,
+          404,
+          394
+        ],
+        "canvas": [
+          363,
+          268
+        ],
+        "floor_at_output_bottom": true
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/P02/cash_notes_blank.png",
+      "alpha_bounds": [
+        41,
+        126,
+        404,
+        394
+      ],
+      "touches_cell_edge": false,
+      "sha256": "89c8526c817ca4312eeac78e52e7c6a4fe34e8e27ebdf4e94830444a6753fdff",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "service_sign_blank",
+      "missions": [
+        18,
+        19
+      ],
+      "source_crop_xywh": [
+        0,
+        442,
+        440,
+        445
+      ],
+      "normalization": {
+        "mode": "tight_alpha_preserve_source_scale",
+        "source_bbox": [
+          38,
+          54,
+          439,
+          374
+        ],
+        "canvas": [
+          401,
+          320
+        ],
+        "floor_at_output_bottom": true
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/P02/service_sign_blank.png",
+      "alpha_bounds": [
+        38,
+        54,
+        439,
+        374
+      ],
+      "touches_cell_edge": false,
+      "sha256": "4a11e540f010920853296c076e45ede88706acd24e65e6196d60d30ecb1a66f3",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "bread",
+      "missions": [
+        19
+      ],
+      "source_crop_xywh": [
+        440,
+        442,
+        459,
+        445
+      ],
+      "normalization": {
+        "mode": "tight_alpha_preserve_source_scale",
+        "source_bbox": [
+          32,
+          89,
+          424,
+          366
+        ],
+        "canvas": [
+          392,
+          277
+        ],
+        "floor_at_output_bottom": true
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/P02/bread.png",
+      "alpha_bounds": [
+        32,
+        89,
+        424,
+        366
+      ],
+      "touches_cell_edge": false,
+      "sha256": "2f85aee1699f1a65a206a4d56b8efa9accf6e2444e8bf3d56dbbb733ad866e14",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "technician_bag",
+      "missions": [
+        19
+      ],
+      "source_crop_xywh": [
+        899,
+        442,
+        431,
+        445
+      ],
+      "normalization": {
+        "mode": "tight_alpha_preserve_source_scale",
+        "source_bbox": [
+          13,
+          32,
+          420,
+          413
+        ],
+        "canvas": [
+          407,
+          381
+        ],
+        "floor_at_output_bottom": true
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/P02/technician_bag.png",
+      "alpha_bounds": [
+        13,
+        32,
+        420,
+        413
+      ],
+      "touches_cell_edge": false,
+      "sha256": "f80e767c854eb91992d704748a02ee774a4d8fc90121689c770b5352c1bc3377",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "scooter_white",
+      "missions": [
+        21
+      ],
+      "source_crop_xywh": [
+        1330,
+        442,
+        444,
+        445
+      ],
+      "normalization": {
+        "mode": "tight_alpha_preserve_source_scale",
+        "source_bbox": [
+          12,
+          9,
+          414,
+          403
+        ],
+        "canvas": [
+          402,
+          394
+        ],
+        "floor_at_output_bottom": true
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/P02/scooter_white.png",
+      "alpha_bounds": [
+        12,
+        9,
+        414,
+        403
+      ],
+      "touches_cell_edge": false,
+      "sha256": "94c0dca43002a71cb1607d0e77ab0ff021ac46eb8c2704bc04fcbce945c1dd9a",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    }
+  ],
+  "qa": {
+    "slice_bounds": "pass",
+    "visual": "pass_source_and_sliced_preview_review",
+    "unity_import": "pass_current_hashes",
+    "integration": "pending"
+  }
+}

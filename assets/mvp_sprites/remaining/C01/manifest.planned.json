@@ -1,0 +1,282 @@
+{
+  "batch": {
+    "id": "C01",
+    "kind": "character",
+    "columns": 4,
+    "rows": 2,
+    "requested_canvas": [
+      2048,
+      1024
+    ],
+    "cell": [
+      512,
+      512
+    ],
+    "read_order": "left_to_right_top_to_bottom",
+    "margin": 32,
+    "status": "planned_not_generated",
+    "source_file": null,
+    "asset_ids": [
+      "luon_tired_idle",
+      "luon_phone_sad",
+      "long_gaming_shout",
+      "luon_exam_worried",
+      "luon_exam_bite_pen",
+      "luon_carry_hotpot",
+      "guard_idle",
+      "guard_inspecting"
+    ]
+  },
+  "assets": [
+    {
+      "id": "luon_tired_idle",
+      "production": "generate_batch",
+      "kind": "character",
+      "missions": [
+        10,
+        11,
+        19
+      ],
+      "description": "Lươn thường phục hiện có, mắt mệt và vai chùng, giữ nhận diện/chiều cao.",
+      "batch": "C01",
+      "cell_index": 1,
+      "row": 0,
+      "column": 0,
+      "planned_crop_xywh": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "actual_crop_xywh": null,
+      "source_file": null,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C01/luon_tired_idle.png",
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "qa_status": "pending_generation",
+      "reference_group": "character_existing"
+    },
+    {
+      "id": "luon_phone_sad",
+      "production": "generate_batch",
+      "kind": "character",
+      "missions": [
+        16
+      ],
+      "description": "Đứng nghe điện thoại buồn; điện thoại nằm trong bàn tay, không vẽ khung gọi.",
+      "batch": "C01",
+      "cell_index": 2,
+      "row": 0,
+      "column": 1,
+      "planned_crop_xywh": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "actual_crop_xywh": null,
+      "source_file": null,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C01/luon_phone_sad.png",
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "qa_status": "pending_generation",
+      "reference_group": "character_existing"
+    },
+    {
+      "id": "long_gaming_shout",
+      "production": "generate_batch",
+      "kind": "character",
+      "missions": [
+        10
+      ],
+      "description": "Long ngồi gaming hò hét, tai nghe, không bake laptop/ghế.",
+      "batch": "C01",
+      "cell_index": 3,
+      "row": 0,
+      "column": 2,
+      "planned_crop_xywh": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "actual_crop_xywh": null,
+      "source_file": null,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C01/long_gaming_shout.png",
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "qa_status": "pending_generation",
+      "reference_group": "character_existing"
+    },
+    {
+      "id": "luon_exam_worried",
+      "production": "generate_batch",
+      "kind": "character",
+      "missions": [
+        14
+      ],
+      "description": "Ngồi lo lắng, tay cầm bút, không bake bàn hoặc đề thi.",
+      "batch": "C01",
+      "cell_index": 4,
+      "row": 0,
+      "column": 3,
+      "planned_crop_xywh": [
+        1536,
+        0,
+        512,
+        512
+      ],
+      "actual_crop_xywh": null,
+      "source_file": null,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C01/luon_exam_worried.png",
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "qa_status": "pending_generation",
+      "reference_group": "character_existing"
+    },
+    {
+      "id": "luon_exam_bite_pen",
+      "production": "generate_batch",
+      "kind": "character",
+      "missions": [
+        14
+      ],
+      "description": "Cùng vị trí/pivot với worried; thay nét mặt và tay cắn bút.",
+      "batch": "C01",
+      "cell_index": 5,
+      "row": 1,
+      "column": 0,
+      "planned_crop_xywh": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "actual_crop_xywh": null,
+      "source_file": null,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C01/luon_exam_bite_pen.png",
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "qa_status": "pending_generation",
+      "reference_group": "character_existing"
+    },
+    {
+      "id": "luon_carry_hotpot",
+      "production": "generate_batch",
+      "kind": "character",
+      "missions": [
+        12
+      ],
+      "description": "Lươn đỡ hai tay; không bake nồi để gắn nồi lẩu cũ ở anchor.",
+      "batch": "C01",
+      "cell_index": 6,
+      "row": 1,
+      "column": 1,
+      "planned_crop_xywh": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "actual_crop_xywh": null,
+      "source_file": null,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C01/luon_carry_hotpot.png",
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "qa_status": "pending_generation",
+      "reference_group": "character_existing"
+    },
+    {
+      "id": "guard_idle",
+      "production": "generate_batch",
+      "kind": "character",
+      "missions": [
+        12
+      ],
+      "description": "Bảo vệ đồng phục xanh; chìa khóa/đèn pin tách riêng.",
+      "batch": "C01",
+      "cell_index": 7,
+      "row": 1,
+      "column": 2,
+      "planned_crop_xywh": [
+        1024,
+        512,
+        512,
+        512
+      ],
+      "actual_crop_xywh": null,
+      "source_file": null,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C01/guard_idle.png",
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "qa_status": "pending_generation",
+      "reference_group": "character_existing"
+    },
+    {
+      "id": "guard_inspecting",
+      "production": "generate_batch",
+      "kind": "character",
+      "missions": [
+        12
+      ],
+      "description": "Cùng bảo vệ, nghiêng nhìn kiểm tra; cùng scale với idle.",
+      "batch": "C01",
+      "cell_index": 8,
+      "row": 1,
+      "column": 3,
+      "planned_crop_xywh": [
+        1536,
+        512,
+        512,
+        512
+      ],
+      "actual_crop_xywh": null,
+      "source_file": null,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C01/guard_inspecting.png",
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "qa_status": "pending_generation",
+      "reference_group": "character_existing"
+    }
+  ],
+  "reference_files": [
+    "mobile-2d/Assets/Sprites/MVP/characters/luon_idle_0.png",
+    "mobile-2d/Assets/Sprites/MVP/characters/luon_walk_0.png",
+    "mobile-2d/Assets/Sprites/MVP/characters/dam_standing.png",
+    "mobile-2d/Assets/Sprites/MVP/characters/long_standing.png",
+    "mobile-2d/Assets/Sprites/MVP/characters/to_standing.png"
+  ],
+  "provenance": "planned_batch_not_yet_generated",
+  "gate": {
+    "blockout": "pending",
+    "generation": "generated_composite_batch",
+    "slicing": "actual_crops_and_hashes_verified",
+    "visual_qa": "pass_source_and_sliced_preview_review",
+    "unity_import": "pass_current_hashes",
+    "integration": "pending"
+  }
+}

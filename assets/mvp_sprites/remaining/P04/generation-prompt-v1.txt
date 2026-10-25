@@ -1,0 +1,11 @@
+Create ONE NEW transparent game PROP BATCH SHEET for Room404. Attached prop sheet is STYLE REFERENCE ONLY: match outlined warm pixel-art-inspired2.5D painterly objects, slightly elevated front-three-quarter view, crisp readable shading. Do not copy its items. True transparent alpha background, no glow/fog/halos/floor/shadows/text/logos/labels/borders/gridlines. Each object fully isolated inside its assigned invisible square cell with at least15% blank margin on every side; do NOT crop object parts. Objects can have different real-world sizes, runtime scales them individually. EXACTLY4columns x2rows,8equal cells, target2048x1024. TOP ROW:
+1 Freshman bedding setA: folded/laid thin blue geometric blanket plus pillow, shaped for a narrow Vietnamese student bunk, elevated angle, no bed frame.
+2 Same-sized bedding setB, muted orange plaid blanket/pillow, same view/registration, no bed frame.
+3 Same-sized bedding setC, muted green patterned blanket/pillow, same view, no bed frame.
+4 Small wrapped serving of Vietnamese dried smoked buffalo meat, a few dark strips on plain wrapping, no letters.
+BOTTOM ROW:
+5 One practical insulated cloth hotpot food delivery tote bag, closed, slightly bulging, no pot or people baked in.
+6 One generic small beer supply group: plain unbranded bottle pack and a few closed cans, blank labels, no text.
+7 One dark navy-blue hardbound thesis book with thin decorative gold border, cover COMPLETELY BLANK, no letters or numbers, three-quarter view.
+8 One bouquet of warm-colored fresh flowers in simple cream/pink wrapping, no hands or person.
+Exactly8prop groups. Bed sets have consistent actual size; each safely separate.

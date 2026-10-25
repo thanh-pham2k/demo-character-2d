@@ -20,9 +20,13 @@ public static class MVPSceneBuilderFinal
     private const float SocketScale = 0.55f;
     private const float LaptopScale = 0.1f;
 
+    [MenuItem("KTX404/Build Room 404 Scene", true)]
+    private static bool CanBuildScene() => !EditorApplication.isPlayingOrWillChangePlaymode;
+
     [MenuItem("KTX404/Build Room 404 Scene")]
     public static void BuildScene()
     {
+        if(EditorApplication.isPlayingOrWillChangePlaymode)return;
         var scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
 
         // 1. Camera setup - Perfectly centered isometric view
@@ -176,6 +180,7 @@ public static class MVPSceneBuilderFinal
 
         // Realistic Scattered Trash Clusters (Small, natural, in corners)
         GameObject trashRoot = new GameObject("Trash_Clusters_Group");
+        trashRoot.SetActive(false);
         trashRoot.transform.SetParent(propsRoot.transform);
         CreateTrashCluster(trashRoot, "Trash_Noodles", trashNoodles, new Vector3(1.2f, -1.0f, 0), 0.14f, shadowSmall);
         CreateTrashCluster(trashRoot, "Trash_Cans", trashCans, new Vector3(-1.6f, -1.2f, 0), 0.13f, shadowSmall);

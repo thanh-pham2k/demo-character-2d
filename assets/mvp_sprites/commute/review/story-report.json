@@ -1,0 +1,16 @@
+{
+    "success": true,
+    "stages": [
+        "Stage1_Year1_Arrival",
+        "Stage2_Year2_Temptation",
+        "Stage3_Year5_Awakening",
+        "Stage4_Year6_Graduation",
+        "Finished"
+    ],
+    "gradeF": true,
+    "gradeA": true,
+    "storySeat": true,
+    "storyRelease": true,
+    "ending": true,
+    "errors": []
+}

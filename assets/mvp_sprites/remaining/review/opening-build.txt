@@ -1,0 +1,2 @@
+PASS 2026-10-25T15:11:02.2230350Z
+Separate opening scene;50authored action anchors,8zones,4cleaning targets,single sprite writer,drag/drop docs,hold,timer and meal budget. Play Mode verification pending.

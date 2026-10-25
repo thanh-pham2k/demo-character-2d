@@ -99,17 +99,28 @@ public static class MVPSceneSnapshot
         Debug.Log("Door review passed: reachable interaction, fixed hinge, opens to 70 degrees and closes. Frames: " + output);
     }
 
-    private static void SaveCameraFrame(Camera cam, string output)
+    public static void SaveCameraFrame(Camera cam, string output, bool includeOverlay = false)
     {
         const int width = 1280;
-        const int height = 720;
+        int height = includeOverlay ? Mathf.Max(1, Mathf.RoundToInt(width / cam.aspect)) : 720;
         RenderTexture previousTarget = cam.targetTexture;
         RenderTexture previousActive = RenderTexture.active;
+        var overlays = new System.Collections.Generic.List<Canvas>();
+        if (includeOverlay)
+            foreach (var canvas in Object.FindObjectsByType<Canvas>())
+                if (canvas.renderMode == RenderMode.ScreenSpaceOverlay) overlays.Add(canvas);
         var rt = new RenderTexture(width, height, 24);
         var frame = new Texture2D(width, height, TextureFormat.RGB24, false);
         try
         {
             cam.targetTexture = rt;
+            foreach (var canvas in overlays)
+            {
+                canvas.renderMode = RenderMode.ScreenSpaceCamera;
+                canvas.worldCamera = cam;
+                canvas.planeDistance = 1f;
+            }
+            Canvas.ForceUpdateCanvases();
             cam.Render();
             RenderTexture.active = rt;
             frame.ReadPixels(new Rect(0, 0, width, height), 0, 0);
@@ -118,7 +129,9 @@ public static class MVPSceneSnapshot
         }
         finally
         {
+            foreach (var canvas in overlays) { canvas.renderMode = RenderMode.ScreenSpaceOverlay; canvas.worldCamera = null; }
             cam.targetTexture = previousTarget;
+            Canvas.ForceUpdateCanvases();
             RenderTexture.active = previousActive;
             Object.DestroyImmediate(frame);
             Object.DestroyImmediate(rt);

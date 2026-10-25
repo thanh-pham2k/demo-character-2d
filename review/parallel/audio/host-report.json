@@ -1,0 +1,23 @@
+{
+  "status": "passed_host_data_only",
+  "missions": 45,
+  "events": 212,
+  "cues": 73,
+  "existing_procedural": 7,
+  "new_procedural_placeholders": 55,
+  "pending_music": 11,
+  "recorded_audio_assets": [],
+  "definition_sha256": "bc2f724ac87a4c0df6486bdcfc3ba86190ef748ab082a354da7afb0ff6553d4a",
+  "unity_compile": "not_run_coordinator_queue",
+  "play_mode": "not_run_coordinator_queue",
+  "listening": "pending",
+  "checks": [
+    "212 exact mission/step keys without loop commits",
+    "cue IDs/levels/duration/provenance",
+    "9 required groups",
+    "loop scene references",
+    "DormSound factory references",
+    "synthesis recipe references",
+    "no automatic editor/scene/session mutation markers"
+  ]
+}

@@ -1,0 +1,94 @@
+[
+  {
+    "batch": "AN02",
+    "ids": [
+      "luon_shirt_front_walk_0",
+      "luon_shirt_front_walk_1",
+      "luon_shirt_front_walk_2",
+      "luon_shirt_front_walk_3"
+    ],
+    "unique_pixel_frames": 4,
+    "heights": [
+      240,
+      240,
+      240,
+      239
+    ],
+    "feet_bottom_y": [
+      320,
+      320,
+      320,
+      320
+    ],
+    "lower_leg_widths": [
+      83,
+      90,
+      88,
+      87
+    ],
+    "warnings": [],
+    "motion_approval": "pending_manual_loop_review_and_gameplay_use"
+  },
+  {
+    "batch": "AN02",
+    "ids": [
+      "luon_shirt_back_walk_0",
+      "luon_shirt_back_walk_1",
+      "luon_shirt_back_walk_2",
+      "luon_shirt_back_walk_3"
+    ],
+    "unique_pixel_frames": 4,
+    "heights": [
+      242,
+      242,
+      242,
+      242
+    ],
+    "feet_bottom_y": [
+      320,
+      320,
+      320,
+      320
+    ],
+    "lower_leg_widths": [
+      79,
+      92,
+      99,
+      93
+    ],
+    "warnings": [],
+    "motion_approval": "pending_manual_loop_review_and_gameplay_use"
+  },
+  {
+    "batch": "AN02",
+    "ids": [
+      "luon_shirt_right_walk_0",
+      "luon_shirt_right_walk_1",
+      "luon_shirt_right_walk_2",
+      "luon_shirt_right_walk_3"
+    ],
+    "unique_pixel_frames": 4,
+    "heights": [
+      234,
+      234,
+      234,
+      234
+    ],
+    "feet_bottom_y": [
+      320,
+      320,
+      320,
+      320
+    ],
+    "lower_leg_widths": [
+      103,
+      101,
+      107,
+      101
+    ],
+    "warnings": [
+      "side_contact_and_passing_silhouettes_too_similar_review"
+    ],
+    "motion_approval": "pending_manual_loop_review_and_gameplay_use"
+  }
+]

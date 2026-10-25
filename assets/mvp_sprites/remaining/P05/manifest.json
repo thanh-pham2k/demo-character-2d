@@ -1,0 +1,279 @@
+{
+  "batch": "P05",
+  "provenance": "generated_composite_batch",
+  "source_file": "assets/mvp_sprites/remaining/P05/source.png",
+  "source_sha256": "a3a06c370074e8202d6a5fbdfbf3f96c2a05a22a493ea64f6e3c9bc4f93eba74",
+  "source_dimensions": [
+    1536,
+    1024
+  ],
+  "grid": [
+    3,
+    2
+  ],
+  "crop_format": "x_y_width_height_top_left",
+  "tool": "built_in_imagegen",
+  "outputs": [
+    {
+      "id": "podium",
+      "missions": [
+        43
+      ],
+      "source_crop_xywh": [
+        0,
+        0,
+        370,
+        512
+      ],
+      "normalization": {
+        "mode": "tight_alpha_preserve_source_scale",
+        "source_bbox": [
+          81,
+          34,
+          350,
+          488
+        ],
+        "canvas": [
+          269,
+          454
+        ],
+        "floor_at_output_bottom": true
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/P05/podium.png",
+      "alpha_bounds": [
+        81,
+        34,
+        350,
+        488
+      ],
+      "touches_cell_edge": false,
+      "sha256": "c565c33be24b97b3df3fe77d0736803c5d8d96469eec26e83a7467f20d59baf4",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "committee_table",
+      "missions": [
+        43
+      ],
+      "source_crop_xywh": [
+        370,
+        0,
+        775,
+        512
+      ],
+      "normalization": {
+        "mode": "tight_alpha_preserve_source_scale",
+        "source_bbox": [
+          21,
+          198,
+          767,
+          415
+        ],
+        "canvas": [
+          746,
+          217
+        ],
+        "floor_at_output_bottom": true
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/P05/committee_table.png",
+      "alpha_bounds": [
+        21,
+        198,
+        767,
+        415
+      ],
+      "touches_cell_edge": false,
+      "sha256": "65a591abc479aafd380d2f5ee08817c360d16a277bfafe04ee9f954b83c43328",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "projector_screen_blank",
+      "missions": [
+        43
+      ],
+      "source_crop_xywh": [
+        1145,
+        0,
+        391,
+        512
+      ],
+      "normalization": {
+        "mode": "tight_alpha_preserve_source_scale",
+        "source_bbox": [
+          10,
+          37,
+          353,
+          483
+        ],
+        "canvas": [
+          343,
+          446
+        ],
+        "floor_at_output_bottom": true
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/P05/projector_screen_blank.png",
+      "alpha_bounds": [
+        10,
+        37,
+        353,
+        483
+      ],
+      "touches_cell_edge": false,
+      "sha256": "b3f7509ef90926ab6855e66223438236a870dfb43de5f4ddef5298d3a64ad196",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "graduation_backdrop_blank",
+      "missions": [
+        45
+      ],
+      "source_crop_xywh": [
+        0,
+        512,
+        558,
+        512
+      ],
+      "normalization": {
+        "mode": "tight_alpha_preserve_source_scale",
+        "source_bbox": [
+          31,
+          25,
+          542,
+          419
+        ],
+        "canvas": [
+          511,
+          394
+        ],
+        "floor_at_output_bottom": true
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/P05/graduation_backdrop_blank.png",
+      "alpha_bounds": [
+        31,
+        25,
+        542,
+        419
+      ],
+      "touches_cell_edge": false,
+      "sha256": "2afb890f5c54444b05556e2848314e734890dc2102791f0ec708fa68360fe9ac",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "beer_table",
+      "missions": [
+        45
+      ],
+      "source_crop_xywh": [
+        558,
+        512,
+        580,
+        512
+      ],
+      "normalization": {
+        "mode": "tight_alpha_preserve_source_scale",
+        "source_bbox": [
+          18,
+          37,
+          516,
+          429
+        ],
+        "canvas": [
+          498,
+          392
+        ],
+        "floor_at_output_bottom": true
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/P05/beer_table.png",
+      "alpha_bounds": [
+        18,
+        37,
+        516,
+        429
+      ],
+      "touches_cell_edge": false,
+      "sha256": "3f832dd9a5c4b31d75a927ec00805c964b1b25965bbe342be80cbd952a7b88d4",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "drinking_glass",
+      "missions": [
+        8,
+        22,
+        34,
+        45
+      ],
+      "source_crop_xywh": [
+        1138,
+        512,
+        398,
+        512
+      ],
+      "normalization": {
+        "mode": "tight_alpha_preserve_source_scale",
+        "source_bbox": [
+          88,
+          70,
+          300,
+          415
+        ],
+        "canvas": [
+          212,
+          345
+        ],
+        "floor_at_output_bottom": true
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/P05/drinking_glass.png",
+      "alpha_bounds": [
+        88,
+        70,
+        300,
+        415
+      ],
+      "touches_cell_edge": false,
+      "sha256": "83371488b9575bab0aa55177fc3b692a47c64dca456377e04a0ba1e45979aec4",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    }
+  ],
+  "qa": {
+    "slice_bounds": "pass",
+    "visual": "pass_source_and_sliced_preview_review",
+    "unity_import": "pass_current_hashes",
+    "integration": "pending"
+  },
+  "raw_generated_source": "assets/mvp_sprites/remaining/P05/source-white.png",
+  "alpha_extraction": "assets/mvp_sprites/remaining/P05/extract_white_matte.py",
+  "rejected_attempts": [
+    "source-v1-rejected-halo.png"
+  ],
+  "geometry_refinement": "Committee table made frontal for E04 five-chair row"
+}

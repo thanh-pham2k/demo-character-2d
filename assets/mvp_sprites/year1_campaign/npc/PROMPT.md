@@ -1,0 +1,8 @@
+Use case: stylized-concept. ONE game animation asset batch, transparent 2048x2048, exact 4x4 equal512px cells. Match attached Long/Luon pixel sprites' CHIBI style: head about40% of standing height, short stocky body, thick crisp dark pixel outlines, consistent warm palette, no realistic adult proportions. 12% empty alpha margin inside each cell, no limbs cropped. Row-major cells:
+0,1,2: Long black hoodie/red headphones, entering a bed facing right: sit at edge with feet down; lift legs/pivot torso; recline fully on back with head to LEFT, feet RIGHT.
+3,4,5: Long lying asleep head LEFT feet RIGHT, full body on horizontal invisible mattress, subtle three breathing frames. Red headphones off ears resting neck. No pillow/blanket/bed drawn.
+6,7,8: Long getting up: reclined on back; torso sits up with knees bent; sit at edge ready to stand. Full body.
+9,10,11: Đạm, short black hair rectangular glasses white collared shirt dark pants, seated writing in notebook on imaginary desk, three subtle pen frames, three-quarter BACK view facing right. Same chibi scale as Long/Luon.
+12: Đạm same seated position, surprised head turn and raised eyebrows.
+13,14,15: male lecturer, grey short hair glasses blue short-sleeve collared shirt dark trousers, standing with chalk, then small nod, then pointing. CHIBI proportions exactly matching the students, older face only. Facing right.
+All frames isolated sprites in a single grid; NO furniture, mattress, chair, background, ground shadow, text or labels. Genuine alpha transparency. Keep identity, clothes, character sizes consistent within each frame sequence. Lying characters fit completely inside cells, never diagonal.

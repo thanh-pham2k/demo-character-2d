@@ -16,13 +16,15 @@ public interface IPlayerInteractable : IInteractable
 
 public static class InteractionTargetUtility
 {
-    public static bool IsAvailable(IInteractable target)
+    public static bool IsAlive(IInteractable target)
     {
         if (object.ReferenceEquals(target, null)) return false;
         // Interfaces do not use Unity's destroyed-object null comparison.
         if (target is Object unityObject && unityObject == null) return false;
         if (target is Behaviour behaviour && !behaviour.isActiveAndEnabled) return false;
         Transform anchor = target.GetTransform();
-        return anchor != null && anchor.gameObject.activeInHierarchy && target.CanInteract;
+        return anchor != null && anchor.gameObject.activeInHierarchy;
     }
+
+    public static bool IsAvailable(IInteractable target) => IsAlive(target) && target.CanInteract;
 }

@@ -1,0 +1,3 @@
+PASS 2026-10-25T10:37:34.1378840Z
+H6 C00 classmate bound in saved scene and NPC writer; prompt updated.
+Scope: editor reference migration only; full classroom playthrough pending.

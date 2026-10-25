@@ -1,0 +1,12 @@
+Create ONE NEW production character SPRITE BATCH SHEET for Room404 Vietnamese2D game. EXACTLY4columns x2rows, eight equal invisible square cells, target2048x1024. True transparent alpha background, no shadows/floor/text/labels/borders/gridlines. Figures SMALL, centered in their cells occupying only central65% height/width with generous blank transparent margins; full hair/hands/shoes inside the cell. Match references' chibi compact bodies, oversized heads, clean dark pixel-art-inspired outlines and warm softly painted shading. No desks/chairs/luggage/boxes baked into bodies unless explicitly specified. References establish Luon's exact face and game style. New committee/parent NPCs should match this style, not copy Luon's face.
+TOP ROW, four seated committee members, knees bent and feet grounded, shared seat height/perspective. No chairs/table baked in:
+1 Committee chair, Vietnamese man55, salt-and-pepper hair, dark rectangular glasses, navy blazer/white shirt, calm firm expression, pen in one hand.
+2 ExaminerA, Vietnamese woman45, dark hair in a neat bob, muted plum blazer/cream blouse/dark trousers, thoughtful face, hands natural.
+3 ExaminerB, Vietnamese man48, short neatly combed dark hair, charcoal blazer/pale blue shirt, no glasses, hand near chin.
+4 ExaminerC, Vietnamese man60, receding gray hair, thin rim glasses, muted brown blazer/white shirt, looking down at a small blank marking sheet, no text on it.
+BOTTOM ROW:
+5 Luon presenting: exact messy black hair/face from reference, white shirt tucked into charcoal trousers, black simple shoes, standing holding small slide remote and gesturing confidently. No podium/screen.
+6 Luon's father: Vietnamese man58 from countryside, short gray-black hair, gently weathered face, modest pale beige short-sleeved shirt tucked into brown trousers, practical shoes, proud warm smile, standing, hands free.
+7 Luon's mother: Vietnamese woman55, dark hair neatly tied back, modest muted pink floral ao dai with light trousers and flat shoes, proud emotional smile, standing, hands free for a separate bouquet; no bouquet baked in.
+8 Luon happy phone call: exact same Luon ascell5 with identical white shirt/charcoal trousers/black shoes, phone at ear, happy relieved emotional face, full body.
+Keep all8people inside their own cells. Exactly eight figures, no duplicate extra committee/advisor; advisor will reuse an existing sprite.

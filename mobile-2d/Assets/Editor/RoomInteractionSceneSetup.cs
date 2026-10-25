@@ -10,7 +10,6 @@ using TMPro;
 [InitializeOnLoad]
 public static class RoomInteractionSceneSetup
 {
-    private const string PoseFolder = "Assets/Sprites/MVP/characters/interaction";
     private static string Request => Path.Combine(Application.dataPath, "../Temp/RoomInteractionSceneSetup.run");
 
     static RoomInteractionSceneSetup()
@@ -21,7 +20,11 @@ public static class RoomInteractionSceneSetup
     private static void ApplyRequestedSetup()
     {
         if (EditorApplication.isPlayingOrWillChangePlaymode)
-            throw new InvalidOperationException("Stop Play Mode before applying room interactions.");
+        {
+            EditorApplication.playModeStateChanged -= ApplyAfterPlayMode;
+            EditorApplication.playModeStateChanged += ApplyAfterPlayMode;
+            return;
+        }
         var scene = SceneManager.GetActiveScene();
         if (scene.path != "Assets/Scenes/Room404_MVP.unity") throw new InvalidOperationException("Open Room404_MVP first.");
         Configure(scene);
@@ -29,7 +32,14 @@ public static class RoomInteractionSceneSetup
         EditorSceneManager.MarkSceneDirty(scene);
         if (!EditorSceneManager.SaveScene(scene)) throw new InvalidOperationException("Could not save interaction integration.");
         File.Delete(Request);
-        Debug.Log("Room interaction integration complete: existing door, two chairs, two beds, existing prompt API.");
+        Debug.Log("Room integration complete: door, chairs, beds, wall hook, desk actions, hallway, campus and bus 33.");
+    }
+
+    private static void ApplyAfterPlayMode(PlayModeStateChange change)
+    {
+        if (change != PlayModeStateChange.EnteredEditMode) return;
+        EditorApplication.playModeStateChanged -= ApplyAfterPlayMode;
+        if (File.Exists(Request)) EditorApplication.delayCall += ApplyRequestedSetup;
     }
 
     public static void Configure(Scene scene)
@@ -37,39 +47,25 @@ public static class RoomInteractionSceneSetup
         GameObject player = Find(scene, "Player_Luon");
         var state = PlayerInteractionStateController.GetOrCreate(player);
         var visual = player.GetComponentInChildren<LuonCharacterVisual>(true);
-        visual.sitLaptopSprite = LoadPose("luon_sitting_chair.png", 1.9f, new Vector2(0.5f, 0.22f));
-        visual.lyingSprite = LoadPose("luon_lying.png", 1.8f, new Vector2(0.5f, 0.5f));
-
-        // Assign Bed Animation Sprites
-        string bedFolder = "Assets/Sprites/MVP/characters/bed_interaction";
-        visual.bedEnterSprites = new Sprite[]
-        {
-            AssetDatabase.LoadAssetAtPath<Sprite>(bedFolder + "/luon_bed_enter_01.png"),
-            AssetDatabase.LoadAssetAtPath<Sprite>(bedFolder + "/luon_bed_enter_02.png"),
-            AssetDatabase.LoadAssetAtPath<Sprite>(bedFolder + "/luon_bed_enter_03.png"),
-            AssetDatabase.LoadAssetAtPath<Sprite>(bedFolder + "/luon_bed_enter_04.png"),
-            AssetDatabase.LoadAssetAtPath<Sprite>(bedFolder + "/luon_bed_lying_back.png")
-        };
-        visual.bedIdleSprites = new Sprite[]
-        {
-            AssetDatabase.LoadAssetAtPath<Sprite>(bedFolder + "/luon_bed_lying_back.png"),
-            AssetDatabase.LoadAssetAtPath<Sprite>(bedFolder + "/luon_bed_lying_left.png"),
-            AssetDatabase.LoadAssetAtPath<Sprite>(bedFolder + "/luon_bed_lying_back.png"),
-            AssetDatabase.LoadAssetAtPath<Sprite>(bedFolder + "/luon_bed_lying_right.png")
-        };
-        visual.bedSleepSprite = AssetDatabase.LoadAssetAtPath<Sprite>(bedFolder + "/luon_bed_sleeping.png");
-        visual.bedExitSprites = new Sprite[]
-        {
-            AssetDatabase.LoadAssetAtPath<Sprite>(bedFolder + "/luon_bed_lying_back.png"),
-            AssetDatabase.LoadAssetAtPath<Sprite>(bedFolder + "/luon_bed_enter_04.png"),
-            AssetDatabase.LoadAssetAtPath<Sprite>(bedFolder + "/luon_bed_enter_03.png"),
-            AssetDatabase.LoadAssetAtPath<Sprite>(bedFolder + "/luon_bed_enter_02.png"),
-            AssetDatabase.LoadAssetAtPath<Sprite>(bedFolder + "/luon_bed_enter_01.png")
-        };
+        visual.sitLaptopSprite = LoadBatchSprite("characters/room_visual_v2/sitting.png", new Vector2(.5f, .5f));
+        visual.lyingSprite = LoadBatchSprite("characters/room_visual_v2/lying_a.png", new Vector2(.5f, .5f));
+        Sprite enter1 = LoadBatchSprite("characters/room_visual_v2/enter_01.png", new Vector2(.5f, .5f));
+        Sprite enter2 = LoadBatchSprite("characters/room_visual_v2/enter_02.png", new Vector2(.5f, .5f));
+        Sprite enter3 = LoadBatchSprite("characters/room_visual_v2/enter_03.png", new Vector2(.5f, .5f));
+        Sprite breath = LoadBatchSprite("characters/room_visual_v2/lying_b.png", new Vector2(.5f, .5f));
+        visual.bedEnterSprites = new[] { enter1, enter2, enter3, visual.lyingSprite };
+        visual.bedIdleSprites = new[] { visual.lyingSprite, breath };
+        visual.bedSleepSprite = LoadBatchSprite("characters/room_visual_v2/sleeping.png", new Vector2(.5f, .5f));
+        visual.bedExitSprites = new[] { visual.lyingSprite, enter3, enter2, enter1 };
+        visual.bedAnimFrameRate = 4f;
+        // LuonCharacterVisual owns sprite animation. Do not add an Animator writer to this hierarchy.
+        var animator = visual.GetComponent<Animator>();
+        if (animator != null) animator.enabled = false;
 
         Transform shadow = player.transform.Find("ContactShadow");
         visual.ConfigurePoseShadow(shadow != null ? shadow.GetComponent<SpriteRenderer>() : null);
         EditorUtility.SetDirty(visual);
+        BedAnimationClipGenerator.GenerateClips();
 
         var desk = Find(scene, "Study_Desk").GetComponent<SpriteRenderer>();
         Transform existingSeat = Find(scene, "Desk_Seat_Marker").transform;
@@ -77,8 +73,30 @@ public static class RoomInteractionSceneSetup
         ConfigureChair(desk, "Chair_Right", new Vector2(490f, 220f), null, state, true);
         ConfigureBed(Find(scene, "BunkBed_Left"), state, true);
         ConfigureBed(Find(scene, "BunkBed_Right"), state, false);
-        Find(scene, "Room_Door").GetComponent<HingedRoomDoor>().SetPreviewAngle(0f);
+        var door = Find(scene, "Room_Door").GetComponent<HingedRoomDoor>();
+        // Detection must survive disabling the physical leaf collider when the door opens.
+        Transform doorTrigger = Child(door.transform, "Door_Interaction");
+        doorTrigger.localPosition = new Vector3(-.64f, 0f, 0f);
+        var doorInteractionCollider = doorTrigger.GetComponent<CircleCollider2D>();
+        if (doorInteractionCollider == null) doorInteractionCollider = doorTrigger.gameObject.AddComponent<CircleCollider2D>();
+        doorInteractionCollider.isTrigger = true;
+        doorInteractionCollider.radius = .6f;
+        var opening = door.transform.Find("Doorway_Opening").GetComponent<SpriteRenderer>();
+        opening.sprite = LoadBatchSprite("environment/room_visual_v2/hallway.png", Vector2.zero);
+        opening.color = Color.white;
+        opening.transform.localScale = Vector3.one;
+        var leaf = door.transform.Find("Door_Leaf").GetComponent<SpriteRenderer>();
+        Transform doorShadow = Child(door.transform, "Door_Shadow");
+        var shadowRenderer = doorShadow.GetComponent<SpriteRenderer>();
+        if (shadowRenderer == null) shadowRenderer = doorShadow.gameObject.AddComponent<SpriteRenderer>();
+        shadowRenderer.sprite = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Sprites/MVP/shadows/shadow_small.png");
+        shadowRenderer.color = new Color(0f, 0f, 0f, .22f);
+        shadowRenderer.sortingLayerID = leaf.sortingLayerID;
+        shadowRenderer.sortingOrder = leaf.sortingOrder - 1;
+        door.ConfigureShadow(shadowRenderer);
+        door.SetPreviewAngle(0f);
         CreatePrompt(Find(scene, "Canvas_MVP").transform, player.GetComponent<PlayerInteractionDetector>());
+        DormJourneySceneSetup.Configure(scene);
     }
 
     private static GameObject Find(Scene scene, string name)
@@ -98,15 +116,14 @@ public static class RoomInteractionSceneSetup
         return child;
     }
 
-    private static Sprite LoadPose(string filename, float height, Vector2 pivot)
+    private static Sprite LoadBatchSprite(string relative, Vector2 pivot)
     {
-        string path = PoseFolder + "/" + filename;
+        string path = "Assets/Sprites/MVP/" + relative;
         var importer = AssetImporter.GetAtPath(path) as TextureImporter;
-        if (importer == null) throw new InvalidOperationException("Missing interaction pose: " + path);
-        var texture = AssetDatabase.LoadAssetAtPath<Texture2D>(path);
+        if (importer == null) throw new InvalidOperationException("Missing batch asset: " + path);
         importer.textureType = TextureImporterType.Sprite;
         importer.spriteImportMode = SpriteImportMode.Single;
-        importer.spritePixelsPerUnit = texture.height / height;
+        importer.spritePixelsPerUnit = 100f;
         importer.mipmapEnabled = false;
         importer.alphaIsTransparency = true;
         importer.filterMode = FilterMode.Point;
@@ -142,8 +159,35 @@ public static class RoomInteractionSceneSetup
         collider.isTrigger = true;
         var interaction = chair.GetComponent<ChairInteractable>();
         if (interaction == null) interaction = chair.gameObject.AddComponent<ChairInteractable>();
-        interaction.Configure(seat, exit, player, desk, faceLeft);
+        SpriteRenderer foreground = ConfigureDeskForeground(desk);
+        interaction.Configure(seat, exit, player, foreground, faceLeft, desk);
         EditorUtility.SetDirty(interaction);
+    }
+
+    private static SpriteRenderer ConfigureDeskForeground(SpriteRenderer desk)
+    {
+        Sprite source = desk.sprite;
+        // Native crop of the existing chair backs / table front. Upper body stays visible above it.
+        Rect rect = new Rect(source.rect.x, source.rect.y, source.rect.width, source.rect.height - 135f);
+        const string path = "Assets/Room404Layout/DeskForeground.asset";
+        Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite>(path);
+        if (sprite == null)
+        {
+            sprite = Sprite.Create(source.texture, rect, new Vector2(.5f, .5f), source.pixelsPerUnit, 0, SpriteMeshType.FullRect);
+            sprite.name = "OriginalDeskChairForeground";
+            AssetDatabase.CreateAsset(sprite, path);
+        }
+        Transform child = Child(desk.transform, "Desk_Foreground");
+        Vector2 center = (rect.center - source.pivot) / source.pixelsPerUnit;
+        float shear = desk.sharedMaterial.HasProperty("_ShearY") ? desk.sharedMaterial.GetFloat("_ShearY") : 0f;
+        child.localPosition = new Vector3(center.x, center.y + shear * center.x, 0f);
+        var renderer = child.GetComponent<SpriteRenderer>();
+        if (renderer == null) renderer = child.gameObject.AddComponent<SpriteRenderer>();
+        renderer.sprite = sprite;
+        renderer.sharedMaterial = desk.sharedMaterial;
+        renderer.sortingLayerID = desk.sortingLayerID;
+        renderer.sortingOrder = desk.sortingOrder + 2;
+        return renderer;
     }
 
     private static void ConfigureBed(GameObject bed, PlayerInteractionStateController player, bool left)
@@ -159,8 +203,8 @@ public static class RoomInteractionSceneSetup
         original.enabled = false;
 
         Sprite sprite = original.sprite;
-        Rect crop = new Rect(0f, 0f, sprite.rect.width, Mathf.Round(sprite.rect.height * 0.30f));
-        const string path = "Assets/Room404Layout/BedForeground.asset";
+        Rect crop = new Rect(0f, 0f, sprite.rect.width, Mathf.Round(sprite.rect.height * 0.22f));
+        const string path = "Assets/Room404Layout/BedForegroundV2.asset";
         Sprite foregroundSprite = AssetDatabase.LoadAssetAtPath<Sprite>(path);
         if (foregroundSprite == null)
         {
@@ -181,9 +225,9 @@ public static class RoomInteractionSceneSetup
         foregroundRenderer.enabled = false;
 
         Transform pose = Child(bed.transform, "BedPivot");
-        pose.localPosition = new Vector3((sprite.rect.width * 0.543f - sprite.pivot.x) / sprite.pixelsPerUnit,
-            (sprite.rect.height * 0.334f - sprite.pivot.y) / sprite.pixelsPerUnit, 0f);
-        pose.rotation = Quaternion.Euler(0f, 0f, left ? 20f : -20f);
+        pose.localPosition = new Vector3((sprite.rect.width * 0.52f - sprite.pivot.x) / sprite.pixelsPerUnit,
+            (sprite.rect.height * 0.275f - sprite.pivot.y) / sprite.pixelsPerUnit, 0f);
+        pose.rotation = Quaternion.Euler(0f, 0f, left ? 10f : -10f);
         Transform exit = Child(bed.transform, "ExitPivot");
         var bodyCollider = bed.GetComponent<BoxCollider2D>();
         Physics2D.SyncTransforms();
@@ -225,4 +269,3 @@ public static class RoomInteractionSceneSetup
         EditorUtility.SetDirty(detector);
     }
 }
-

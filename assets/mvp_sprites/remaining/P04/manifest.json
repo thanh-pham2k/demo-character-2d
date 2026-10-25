@@ -1,0 +1,363 @@
+{
+  "batch": "P04",
+  "provenance": "generated_composite_batch",
+  "source_file": "assets/mvp_sprites/remaining/P04/source.png",
+  "source_sha256": "40f329e317ef0e60b33517a6757d31b25a8ccd628b04b0de0a9bf45e91ae799a",
+  "source_dimensions": [
+    1774,
+    887
+  ],
+  "grid": [
+    4,
+    2
+  ],
+  "crop_format": "x_y_width_height_top_left",
+  "tool": "built_in_imagegen",
+  "outputs": [
+    {
+      "id": "bedding_freshman_a",
+      "missions": [
+        29,
+        33,
+        44
+      ],
+      "source_crop_xywh": [
+        0,
+        0,
+        470,
+        429
+      ],
+      "normalization": {
+        "mode": "tight_alpha_preserve_source_scale",
+        "source_bbox": [
+          30,
+          89,
+          459,
+          413
+        ],
+        "canvas": [
+          429,
+          324
+        ],
+        "floor_at_output_bottom": true
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/P04/bedding_freshman_a.png",
+      "alpha_bounds": [
+        30,
+        89,
+        459,
+        413
+      ],
+      "touches_cell_edge": false,
+      "sha256": "8fbab52bf68b84e27e6da55f96e16642d165a37e36d1d0e221df0cbee94e927e",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "bedding_freshman_b",
+      "missions": [
+        30,
+        33,
+        44
+      ],
+      "source_crop_xywh": [
+        470,
+        0,
+        443,
+        429
+      ],
+      "normalization": {
+        "mode": "tight_alpha_preserve_source_scale",
+        "source_bbox": [
+          12,
+          86,
+          432,
+          404
+        ],
+        "canvas": [
+          420,
+          318
+        ],
+        "floor_at_output_bottom": true
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/P04/bedding_freshman_b.png",
+      "alpha_bounds": [
+        12,
+        86,
+        432,
+        404
+      ],
+      "touches_cell_edge": false,
+      "sha256": "ae2024789e58a84e6b705bbaee178d10bbc710f9528c2224b678065c504b7764",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "bedding_freshman_c",
+      "missions": [
+        31,
+        33,
+        44
+      ],
+      "source_crop_xywh": [
+        913,
+        0,
+        449,
+        429
+      ],
+      "normalization": {
+        "mode": "tight_alpha_preserve_source_scale",
+        "source_bbox": [
+          12,
+          87,
+          435,
+          405
+        ],
+        "canvas": [
+          423,
+          318
+        ],
+        "floor_at_output_bottom": true
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/P04/bedding_freshman_c.png",
+      "alpha_bounds": [
+        12,
+        87,
+        435,
+        405
+      ],
+      "touches_cell_edge": false,
+      "sha256": "4985e00a2354306bb98eece1ed7d82438efcac8e3cab039b8d6f97c27173f4db",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "dried_buffalo_meat",
+      "missions": [
+        4,
+        8,
+        30
+      ],
+      "source_crop_xywh": [
+        1362,
+        0,
+        412,
+        429
+      ],
+      "normalization": {
+        "mode": "tight_alpha_preserve_source_scale",
+        "source_bbox": [
+          15,
+          124,
+          381,
+          413
+        ],
+        "canvas": [
+          366,
+          289
+        ],
+        "floor_at_output_bottom": true
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/P04/dried_buffalo_meat.png",
+      "alpha_bounds": [
+        15,
+        124,
+        381,
+        413
+      ],
+      "touches_cell_edge": false,
+      "sha256": "c384cf4d67f910e40ea47948035dac1787cab171dc35962991dfc5af8b307dd9",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "hotpot_supply_bag",
+      "missions": [
+        34
+      ],
+      "source_crop_xywh": [
+        0,
+        429,
+        460,
+        458
+      ],
+      "normalization": {
+        "mode": "tight_alpha_preserve_source_scale",
+        "source_bbox": [
+          38,
+          34,
+          435,
+          397
+        ],
+        "canvas": [
+          397,
+          363
+        ],
+        "floor_at_output_bottom": true
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/P04/hotpot_supply_bag.png",
+      "alpha_bounds": [
+        38,
+        34,
+        435,
+        397
+      ],
+      "touches_cell_edge": false,
+      "sha256": "3d8f88abfac781a394feaa5ce14fe4ce249b31043b72cc587c7c77be1a609b02",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "beer_supply",
+      "missions": [
+        34,
+        45
+      ],
+      "source_crop_xywh": [
+        460,
+        429,
+        434,
+        458
+      ],
+      "normalization": {
+        "mode": "tight_alpha_preserve_source_scale",
+        "source_bbox": [
+          27,
+          53,
+          418,
+          370
+        ],
+        "canvas": [
+          391,
+          317
+        ],
+        "floor_at_output_bottom": true
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/P04/beer_supply.png",
+      "alpha_bounds": [
+        27,
+        53,
+        418,
+        370
+      ],
+      "touches_cell_edge": false,
+      "sha256": "f3d83ee8053cdafad194eb5c34bd8c473812fd37fe2df43a8beb9f790deaf6c2",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "thesis_book_blank",
+      "missions": [
+        41,
+        43,
+        44
+      ],
+      "source_crop_xywh": [
+        894,
+        429,
+        435,
+        458
+      ],
+      "normalization": {
+        "mode": "tight_alpha_preserve_source_scale",
+        "source_bbox": [
+          17,
+          61,
+          419,
+          384
+        ],
+        "canvas": [
+          402,
+          323
+        ],
+        "floor_at_output_bottom": true
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/P04/thesis_book_blank.png",
+      "alpha_bounds": [
+        17,
+        61,
+        419,
+        384
+      ],
+      "touches_cell_edge": false,
+      "sha256": "8adf02390b80d4631d91e24623ff9190dfaf82f8b4da0b0184e74895469533ce",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "bouquet",
+      "missions": [
+        45
+      ],
+      "source_crop_xywh": [
+        1329,
+        429,
+        445,
+        458
+      ],
+      "normalization": {
+        "mode": "tight_alpha_preserve_source_scale",
+        "source_bbox": [
+          17,
+          17,
+          414,
+          420
+        ],
+        "canvas": [
+          397,
+          403
+        ],
+        "floor_at_output_bottom": true
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/P04/bouquet.png",
+      "alpha_bounds": [
+        17,
+        17,
+        414,
+        420
+      ],
+      "touches_cell_edge": false,
+      "sha256": "dff7311add31e122490c7f79c98c321ab377c67f0ea22f8df81f1dac0741ecc2",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    }
+  ],
+  "qa": {
+    "slice_bounds": "pass",
+    "visual": "pass_source_and_sliced_preview_review",
+    "unity_import": "pass_current_hashes",
+    "integration": "pending"
+  }
+}

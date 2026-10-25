@@ -1,0 +1,791 @@
+{
+  "batch": "AN02",
+  "provenance": "generated_composite_batch",
+  "source_file": "assets/mvp_sprites/remaining/AN02/source.png",
+  "source_sha256": "f41e4d3be4d3637fad1ede3d14e9fcba20b1a33d282fe5d29c8a7ac8aeabed3b",
+  "source_dimensions": [
+    1619,
+    971
+  ],
+  "grid": [
+    5,
+    3
+  ],
+  "crop_format": "x_y_width_height_top_left",
+  "tool": "built_in_imagegen",
+  "outputs": [
+    {
+      "id": "luon_shirt_front_idle",
+      "missions": [
+        37,
+        40,
+        41,
+        43,
+        44
+      ],
+      "source_crop_xywh": [
+        0,
+        0,
+        355,
+        328
+      ],
+      "normalization": {
+        "mode": "shared_batch_scale_head_center_feet_baseline",
+        "source_bbox": [
+          129,
+          18,
+          277,
+          317
+        ],
+        "scale": 0.802675585284281,
+        "source_head_center_x": 75,
+        "paste_xy": [
+          68,
+          80
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/AN02/luon_shirt_front_idle.png",
+      "alpha_bounds": [
+        129,
+        18,
+        277,
+        317
+      ],
+      "touches_cell_edge": false,
+      "sha256": "eed8fab9e4694ab3236a780e422942424a6729eee6e5dda11d522842c6e11206",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "luon_shirt_front_walk_0",
+      "missions": [
+        37,
+        40,
+        41,
+        43,
+        44
+      ],
+      "source_crop_xywh": [
+        355,
+        0,
+        313,
+        328
+      ],
+      "normalization": {
+        "mode": "shared_batch_scale_head_center_feet_baseline",
+        "source_bbox": [
+          79,
+          18,
+          226,
+          317
+        ],
+        "scale": 0.802675585284281,
+        "source_head_center_x": 74.0,
+        "paste_xy": [
+          69,
+          80
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/AN02/luon_shirt_front_walk_0.png",
+      "alpha_bounds": [
+        79,
+        18,
+        226,
+        317
+      ],
+      "touches_cell_edge": false,
+      "sha256": "3a1a426b417138442868820de903bc5e6bd2f66c03897cb2532ca5d94afc38d9",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "luon_shirt_front_walk_1",
+      "missions": [
+        37,
+        40,
+        41,
+        43,
+        44
+      ],
+      "source_crop_xywh": [
+        668,
+        0,
+        289,
+        328
+      ],
+      "normalization": {
+        "mode": "shared_batch_scale_head_center_feet_baseline",
+        "source_bbox": [
+          68,
+          18,
+          216,
+          317
+        ],
+        "scale": 0.802675585284281,
+        "source_head_center_x": 74.0,
+        "paste_xy": [
+          69,
+          80
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/AN02/luon_shirt_front_walk_1.png",
+      "alpha_bounds": [
+        68,
+        18,
+        216,
+        317
+      ],
+      "touches_cell_edge": false,
+      "sha256": "c220daf7e6d0e5da209a7c160ff9ec264dd0434f712013989a0e30932aad0c3b",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "luon_shirt_front_walk_2",
+      "missions": [
+        37,
+        40,
+        41,
+        43,
+        44
+      ],
+      "source_crop_xywh": [
+        957,
+        0,
+        313,
+        328
+      ],
+      "normalization": {
+        "mode": "shared_batch_scale_head_center_feet_baseline",
+        "source_bbox": [
+          84,
+          18,
+          230,
+          317
+        ],
+        "scale": 0.802675585284281,
+        "source_head_center_x": 72,
+        "paste_xy": [
+          70,
+          80
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/AN02/luon_shirt_front_walk_2.png",
+      "alpha_bounds": [
+        84,
+        18,
+        230,
+        317
+      ],
+      "touches_cell_edge": false,
+      "sha256": "05964f024d717c818077eb3ee2848111a43e867d2bfa323f81659e7c94a5cb40",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "luon_shirt_front_walk_3",
+      "missions": [
+        37,
+        40,
+        41,
+        43,
+        44
+      ],
+      "source_crop_xywh": [
+        1270,
+        0,
+        349,
+        328
+      ],
+      "normalization": {
+        "mode": "shared_batch_scale_head_center_feet_baseline",
+        "source_bbox": [
+          74,
+          19,
+          221,
+          317
+        ],
+        "scale": 0.802675585284281,
+        "source_head_center_x": 73.0,
+        "paste_xy": [
+          69,
+          81
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/AN02/luon_shirt_front_walk_3.png",
+      "alpha_bounds": [
+        74,
+        19,
+        221,
+        317
+      ],
+      "touches_cell_edge": false,
+      "sha256": "8ca536383c8122635d07f8c5ac1c99deec4c71cc1df0b71a51522440e45dc12d",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "luon_shirt_back_idle",
+      "missions": [
+        37,
+        40,
+        41,
+        43,
+        44
+      ],
+      "source_crop_xywh": [
+        0,
+        328,
+        355,
+        322
+      ],
+      "normalization": {
+        "mode": "shared_batch_scale_head_center_feet_baseline",
+        "source_bbox": [
+          129,
+          13,
+          277,
+          313
+        ],
+        "scale": 0.802675585284281,
+        "source_head_center_x": 73,
+        "paste_xy": [
+          69,
+          79
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/AN02/luon_shirt_back_idle.png",
+      "alpha_bounds": [
+        129,
+        13,
+        277,
+        313
+      ],
+      "touches_cell_edge": false,
+      "sha256": "057d6484c0393602bbc8184a1c03026925346030ecd8aa897dba145b03cbf0d1",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "luon_shirt_back_walk_0",
+      "missions": [
+        37,
+        40,
+        41,
+        43,
+        44
+      ],
+      "source_crop_xywh": [
+        355,
+        328,
+        313,
+        322
+      ],
+      "normalization": {
+        "mode": "shared_batch_scale_head_center_feet_baseline",
+        "source_bbox": [
+          79,
+          14,
+          226,
+          314
+        ],
+        "scale": 0.802675585284281,
+        "source_head_center_x": 73.0,
+        "paste_xy": [
+          69,
+          79
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/AN02/luon_shirt_back_walk_0.png",
+      "alpha_bounds": [
+        79,
+        14,
+        226,
+        314
+      ],
+      "touches_cell_edge": false,
+      "sha256": "4651f3e3f7d22e8d48435b4c89324a2500b5fe31fd6e7aee63fa4570bfd221bc",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "luon_shirt_back_walk_1",
+      "missions": [
+        37,
+        40,
+        41,
+        43,
+        44
+      ],
+      "source_crop_xywh": [
+        668,
+        328,
+        289,
+        322
+      ],
+      "normalization": {
+        "mode": "shared_batch_scale_head_center_feet_baseline",
+        "source_bbox": [
+          68,
+          14,
+          215,
+          314
+        ],
+        "scale": 0.802675585284281,
+        "source_head_center_x": 73.0,
+        "paste_xy": [
+          69,
+          79
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/AN02/luon_shirt_back_walk_1.png",
+      "alpha_bounds": [
+        68,
+        14,
+        215,
+        314
+      ],
+      "touches_cell_edge": false,
+      "sha256": "3bbd4e08a2c2e3b74e67b191cb15b38bce7a0d0feab9b91c5718ea87af36739e",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "luon_shirt_back_walk_2",
+      "missions": [
+        37,
+        40,
+        41,
+        43,
+        44
+      ],
+      "source_crop_xywh": [
+        957,
+        328,
+        313,
+        322
+      ],
+      "normalization": {
+        "mode": "shared_batch_scale_head_center_feet_baseline",
+        "source_bbox": [
+          83,
+          13,
+          230,
+          314
+        ],
+        "scale": 0.802675585284281,
+        "source_head_center_x": 72.0,
+        "paste_xy": [
+          70,
+          78
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/AN02/luon_shirt_back_walk_2.png",
+      "alpha_bounds": [
+        83,
+        13,
+        230,
+        314
+      ],
+      "touches_cell_edge": false,
+      "sha256": "836bdfc89821910850e69d3a102bf31f6dfab803fc1fd2ee526997411a197ce1",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "luon_shirt_back_walk_3",
+      "missions": [
+        37,
+        40,
+        41,
+        43,
+        44
+      ],
+      "source_crop_xywh": [
+        1270,
+        328,
+        349,
+        322
+      ],
+      "normalization": {
+        "mode": "shared_batch_scale_head_center_feet_baseline",
+        "source_bbox": [
+          74,
+          13,
+          221,
+          314
+        ],
+        "scale": 0.802675585284281,
+        "source_head_center_x": 73.0,
+        "paste_xy": [
+          69,
+          78
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/AN02/luon_shirt_back_walk_3.png",
+      "alpha_bounds": [
+        74,
+        13,
+        221,
+        314
+      ],
+      "touches_cell_edge": false,
+      "sha256": "fc5a02646627c7be66e4662d7004e974515fd064847a01fa48e5b0004d724f35",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "luon_shirt_right_idle",
+      "missions": [
+        37,
+        40,
+        41,
+        43,
+        44
+      ],
+      "source_crop_xywh": [
+        0,
+        650,
+        355,
+        321
+      ],
+      "normalization": {
+        "mode": "shared_batch_scale_head_center_feet_baseline",
+        "source_bbox": [
+          129,
+          9,
+          276,
+          301
+        ],
+        "scale": 0.802675585284281,
+        "source_head_center_x": 72,
+        "paste_xy": [
+          70,
+          86
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/AN02/luon_shirt_right_idle.png",
+      "alpha_bounds": [
+        129,
+        9,
+        276,
+        301
+      ],
+      "touches_cell_edge": false,
+      "sha256": "5dc6a347db2ad6d1ae5180ac2a6aa4d105b57a4b16a8951ae35d670ee9464d08",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "luon_shirt_right_walk_0",
+      "missions": [
+        37,
+        40,
+        41,
+        43,
+        44
+      ],
+      "source_crop_xywh": [
+        355,
+        650,
+        313,
+        321
+      ],
+      "normalization": {
+        "mode": "shared_batch_scale_head_center_feet_baseline",
+        "source_bbox": [
+          84,
+          10,
+          246,
+          301
+        ],
+        "scale": 0.802675585284281,
+        "source_head_center_x": 79.0,
+        "paste_xy": [
+          65,
+          86
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/AN02/luon_shirt_right_walk_0.png",
+      "alpha_bounds": [
+        84,
+        10,
+        246,
+        301
+      ],
+      "touches_cell_edge": false,
+      "sha256": "08c3349d7f629e298a17c4f559613a859d7cc29305ad5df8799f17ebf5c423d3",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "luon_shirt_right_walk_1",
+      "missions": [
+        37,
+        40,
+        41,
+        43,
+        44
+      ],
+      "source_crop_xywh": [
+        668,
+        650,
+        289,
+        321
+      ],
+      "normalization": {
+        "mode": "shared_batch_scale_head_center_feet_baseline",
+        "source_bbox": [
+          68,
+          10,
+          215,
+          301
+        ],
+        "scale": 0.802675585284281,
+        "source_head_center_x": 73.0,
+        "paste_xy": [
+          69,
+          86
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/AN02/luon_shirt_right_walk_1.png",
+      "alpha_bounds": [
+        68,
+        10,
+        215,
+        301
+      ],
+      "touches_cell_edge": false,
+      "sha256": "bfd84d25aaaa875b39e33deda424b9f5f1ed5b589adab4f12378b81696ad6875",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "luon_shirt_right_walk_2",
+      "missions": [
+        37,
+        40,
+        41,
+        43,
+        44
+      ],
+      "source_crop_xywh": [
+        957,
+        650,
+        313,
+        321
+      ],
+      "normalization": {
+        "mode": "shared_batch_scale_head_center_feet_baseline",
+        "source_bbox": [
+          75,
+          10,
+          241,
+          301
+        ],
+        "scale": 0.802675585284281,
+        "source_head_center_x": 81,
+        "paste_xy": [
+          63,
+          86
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/AN02/luon_shirt_right_walk_2.png",
+      "alpha_bounds": [
+        75,
+        10,
+        241,
+        301
+      ],
+      "touches_cell_edge": false,
+      "sha256": "f20db2c331a65aa3ddd4a3b835a0417a9be5b003b49efca83d366fd8949ce067",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "luon_shirt_right_walk_3",
+      "missions": [
+        37,
+        40,
+        41,
+        43,
+        44
+      ],
+      "source_crop_xywh": [
+        1270,
+        650,
+        349,
+        321
+      ],
+      "normalization": {
+        "mode": "shared_batch_scale_head_center_feet_baseline",
+        "source_bbox": [
+          74,
+          10,
+          220,
+          301
+        ],
+        "scale": 0.802675585284281,
+        "source_head_center_x": 73,
+        "paste_xy": [
+          69,
+          86
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/AN02/luon_shirt_right_walk_3.png",
+      "alpha_bounds": [
+        74,
+        10,
+        220,
+        301
+      ],
+      "touches_cell_edge": false,
+      "sha256": "ac6b962fb9538069ecad3472f4221f23cd7f5e8ddaba94a6aaec0d5fea7ee270",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    }
+  ],
+  "qa": {
+    "slice_bounds": "pass",
+    "visual": "pass_source_and_sliced_preview_review",
+    "unity_import": "pass_current_hashes",
+    "integration": "pending",
+    "motion": "pending_manual_loop_review",
+    "registration": "metrics_recorded_in_motion-review.json"
+  }
+}

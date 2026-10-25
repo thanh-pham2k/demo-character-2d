@@ -1,4 +1,7 @@
 # 🛠️ KẾ HOẠCH TRIỂN KHAI KỸ THUẬT: PHÒNG 404 (PRODUCTION ROADMAP)
+
+> Baseline thực thi cập nhật 25/10/2026: [PRODUCTION_FLOW_BASELINE.md](PRODUCTION_FLOW_BASELINE.md) và [REMAINING_ASSET_INVENTORY.md](REMAINING_ASSET_INVENTORY.md). Khi có mâu thuẫn với bản thiết kế ban đầu dưới đây, dùng baseline cập nhật. Tiến độ asset không đồng nghĩa gameplay đã hoàn thành.
+> Design được tách theo [story/README.md](README.md): [pillars](GAME_DESIGN_PILLARS.md), [systems](GAMEPLAY_SYSTEMS_PLAN.md), [transitions](GAMEPLAY_TRANSITIONS_PLAN.md) và [playtest gates](PLAYTEST_AND_ACCEPTANCE_PLAN.md). Các tuần 1–8, sơ đồ framework/ScriptableObject và HUD 4 thanh bên dưới là đề xuất ban đầu, không phải cam kết tiến độ hay chỉ dẫn tạo lại runtime; xem kiến trúc/trạng thái thật tại [PRODUCTION_CAMPAIGN_IMPLEMENTATION.md](PRODUCTION_CAMPAIGN_IMPLEMENTATION.md).
 ### Dự án: Ký Túc Xá 404 — 6 Năm Đại Học Bách Khoa
 * **Engine:** Unity (2D / 2.5D URP)
 * **Ngôn ngữ:** C# (.NET Standard)
@@ -41,10 +44,10 @@
    * Di chuyển 8 hướng (WASD / Joystick cảm ứng cho mobile), chuẩn hóa vector.
    * Xử lý tương tác vật lý (Raycast 2D / Trigger phát hiện đồ vật có thể tương tác `[ E ]`).
    * Quản lý Animation Driver (Idle, Walk, Sit, Sleep, Hold Item).
-2. **`QuestManager` & `QuestStep` (Hệ thống nhiệm vụ hướng sự kiện):**
-   * Mỗi Mission trong 45 missions là một ScriptableObject kế thừa `BaseQuestSO`.
-   * Hỗ trợ các điều kiện hoàn thành: `InteractWithTarget`, `ReachLocation`, `CompleteMiniGame`, `SpendMoney`, `HoldKeyDuration` (dành cho Uninstall game).
-   * Tự động trigger Mission tiếp theo khi Mission hiện tại hoàn thành (No hardcode).
+2. **Production campaign (đang dùng):**
+   * Định nghĩa 45 mission và event theo thứ tự trong `Assets/Resources/ProductionCampaign/missions.json`.
+   * Runtime xác thực event/action/choice hiện tại trước khi ghi effect; xem [PRODUCTION_CAMPAIGN_IMPLEMENTATION.md](PRODUCTION_CAMPAIGN_IMPLEMENTATION.md).
+   * Không tạo thêm 45 ScriptableObject hoặc một QuestManager song song chỉ dựa trên đề xuất kiến trúc ban đầu này.
 3. **`TimeAndTransitionManager` (Chuyển giao thời gian):**
    * Xử lý Time-lapse đồng hồ (`23:40 ➔ 04:32`).
    * Quản lý chu kỳ Ngày / Đêm bằng 2D Light (Global Light chuyển từ vàng cam chiều ➔ trắng đèn tuýp đêm ➔ xanh mờ sáng sớm).
@@ -93,7 +96,7 @@ Game gói gọn trong **4 Bản đồ (Scenes/Rooms)**:
 
 1. **HUD Gameplay chính (In-game Minimalist UI):**
    * Góc trên trái: Ô hiển thị Thời gian (Thứ, Giờ, Học kỳ, Năm).
-   * Góc trên phải: 4 thanh chỉ số tối giản (Tiền, GPA, Năng lượng, Bromance).
+   * Trạng thái học vụ là phần tóm tắt theo ngữ cảnh; Energy và Money chỉ xuất hiện khi đang tạo lựa chọn. Quan hệ ưu tiên thể hiện qua hành vi/thoại của NPC, không bắt buộc dùng thanh Bromance.
    * Góc dưới trái: Tracker mục tiêu nhiệm vụ hiện tại (Quest Objective).
    * Bong bóng phím bấm tương tác trên đầu đồ vật: `[ E ] Tương tác`.
 2. **Màn hình Điện Thoại Sinh Viên (Smartphone UI):**
@@ -220,10 +223,12 @@ MILESTONE 6: Polish, Sound, Balance & Release (Tuần 8)
 ```text
 Assets/
 ├── Data/
-│   ├── Quests/              # 45 ScriptableObjects tương ứng 45 Missions (Mission01_Bus33.asset...)
+│   ├── ProductionCampaign/  # Nguồn campaign hiện tại nằm trong Resources/ProductionCampaign/missions.json
 │   ├── Dialogues/           # Toàn bộ hội thoại theo từng Mission (Text, Audio, Avatars)
 │   ├── MiniGames/           # Config thông số các minigame (thời gian, phím bấm, độ khó)
 │   └── AcademicPortal/      # Dữ liệu môn học, điều kiện tiên quyết, tín chỉ từng kỳ
 ```
 
-Tất cả đã được quy hoạch bài bản, tối ưu hóa code dùng chung và sẵn sàng bước vào giai đoạn **Coding Prototype** theo đúng kế hoạch!
+Đây là phân nhóm nội dung ở mức khái niệm; không cam kết các thư mục hoặc định dạng này đã tồn tại. Với campaign, dùng nguồn JSON và runtime hiện hành thay vì bản lưu trữ ScriptableObject trong sơ đồ cũ.
+
+Đây là blueprint khởi đầu, không phải bằng chứng mọi hệ thống hoặc mission đã được triển khai. Dùng production gates và trạng thái thực tế trong [PLAYER_EXPERIENCE_PLAN.md](PLAYER_EXPERIENCE_PLAN.md) cùng [PRODUCTION_CAMPAIGN_IMPLEMENTATION.md](PRODUCTION_CAMPAIGN_IMPLEMENTATION.md) để quyết định công việc tiếp theo.

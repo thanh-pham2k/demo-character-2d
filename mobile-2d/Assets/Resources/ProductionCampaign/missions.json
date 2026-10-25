@@ -1,0 +1,3352 @@
+{
+  "version": 1,
+  "compatibleSaves": [
+    {
+      "hash": "2ce3267964e0ff292ea7d44b98343c456d140a989941819b2009bafbfbe26327",
+      "maxMission": 4,
+      "reason": "Meal choices added inM05; M01–04 event contracts and effects unchanged",
+      "archivedDefinition": "story/plans/production-definitions/2ce3267964e0ff292ea7d44b98343c456d140a989941819b2009bafbfbe26327.json"
+    },
+    {
+      "hash": "ac5f09d0dbac3286651324b3a374de604df0b0ce6314a57bc80dac5cdeb37ff5",
+      "maxMission": 5,
+      "reason": "M06 stable destinations corrected for physical school route; M01-M05 event contracts unchanged",
+      "archivedDefinition": "story/plans/production-definitions/ac5f09d0dbac3286651324b3a374de604df0b0ce6314a57bc80dac5cdeb37ff5.json"
+    },
+    {
+      "hash": "75f8fc49729636919f5c866ab2617ebb47e1ae7a940d6821c69f966b4ca2c1f7",
+      "maxMission": 6,
+      "reason": "M07 interactive course ledger and reserved commute fares added; M01-M06 contracts unchanged",
+      "archivedDefinition": "story/plans/production-definitions/75f8fc49729636919f5c866ab2617ebb47e1ae7a940d6821c69f966b4ca2c1f7.json"
+    }
+  ],
+  "scope": "Production event contracts for45missions; scene/minigame adapters still required",
+  "initialMoney": 35000,
+  "initialFacts": [
+    "item:admission_documents",
+    "item:backpack",
+    "item:screwdriver"
+  ],
+  "missions": [
+    {
+      "id": 1,
+      "entry": "Xuống xe khách",
+      "bridge": "Đến sảnh KTX; có hỗ trợ nếu cạn tiền",
+      "steps": [
+        {
+          "id": "decline_tout",
+          "label": "Từ chối lời mời xe",
+          "zone": "Station",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "buy_ticket",
+          "label": "Mua vé xe đến KTX",
+          "zone": "Station",
+          "cost": 7000,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [
+            "item:dorm_ticket"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "arrive_dorm",
+          "label": "Xuống xe tại sảnh KTX",
+          "zone": "Reception",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "item:dorm_ticket"
+          ],
+          "grants": [],
+          "removes": [
+            "item:dorm_ticket"
+          ],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "entry": "Sảnh KTX",
+      "bridge": "Quản lý chỉ đường lên tầng 4",
+      "steps": [
+        {
+          "id": "present_documents",
+          "label": "Nộp giấy nhập học",
+          "zone": "Reception",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "item:admission_documents"
+          ],
+          "grants": [
+            "room:assigned"
+          ],
+          "removes": [
+            "item:admission_documents"
+          ],
+          "choices": []
+        },
+        {
+          "id": "receive_room_key",
+          "label": "Nhận chìa khóa404",
+          "zone": "Reception",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "room:assigned"
+          ],
+          "grants": [
+            "item:room_key"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "reach_room",
+          "label": "Lên tầng4",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "entry": "Mở cửa 404",
+      "bridge": "Thấy bụi và nhận danh sách mua đồ dọn",
+      "steps": [
+        {
+          "id": "unlock_room",
+          "label": "Mở phòng404",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "item:room_key"
+          ],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "claim_bed",
+          "label": "Chọn giường",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": [
+            {
+              "id": "left",
+              "label": "Giường bên trái",
+              "cost": 0,
+              "reward": 0,
+              "requires": [],
+              "grants": [
+                "bed:luon_left"
+              ],
+              "removes": []
+            },
+            {
+              "id": "right",
+              "label": "Giường bên phải",
+              "cost": 0,
+              "reward": 0,
+              "requires": [],
+              "grants": [
+                "bed:luon_right"
+              ],
+              "removes": []
+            }
+          ]
+        },
+        {
+          "id": "place_backpack",
+          "label": "Đặt balo",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "item:backpack"
+          ],
+          "grants": [
+            "room:backpack_stored"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "repair_fan",
+          "label": "Siết ốc và cắm quạt",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "item:screwdriver"
+          ],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "entry": "Phòng bụi",
+      "bridge": "Bạn đến lần lượt rồi rủ ăn; timeout chỉ retry phần dọn",
+      "steps": [
+        {
+          "id": "buy_cleaning_kit",
+          "label": "Mua bộ vệ sinh",
+          "zone": "Room",
+          "cost": 5000,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [
+            "item:cleaning_kit"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "clean_four_spots",
+          "label": "Lau đủ4điểm",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "item:cleaning_kit"
+          ],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "meet_roommates",
+          "label": "Làm quen ba bạn",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "entry": "Cả nhóm đói",
+      "bridge": "Lịch học hiện trên điện thoại; về ngủ",
+      "steps": [
+        {
+          "id": "choose_meal",
+          "label": "Chọn cơm trong ngân sách",
+          "zone": "Canteen",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": [
+            {
+              "id": "vegetarian",
+              "label": "Cơm và rau",
+              "cost": 10000,
+              "reward": 0,
+              "requires": [],
+              "grants": [
+                "meal:vegetarian"
+              ],
+              "removes": []
+            },
+            {
+              "id": "meat",
+              "label": "Cơm và thịt",
+              "cost": 15000,
+              "reward": 0,
+              "requires": [],
+              "grants": [
+                "meal:meat"
+              ],
+              "removes": []
+            },
+            {
+              "id": "standard",
+              "label": "Cơm, thịt và rau",
+              "cost": 20000,
+              "reward": 0,
+              "requires": [],
+              "grants": [
+                "meal:standard"
+              ],
+              "removes": []
+            },
+            {
+              "id": "vegetarian_tea",
+              "label": "Cơm, rau và trà",
+              "cost": 13000,
+              "reward": 0,
+              "requires": [],
+              "grants": [
+                "meal:vegetarian_tea"
+              ],
+              "removes": []
+            },
+            {
+              "id": "meat_tea",
+              "label": "Cơm, thịt và trà",
+              "cost": 18000,
+              "reward": 0,
+              "requires": [],
+              "grants": [
+                "meal:meat_tea"
+              ],
+              "removes": []
+            },
+            {
+              "id": "tea",
+              "label": "Cơm, thịt, rau và trà",
+              "cost": 23000,
+              "reward": 0,
+              "requires": [],
+              "grants": [
+                "meal:tea"
+              ],
+              "removes": []
+            }
+          ]
+        },
+        {
+          "id": "eat_together",
+          "label": "Ăn và trò chuyện",
+          "zone": "Canteen",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "receive_schedule",
+          "label": "Xem lịch học",
+          "zone": "Canteen",
+          "cost": 0,
+          "reward": 100000,
+          "credits": 0,
+          "requires": [],
+          "grants": [
+            "schedule:year1"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "return_sleep",
+          "label": "Về phòng ngủ",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "entry": "Sáng đi học",
+      "bridge": "Hẹn một buổi học khác; chưa cấp card cuối năm",
+      "steps": [
+        {
+          "id": "equip_backpack",
+          "label": "Đeo balo",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "item:backpack",
+            "room:backpack_stored"
+          ],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "wash_before_class",
+          "label": "Vệ sinh buổi sáng",
+          "zone": "Hallway",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "take_bus",
+          "label": "Lên xe đi học",
+          "zone": "H6",
+          "cost": 7000,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "enter_class",
+          "label": "Vào lớpH6",
+          "zone": "H6Classroom",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "solve_warmup",
+          "label": "Giải câu khởi động55",
+          "zone": "H6Classroom",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "finish_lesson",
+          "label": "Học hết tiết",
+          "zone": "H6Classroom",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "return_room",
+          "label": "Đi xe về404",
+          "zone": "Room",
+          "cost": 7000,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "tell_dam",
+          "label": "Kể chuyện cho Đạm",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "entry": "Một sáng khác, 07:20",
+      "bridge": "Chuỗi ngày đại diện và kết quả thi: 32 tín chỉ; rủ lẩu",
+      "steps": [
+        {
+          "id": "join_wc_queue",
+          "label": "Xếp hàngWC",
+          "zone": "Hallway",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "catch_bus",
+          "label": "Đón xe hoặc chuyến sau",
+          "zone": "H6",
+          "cost": 7000,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": [
+            {
+              "id": "on_time",
+              "label": "Chuyến đúng giờ",
+              "cost": 0,
+              "reward": 0,
+              "requires": [],
+              "grants": [
+                "travel:on_time"
+              ],
+              "removes": []
+            },
+            {
+              "id": "next_bus",
+              "label": "Chuyến sau",
+              "cost": 0,
+              "reward": 0,
+              "requires": [],
+              "grants": [
+                "travel:missed_bus_recovered"
+              ],
+              "removes": []
+            }
+          ]
+        },
+        {
+          "id": "attend_class",
+          "label": "Điểm danh",
+          "zone": "H6Classroom",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "review_commute_ledger",
+          "label": "Dự trù vé các buổi học còn lại",
+          "zone": "H6Classroom",
+          "cost": 63000,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [
+            "ledger:year1_commute_reserved"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "study_y1_calculus1",
+          "label": "Học: Giải Tích 1",
+          "zone": "H6Classroom",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "ledger:year1_commute_reserved"
+          ],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "exam_y1_calculus1",
+          "label": "Thi: Giải Tích 1",
+          "zone": "H6Classroom",
+          "cost": 0,
+          "reward": 0,
+          "credits": 6,
+          "requires": [
+            "ledger:year1_commute_reserved",
+            "action:7:study_y1_calculus1"
+          ],
+          "grants": [
+            "passed:Y1_calculus1"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "study_y1_algebra",
+          "label": "Học: Đại số tuyến tính",
+          "zone": "H6Classroom",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "ledger:year1_commute_reserved"
+          ],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "exam_y1_algebra",
+          "label": "Thi: Đại số tuyến tính",
+          "zone": "H6Classroom",
+          "cost": 0,
+          "reward": 0,
+          "credits": 11,
+          "requires": [
+            "ledger:year1_commute_reserved",
+            "action:7:study_y1_algebra"
+          ],
+          "grants": [
+            "passed:Y1_algebra"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "study_y1_computing",
+          "label": "Học: Nhập môn Tin",
+          "zone": "H6Classroom",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "ledger:year1_commute_reserved"
+          ],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "exam_y1_computing",
+          "label": "Thi: Nhập môn Tin",
+          "zone": "H6Classroom",
+          "cost": 0,
+          "reward": 0,
+          "credits": 16,
+          "requires": [
+            "ledger:year1_commute_reserved",
+            "action:7:study_y1_computing"
+          ],
+          "grants": [
+            "passed:Y1_computing"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "study_y1_mechanics",
+          "label": "Học: Cơ học đại cương",
+          "zone": "H6Classroom",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "ledger:year1_commute_reserved"
+          ],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "exam_y1_mechanics",
+          "label": "Thi: Cơ học đại cương",
+          "zone": "H6Classroom",
+          "cost": 0,
+          "reward": 0,
+          "credits": 21,
+          "requires": [
+            "ledger:year1_commute_reserved",
+            "action:7:study_y1_mechanics"
+          ],
+          "grants": [
+            "passed:Y1_mechanics"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "study_y1_english1",
+          "label": "Học: Tiếng Anh 1",
+          "zone": "H6Classroom",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "ledger:year1_commute_reserved"
+          ],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "exam_y1_english1",
+          "label": "Thi: Tiếng Anh 1",
+          "zone": "H6Classroom",
+          "cost": 0,
+          "reward": 0,
+          "credits": 26,
+          "requires": [
+            "ledger:year1_commute_reserved",
+            "action:7:study_y1_english1"
+          ],
+          "grants": [
+            "passed:Y1_english1"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "study_y1_study_skills",
+          "label": "Học: Kỹ năng học đại học",
+          "zone": "H6Classroom",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "ledger:year1_commute_reserved"
+          ],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "exam_y1_study_skills",
+          "label": "Thi: Kỹ năng học đại học",
+          "zone": "H6Classroom",
+          "cost": 0,
+          "reward": 0,
+          "credits": 32,
+          "requires": [
+            "ledger:year1_commute_reserved",
+            "action:7:study_y1_study_skills"
+          ],
+          "grants": [
+            "passed:Y1_study_skills"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "finish_year_exams",
+          "label": "Hoàn thành các kỳ thi",
+          "zone": "H6Classroom",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "passed:Y1_calculus1",
+            "passed:Y1_algebra",
+            "passed:Y1_computing",
+            "passed:Y1_mechanics",
+            "passed:Y1_english1",
+            "passed:Y1_study_skills"
+          ],
+          "grants": [
+            "ledger:year1_commute_used"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "read_year_results",
+          "label": "Xem32tín chỉ",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 32,
+          "requires": [
+            "ledger:year1_commute_used",
+            "passed:Y1_calculus1",
+            "passed:Y1_algebra",
+            "passed:Y1_computing",
+            "passed:Y1_mechanics",
+            "passed:Y1_english1",
+            "passed:Y1_study_skills"
+          ],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "entry": "Đã 32/150, không nợ",
+      "bridge": "Ngủ; thẻ chuyển kỳ 3 và tin đăng ký môn mở M09",
+      "steps": [
+        {
+          "id": "get_cooker",
+          "label": "Lấy bếp và nồi",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "credits:32"
+          ],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "plug_cooker",
+          "label": "Cắm bếp",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "action:8:get_cooker"
+          ],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "add_ingredients",
+          "label": "Thêm đồ ăn",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "action:8:plug_cooker"
+          ],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "share_feast",
+          "label": "Ăn lẩu cùng phòng",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "action:8:add_ingredients"
+          ],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "toast",
+          "label": "Cụng ly",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "action:8:share_feast"
+          ],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "sleep_new_term",
+          "label": "Ngủ và chuyển học kỳ3",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "credits:32",
+            "action:8:toast"
+          ],
+          "grants": [
+            "term:3"
+          ],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "entry": "Ngày đăng ký, 08:59",
+      "bridge": "Hiện lớp 06:45; tuần học đại diện dẫn tới M10",
+      "steps": [
+        {
+          "id": "refresh_registration",
+          "label": "Chờ mở đăng ký",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "select_classes",
+          "label": "Chọn lớp",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "confirm_schedule",
+          "label": "Xác nhận lịch06:45",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [
+            "schedule:0645"
+          ],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "entry": "Một tối 23:40",
+      "bridge": "Sáng hôm sau khác năng lượng/điểm danh rồi hội tụ",
+      "steps": [
+        {
+          "id": "choose_night",
+          "label": "Chơi thêm hoặc đi ngủ",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": [
+            {
+              "id": "play",
+              "label": "YES — chơi tiếp",
+              "cost": 0,
+              "reward": 0,
+              "requires": [],
+              "grants": [
+                "choice:gaming_yes"
+              ],
+              "removes": []
+            },
+            {
+              "id": "sleep",
+              "label": "NO — đi ngủ",
+              "cost": 0,
+              "reward": 0,
+              "requires": [],
+              "grants": [
+                "choice:gaming_no"
+              ],
+              "removes": []
+            }
+          ]
+        },
+        {
+          "id": "end_night",
+          "label": "Kết thúc đêm theo lựa chọn",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "entry": "Báo thức 06:30",
+      "bridge": "Một tối khác nấu lẩu M12; không coi đây là buổi thi",
+      "steps": [
+        {
+          "id": "choose_alarm",
+          "label": "Dậy hoặc Snooze",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": [
+            {
+              "id": "wake",
+              "label": "Dậy ngay",
+              "cost": 0,
+              "reward": 0,
+              "requires": [],
+              "grants": [
+                "choice:wake"
+              ],
+              "removes": []
+            },
+            {
+              "id": "snooze",
+              "label": "Snooze",
+              "cost": 0,
+              "reward": 0,
+              "requires": [],
+              "grants": [
+                "choice:snooze"
+              ],
+              "removes": []
+            }
+          ]
+        },
+        {
+          "id": "show_morning_consequence",
+          "label": "Xem hậu quả buổi sáng",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "entry": "Nghe chìa khóa khi nấu",
+      "bridge": "Nhắc deadline C++; bị bắt có cảnh cáo hoặc retry",
+      "steps": [
+        {
+          "id": "hear_guard",
+          "label": "Nghe chìa khóa bảo vệ",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "unplug_cooker",
+          "label": "Rút điện",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "hide_pot",
+          "label": "Cất nồi",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "pretend_sleep",
+          "label": "Giả ngủ",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "resolve_inspection",
+          "label": "Kết thúc kiểm tra",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [
+            "story:inspection_resolved"
+          ],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "entry": "Tin nhắc bài C++",
+      "bridge": "Điểm thành phần thấp; nhận lịch thi cuối kỳ",
+      "steps": [
+        {
+          "id": "compile_assignment",
+          "label": "Compile bàiC++",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "find_error",
+          "label": "Tìm lỗi",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "patch_assignment",
+          "label": "Sửa lỗi",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "test_assignment",
+          "label": "Chạy test",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "submit_assignment",
+          "label": "Nộp trước hạn",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "action:13:test_assignment"
+          ],
+          "grants": [
+            "submission:cpp"
+          ],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "entry": "Ngày thi, đủ tư cách",
+      "bridge": "Tin hẹn công bố điểm; không cấp F ngay từ ngủ quên",
+      "steps": [
+        {
+          "id": "arrive_exam",
+          "label": "Đến phòng thi",
+          "zone": "H6",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "answer_known_sections",
+          "label": "Làm phần kiến thức đã học",
+          "zone": "H6",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "submit_exam",
+          "label": "Nộp bài",
+          "zone": "H6",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "entry": "Portal công bố điểm",
+      "bridge": "Mở hóa đơn học lại rồi nhận cuộc gọi mẹ",
+      "steps": [
+        {
+          "id": "open_grade_portal",
+          "label": "Mở bảng điểm",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "read_failed_courses",
+          "label": "Xem3mônF",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 50,
+          "requires": [],
+          "grants": [
+            "failed:GT2",
+            "failed:VL1",
+            "failed:KTLT"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "read_prerequisite_graph",
+          "label": "Xem các môn bị khóa",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "open_retaking_invoice",
+          "label": "Mở hóa đơn học lại",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "entry": "Hóa đơn, mẹ gọi",
+      "bridge": "Tin khách cạnh phòng có máy hỏng mở job đầu",
+      "steps": [
+        {
+          "id": "answer_mother",
+          "label": "Trả lời mẹ",
+          "zone": "Hallway",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": [
+            {
+              "id": "honest",
+              "label": "Nói thật",
+              "cost": 0,
+              "reward": 0,
+              "requires": [],
+              "grants": [
+                "choice:mother_honest"
+              ],
+              "removes": []
+            },
+            {
+              "id": "ask_help",
+              "label": "Xin hỗ trợ",
+              "cost": 0,
+              "reward": 0,
+              "requires": [],
+              "grants": [
+                "choice:mother_help"
+              ],
+              "removes": []
+            }
+          ]
+        },
+        {
+          "id": "finish_call",
+          "label": "Kết thúc cuộc gọi",
+          "zone": "Hallway",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "receive_first_job",
+          "label": "Nhận tin khách đầu tiên",
+          "zone": "Hallway",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "entry": "Khách mang laptop",
+      "bridge": "Khách giới thiệu thêm; Lươn muốn treo biển",
+      "steps": [
+        {
+          "id": "receive_laptop",
+          "label": "Nhận máy",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "backup_data",
+          "label": "Sao lưu giả lập",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [
+            "job1:backup"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "boot_usb",
+          "label": "Khởi độngUSB",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "install_system",
+          "label": "Cài hệ điều hành",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "job1:backup"
+          ],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "handover_laptop",
+          "label": "Bàn giao và nhận50k",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 50000,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "entry": "Hoàn thành job đầu",
+      "bridge": "Job board và lịch học lại cùng được mở",
+      "steps": [
+        {
+          "id": "post_service_sign",
+          "label": "Treo biển",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "accept_next_jobs",
+          "label": "Nhận đơn tiếp theo",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "entry": "Lịch học/ca sửa máy",
+      "bridge": "Kỳ 5 pass KTLT/VL1; kỳ 6 mở CTDL; khách nữ nhắn",
+      "steps": [
+        {
+          "id": "complete_job_a",
+          "label": "Hoàn thành ca sửa máy1",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 50000,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "rest_and_eat",
+          "label": "Ăn và nghỉ",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "complete_job_b",
+          "label": "Hoàn thành ca sửa máy2",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 50000,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "review_weekly_ledger",
+          "label": "Xem thu chi nhiều tuần",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 1200000,
+          "credits": 0,
+          "requires": [],
+          "grants": [
+            "ledger:weeks_reviewed"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "pay_retaking_fee",
+          "label": "Đóng học phí",
+          "zone": "Room",
+          "cost": 900000,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "ledger:weeks_reviewed"
+          ],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "pass_programming",
+          "label": "PassKTLT",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [
+            "passed:KTLT"
+          ],
+          "removes": [
+            "failed:KTLT"
+          ],
+          "choices": []
+        },
+        {
+          "id": "pass_physics",
+          "label": "PassVL1",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [
+            "passed:VL1"
+          ],
+          "removes": [
+            "failed:VL1"
+          ],
+          "choices": []
+        },
+        {
+          "id": "enroll_data_structures",
+          "label": "MởCTDL học kỳ6",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "passed:KTLT"
+          ],
+          "grants": [
+            "enrolled:CTDL"
+          ],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "entry": "Crush nhờ sửa",
+      "bridge": "Tin hẹn tới quán; mượn áo Long",
+      "steps": [
+        {
+          "id": "receive_crush_laptop",
+          "label": "Nhận máy của bạn nữ",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "scan_virus",
+          "label": "Quét virus",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "repair_crush_laptop",
+          "label": "Sửa lỗi",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "waive_labor",
+          "label": "Miễn tiền công",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [
+            "job:waived_labor_only"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "receive_cafe_invite",
+          "label": "Nhận tin hẹn",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "entry": "Tới quán theo tin",
+      "bridge": "Về trả áo; bạn nhận ra buồn và rủ Hồ Đá",
+      "steps": [
+        {
+          "id": "borrow_jacket",
+          "label": "Mượn áo Long",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [
+            "item:borrowed_jacket"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "arrive_cafe",
+          "label": "Đến quán",
+          "zone": "Cafe",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "meet_boyfriend",
+          "label": "Gặp bạn trai của crush",
+          "zone": "Cafe",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "repair_second_laptop",
+          "label": "Sửa máy theo checklist",
+          "zone": "Cafe",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "return_jacket",
+          "label": "Về trả áo",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "item:borrowed_jacket"
+          ],
+          "grants": [],
+          "removes": [
+            "item:borrowed_jacket"
+          ],
+          "choices": []
+        },
+        {
+          "id": "accept_lake_invite",
+          "label": "Nhận lời ra HồĐá",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "entry": "Nhóm hẹn Hồ Đá",
+      "bridge": "Về ngủ; nhận tin điểm cuối năm",
+      "steps": [
+        {
+          "id": "sit_with_friends",
+          "label": "Ngồi cùng nhóm",
+          "zone": "Lake",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "share_tea",
+          "label": "Chia trà và đồ ăn",
+          "zone": "Lake",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [
+            "friends:shared_tea"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "finish_conversation",
+          "label": "Trò chuyện",
+          "zone": "Lake",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "return_sleep",
+          "label": "Về ngủ",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "entry": "Portal năm 3",
+      "bridge": "Đạm nhờ mang sách tới lab",
+      "steps": [
+        {
+          "id": "open_year3_results",
+          "label": "Mở điểm năm3",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "pass_calculus2",
+          "label": "Xác nhậnGT2đãpass",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [
+            "passed:GT2"
+          ],
+          "removes": [
+            "failed:GT2"
+          ],
+          "choices": []
+        },
+        {
+          "id": "read_data_structures_fail",
+          "label": "XemCTDLchưađạt",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "enrolled:CTDL"
+          ],
+          "grants": [
+            "failed:CTDL"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "read_78_credits",
+          "label": "Xem78tín chỉ",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 78,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "receive_lab_request",
+          "label": "Đạm nhờ mang sách",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "entry": "Sách từ Đạm",
+      "bridge": "Về 404; Long nhờ chỉnh CV",
+      "steps": [
+        {
+          "id": "take_book",
+          "label": "Lấy sách",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "travel_hcmus",
+          "label": "Đến labHCMUS",
+          "zone": "Lab",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "deliver_book",
+          "label": "Giao sách",
+          "zone": "Lab",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "listen_lab_talk",
+          "label": "Nghe thảo luận",
+          "zone": "Lab",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "return_room",
+          "label": "Về404",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "entry": "CV trên laptop",
+      "bridge": "Vài ngày sau có mail đậu; Tộ chuẩn bị ca sáng",
+      "steps": [
+        {
+          "id": "edit_cv",
+          "label": "ChỉnhCV",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "export_cv_pdf",
+          "label": "XuấtPDF",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "send_cv",
+          "label": "GửiCV",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "receive_job_email",
+          "label": "Vài ngày sau nhận mail đậu",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "entry": "Buổi sáng bạn đi làm",
+      "bridge": "Tin xét điều kiện đồ án của khóa",
+      "steps": [
+        {
+          "id": "see_to_to_work",
+          "label": "Tiễn Tộ đi làm",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "read_friend_schedules",
+          "label": "Xem lịch bạn bè",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "receive_eligibility_notice",
+          "label": "Nhận thông báo xét đồ án",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "entry": "Đợt xét đồ án",
+      "bridge": "Bạn nhờ chụp ảnh chung; không cho đăng ký lặp vô hạn",
+      "steps": [
+        {
+          "id": "apply_thesis",
+          "label": "Nộp đơn",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "read_rejection",
+          "label": "Xem118/136và2tiênquyết",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 118,
+          "requires": [
+            "failed:CTDL"
+          ],
+          "grants": [
+            "thesis:rejected"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "receive_photo_invite",
+          "label": "Nhận lời chụp ảnh",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "entry": "Hẹn chụp tại ĐHQG",
+      "bridge": "Về 404; Long báo dọn đầu kỳ 9",
+      "steps": [
+        {
+          "id": "meet_graduate_friends",
+          "label": "Gặp ba bạn sau lễ riêng",
+          "zone": "Courtyard",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "take_group_photo",
+          "label": "Chụp ảnh chung",
+          "zone": "Courtyard",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "answer_parents",
+          "label": "Trả lời phụ huynh",
+          "zone": "Courtyard",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "return_room",
+          "label": "Về404",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "entry": "Long đóng thùng",
+      "bridge": "Một ngày khác Tộ báo chuyển trọ",
+      "steps": [
+        {
+          "id": "carry_longs_boxes",
+          "label": "Bê thùng cho Long",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "say_goodbye_long",
+          "label": "Chào Long",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "long_leaves",
+          "label": "Long rời phòng",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [
+            "room:long_left"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "freshman1_moves_in",
+          "label": "Người mới1nhận giường",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "room:long_left"
+          ],
+          "grants": [
+            "room:freshman1"
+          ],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "entry": "Tộ rời đi",
+      "bridge": "Đạm nhắn hoàn tất thủ tục và ngày rời KTX",
+      "steps": [
+        {
+          "id": "receive_to_gift",
+          "label": "Nhận thịt khô",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "say_goodbye_to",
+          "label": "Chào Tộ",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "to_leaves",
+          "label": "Tộ chuyển trọ",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [
+            "room:to_left"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "freshman2_moves_in",
+          "label": "Người mới2nhận giường",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "room:to_left"
+          ],
+          "grants": [
+            "room:freshman2"
+          ],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "entry": "Đạm ở cửa",
+      "bridge": "Đêm nhìn icon game; Đạm chưa bay",
+      "steps": [
+        {
+          "id": "hear_dams_plan",
+          "label": "Nghe lịch đi của Đạm",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "say_goodbye_dam",
+          "label": "Chào Đạm",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "dam_leaves_dorm",
+          "label": "Đạm rờiKTX",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [
+            "room:dam_left"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "freshman3_moves_in",
+          "label": "Người mới3nhận giường",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "room:dam_left"
+          ],
+          "grants": [
+            "room:freshman3"
+          ],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "entry": "Chọn laptop",
+      "bridge": "Đặt báo thức 06:30 và lịch trả nợ; chưa mở đồ án",
+      "steps": [
+        {
+          "id": "select_uninstall",
+          "label": "Chọn xóa game",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "hold_uninstall",
+          "label": "Giữ đúng nút đến hoàn tất",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [
+            "game:uninstalled"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "set_alarm",
+          "label": "Đặt06:30",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "write_recovery_plan",
+          "label": "Lập lịch trả nợ",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "entry": "Ngày mới 06:30",
+      "bridge": "Chuỗi ngày học đại diện; khuya có tiếng gõ cửa",
+      "steps": [
+        {
+          "id": "wake_immediately",
+          "label": "Dậy06:30",
+          "zone": "H6",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "game:uninstalled"
+          ],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "morning_wc",
+          "label": "Vệ sinh",
+          "zone": "H6",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "arrive_class_on_time",
+          "label": "Tới lớp đúng giờ",
+          "zone": "H6",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "study_days",
+          "label": "Chuỗi ngày học đại diện",
+          "zone": "H6",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "hear_knock",
+          "label": "Nghe gõ cửa khuya",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "entry": "Đang ôn lúc 01:00",
+      "bridge": "Bạn rời; Đạm báo sắp bay; lịch chuyển tới kỳ thi",
+      "steps": [
+        {
+          "id": "open_for_friends",
+          "label": "Mở cửa",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "room:dam_left"
+          ],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "receive_supplies",
+          "label": "Nhận tiếp tế",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "share_hotpot",
+          "label": "Ăn lẩu",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "receive_study_notes",
+          "label": "Nhận tài liệu",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "say_goodbye_visitors",
+          "label": "Tiễn bạn",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "read_flight_message",
+          "label": "Đạm báo sắp bay",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [
+            "dam:flight_after_visit"
+          ],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "entry": "Đã ôn, đúng học kỳ",
+      "bridge": "Kết quả cập nhật; portal xét điều kiện",
+      "steps": [
+        {
+          "id": "revise_data_structures",
+          "label": "ÔnCTDL",
+          "zone": "H6",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "pass_data_structures",
+          "label": "PassCTDLkỳ9",
+          "zone": "H6",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "passed:KTLT"
+          ],
+          "grants": [
+            "passed:CTDL"
+          ],
+          "removes": [
+            "failed:CTDL"
+          ],
+          "choices": []
+        },
+        {
+          "id": "enroll_operating_systems",
+          "label": "HọcHĐHkỳ10",
+          "zone": "H6",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "passed:CTDL"
+          ],
+          "grants": [
+            "enrolled:HDH"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "pass_operating_systems",
+          "label": "PassHĐH",
+          "zone": "H6",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "passed:CTDL",
+            "enrolled:HDH"
+          ],
+          "grants": [
+            "passed:HDH"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "read_debt_cleared",
+          "label": "Xem hết nợ",
+          "zone": "H6",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "entry": "Portal có đủ điểm",
+      "bridge": "Form đề tài và lịch GVHD đầu năm 6",
+      "steps": [
+        {
+          "id": "open_eligibility_portal",
+          "label": "Mở portal",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "confirm_136_credits",
+          "label": "Xác nhận136/150",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 136,
+          "requires": [
+            "passed:GT2",
+            "passed:VL1",
+            "passed:KTLT",
+            "passed:CTDL",
+            "passed:HDH"
+          ],
+          "grants": [
+            "thesis:eligible"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "receive_advisor_appointment",
+          "label": "Nhận lịchGVHD",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "entry": "Lịch hẹn GVHD",
+      "bridge": "Checklist nghiên cứu và nguồn tài liệu",
+      "steps": [
+        {
+          "id": "meet_advisor",
+          "label": "Gặp thầy",
+          "zone": "AdvisorOffice",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "choose_network_topic",
+          "label": "Chọn đề tài mạng",
+          "zone": "AdvisorOffice",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "register_topic",
+          "label": "Đăng ký đề tài",
+          "zone": "AdvisorOffice",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "thesis:eligible"
+          ],
+          "grants": [
+            "thesis:network_diagnostics"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "receive_research_checklist",
+          "label": "Nhận checklist",
+          "zone": "AdvisorOffice",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "entry": "Đề tài duyệt",
+      "bridge": "Backlog module trên laptop",
+      "steps": [
+        {
+          "id": "search_references",
+          "label": "Tra cứu",
+          "zone": "Library",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "assemble_network_design",
+          "label": "Ghép sơ đồ",
+          "zone": "Library",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "validate_design",
+          "label": "Xác nhận thiết kế",
+          "zone": "Library",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "thesis:network_diagnostics"
+          ],
+          "grants": [
+            "thesis:design_valid"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "write_backlog",
+          "label": "Lập backlog",
+          "zone": "Library",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "entry": "Backlog code",
+      "bridge": "Đặt lịch demo 1; ngủ và tới GVHD",
+      "steps": [
+        {
+          "id": "implement_modules",
+          "label": "Viết module",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "run_project_tests",
+          "label": "Chạy test",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "run_first_demo",
+          "label": "Demo đầu chạy được",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "thesis:design_valid"
+          ],
+          "grants": [
+            "thesis:demo1_ready"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "book_demo1",
+          "label": "Đặt lịchdemo1",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "entry": "Demo 1",
+      "bridge": "Về sửa sơ đồ/code; test mới pass để mở demo 2",
+      "steps": [
+        {
+          "id": "present_demo1",
+          "label": "Chạy demo1",
+          "zone": "AdvisorOffice",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "record_security_feedback",
+          "label": "Ghi việc sửa",
+          "zone": "AdvisorOffice",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "patch_security",
+          "label": "Sửa bảo mật",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "pass_security_tests",
+          "label": "Test mới pass",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "thesis:demo1_ready"
+          ],
+          "grants": [
+            "thesis:security_tests_pass"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "book_demo2",
+          "label": "Hẹn demo2",
+          "zone": "AdvisorOffice",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "entry": "Demo 2 đạt",
+      "bridge": "Nhắc hạn nộp; kiểm thử trước khi upload",
+      "steps": [
+        {
+          "id": "pass_demo2",
+          "label": "Demo2được duyệt",
+          "zone": "AdvisorOffice",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "thesis:security_tests_pass"
+          ],
+          "grants": [
+            "thesis:demo2_pass"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "format_report",
+          "label": "Định dạng120trang",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "print_report",
+          "label": "In",
+          "zone": "PrintShop",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "bind_thesis",
+          "label": "Đóng bìa",
+          "zone": "PrintShop",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "thesis:demo2_pass"
+          ],
+          "grants": [
+            "item:bound_thesis"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "review_submission_deadline",
+          "label": "Xem hạn nộp",
+          "zone": "AdvisorOffice",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "entry": "Crash trước hạn",
+      "bridge": "Receipt và backup; nhận lịch bảo vệ sau đó",
+      "steps": [
+        {
+          "id": "reproduce_crash",
+          "label": "Tái hiệncrash",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "read_crash_log",
+          "label": "Đọc log",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "patch_final_bug",
+          "label": "Patch",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "pass_final_tests",
+          "label": "Test lại",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "submit_project",
+          "label": "Nộp trước hạn",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "action:42:pass_final_tests",
+            "item:bound_thesis"
+          ],
+          "grants": [
+            "thesis:submitted"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "save_receipt_backup",
+          "label": "Lưu receipt vàbackup",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "thesis:submitted"
+          ],
+          "grants": [
+            "thesis:receipt"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "receive_defense_schedule",
+          "label": "Nhận lịch bảo vệ",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "entry": "Receipt và lịch hội đồng",
+      "bridge": "Sai thì retry tại checkpoint/tập dượt; đạt mới mở M44",
+      "steps": [
+        {
+          "id": "change_to_shirt",
+          "label": "Thay sơ mi",
+          "zone": "DefenseRoom",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "connect_projector",
+          "label": "Cắm máy chiếu",
+          "zone": "DefenseRoom",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "thesis:receipt"
+          ],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "present_thesis",
+          "label": "Thuyết trình",
+          "zone": "DefenseRoom",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "pass_defense_qa",
+          "label": "Trả lời phản biện đạt",
+          "zone": "DefenseRoom",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "thesis:receipt"
+          ],
+          "grants": [
+            "thesis:defense_pass"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "receive_grade_a",
+          "label": "Nhận kết quảA",
+          "zone": "DefenseRoom",
+          "cost": 0,
+          "reward": 0,
+          "credits": 150,
+          "requires": [
+            "thesis:defense_pass"
+          ],
+          "grants": [
+            "thesis:grade_a"
+          ],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "entry": "Kết quả đạt",
+      "bridge": "Thư mời chuyển tới ngày lễ; chưa đánh Finished",
+      "steps": [
+        {
+          "id": "call_mother",
+          "label": "Gọi mẹ",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "pack_own_belongings",
+          "label": "Gói đồ riêng",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "thesis:grade_a",
+            "room:freshman1",
+            "room:freshman2",
+            "room:freshman3"
+          ],
+          "grants": [
+            "room:luon_packed"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "turn_off_light",
+          "label": "Tắt đèn",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "close_room_door",
+          "label": "Khép cửa",
+          "zone": "Room",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "return_key",
+          "label": "Trả khóa",
+          "zone": "Reception",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "item:room_key",
+            "room:luon_packed"
+          ],
+          "grants": [
+            "room:key_returned"
+          ],
+          "removes": [
+            "item:room_key"
+          ],
+          "choices": []
+        },
+        {
+          "id": "receive_ceremony_invitation",
+          "label": "Nhận thư mời",
+          "zone": "Reception",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "entry": "Thư mời lễ",
+      "bridge": "Fade, credits, lưu hoàn thành, quay menu",
+      "steps": [
+        {
+          "id": "receive_degree",
+          "label": "Nhận bằngA5",
+          "zone": "GraduationHall",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "room:key_returned",
+            "thesis:grade_a"
+          ],
+          "grants": [
+            "item:degree"
+          ],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "meet_family",
+          "label": "Gặp gia đình",
+          "zone": "GraduationHall",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "read_dam_return_message",
+          "label": "Đạm nhắn đã về",
+          "zone": "GraduationHall",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "reunite_friends",
+          "label": "Hội ngộ bạn",
+          "zone": "GraduationHall",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "travel_binh_dong",
+          "label": "Tới BìnhĐông",
+          "zone": "BinhDong",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "link_shoulders",
+          "label": "Khoác vai",
+          "zone": "BinhDong",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [],
+          "grants": [],
+          "removes": [],
+          "choices": []
+        },
+        {
+          "id": "finish_credits",
+          "label": "Xem hếtcredits",
+          "zone": "BinhDong",
+          "cost": 0,
+          "reward": 0,
+          "credits": 0,
+          "requires": [
+            "item:degree",
+            "action:45:link_shoulders"
+          ],
+          "grants": [
+            "campaign:finished"
+          ],
+          "removes": [],
+          "choices": []
+        }
+      ]
+    }
+  ]
+}

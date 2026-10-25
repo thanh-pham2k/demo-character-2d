@@ -63,6 +63,7 @@ public class PlayerInteractionDetector : MonoBehaviour
 
     public bool TryInteract()
     {
+        if(YearOneRuntimeUI.CapturesMovement)return false;
         currentInteractable = FindClosestInteractable();
         if (!InteractionTargetUtility.IsAvailable(currentInteractable) ||
             !interactionState.CanInteractWith(currentInteractable)) return false;

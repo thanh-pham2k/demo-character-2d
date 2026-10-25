@@ -1,0 +1,62 @@
+{
+  "luon_backpack_front_idle": [
+    0,
+    0,
+    430,
+    398
+  ],
+  "luon_backpack_front_walk_0": [
+    430,
+    0,
+    378,
+    398
+  ],
+  "luon_backpack_front_walk_1": [
+    808,
+    0,
+    364,
+    398
+  ],
+  "luon_backpack_front_walk_2": [
+    1172,
+    0,
+    380,
+    398
+  ],
+  "luon_backpack_front_walk_3": [
+    1552,
+    0,
+    431,
+    398
+  ],
+  "luon_backpack_back_idle": [
+    0,
+    398,
+    430,
+    395
+  ],
+  "luon_backpack_back_walk_0": [
+    430,
+    398,
+    378,
+    395
+  ],
+  "luon_backpack_back_walk_1": [
+    808,
+    398,
+    364,
+    395
+  ],
+  "luon_backpack_back_walk_2": [
+    1172,
+    398,
+    380,
+    395
+  ],
+  "luon_backpack_back_walk_3": [
+    1552,
+    398,
+    431,
+    395
+  ]
+}

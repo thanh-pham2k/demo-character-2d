@@ -1,0 +1,7 @@
+{
+    "success": true,
+    "assertions": 91,
+    "finishedUtc": "2026-10-25T14:04:09.8011880Z",
+    "error": "",
+    "scope": "Production bus host/session fare, direction, choice and save failure; physical production scene integration pending"
+}

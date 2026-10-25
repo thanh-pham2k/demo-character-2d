@@ -1,0 +1,14 @@
+{
+  "kind": "source-contract-audit",
+  "missionSteps": 21,
+  "allStepsHaveExplicitUi": true,
+  "singleInjectedSession": true,
+  "unityCompileRun": false,
+  "playModeRun": false,
+  "files": {
+    "mobile-2d/Assets/Scripts/ProductionChapters/Year2/Year2Challenge.cs": "0e77cee5ad4fc0f5c80f3af532ff3a40ec7e67a1e1542b243904b7383eeca002",
+    "mobile-2d/Assets/Scripts/ProductionChapters/Year2/Year2WorldAction.cs": "e40bdff87d1b1eb059b02f777ab189a295bba59c100b8c91347e6a545d2692bf",
+    "mobile-2d/Assets/Scripts/ProductionChapters/Year2/Year2Module.cs": "59e4d041eaa5994c890c64780a58f0e55d3ebd2ec17aeb7e03781c393413daa1",
+    "mobile-2d/Assets/Editor/ProductionChapters/Year2/Year2Tools.cs": "56fd6e0161ba398bcc943795f6d05d243a95a30c4da1d7fcb7103bd9e54aba72"
+  }
+}

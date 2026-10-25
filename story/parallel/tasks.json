@@ -1,0 +1,46 @@
+{
+  "status": "six_source_handoffs_complete_integration_pending",
+  "hostId": "local",
+  "workspace": ".",
+  "coordinator": "tao asset",
+  "contract": "story/parallel/PARALLEL_EXECUTION.md",
+  "tasks": [
+    {
+      "key": "year2",
+      "threadId": "01a173bb-dadb-7ac3-9bba-60e875a9f0a4",
+      "handoff": "story/parallel/year2.md",
+      "status": "source_handoff_complete_unity_pending"
+    },
+    {
+      "key": "year3",
+      "threadId": "01a173bb-dc8c-7833-ba84-7fee69edc453",
+      "handoff": "story/parallel/year3.md",
+      "status": "source_handoff_complete_unity_pending"
+    },
+    {
+      "key": "years45",
+      "threadId": "01a173bb-ddc7-70e3-a4d2-a0e1fd950055",
+      "handoff": "story/parallel/years45.md",
+      "status": "source_handoff_complete_unity_integration_pending"
+    },
+    {
+      "key": "year6",
+      "threadId": "01a173bb-defb-74f1-ba4e-c578fb6ca023",
+      "handoff": "story/parallel/year6.md",
+      "status": "source_handoff_complete_unity_integration_pending"
+    },
+    {
+      "key": "art_polish",
+      "threadId": "01a173bb-e166-7891-ba5b-e9e0b7f66ebe",
+      "handoff": "story/parallel/art_polish.md",
+      "status": "source_handoff_complete_runtime_acceptance_pending"
+    },
+    {
+      "key": "audio",
+      "threadId": "01a173bb-e2b2-7b93-9565-f93cf22570ac",
+      "handoff": "story/parallel/audio.md",
+      "status": "source_handoff_complete_integration_listening_bgm_pending"
+    }
+  ],
+  "integration_status": "Parallel modules not wired into shared production scene or Play verified; last verified opening remains M01-M09/819checks."
+}

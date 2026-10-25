@@ -1,0 +1,30 @@
+{
+  "source": "source.png",
+  "size": [
+    1536,
+    1024
+  ],
+  "alpha_threshold": 12,
+  "x_boundaries": null,
+  "y_boundaries": [
+    0,
+    512,
+    1024
+  ],
+  "per_row_x": {
+    "0": [
+      0,
+      370,
+      1145,
+      1536
+    ],
+    "1": [
+      0,
+      558,
+      1138,
+      1536
+    ]
+  },
+  "per_column_y": {},
+  "method": "transparent_gutter_midpoints; row_or_column_specific_when_needed; visual_review_required"
+}

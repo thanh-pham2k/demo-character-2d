@@ -25,3 +25,9 @@
 .DS_Store
 Thumbs.db
 Desktop.ini
+
+# Raw Play Mode capture frames; curated reviews are retained with batch sources.
+mobile-2d/PlayModeInteractionReports/*.png
+mobile-2d/PlayModeInteractionReports/**/*.log
+review/parallel/years45/*.dll
+review/parallel/years45/*.exe

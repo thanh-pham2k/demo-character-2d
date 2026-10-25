@@ -1,0 +1,392 @@
+{
+  "batch": "C03",
+  "provenance": "generated_composite_batch",
+  "source_file": "assets/mvp_sprites/remaining/C03/source.png",
+  "source_sha256": "b414c81d135180f1480a81d31aad0fd531bb2f7231ba0cbe528ada279e2b0780",
+  "source_dimensions": [
+    1774,
+    887
+  ],
+  "grid": [
+    4,
+    2
+  ],
+  "crop_format": "x_y_width_height_top_left",
+  "tool": "built_in_imagegen",
+  "outputs": [
+    {
+      "id": "dam_lab_pose",
+      "missions": [
+        24
+      ],
+      "source_crop_xywh": [
+        0,
+        0,
+        476,
+        446
+      ],
+      "normalization": {
+        "source_bbox": [
+          183,
+          38,
+          392,
+          442
+        ],
+        "scale": 0.594059405940594,
+        "paste_xy": [
+          66,
+          80
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C03/dam_lab_pose.png",
+      "alpha_bounds": [
+        183,
+        38,
+        392,
+        442
+      ],
+      "touches_cell_edge": false,
+      "sha256": "5d67fe098a846acdf3b09a3986a0a3e1af6c564a407636b797c0596c9e822947",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "long_office",
+      "missions": [
+        26,
+        29,
+        34,
+        45
+      ],
+      "source_crop_xywh": [
+        476,
+        0,
+        404,
+        446
+      ],
+      "normalization": {
+        "source_bbox": [
+          98,
+          34,
+          282,
+          441
+        ],
+        "scale": 0.5896805896805897,
+        "paste_xy": [
+          73,
+          80
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C03/long_office.png",
+      "alpha_bounds": [
+        98,
+        34,
+        282,
+        441
+      ],
+      "touches_cell_edge": false,
+      "sha256": "5a13f507e6fd77c994b8e199e5ab7cabf0122b2a10ed1a56f4f0f00915b9214e",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "to_office",
+      "missions": [
+        26,
+        30,
+        34,
+        45
+      ],
+      "source_crop_xywh": [
+        880,
+        0,
+        427,
+        446
+      ],
+      "normalization": {
+        "source_bbox": [
+          115,
+          35,
+          303,
+          440
+        ],
+        "scale": 0.5925925925925926,
+        "paste_xy": [
+          72,
+          80
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C03/to_office.png",
+      "alpha_bounds": [
+        115,
+        35,
+        303,
+        440
+      ],
+      "touches_cell_edge": false,
+      "sha256": "6445a506c3f787306402bf7fa41e6f82f9011082805dc289fa0b47c3fcb807f4",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "dam_travel",
+      "missions": [
+        31,
+        34,
+        45
+      ],
+      "source_crop_xywh": [
+        1307,
+        0,
+        467,
+        446
+      ],
+      "normalization": {
+        "source_bbox": [
+          106,
+          34,
+          287,
+          440
+        ],
+        "scale": 0.5911330049261084,
+        "paste_xy": [
+          74,
+          80
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C03/dam_travel.png",
+      "alpha_bounds": [
+        106,
+        34,
+        287,
+        440
+      ],
+      "touches_cell_edge": false,
+      "sha256": "fbb39e2f105961b826e067ee2014c71f46355ffe42255838c42e38b4bbb3884a",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "luon_carry_box",
+      "missions": [
+        29
+      ],
+      "source_crop_xywh": [
+        0,
+        446,
+        476,
+        441
+      ],
+      "normalization": {
+        "source_bbox": [
+          159,
+          33,
+          362,
+          422
+        ],
+        "scale": 0.6169665809768637,
+        "paste_xy": [
+          65,
+          80
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C03/luon_carry_box.png",
+      "alpha_bounds": [
+        159,
+        33,
+        362,
+        422
+      ],
+      "touches_cell_edge": false,
+      "sha256": "651183cb9e34a86bda599700a13ee454dd4b764543038c8ec894ccd8801065f3",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "dam_graduate",
+      "missions": [
+        28
+      ],
+      "source_crop_xywh": [
+        476,
+        446,
+        404,
+        441
+      ],
+      "normalization": {
+        "source_bbox": [
+          86,
+          6,
+          299,
+          422
+        ],
+        "scale": 0.6490384615384616,
+        "paste_xy": [
+          59,
+          50
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C03/dam_graduate.png",
+      "alpha_bounds": [
+        86,
+        6,
+        299,
+        422
+      ],
+      "touches_cell_edge": false,
+      "sha256": "2999c978bf6b5fbd694fbe7034ee455aeebfa2404d14c1cf4b0df1b01957f4e9",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "long_graduate",
+      "missions": [
+        28
+      ],
+      "source_crop_xywh": [
+        880,
+        446,
+        427,
+        441
+      ],
+      "normalization": {
+        "source_bbox": [
+          106,
+          7,
+          323,
+          420
+        ],
+        "scale": 0.6537530266343826,
+        "paste_xy": [
+          57,
+          50
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C03/long_graduate.png",
+      "alpha_bounds": [
+        106,
+        7,
+        323,
+        420
+      ],
+      "touches_cell_edge": false,
+      "sha256": "f8da791aa72a1d0b91cde2861f7d4702a41ff19370ee111e396271686a2a22ff",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "to_graduate",
+      "missions": [
+        28
+      ],
+      "source_crop_xywh": [
+        1307,
+        446,
+        467,
+        441
+      ],
+      "normalization": {
+        "source_bbox": [
+          108,
+          9,
+          307,
+          422
+        ],
+        "scale": 0.6537530266343826,
+        "paste_xy": [
+          63,
+          50
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C03/to_graduate.png",
+      "alpha_bounds": [
+        108,
+        9,
+        307,
+        422
+      ],
+      "touches_cell_edge": false,
+      "sha256": "2fc18c79a23d963750c2ff9f6563705ea2355c34db9a249a3426342748574af1",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    }
+  ],
+  "qa": {
+    "slice_bounds": "pass",
+    "visual": "pass_source_and_sliced_preview_review",
+    "unity_import": "pass_current_hashes",
+    "integration": "pending"
+  }
+}

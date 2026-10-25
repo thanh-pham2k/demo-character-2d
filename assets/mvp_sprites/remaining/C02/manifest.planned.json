@@ -1,0 +1,288 @@
+{
+  "batch": {
+    "id": "C02",
+    "kind": "character",
+    "columns": 4,
+    "rows": 2,
+    "requested_canvas": [
+      2048,
+      1024
+    ],
+    "cell": [
+      512,
+      512
+    ],
+    "read_order": "left_to_right_top_to_bottom",
+    "margin": 32,
+    "status": "planned_not_generated",
+    "source_file": null,
+    "asset_ids": [
+      "crush_idle",
+      "crush_boyfriend_idle",
+      "luon_repair_laptop",
+      "luon_borrowed_jacket",
+      "luon_lake_sit",
+      "dam_lake_sit",
+      "long_lake_sit",
+      "to_lake_sit"
+    ]
+  },
+  "assets": [
+    {
+      "id": "crush_idle",
+      "production": "generate_batch",
+      "kind": "character",
+      "missions": [
+        20,
+        21
+      ],
+      "description": "Nữ sinh đứng, ôm tài liệu; không tạo portrait riêng.",
+      "batch": "C02",
+      "cell_index": 1,
+      "row": 0,
+      "column": 0,
+      "planned_crop_xywh": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "actual_crop_xywh": null,
+      "source_file": null,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C02/crush_idle.png",
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "qa_status": "pending_generation",
+      "reference_group": "character_existing"
+    },
+    {
+      "id": "crush_boyfriend_idle",
+      "production": "generate_batch",
+      "kind": "character",
+      "missions": [
+        21
+      ],
+      "description": "Nam sinh đứng, cùng tuổi; xe là prop rời.",
+      "batch": "C02",
+      "cell_index": 2,
+      "row": 0,
+      "column": 1,
+      "planned_crop_xywh": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "actual_crop_xywh": null,
+      "source_file": null,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C02/crush_boyfriend_idle.png",
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "qa_status": "pending_generation",
+      "reference_group": "character_existing"
+    },
+    {
+      "id": "luon_repair_laptop",
+      "production": "generate_batch",
+      "kind": "character",
+      "missions": [
+        17,
+        19,
+        20,
+        21
+      ],
+      "description": "Lươn ngồi sửa, tay làm việc; laptop/bộ đồ nghề rời.",
+      "batch": "C02",
+      "cell_index": 3,
+      "row": 0,
+      "column": 2,
+      "planned_crop_xywh": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "actual_crop_xywh": null,
+      "source_file": null,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C02/luon_repair_laptop.png",
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "qa_status": "pending_generation",
+      "reference_group": "character_existing"
+    },
+    {
+      "id": "luon_borrowed_jacket",
+      "production": "generate_batch",
+      "kind": "character",
+      "missions": [
+        21
+      ],
+      "description": "Lươn mặc áo khoác mượn Long, pose đứng tại quán; di chuyển đoạn ngắn bằng ghép trang phục nếu đạt QA.",
+      "batch": "C02",
+      "cell_index": 4,
+      "row": 0,
+      "column": 3,
+      "planned_crop_xywh": [
+        1536,
+        0,
+        512,
+        512
+      ],
+      "actual_crop_xywh": null,
+      "source_file": null,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C02/luon_borrowed_jacket.png",
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "qa_status": "pending_generation",
+      "reference_group": "character_existing"
+    },
+    {
+      "id": "luon_lake_sit",
+      "production": "generate_batch",
+      "kind": "character",
+      "missions": [
+        5,
+        22
+      ],
+      "description": "Lươn ngồi ghế, chân đặt đất; góc nhìn nhóm Hồ Đá đã thống nhất. Dùng chung M05 và M22: ngồi ghế, chân đặt sàn, props tách rời.",
+      "batch": "C02",
+      "cell_index": 5,
+      "row": 1,
+      "column": 0,
+      "planned_crop_xywh": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "actual_crop_xywh": null,
+      "source_file": null,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C02/luon_lake_sit.png",
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "qa_status": "pending_generation",
+      "reference_group": "character_existing"
+    },
+    {
+      "id": "dam_lake_sit",
+      "production": "generate_batch",
+      "kind": "character",
+      "missions": [
+        5,
+        22
+      ],
+      "description": "Đạm ngồi ghế cùng góc, tay đưa nhẹ an ủi. Dùng chung M05 và M22: ngồi ghế, chân đặt sàn, props tách rời.",
+      "batch": "C02",
+      "cell_index": 6,
+      "row": 1,
+      "column": 1,
+      "planned_crop_xywh": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "actual_crop_xywh": null,
+      "source_file": null,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C02/dam_lake_sit.png",
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "qa_status": "pending_generation",
+      "reference_group": "character_existing"
+    },
+    {
+      "id": "long_lake_sit",
+      "production": "generate_batch",
+      "kind": "character",
+      "missions": [
+        5,
+        22
+      ],
+      "description": "Long ngồi ghế, tay cầm ly qua attachment, không bake ly. Dùng chung M05 và M22: ngồi ghế, chân đặt sàn, props tách rời.",
+      "batch": "C02",
+      "cell_index": 7,
+      "row": 1,
+      "column": 2,
+      "planned_crop_xywh": [
+        1024,
+        512,
+        512,
+        512
+      ],
+      "actual_crop_xywh": null,
+      "source_file": null,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C02/long_lake_sit.png",
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "qa_status": "pending_generation",
+      "reference_group": "character_existing"
+    },
+    {
+      "id": "to_lake_sit",
+      "production": "generate_batch",
+      "kind": "character",
+      "missions": [
+        5,
+        22
+      ],
+      "description": "Tộ ngồi ghế, tay cầm đồ ăn qua attachment. Dùng chung M05 và M22: ngồi ghế, chân đặt sàn, props tách rời.",
+      "batch": "C02",
+      "cell_index": 8,
+      "row": 1,
+      "column": 3,
+      "planned_crop_xywh": [
+        1536,
+        512,
+        512,
+        512
+      ],
+      "actual_crop_xywh": null,
+      "source_file": null,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C02/to_lake_sit.png",
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "qa_status": "pending_generation",
+      "reference_group": "character_existing"
+    }
+  ],
+  "reference_files": [
+    "mobile-2d/Assets/Sprites/MVP/characters/luon_idle_0.png",
+    "mobile-2d/Assets/Sprites/MVP/characters/luon_walk_0.png",
+    "mobile-2d/Assets/Sprites/MVP/characters/dam_standing.png",
+    "mobile-2d/Assets/Sprites/MVP/characters/long_standing.png",
+    "mobile-2d/Assets/Sprites/MVP/characters/to_standing.png"
+  ],
+  "provenance": "planned_batch_not_yet_generated",
+  "gate": {
+    "blockout": "pending",
+    "generation": "generated_composite_batch",
+    "slicing": "actual_crops_and_hashes_verified",
+    "visual_qa": "pass_source_and_sliced_preview_review",
+    "unity_import": "pass_current_hashes",
+    "integration": "pending"
+  }
+}

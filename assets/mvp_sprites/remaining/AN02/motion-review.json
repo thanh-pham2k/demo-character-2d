@@ -1,0 +1,92 @@
+[
+  {
+    "batch": "AN02",
+    "ids": [
+      "luon_shirt_front_walk_0",
+      "luon_shirt_front_walk_1",
+      "luon_shirt_front_walk_2",
+      "luon_shirt_front_walk_3"
+    ],
+    "unique_pixel_frames": 4,
+    "heights": [
+      240,
+      240,
+      240,
+      239
+    ],
+    "feet_bottom_y": [
+      320,
+      320,
+      320,
+      320
+    ],
+    "lower_leg_widths": [
+      84,
+      91,
+      88,
+      88
+    ],
+    "warnings": [],
+    "motion_approval": "pending_manual_loop_review_and_gameplay_use"
+  },
+  {
+    "batch": "AN02",
+    "ids": [
+      "luon_shirt_back_walk_0",
+      "luon_shirt_back_walk_1",
+      "luon_shirt_back_walk_2",
+      "luon_shirt_back_walk_3"
+    ],
+    "unique_pixel_frames": 4,
+    "heights": [
+      241,
+      241,
+      242,
+      242
+    ],
+    "feet_bottom_y": [
+      320,
+      320,
+      320,
+      320
+    ],
+    "lower_leg_widths": [
+      81,
+      94,
+      101,
+      95
+    ],
+    "warnings": [],
+    "motion_approval": "pending_manual_loop_review_and_gameplay_use"
+  },
+  {
+    "batch": "AN02",
+    "ids": [
+      "luon_shirt_right_walk_0",
+      "luon_shirt_right_walk_1",
+      "luon_shirt_right_walk_2",
+      "luon_shirt_right_walk_3"
+    ],
+    "unique_pixel_frames": 4,
+    "heights": [
+      234,
+      234,
+      234,
+      234
+    ],
+    "feet_bottom_y": [
+      320,
+      320,
+      320,
+      320
+    ],
+    "lower_leg_widths": [
+      130,
+      79,
+      133,
+      77
+    ],
+    "warnings": [],
+    "motion_approval": "pending_manual_loop_review_and_gameplay_use"
+  }
+]

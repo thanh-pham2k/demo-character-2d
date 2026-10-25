@@ -1,0 +1,3 @@
+2026-10-25T15:13:01.8818620Z
+passed=79 routines=3
+Semester/week bridge retains actor lock until finished

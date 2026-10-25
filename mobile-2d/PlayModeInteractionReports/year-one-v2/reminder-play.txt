@@ -1,0 +1,3 @@
+RUNNING BATCH
+PASS scenario 7 • assertions 7
+PASS: scenarios 7 through 7 completed.

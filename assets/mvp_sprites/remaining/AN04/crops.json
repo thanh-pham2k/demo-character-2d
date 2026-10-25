@@ -1,0 +1,74 @@
+{
+  "guard_right_walk_0": [
+    0,
+    0,
+    398,
+    365
+  ],
+  "guard_right_walk_1": [
+    398,
+    0,
+    330,
+    365
+  ],
+  "guard_right_walk_2": [
+    728,
+    0,
+    363,
+    365
+  ],
+  "guard_right_walk_3": [
+    1091,
+    0,
+    357,
+    365
+  ],
+  "luon_box_right_walk_0": [
+    0,
+    365,
+    398,
+    359
+  ],
+  "luon_box_right_walk_1": [
+    398,
+    365,
+    330,
+    359
+  ],
+  "luon_box_right_walk_2": [
+    728,
+    365,
+    363,
+    359
+  ],
+  "luon_box_right_walk_3": [
+    1091,
+    365,
+    357,
+    359
+  ],
+  "luon_pot_right_walk_0": [
+    0,
+    724,
+    398,
+    362
+  ],
+  "luon_pot_right_walk_1": [
+    398,
+    724,
+    330,
+    362
+  ],
+  "luon_pot_right_walk_2": [
+    728,
+    724,
+    363,
+    362
+  ],
+  "luon_pot_right_walk_3": [
+    1091,
+    724,
+    357,
+    362
+  ]
+}

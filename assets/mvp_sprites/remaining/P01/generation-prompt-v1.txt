@@ -1,0 +1,13 @@
+Create ONE transparent game PROP sprite batch, exactly4COLUMNS x2ROWS, eight equal invisible square cells on a2:1 target2048x1024 canvas. Attached sheet is a STYLE reference: match warm outlined pixel-art-inspired2.5D hand-painted student dorm props. Do not copy its items. Crisp readable texture, slightly elevated front-three-quarter view. TRUE TRANSPARENT alpha background. No floor/shadow/text/numbers/borders/grid/dividers/checkerboard.
+Small isolated objects with VERY generous blank space: each prop must fit fully in the central65% of its cell, no touching any boundary. Tall wardrobes smaller in framing so tops/feet all visible. The two wardrobe variants MUST have identical overall dimensions/perspective/frame position.
+TOP ROW:
+1. Compact cheap digital alarm clock, dark gray plastic casing, three-quarter front view, rectangular RED DISPLAY AREA COMPLETELY BLANK and UNLIT, no digits/letters. Runtime text will be added later.
+2. A modest old Vietnamese dorm wardrobe cabinet, muted brown wood, two doors CLOSED, simple handles, full cabinet visible, empty top, no writing. The wardrobe should fit in small student room.
+3. EXACT SAME wardrobe ascell2 but both doors OPEN, empty interior with one lower shelf and hanging space. Leave enough empty lower compartment for separate electric hotpot sprite. NO pot, clothes or hangers baked in.
+4. A small brass key ring holding3plain metal keys, isolated, same style, no number tags or lettering.
+BOTTOM ROW:
+5. A plain black compact security flashlight, isolated diagonal orientation, switched OFF, no light cone.
+6. A plastic cup containing a toothbrush and a little toothpaste tube, no logos or text; a single small grouped bathroom prop.
+7. A folded pale blue cotton towel, isolated.
+8. A small metallic USB boot stick with plain black cap and tiny attachment ring, isolated, no logo/text.
+Exactly8separate prop groups, one per cell. Entire source must have transparent margins between all rows/columns. No duplicated extra wardrobes or icon variants.

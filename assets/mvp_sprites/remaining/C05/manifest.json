@@ -1,0 +1,303 @@
+{
+  "batch": "C05",
+  "provenance": "generated_composite_batch",
+  "source_file": "assets/mvp_sprites/remaining/C05/source.png",
+  "source_sha256": "9304f19711673329a57f6c9f15110e614c599180d4ecfd4b5cd1eb980d657f46",
+  "source_dimensions": [
+    1536,
+    1024
+  ],
+  "grid": [
+    3,
+    2
+  ],
+  "crop_format": "x_y_width_height_top_left",
+  "tool": "built_in_imagegen",
+  "outputs": [
+    {
+      "id": "luon_packing",
+      "missions": [
+        44
+      ],
+      "source_crop_xywh": [
+        0,
+        0,
+        545,
+        503
+      ],
+      "normalization": {
+        "source_bbox": [
+          141,
+          86,
+          462,
+          501
+        ],
+        "scale": 0.4578313253012048,
+        "paste_xy": [
+          54,
+          130
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C05/luon_packing.png",
+      "alpha_bounds": [
+        141,
+        86,
+        462,
+        501
+      ],
+      "touches_cell_edge": false,
+      "sha256": "a13757c010eba11cadf295480bdf62b1405c05d0b5abefb68c9446b9e91cf4b3",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "luon_shirt_sit",
+      "missions": [
+        37,
+        40,
+        41
+      ],
+      "source_crop_xywh": [
+        545,
+        0,
+        440,
+        513
+      ],
+      "normalization": {
+        "source_bbox": [
+          106,
+          41,
+          351,
+          512
+        ],
+        "scale": 0.4033970276008493,
+        "paste_xy": [
+          78,
+          130
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C05/luon_shirt_sit.png",
+      "alpha_bounds": [
+        106,
+        41,
+        351,
+        512
+      ],
+      "touches_cell_edge": false,
+      "sha256": "836741465eff8f661c6cfa23ce1869339be4643799c128163a1421b90f046c23",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "luon_reunion_arm",
+      "missions": [
+        45
+      ],
+      "source_crop_xywh": [
+        985,
+        0,
+        551,
+        514
+      ],
+      "normalization": {
+        "source_bbox": [
+          122,
+          27,
+          417,
+          513
+        ],
+        "scale": 0.49382716049382713,
+        "paste_xy": [
+          119,
+          80
+        ],
+        "canvas": [
+          384,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C05/luon_reunion_arm.png",
+      "alpha_bounds": [
+        122,
+        27,
+        417,
+        513
+      ],
+      "touches_cell_edge": false,
+      "sha256": "e6d64258962f116c7fadfbef354b3c0cd5b9736371aa4b9f5d3e788a1ae21f93",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "dam_reunion_arm",
+      "missions": [
+        45
+      ],
+      "source_crop_xywh": [
+        0,
+        503,
+        545,
+        521
+      ],
+      "normalization": {
+        "source_bbox": [
+          146,
+          3,
+          528,
+          492
+        ],
+        "scale": 0.49079754601226994,
+        "paste_xy": [
+          98,
+          80
+        ],
+        "canvas": [
+          384,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C05/dam_reunion_arm.png",
+      "alpha_bounds": [
+        146,
+        3,
+        528,
+        492
+      ],
+      "touches_cell_edge": false,
+      "sha256": "c97dd7f385b12a48f5c177b541f66b180440c9212baae74625e001ed352f49a4",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "long_reunion_arm",
+      "missions": [
+        45
+      ],
+      "source_crop_xywh": [
+        545,
+        512,
+        440,
+        512
+      ],
+      "normalization": {
+        "source_bbox": [
+          16,
+          1,
+          430,
+          486
+        ],
+        "scale": 0.4948453608247423,
+        "paste_xy": [
+          89,
+          80
+        ],
+        "canvas": [
+          384,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C05/long_reunion_arm.png",
+      "alpha_bounds": [
+        16,
+        1,
+        430,
+        486
+      ],
+      "touches_cell_edge": false,
+      "sha256": "9cd78cb7b49f9813aed1d2baf2ab5d22053e32c1d22419dbd1a6b6c53b6d543b",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "to_reunion_arm",
+      "missions": [
+        45
+      ],
+      "source_crop_xywh": [
+        985,
+        514,
+        551,
+        510
+      ],
+      "normalization": {
+        "source_bbox": [
+          21,
+          1,
+          348,
+          483
+        ],
+        "scale": 0.4979253112033195,
+        "paste_xy": [
+          110,
+          80
+        ],
+        "canvas": [
+          384,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C05/to_reunion_arm.png",
+      "alpha_bounds": [
+        21,
+        1,
+        348,
+        483
+      ],
+      "touches_cell_edge": false,
+      "sha256": "a104ec22783c88e7299348350b7404df087e3665bee672ccec1a297ba03b9944",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    }
+  ],
+  "qa": {
+    "slice_bounds": "pass",
+    "visual": "pass_source_and_sliced_preview_review",
+    "unity_import": "pass_current_hashes",
+    "integration": "pending"
+  },
+  "raw_generated_source": "assets/mvp_sprites/remaining/C05/source-white.png",
+  "alpha_extraction": "assets/mvp_sprites/remaining/C05/extract_white_matte.py",
+  "rejected_attempts": [
+    "source-v1.png",
+    "source-v2-rejected-halo.png"
+  ],
+  "assembly_preview": "assets/mvp_sprites/remaining/C05/reunion-fit-preview.jpg"
+}

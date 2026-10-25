@@ -35,6 +35,7 @@ Material:
     m_Floats:
     - _CompressX: 1
     - _EnableExternalAlpha: 0
+    - _ShearX: 0
     - _ShearY: -0.0927357
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}

@@ -1,0 +1,14 @@
+{
+  "method": "Per-column transparent row gaps: row boundary differs slightly across columns; inspected each crop",
+  "x_boundaries": [
+    0,
+    545,
+    985,
+    1536
+  ],
+  "column_split_y": [
+    503,
+    512,
+    514
+  ]
+}

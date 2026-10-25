@@ -1,0 +1,62 @@
+[
+  {
+    "batch": "AN00",
+    "ids": [
+      "luon_casual_front_walk_0",
+      "luon_casual_front_walk_1",
+      "luon_casual_front_walk_2",
+      "luon_casual_front_walk_3"
+    ],
+    "unique_pixel_frames": 4,
+    "heights": [
+      243,
+      243,
+      242,
+      243
+    ],
+    "feet_bottom_y": [
+      320,
+      320,
+      320,
+      320
+    ],
+    "lower_leg_widths": [
+      106,
+      101,
+      105,
+      108
+    ],
+    "warnings": [],
+    "motion_approval": "pending_manual_loop_review_and_gameplay_use"
+  },
+  {
+    "batch": "AN00",
+    "ids": [
+      "luon_casual_back_walk_0",
+      "luon_casual_back_walk_1",
+      "luon_casual_back_walk_2",
+      "luon_casual_back_walk_3"
+    ],
+    "unique_pixel_frames": 4,
+    "heights": [
+      238,
+      238,
+      238,
+      238
+    ],
+    "feet_bottom_y": [
+      320,
+      320,
+      320,
+      320
+    ],
+    "lower_leg_widths": [
+      113,
+      95,
+      114,
+      107
+    ],
+    "warnings": [],
+    "motion_approval": "pending_manual_loop_review_and_gameplay_use"
+  }
+]

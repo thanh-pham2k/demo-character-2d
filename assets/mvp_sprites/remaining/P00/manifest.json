@@ -1,0 +1,353 @@
+{
+  "batch": "P00",
+  "provenance": "generated_composite_batch",
+  "source_file": "assets/mvp_sprites/remaining/P00/source.png",
+  "source_sha256": "6d1220370fd580c1eac0cf987fb548ed9b9cfacd829cf54d78800fff2ae61ce7",
+  "source_dimensions": [
+    1774,
+    887
+  ],
+  "grid": [
+    4,
+    2
+  ],
+  "crop_format": "x_y_width_height_top_left",
+  "tool": "built_in_imagegen",
+  "outputs": [
+    {
+      "id": "nem_chua_box",
+      "missions": [
+        1,
+        3
+      ],
+      "source_crop_xywh": [
+        0,
+        0,
+        489,
+        505
+      ],
+      "normalization": {
+        "mode": "tight_alpha_preserve_source_scale",
+        "source_bbox": [
+          33,
+          94,
+          445,
+          447
+        ],
+        "canvas": [
+          412,
+          353
+        ],
+        "floor_at_output_bottom": true
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/P00/nem_chua_box.png",
+      "alpha_bounds": [
+        33,
+        94,
+        445,
+        447
+      ],
+      "touches_cell_edge": false,
+      "sha256": "6498e4441fb715e75f4c5db44f0f372606b334b6dd86f8780aee3f7024803064",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "cleaning_bucket",
+      "missions": [
+        4
+      ],
+      "source_crop_xywh": [
+        489,
+        0,
+        400,
+        505
+      ],
+      "normalization": {
+        "mode": "tight_alpha_preserve_source_scale",
+        "source_bbox": [
+          24,
+          76,
+          379,
+          454
+        ],
+        "canvas": [
+          355,
+          378
+        ],
+        "floor_at_output_bottom": true
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/P00/cleaning_bucket.png",
+      "alpha_bounds": [
+        24,
+        76,
+        379,
+        454
+      ],
+      "touches_cell_edge": false,
+      "sha256": "37fce6978881d7942298253685e4ae28766866ea215b066a5c1b5537613ab34e",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "cleaning_rag",
+      "missions": [
+        4
+      ],
+      "source_crop_xywh": [
+        889,
+        0,
+        451,
+        505
+      ],
+      "normalization": {
+        "mode": "tight_alpha_preserve_source_scale",
+        "source_bbox": [
+          22,
+          192,
+          422,
+          455
+        ],
+        "canvas": [
+          400,
+          263
+        ],
+        "floor_at_output_bottom": true
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/P00/cleaning_rag.png",
+      "alpha_bounds": [
+        22,
+        192,
+        422,
+        455
+      ],
+      "touches_cell_edge": false,
+      "sha256": "e4be65b72dc25ff1131f250c53b42e1b9cf315fa59be653e9b8d1579237a6229",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "mini_fan",
+      "missions": [
+        3
+      ],
+      "source_crop_xywh": [
+        1340,
+        0,
+        434,
+        505
+      ],
+      "normalization": {
+        "mode": "tight_alpha_preserve_source_scale",
+        "source_bbox": [
+          31,
+          54,
+          394,
+          466
+        ],
+        "canvas": [
+          363,
+          412
+        ],
+        "floor_at_output_bottom": true
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/P00/mini_fan.png",
+      "alpha_bounds": [
+        31,
+        54,
+        394,
+        466
+      ],
+      "touches_cell_edge": false,
+      "sha256": "b505dcebdd8a2eeadcb4b7366f4b62bbaa0ac9b8361af03e5824a31a167de8c6",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "meal_tray",
+      "missions": [
+        5
+      ],
+      "source_crop_xywh": [
+        0,
+        505,
+        489,
+        382
+      ],
+      "normalization": {
+        "mode": "tight_alpha_preserve_source_scale",
+        "source_bbox": [
+          29,
+          46,
+          467,
+          330
+        ],
+        "canvas": [
+          438,
+          284
+        ],
+        "floor_at_output_bottom": true
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/P00/meal_tray.png",
+      "alpha_bounds": [
+        29,
+        46,
+        467,
+        330
+      ],
+      "touches_cell_edge": false,
+      "sha256": "396ed6b7dfd8cb323618a452d7d7d7ce3b6c96addcb85d0f724985407d9d3ece",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "food_rice",
+      "missions": [
+        5
+      ],
+      "source_crop_xywh": [
+        489,
+        505,
+        400,
+        382
+      ],
+      "normalization": {
+        "mode": "tight_alpha_preserve_source_scale",
+        "source_bbox": [
+          34,
+          53,
+          362,
+          318
+        ],
+        "canvas": [
+          328,
+          265
+        ],
+        "floor_at_output_bottom": true
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/P00/food_rice.png",
+      "alpha_bounds": [
+        34,
+        53,
+        362,
+        318
+      ],
+      "touches_cell_edge": false,
+      "sha256": "a77202973ac41c60d6a3b9e1a77b8c350bf612ada09fde6573e44dd84492e183",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "food_meat",
+      "missions": [
+        5
+      ],
+      "source_crop_xywh": [
+        889,
+        505,
+        451,
+        382
+      ],
+      "normalization": {
+        "mode": "tight_alpha_preserve_source_scale",
+        "source_bbox": [
+          41,
+          40,
+          406,
+          325
+        ],
+        "canvas": [
+          365,
+          285
+        ],
+        "floor_at_output_bottom": true
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/P00/food_meat.png",
+      "alpha_bounds": [
+        41,
+        40,
+        406,
+        325
+      ],
+      "touches_cell_edge": false,
+      "sha256": "b73e258ea708d8a099c455109d3d0869037bc417df7701dc160e6b12be5abbfc",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "food_vegetables",
+      "missions": [
+        5
+      ],
+      "source_crop_xywh": [
+        1340,
+        505,
+        434,
+        382
+      ],
+      "normalization": {
+        "mode": "tight_alpha_preserve_source_scale",
+        "source_bbox": [
+          32,
+          53,
+          404,
+          321
+        ],
+        "canvas": [
+          372,
+          268
+        ],
+        "floor_at_output_bottom": true
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/P00/food_vegetables.png",
+      "alpha_bounds": [
+        32,
+        53,
+        404,
+        321
+      ],
+      "touches_cell_edge": false,
+      "sha256": "c102159a06ad00a9d425d80ee953513aaed7c39ecd76bf11b6a871c7394d98f2",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    }
+  ],
+  "qa": {
+    "slice_bounds": "pass",
+    "visual": "pass_source_and_sliced_preview_review",
+    "unity_import": "pass_current_hashes",
+    "integration": "pending"
+  }
+}

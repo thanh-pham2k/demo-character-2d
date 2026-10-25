@@ -1,0 +1,94 @@
+[
+  {
+    "batch": "AN03",
+    "ids": [
+      "luon_robe_front_walk_0",
+      "luon_robe_front_walk_1",
+      "luon_robe_front_walk_2",
+      "luon_robe_front_walk_3"
+    ],
+    "unique_pixel_frames": 4,
+    "heights": [
+      270,
+      268,
+      269,
+      273
+    ],
+    "feet_bottom_y": [
+      320,
+      320,
+      320,
+      320
+    ],
+    "lower_leg_widths": [
+      111,
+      117,
+      116,
+      109
+    ],
+    "warnings": [],
+    "motion_approval": "pending_manual_loop_review_and_gameplay_use"
+  },
+  {
+    "batch": "AN03",
+    "ids": [
+      "luon_robe_back_walk_0",
+      "luon_robe_back_walk_1",
+      "luon_robe_back_walk_2",
+      "luon_robe_back_walk_3"
+    ],
+    "unique_pixel_frames": 4,
+    "heights": [
+      270,
+      270,
+      270,
+      272
+    ],
+    "feet_bottom_y": [
+      320,
+      320,
+      320,
+      320
+    ],
+    "lower_leg_widths": [
+      114,
+      117,
+      105,
+      121
+    ],
+    "warnings": [],
+    "motion_approval": "pending_manual_loop_review_and_gameplay_use"
+  },
+  {
+    "batch": "AN03",
+    "ids": [
+      "luon_robe_right_walk_0",
+      "luon_robe_right_walk_1",
+      "luon_robe_right_walk_2",
+      "luon_robe_right_walk_3"
+    ],
+    "unique_pixel_frames": 4,
+    "heights": [
+      273,
+      275,
+      273,
+      270
+    ],
+    "feet_bottom_y": [
+      320,
+      320,
+      320,
+      320
+    ],
+    "lower_leg_widths": [
+      126,
+      126,
+      126,
+      127
+    ],
+    "warnings": [
+      "side_contact_and_passing_silhouettes_too_similar_review"
+    ],
+    "motion_approval": "pending_manual_loop_review_and_gameplay_use"
+  }
+]

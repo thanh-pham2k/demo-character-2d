@@ -94,6 +94,21 @@ public class MVPFlowController : MonoBehaviour
     private Coroutine currentDialogueRoutine;
     private PlayerInteractionStateController playerInteractionState;
     private bool storyPoseActive;
+    public event System.Action BedClaimed,RoomCleaned,RoommatesIntroduced;
+    public System.Func<bool> CanCompleteYearOne;
+    public bool HasIntroducedRoommates { get; private set; }
+    [SerializeField] private bool extendedYearOne;
+    public void ConfigureExtendedYearOne(bool enabled) => extendedYearOne=enabled;
+    public void CompleteExtendedYearOne()
+    {
+        if(CanCompleteYearOne!=null && !CanCompleteYearOne())return;
+        if(currentStage!=Stage.Stage1_Year1_Arrival)return;
+        ReleaseStoryPose();
+        if(dialoguePanel!=null)dialoguePanel.SetActive(false);
+        if(roommatesGroup!=null)roommatesGroup.SetActive(true);
+        if(playerObj!=null && deskSeatTransform!=null)playerObj.transform.position=deskSeatTransform.position+Vector3.down;
+        TransitionToStage2();
+    }
 
     private void Awake()
     {
@@ -157,6 +172,7 @@ public class MVPFlowController : MonoBehaviour
     // ========================================================
     private void InitStage1()
     {
+        HasIntroducedRoommates=false;
         currentStage = Stage.Stage1_Year1_Arrival;
         yearText.text = "NĂM 1 — TÂN SINH VIÊN (201X)";
         timeText.text = "14:20 • THỨ HAI";
@@ -167,7 +183,7 @@ public class MVPFlowController : MonoBehaviour
         if (laptopLight != null) laptopLight.intensity = 0f;
 
         if (backpackProp != null) backpackProp.SetActive(false);
-        if (trashPileProp != null) trashPileProp.SetActive(true);
+        if (trashPileProp != null) trashPileProp.SetActive(false);
         if (roommatesGroup != null) roommatesGroup.SetActive(false);
         if (diplomaProp != null) diplomaProp.SetActive(false);
 
@@ -198,20 +214,18 @@ public class MVPFlowController : MonoBehaviour
     public void OnClaimBed()
     {
         if (currentStage != Stage.Stage1_Year1_Arrival) return;
+        BedClaimed?.Invoke();
 
         // Place backpack
         if (backpackProp != null) backpackProp.SetActive(true);
         if (bedInteractable != null) bedInteractable.SetInteractable(false);
 
-        objectiveText.text = "Mục tiêu: Dùng chổi quét sạch đống rác [E] trước khi bạn mới tới.";
-
-        if (trashInteractable != null)
-        {
-            trashInteractable.SetInteractable(true);
-            trashInteractable.SetPrompt("Bấm [E] quét rác");
-            trashInteractable.onInteract.RemoveAllListeners();
-            trashInteractable.onInteract.AddListener(OnCleanTrash);
-        }
+        // Room 404 is already clean; keep the completion event for campaign saves.
+        trashCleanCount = 3;
+        if (trashPileProp != null) trashPileProp.SetActive(false);
+        if (trashInteractable != null) trashInteractable.SetInteractable(false);
+        RoomCleaned?.Invoke();
+        StartCoroutine(RoommatesEnterRoutine());
     }
 
     public void OnCleanTrash()
@@ -224,6 +238,7 @@ public class MVPFlowController : MonoBehaviour
         }
         else
         {
+            RoomCleaned?.Invoke();
             if (trashPileProp != null) trashPileProp.SetActive(false);
             if (trashInteractable != null) trashInteractable.SetInteractable(false);
 
@@ -245,7 +260,29 @@ public class MVPFlowController : MonoBehaviour
         yield return StartDialogue("Phùng Canh Tộ", portraitTo, "Chào cả nhà iu~ Tui là Tộ, mang chùm mận trên quê Cao Bằng xuống nè, tí ăn xong rửa bát phụ tui nghen!");
 
         yield return new WaitForSeconds(0.5f);
+        HasIntroducedRoommates=true;RoommatesIntroduced?.Invoke();
+        if(extendedYearOne)
+        {
+            objectiveText.text="Mục tiêu: Chuẩn bị balo, vệ sinh cá nhân và đón xe 33 đi học.";
+            yield break;
+        }
         TransitionToStage2();
+    }
+    public void RestoreYearOneOpening(bool claimed,bool cleaned,bool friends)
+    {
+        // Migrate checkpoints saved between claiming the bed and the removed cleanup step.
+        if(claimed && !cleaned){cleaned=true;RoomCleaned?.Invoke();}
+        StopAllCoroutines();ReleaseStoryPose();trashCleanCount=cleaned?3:0;InitStage1();
+        if(claimed)
+        {
+            if(bedInteractable!=null)bedInteractable.SetInteractable(false);
+            if(backpackProp!=null)backpackProp.SetActive(true);
+            if(trashInteractable!=null){trashInteractable.SetInteractable(!cleaned);trashInteractable.onInteract.RemoveAllListeners();trashInteractable.onInteract.AddListener(OnCleanTrash);}
+        }
+        if(trashPileProp!=null)trashPileProp.SetActive(false);
+        HasIntroducedRoommates=friends;if(roommatesGroup!=null)roommatesGroup.SetActive(friends);
+        if(dialoguePanel!=null)dialoguePanel.SetActive(false);
+        if(cleaned && !friends)StartCoroutine(RoommatesEnterRoutine());
     }
 
     // ========================================================

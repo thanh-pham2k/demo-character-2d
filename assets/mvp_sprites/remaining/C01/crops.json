@@ -1,0 +1,50 @@
+{
+  "luon_tired_idle": [
+    0,
+    0,
+    463,
+    466
+  ],
+  "luon_phone_sad": [
+    463,
+    0,
+    426,
+    466
+  ],
+  "long_gaming_shout": [
+    889,
+    0,
+    446,
+    466
+  ],
+  "luon_exam_worried": [
+    1335,
+    0,
+    439,
+    466
+  ],
+  "luon_exam_bite_pen": [
+    0,
+    466,
+    463,
+    421
+  ],
+  "luon_carry_hotpot": [
+    463,
+    466,
+    426,
+    421
+  ],
+  "guard_idle": [
+    889,
+    466,
+    446,
+    421
+  ],
+  "guard_inspecting": [
+    1335,
+    466,
+    439,
+    421
+  ]
+}

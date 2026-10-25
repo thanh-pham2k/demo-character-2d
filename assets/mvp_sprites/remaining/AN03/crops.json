@@ -1,0 +1,92 @@
+{
+  "luon_robe_front_idle": [
+    0,
+    0,
+    350,
+    319
+  ],
+  "luon_robe_front_walk_0": [
+    350,
+    0,
+    316,
+    319
+  ],
+  "luon_robe_front_walk_1": [
+    666,
+    0,
+    297,
+    319
+  ],
+  "luon_robe_front_walk_2": [
+    963,
+    0,
+    308,
+    319
+  ],
+  "luon_robe_front_walk_3": [
+    1271,
+    0,
+    348,
+    319
+  ],
+  "luon_robe_back_idle": [
+    0,
+    319,
+    350,
+    318
+  ],
+  "luon_robe_back_walk_0": [
+    350,
+    319,
+    316,
+    318
+  ],
+  "luon_robe_back_walk_1": [
+    666,
+    319,
+    297,
+    318
+  ],
+  "luon_robe_back_walk_2": [
+    963,
+    319,
+    308,
+    318
+  ],
+  "luon_robe_back_walk_3": [
+    1271,
+    319,
+    348,
+    318
+  ],
+  "luon_robe_right_idle": [
+    0,
+    637,
+    350,
+    334
+  ],
+  "luon_robe_right_walk_0": [
+    350,
+    637,
+    316,
+    334
+  ],
+  "luon_robe_right_walk_1": [
+    666,
+    637,
+    297,
+    334
+  ],
+  "luon_robe_right_walk_2": [
+    963,
+    637,
+    308,
+    334
+  ],
+  "luon_robe_right_walk_3": [
+    1271,
+    637,
+    348,
+    334
+  ]
+}

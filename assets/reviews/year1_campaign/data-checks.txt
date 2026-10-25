@@ -1,0 +1,3 @@
+[YearOneProgressChecks] PASS: six-day gates, 12 lessons, assignments, exams, budget, checkpoints, missed bus and transition idempotency.
+
+Scope: distinct task questions/hints; six-day gates, 12 lessons, 12 paid trips ending26k; safe checkpoints; corrupt/unsupported/missing primary backup recovery; free missed-bus walk; one-time dorm reaction; Year2 idempotency. Isolated test save; user save untouched.

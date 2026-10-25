@@ -1,0 +1,571 @@
+{
+  "date": "2026-10-25",
+  "count": 94,
+  "status": "file_inventory_not_full_visual_qa",
+  "files": [
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/characters/bed_interaction/luon_bed_enter_01.png",
+      "width": 344,
+      "height": 384,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/characters/bed_interaction/luon_bed_enter_02.png",
+      "width": 344,
+      "height": 384,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/characters/bed_interaction/luon_bed_enter_03.png",
+      "width": 344,
+      "height": 384,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/characters/bed_interaction/luon_bed_enter_04.png",
+      "width": 344,
+      "height": 384,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/characters/bed_interaction/luon_bed_lying_back.png",
+      "width": 344,
+      "height": 384,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/characters/bed_interaction/luon_bed_lying_left.png",
+      "width": 344,
+      "height": 384,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/characters/bed_interaction/luon_bed_lying_right.png",
+      "width": 344,
+      "height": 384,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/characters/bed_interaction/luon_bed_sleeping.png",
+      "width": 344,
+      "height": 384,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/characters/dam_sitting.png",
+      "width": 149,
+      "height": 204,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/characters/dam_standing.png",
+      "width": 106,
+      "height": 251,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/characters/interaction/luon_lying.png",
+      "width": 701,
+      "height": 745,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/characters/interaction/luon_sitting_chair.png",
+      "width": 385,
+      "height": 762,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/characters/long_sitting.png",
+      "width": 167,
+      "height": 208,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/characters/long_standing.png",
+      "width": 119,
+      "height": 251,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/characters/luon_idle_0.png",
+      "width": 103,
+      "height": 236,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/characters/luon_sitting_laptop.png",
+      "width": 141,
+      "height": 202,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/characters/luon_walk_0.png",
+      "width": 112,
+      "height": 233,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/characters/luon_walk_1.png",
+      "width": 123,
+      "height": 233,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/characters/luon_walk_2.png",
+      "width": 117,
+      "height": 236,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/characters/luon_walk_3.png",
+      "width": 118,
+      "height": 236,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/characters/room_visual_v2/enter_01.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/characters/room_visual_v2/enter_02.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/characters/room_visual_v2/enter_03.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/characters/room_visual_v2/lying_a.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/characters/room_visual_v2/lying_b.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/characters/room_visual_v2/sitting.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/characters/room_visual_v2/sleeping.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/characters/to_sitting.png",
+      "width": 180,
+      "height": 205,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/characters/to_standing.png",
+      "width": 140,
+      "height": 247,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/commute/bus_33.png",
+      "width": 750,
+      "height": 257,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/commute/bus_sign.png",
+      "width": 101,
+      "height": 260,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/commute/campus.png",
+      "width": 1536,
+      "height": 496,
+      "mode": "RGB"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/commute/hook_empty.png",
+      "width": 128,
+      "height": 192,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/commute/hook_full.png",
+      "width": 128,
+      "height": 192,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/commute/notebook.png",
+      "width": 120,
+      "height": 120,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/commute/study_0.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/commute/study_1.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/commute/study_2.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/commute/typing_0.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/commute/typing_1.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/dorm_journey/backpack_idle.png",
+      "width": 180,
+      "height": 260,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/dorm_journey/backpack_walk_0.png",
+      "width": 180,
+      "height": 260,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/dorm_journey/backpack_walk_1.png",
+      "width": 180,
+      "height": 260,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/dorm_journey/backpack_walk_2.png",
+      "width": 180,
+      "height": 260,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/dorm_journey/hallway.png",
+      "width": 1246,
+      "height": 429,
+      "mode": "RGB"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/dorm_journey/wc_female.png",
+      "width": 128,
+      "height": 250,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/dorm_journey/wc_male.png",
+      "width": 128,
+      "height": 250,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/environment/bunk_bed.png",
+      "width": 456,
+      "height": 628,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/environment/bunk_bed_lengthwise.png",
+      "width": 1068,
+      "height": 1472,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/environment/ceiling_fan.png",
+      "width": 510,
+      "height": 268,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/environment/fan_blades_rotor.png",
+      "width": 510,
+      "height": 268,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/environment/fan_mount_rod.png",
+      "width": 510,
+      "height": 268,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/environment/fan_mount_stem.png",
+      "width": 510,
+      "height": 268,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/environment/fan_rotor.png",
+      "width": 510,
+      "height": 268,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/environment/light_switch_socket.png",
+      "width": 234,
+      "height": 130,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/environment/room_404_backdrop.png",
+      "width": 1037,
+      "height": 627,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/environment/room_visual_v2/hallway.png",
+      "width": 128,
+      "height": 230,
+      "mode": "RGB"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/environment/study_desk_chairs.png",
+      "width": 647,
+      "height": 322,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/environment/wall_socket_clean.png",
+      "width": 64,
+      "height": 48,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/props/cleaning_broom_dustpan.png",
+      "width": 373,
+      "height": 514,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/props/diploma_degree.png",
+      "width": 644,
+      "height": 427,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/props/laptop_open.png",
+      "width": 640,
+      "height": 476,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/props/luon_backpack.png",
+      "width": 512,
+      "height": 488,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/props/trash_bags.png",
+      "width": 275,
+      "height": 296,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/props/trash_cans.png",
+      "width": 263,
+      "height": 203,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/props/trash_noodles.png",
+      "width": 263,
+      "height": 202,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/props/trash_piles.png",
+      "width": 527,
+      "height": 369,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/props/trash_small_0.png",
+      "width": 51,
+      "height": 32,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/props/trash_small_1.png",
+      "width": 527,
+      "height": 369,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/shadows/shadow_bed.png",
+      "width": 240,
+      "height": 80,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/shadows/shadow_character.png",
+      "width": 120,
+      "height": 45,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/shadows/shadow_desk.png",
+      "width": 280,
+      "height": 70,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/shadows/shadow_small.png",
+      "width": 50,
+      "height": 20,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/ui/button_no.png",
+      "width": 338,
+      "height": 176,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/ui/button_yes.png",
+      "width": 355,
+      "height": 235,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/ui/dialogue_box.png",
+      "width": 738,
+      "height": 234,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/ui/grade_stamp_a.png",
+      "width": 384,
+      "height": 364,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/ui/grade_stamp_f.png",
+      "width": 362,
+      "height": 329,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/ui/portrait_dam.png",
+      "width": 337,
+      "height": 328,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/ui/portrait_long.png",
+      "width": 337,
+      "height": 337,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/ui/portrait_luon.png",
+      "width": 337,
+      "height": 332,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/ui/portrait_to.png",
+      "width": 337,
+      "height": 338,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/year1/dam_floor.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/year1/dam_writing.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/year1/h6_classroom.png",
+      "width": 765,
+      "height": 465,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/year1/h6_classroom_v2.png",
+      "width": 1182,
+      "height": 613,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/year1/h6_gate.png",
+      "width": 765,
+      "height": 465,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/year1/h6_gate_v2.png",
+      "width": 1182,
+      "height": 717,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/year1/long_floor.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/year1/luon_floor.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/year1/pot_0.png",
+      "width": 384,
+      "height": 384,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/year1/pot_1.png",
+      "width": 384,
+      "height": 384,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/year1/teacher.png",
+      "width": 256,
+      "height": 320,
+      "mode": "RGBA"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/year1/to_floor.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA"
+    }
+  ]
+}

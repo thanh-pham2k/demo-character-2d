@@ -1,16 +1,32 @@
-# 🎓 PHÒNG 404 — GAME DESIGN DOCUMENT
-### Tựa game: Ký Túc Xá 404 (Hành trình 6 năm Bách Khoa của Lê Văn Lươn)
+# Phòng 404 — Game design documents
 
----
+Bộ tài liệu được chia theo câu hỏi cần trả lời. Bắt đầu ở [Player Experience Plan](PLAYER_EXPERIENCE_PLAN.md), sau đó mở đúng tài liệu chi tiết.
 
-## 📌 HỆ THỐNG TÀI LIỆU DỰ ÁN (ĐÃ TINH GỌN & CHUẨN HÓA 100%)
+Theo dõi thứ tự thực hiện và task kế tiếp tại [Task tracker](../tasks/README.md). Tracker điều phối công việc, không thay nguồn chuẩn thiết kế bên dưới.
 
-1. 📄 [**`MASTER_GAME_FLOW.md`**](./MASTER_GAME_FLOW.md):
-   * **Bản thiết kế duy nhất và toàn diện nhất:** Chi tiết trọn vẹn **45 Missions** chia theo 6 Năm (12 Học kỳ).
-   * Chuỗi quan hệ nhân quả vật lý: `Nguyên nhân ➔ Hành động của Player ➔ Kết quả ➔ Nhiệm vụ mới`.
-   * Cơ chế chuyển tiếp mượt mà giữa Ngày, Đêm muộn (Time-lapse), Học kỳ và Năm học (Thẻ tiến độ học vụ).
-   * Logic học vụ Bách Khoa chặt chẽ giải thích vì sao đúng 6 năm mới ra trường.
-   * Arc Năm 5 trả nợ môn & Arc Năm 6 toàn bộ quy trình làm đồ án tốt nghiệp đến lễ ra trường và Happy Ending.
+## Nguồn chuẩn
 
-2. 👥 [**`characters/members.md`**](./characters/members.md):
-   * Hồ sơ 4 nhân vật chính phòng 404 (Lê Văn Lươn, Ninh Đạm, Trần Gia Bảo Long, Phùng Canh Tộ).
+| Cần biết | Tài liệu | Trách nhiệm |
+|---|---|---|
+| Game hứa hẹn trải nghiệm gì? | [Game Design Pillars](GAME_DESIGN_PILLARS.md) | Định vị, cảm xúc, agency và scope |
+| Mission nào xảy ra và kết thúc ra sao? | [Production Flow Baseline](PRODUCTION_FLOW_BASELINE.md) | Canon 45 mission, học vụ, continuity và ending |
+| Thời gian/địa điểm chuyển thế nào? | [Gameplay Transitions](GAMEPLAY_TRANSITIONS_PLAN.md) | Thẻ chuyển thời gian, montage, đi lại, cầu nối M01–M45 |
+| Người chơi làm gì và state đổi thế nào? | [Gameplay Systems](GAMEPLAY_SYSTEMS_PLAN.md) | Loop, variety, academic, relationship, resource, recovery |
+| Khi nào trải nghiệm đạt? | [Playtest and Acceptance](PLAYTEST_AND_ACCEPTANCE_PLAN.md) | Vertical slice, playtest, acceptance và gates |
+| Triển khai và tiến độ ra sao? | [Production Roadmap](PRODUCTION_ROADMAP.md) | Kỹ thuật, asset và thứ tự công việc |
+| Cái gì đã chạy trong runtime? | [Production Campaign Implementation](PRODUCTION_CAMPAIGN_IMPLEMENTATION.md) | Mô hình hiện tại, giới hạn và bằng chứng |
+
+## Tài liệu tham khảo
+
+- [Master Game Flow](MASTER_GAME_FLOW.md) là bản thảo truyện dài. Khi khác baseline về thứ tự/transition/canon, dùng baseline.
+- [Characters](characters/members.md) lưu hồ sơ nhân vật.
+- `PRODUCTION_*_REVIEW.md`, `YEAR_ONE_*_IMPLEMENTATION.md` và `REMAINING_ASSET_INVENTORY.md` lưu review/tiến độ cụ thể; đọc theo ngày và phạm vi của từng báo cáo.
+- `parallel/` là brief giao việc, không thay nguồn chuẩn design/campaign.
+
+## Thứ tự ưu tiên khi tài liệu mâu thuẫn
+
+1. `PRODUCTION_FLOW_BASELINE.md` cho canon và mission graph.
+2. `GAMEPLAY_TRANSITIONS_PLAN.md` cho cách biểu diễn thời gian/địa điểm, miễn không đổi canon.
+3. `GAME_DESIGN_PILLARS.md`, `GAMEPLAY_SYSTEMS_PLAN.md`, `PLAYTEST_AND_ACCEPTANCE_PLAN.md` cho nguyên tắc thiết kế.
+4. `MASTER_GAME_FLOW.md` cho chi tiết truyện chưa bị nguồn chuẩn mới thay thế.
+5. `PRODUCTION_CAMPAIGN_IMPLEMENTATION.md` và review có ngày chỉ xác nhận trạng thái runtime, không tự quyết định canon.

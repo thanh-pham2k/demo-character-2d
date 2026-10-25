@@ -10,7 +10,10 @@ public class HingedRoomDoor : MonoBehaviour, IInteractable
     [SerializeField] private float swingSpeed = 100f;
     [SerializeField] private float currentAngle = 25f;
     [SerializeField] private float targetAngle = 25f;
+    [SerializeField] private SpriteRenderer floorShadow;
     private MaterialPropertyBlock properties;
+
+    public void ConfigureShadow(SpriteRenderer shadow) { floorShadow = shadow; ApplyAngle(); }
 
     public float CurrentAngle => currentAngle;
     public bool CanInteract => isActiveAndEnabled && doorLeaf != null;
@@ -98,6 +101,14 @@ public class HingedRoomDoor : MonoBehaviour, IInteractable
         properties.SetFloat("_ShearY", Mathf.Sin(radians) * 0.45f);
         doorLeaf.SetPropertyBlock(properties);
 
+        if (floorShadow != null && floorShadow.sprite != null)
+        {
+            floorShadow.enabled = currentAngle > 1f;
+            floorShadow.transform.localPosition = new Vector3(-width * .5f, -depth * .5f - .025f, 0f);
+            floorShadow.transform.localRotation = Quaternion.Euler(0f, 0f, Mathf.Atan2(depth, width) * Mathf.Rad2Deg);
+            Vector2 bounds = floorShadow.sprite.bounds.size;
+            floorShadow.transform.localScale = new Vector3(new Vector2(width, depth).magnitude / bounds.x, .14f / bounds.y, 1f);
+        }
         if (blockingCollider != null)
         {
             blockingCollider.enabled = targetAngle <= currentAngle && currentAngle < openAngle - 0.5f;

@@ -1,0 +1,9 @@
+Use case: 2D / 2.5D game sprite production.
+PROJECT: Vietnamese student narrative game Room 404. Produce ONE COMPOSITE BATCH SHEET, not separate images. Match attached reference images' clean outlined softly shaded chibi game art, warm earthy palette and slightly elevated 3/4 view. Preserve distinct identities, practical readable silhouettes and consistent character scale. References are STYLE / IDENTITY references only, not targets to edit.
+Two complete wide game backgrounds stacked in one canvas, equal panels. No NPCs or interactive props baked into backgrounds. Reserve playable floor space, door/spawn/seat/foreground markers matching blockout. Environmental lighting only, no UI, words, labels, logos, grid lines. Each scene is a standalone panel with coherent perspective matching the existing H6/room backdrop style.
+LAYOUT: 1 columns x 2 rows, all cells identical, read left to right then top to bottom. Target canvas 2048x2048; cell 2048x1024. Keep 64px blank safety margin within every cell, consistent baseline and scale. Do not place any part in adjacent cells.
+CELL CONTENTS (order is mandatory; do not print IDs in the image):
+1. drink_cafe_background: Quán nước có bàn sửa máy tạm, chừa xe tay ga; bố trí ba người không che mặt.
+2. research_lab_background: Lab trường Tự Nhiên, bàn nghiên cứu trống người; tài liệu và máy móc phụ có thể bake nếu không tương tác.
+
+QUALITY CHECK: exact cell count, unclipped feet/hands/head, no subject duplicates except intended animation cycles, no fused characters, transparent empty margins for sprites. Output only the finished sheet.

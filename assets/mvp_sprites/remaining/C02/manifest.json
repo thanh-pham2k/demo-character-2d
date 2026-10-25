@@ -1,0 +1,392 @@
+{
+  "batch": "C02",
+  "provenance": "generated_composite_batch",
+  "source_file": "assets/mvp_sprites/remaining/C02/source.png",
+  "source_sha256": "5b6c0014e15858ee0da5a7a21c2278c0b2b4de18f4388f31f83beaf727088620",
+  "source_dimensions": [
+    1774,
+    887
+  ],
+  "grid": [
+    4,
+    2
+  ],
+  "crop_format": "x_y_width_height_top_left",
+  "tool": "built_in_imagegen",
+  "outputs": [
+    {
+      "id": "crush_idle",
+      "missions": [
+        20,
+        21
+      ],
+      "source_crop_xywh": [
+        0,
+        0,
+        444,
+        444
+      ],
+      "normalization": {
+        "source_bbox": [
+          170,
+          108,
+          323,
+          439
+        ],
+        "scale": 0.7250755287009063,
+        "paste_xy": [
+          72,
+          80
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C02/crush_idle.png",
+      "alpha_bounds": [
+        170,
+        108,
+        323,
+        439
+      ],
+      "touches_cell_edge": false,
+      "sha256": "19dd2bd82646ad02a9ae27b428e02865a6de611ba5fbc1d7a58fe275677ef28c",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "crush_boyfriend_idle",
+      "missions": [
+        21
+      ],
+      "source_crop_xywh": [
+        444,
+        0,
+        443,
+        444
+      ],
+      "normalization": {
+        "source_bbox": [
+          141,
+          86,
+          294,
+          440
+        ],
+        "scale": 0.6779661016949152,
+        "paste_xy": [
+          76,
+          80
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C02/crush_boyfriend_idle.png",
+      "alpha_bounds": [
+        141,
+        86,
+        294,
+        440
+      ],
+      "touches_cell_edge": false,
+      "sha256": "4c445468ce381d7e5474f803a2a9af251b4264fb19ea4d22cb817518dd2bb580",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "luon_repair_laptop",
+      "missions": [
+        17,
+        19,
+        20,
+        21
+      ],
+      "source_crop_xywh": [
+        887,
+        0,
+        443,
+        444
+      ],
+      "normalization": {
+        "source_bbox": [
+          140,
+          173,
+          303,
+          441
+        ],
+        "scale": 0.7089552238805971,
+        "paste_xy": [
+          70,
+          130
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C02/luon_repair_laptop.png",
+      "alpha_bounds": [
+        140,
+        173,
+        303,
+        441
+      ],
+      "touches_cell_edge": false,
+      "sha256": "1a4874343052b79efc9748da72778fee370d26276231f963ba2b5ce6a63d9cb3",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "luon_borrowed_jacket",
+      "missions": [
+        21
+      ],
+      "source_crop_xywh": [
+        1330,
+        0,
+        444,
+        444
+      ],
+      "normalization": {
+        "source_bbox": [
+          133,
+          94,
+          286,
+          439
+        ],
+        "scale": 0.6956521739130435,
+        "paste_xy": [
+          75,
+          80
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C02/luon_borrowed_jacket.png",
+      "alpha_bounds": [
+        133,
+        94,
+        286,
+        439
+      ],
+      "touches_cell_edge": false,
+      "sha256": "acbac5240c717be411430d7b9d5b55d46dc455385326556e6612f863c938f642",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "luon_lake_sit",
+      "missions": [
+        5,
+        22
+      ],
+      "source_crop_xywh": [
+        0,
+        444,
+        444,
+        443
+      ],
+      "normalization": {
+        "source_bbox": [
+          161,
+          125,
+          312,
+          396
+        ],
+        "scale": 0.7011070110701108,
+        "paste_xy": [
+          75,
+          130
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C02/luon_lake_sit.png",
+      "alpha_bounds": [
+        161,
+        125,
+        312,
+        396
+      ],
+      "touches_cell_edge": false,
+      "sha256": "e58b0ea56d890986d74114511f3ea9d62da63e73a7bde7092e3206289246b3bc",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "dam_lake_sit",
+      "missions": [
+        5,
+        22
+      ],
+      "source_crop_xywh": [
+        444,
+        444,
+        443,
+        443
+      ],
+      "normalization": {
+        "source_bbox": [
+          140,
+          106,
+          342,
+          395
+        ],
+        "scale": 0.657439446366782,
+        "paste_xy": [
+          61,
+          130
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C02/dam_lake_sit.png",
+      "alpha_bounds": [
+        140,
+        106,
+        342,
+        395
+      ],
+      "touches_cell_edge": false,
+      "sha256": "9a878d6c2a53f3e71fee072223babc59db846c2c6fd84afe99e0babc1958beea",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "long_lake_sit",
+      "missions": [
+        5,
+        22
+      ],
+      "source_crop_xywh": [
+        887,
+        444,
+        443,
+        443
+      ],
+      "normalization": {
+        "source_bbox": [
+          131,
+          103,
+          356,
+          396
+        ],
+        "scale": 0.6484641638225256,
+        "paste_xy": [
+          55,
+          130
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C02/long_lake_sit.png",
+      "alpha_bounds": [
+        131,
+        103,
+        356,
+        396
+      ],
+      "touches_cell_edge": false,
+      "sha256": "96ddb78fc49b721462c5f15026bec2146f1f213e198a18db3646dc579107bb8f",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "to_lake_sit",
+      "missions": [
+        5,
+        22
+      ],
+      "source_crop_xywh": [
+        1330,
+        444,
+        444,
+        443
+      ],
+      "normalization": {
+        "source_bbox": [
+          97,
+          110,
+          313,
+          395
+        ],
+        "scale": 0.6666666666666666,
+        "paste_xy": [
+          56,
+          130
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C02/to_lake_sit.png",
+      "alpha_bounds": [
+        97,
+        110,
+        313,
+        395
+      ],
+      "touches_cell_edge": false,
+      "sha256": "b824e4abb1753027a45c74b572078e5c4299fe13b1e75606da7ecfb25c8edae7",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    }
+  ],
+  "qa": {
+    "slice_bounds": "pass",
+    "visual": "pass_source_and_sliced_preview_review",
+    "unity_import": "pass_current_hashes",
+    "integration": "pending"
+  }
+}

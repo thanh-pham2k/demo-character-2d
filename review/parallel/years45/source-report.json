@@ -1,0 +1,15 @@
+{
+  "events": 54,
+  "authored": 54,
+  "missing": [],
+  "extra": [],
+  "roslynRuntime": true,
+  "roslynEditor": true,
+  "unityRefresh": false,
+  "unityCompile": false,
+  "playMode": false,
+  "files": {
+    "mobile-2d/Assets/Scripts/ProductionChapters/Years45/Years45Activities.cs": "d0c2dd6b7d40462081cf429d0ce18f3cc17162fc6a3804c61aad82060ac52874",
+    "mobile-2d/Assets/Scripts/ProductionChapters/Years45/Years45ChapterModule.cs": "399b9c8483f778f2788a53d3d5aaac42bca67d48dcb842b76f04e045f7099902"
+  }
+}

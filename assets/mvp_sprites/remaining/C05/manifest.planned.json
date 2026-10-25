@@ -1,0 +1,222 @@
+{
+  "batch": {
+    "id": "C05",
+    "kind": "character",
+    "columns": 3,
+    "rows": 2,
+    "requested_canvas": [
+      1536,
+      1024
+    ],
+    "cell": [
+      512,
+      512
+    ],
+    "read_order": "left_to_right_top_to_bottom",
+    "margin": 32,
+    "status": "planned_not_generated",
+    "source_file": null,
+    "asset_ids": [
+      "luon_packing",
+      "luon_shirt_sit",
+      "luon_reunion_arm",
+      "dam_reunion_arm",
+      "long_reunion_arm",
+      "to_reunion_arm"
+    ]
+  },
+  "assets": [
+    {
+      "id": "luon_packing",
+      "production": "generate_batch",
+      "kind": "character",
+      "missions": [
+        44
+      ],
+      "description": "Lươn thường phục thu dọn góc riêng, đồ/balo tách rời.",
+      "batch": "C05",
+      "cell_index": 1,
+      "row": 0,
+      "column": 0,
+      "planned_crop_xywh": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "actual_crop_xywh": null,
+      "source_file": null,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C05/luon_packing.png",
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "qa_status": "pending_generation",
+      "reference_group": "character_existing"
+    },
+    {
+      "id": "luon_shirt_sit",
+      "production": "generate_batch",
+      "kind": "character",
+      "missions": [
+        37,
+        40,
+        41
+      ],
+      "description": "Lươn sơ mi ngồi, dùng tại văn phòng/duyệt demo; giữ cùng trang phục bảo vệ.",
+      "batch": "C05",
+      "cell_index": 2,
+      "row": 0,
+      "column": 1,
+      "planned_crop_xywh": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "actual_crop_xywh": null,
+      "source_file": null,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C05/luon_shirt_sit.png",
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "qa_status": "pending_generation",
+      "reference_group": "character_existing"
+    },
+    {
+      "id": "luon_reunion_arm",
+      "production": "generate_batch",
+      "kind": "character",
+      "missions": [
+        45
+      ],
+      "description": "Lươn thường phục, vị trí trái trong nhóm bốn, tay nối Đạm.",
+      "batch": "C05",
+      "cell_index": 3,
+      "row": 0,
+      "column": 2,
+      "planned_crop_xywh": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "actual_crop_xywh": null,
+      "source_file": null,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C05/luon_reunion_arm.png",
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "qa_status": "pending_generation",
+      "reference_group": "character_existing"
+    },
+    {
+      "id": "dam_reunion_arm",
+      "production": "generate_batch",
+      "kind": "character",
+      "missions": [
+        45
+      ],
+      "description": "Đạm vị trí thứ hai, tay nối Lươn/Long.",
+      "batch": "C05",
+      "cell_index": 4,
+      "row": 1,
+      "column": 0,
+      "planned_crop_xywh": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "actual_crop_xywh": null,
+      "source_file": null,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C05/dam_reunion_arm.png",
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "qa_status": "pending_generation",
+      "reference_group": "character_existing"
+    },
+    {
+      "id": "long_reunion_arm",
+      "production": "generate_batch",
+      "kind": "character",
+      "missions": [
+        45
+      ],
+      "description": "Long vị trí thứ ba, tay nối Đạm/Tộ.",
+      "batch": "C05",
+      "cell_index": 5,
+      "row": 1,
+      "column": 1,
+      "planned_crop_xywh": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "actual_crop_xywh": null,
+      "source_file": null,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C05/long_reunion_arm.png",
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "qa_status": "pending_generation",
+      "reference_group": "character_existing"
+    },
+    {
+      "id": "to_reunion_arm",
+      "production": "generate_batch",
+      "kind": "character",
+      "missions": [
+        45
+      ],
+      "description": "Tộ vị trí phải, tay nối Long; cùng hàng vai/feet line với ba ô trước.",
+      "batch": "C05",
+      "cell_index": 6,
+      "row": 1,
+      "column": 2,
+      "planned_crop_xywh": [
+        1024,
+        512,
+        512,
+        512
+      ],
+      "actual_crop_xywh": null,
+      "source_file": null,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C05/to_reunion_arm.png",
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "qa_status": "pending_generation",
+      "reference_group": "character_existing"
+    }
+  ],
+  "reference_files": [
+    "mobile-2d/Assets/Sprites/MVP/characters/luon_idle_0.png",
+    "mobile-2d/Assets/Sprites/MVP/characters/luon_walk_0.png",
+    "mobile-2d/Assets/Sprites/MVP/characters/dam_standing.png",
+    "mobile-2d/Assets/Sprites/MVP/characters/long_standing.png",
+    "mobile-2d/Assets/Sprites/MVP/characters/to_standing.png"
+  ],
+  "provenance": "planned_batch_not_yet_generated",
+  "gate": {
+    "blockout": "pending",
+    "generation": "generated_composite_batch",
+    "slicing": "actual_crops_and_hashes_verified",
+    "visual_qa": "pass_source_and_sliced_preview_review",
+    "unity_import": "pass_current_hashes",
+    "integration": "pending"
+  }
+}

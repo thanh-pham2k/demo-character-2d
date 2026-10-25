@@ -1,0 +1,11 @@
+Create ONE NEW transparent game PROP BATCH SHEET for Room404. Attached prop sheet is STYLE REFERENCE ONLY: match outlined warm pixel-art-inspired2.5D painterly objects, slightly elevated front-three-quarter view, crisp readable shading. Do not copy its items. True transparent alpha background, no glow/fog/halos/floor/shadows/text/logos/labels/borders/gridlines. Each object fully isolated inside its assigned invisible square cell with at least15% blank margin on every side; do NOT crop object parts. Objects can have different real-world sizes, runtime scales them individually. EXACTLY4columns x2rows,8equal cells, target2048x1024. TOP ROW left→right:
+1 An opened compact laptop repair screwdriver toolkit with bits neatly arranged. Place ONE loose screwdriver clearly separated next to the case WITHIN this same cell so it can be cropped as a hand tool. No logos.
+2 An old laptop with bottom cover removed, visible fan/board/drive, slightly elevated workbench angle, no desk/person/hands or text.
+3 An empty transparent or lightly tinted glass savings jar with simple removable lid placed nearby in same cell, no coins/notes/labels inside.
+4 A small bundle of generic illustrated green/blue banknote rectangles, NO readable denominations/serials/official bank designs or lettering.
+BOTTOM ROW:
+5 A slightly worn blank cardboard service sign, plain tan front face with taped corners, no letters; runtime adds service text.
+6 One Vietnamese bread baguette sandwich, small crisp loaf with simple filling, no wrapper/plate.
+7 A muted dark brown/olive technician crossbody tools bag, closed, strap visible, no person.
+8 A modern plain WHITE scooter on kickstand, side-three-quarter view, full wheels/mirrors intact, no logo or rider.
+Exactly8prop groups, no extra icons or duplicated variants.

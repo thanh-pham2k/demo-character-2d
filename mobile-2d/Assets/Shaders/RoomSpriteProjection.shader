@@ -6,6 +6,7 @@ Shader "Room404/SpriteProjection"
         _Color ("Tint", Color) = (1,1,1,1)
         _ShearY ("Vertical projection shear", Float) = 0
         _CompressX ("Horizontal projection", Float) = 1
+        _ShearX ("Horizontal alignment shear", Float) = 0
         [HideInInspector] _RendererColor ("Renderer Color", Color) = (1,1,1,1)
         [HideInInspector] _AlphaTex ("External Alpha", 2D) = "white" {}
         [HideInInspector] _EnableExternalAlpha ("Enable External Alpha", Float) = 0
@@ -40,6 +41,7 @@ Shader "Room404/SpriteProjection"
                 half4 _Color;
                 float _ShearY;
                 float _CompressX;
+                float _ShearX;
             CBUFFER_END
             Varyings Vert(Attributes input)
             {
@@ -47,6 +49,7 @@ Shader "Room404/SpriteProjection"
                 SetUpSpriteInstanceProperties();
                 input.positionOS = UnityFlipSprite(input.positionOS, unity_SpriteProps.xy);
                 input.positionOS.y += _ShearY * input.positionOS.x;
+                input.positionOS.x += _ShearX * input.positionOS.y;
                 input.positionOS.x *= _CompressX;
                 Varyings output = CommonUnlitVertex(input);
                 output.color = input.color * _Color * unity_SpriteColor;

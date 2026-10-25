@@ -1,0 +1,1276 @@
+{
+    "scope": "Generated art import/catalog/gallery only; gameplay integration still pending",
+    "success": true,
+    "planned": 178,
+    "imported": 178,
+    "completedUtc": "2026-10-25T10:55:56.9537150Z",
+    "evidence": [
+        {
+            "id": "npc_dorm_manager",
+            "sha256": "f0ab6e64917a120644ea3c04c65add06b2e588c58cc91a6f6901959837ef4d72"
+        },
+        {
+            "id": "npc_station_tout",
+            "sha256": "6f1d042c094f4db2c30cfa4061438a9e2ad115d7be8915ea5ceab10f2eff240e"
+        },
+        {
+            "id": "npc_canteen_vendor",
+            "sha256": "385d4b27c6cad529c1ea564784a06323d81ab9d8452ccc7c0d49b104086fe4e0"
+        },
+        {
+            "id": "npc_h6_classmate_writing",
+            "sha256": "8e17baed6210624994db64d14f6d898fab72651edf95d894dc7d1d5ab5e183e0"
+        },
+        {
+            "id": "npc_repair_customer",
+            "sha256": "f2941bdf0636fcd00f2c4ecf59752fa8d303f94f926b89f84ad98451dc3ec58e"
+        },
+        {
+            "id": "npc_freshman_1",
+            "sha256": "4d69802291aca9120abe5544b23e4831b7d7e33d62dfc3556ca0bd1f152d0fc5"
+        },
+        {
+            "id": "npc_freshman_2",
+            "sha256": "9ed81f2fa8bee935e5029031e666773ce7cc86794a18c9f1db8fc0e47edf0087"
+        },
+        {
+            "id": "npc_freshman_3",
+            "sha256": "53e9934e6e9923b70c05e2af4a43e535116ae3fcd8a7ed694f13f591b9b02ee1"
+        },
+        {
+            "id": "luon_tired_idle",
+            "sha256": "c236af15810edb54efdebff5ab5a6e8134a9ca91ad4ab0968972b7776ad07cff"
+        },
+        {
+            "id": "luon_phone_sad",
+            "sha256": "761d77d9e3611a470f30dff6eac3e128baf4c60dbd17cf70261b65ff099a523e"
+        },
+        {
+            "id": "long_gaming_shout",
+            "sha256": "e2c07bcb487417ad6a86b495a4e24d9deecaa21bdc83a53b3e3e3f886ec02b19"
+        },
+        {
+            "id": "luon_exam_worried",
+            "sha256": "03b1fa866763f1a8386f4611f78138d6d2f0dba1b5b5af5dd6a57171ec918b55"
+        },
+        {
+            "id": "luon_exam_bite_pen",
+            "sha256": "3161aa90540c9db136bc806c144c39aacf8ca6a6ade9dd8e40ad0840bb05cd79"
+        },
+        {
+            "id": "luon_carry_hotpot",
+            "sha256": "98fc7e04d73511006a41fd868096c5c857e0bebf87c61ad2b92be48ab59d538c"
+        },
+        {
+            "id": "guard_idle",
+            "sha256": "1db77d7eab191ac3429f6a7d7212a0abdfdab6411009ef70fc6972c8f9f43efa"
+        },
+        {
+            "id": "guard_inspecting",
+            "sha256": "1b5c905cdacb5a3e97296b609adcfd9d64bb4e96dad321944086676b572adc38"
+        },
+        {
+            "id": "crush_idle",
+            "sha256": "19dd2bd82646ad02a9ae27b428e02865a6de611ba5fbc1d7a58fe275677ef28c"
+        },
+        {
+            "id": "crush_boyfriend_idle",
+            "sha256": "4c445468ce381d7e5474f803a2a9af251b4264fb19ea4d22cb817518dd2bb580"
+        },
+        {
+            "id": "luon_repair_laptop",
+            "sha256": "1a4874343052b79efc9748da72778fee370d26276231f963ba2b5ce6a63d9cb3"
+        },
+        {
+            "id": "luon_borrowed_jacket",
+            "sha256": "acbac5240c717be411430d7b9d5b55d46dc455385326556e6612f863c938f642"
+        },
+        {
+            "id": "luon_lake_sit",
+            "sha256": "e58b0ea56d890986d74114511f3ea9d62da63e73a7bde7092e3206289246b3bc"
+        },
+        {
+            "id": "dam_lake_sit",
+            "sha256": "9a878d6c2a53f3e71fee072223babc59db846c2c6fd84afe99e0babc1958beea"
+        },
+        {
+            "id": "long_lake_sit",
+            "sha256": "96ddb78fc49b721462c5f15026bec2146f1f213e198a18db3646dc579107bb8f"
+        },
+        {
+            "id": "to_lake_sit",
+            "sha256": "b824e4abb1753027a45c74b572078e5c4299fe13b1e75606da7ecfb25c8edae7"
+        },
+        {
+            "id": "dam_lab_pose",
+            "sha256": "5d67fe098a846acdf3b09a3986a0a3e1af6c564a407636b797c0596c9e822947"
+        },
+        {
+            "id": "long_office",
+            "sha256": "5a13f507e6fd77c994b8e199e5ab7cabf0122b2a10ed1a56f4f0f00915b9214e"
+        },
+        {
+            "id": "to_office",
+            "sha256": "6445a506c3f787306402bf7fa41e6f82f9011082805dc289fa0b47c3fcb807f4"
+        },
+        {
+            "id": "dam_travel",
+            "sha256": "fbb39e2f105961b826e067ee2014c71f46355ffe42255838c42e38b4bbb3884a"
+        },
+        {
+            "id": "luon_carry_box",
+            "sha256": "651183cb9e34a86bda599700a13ee454dd4b764543038c8ec894ccd8801065f3"
+        },
+        {
+            "id": "dam_graduate",
+            "sha256": "2999c978bf6b5fbd694fbe7034ee455aeebfa2404d14c1cf4b0df1b01957f4e9"
+        },
+        {
+            "id": "long_graduate",
+            "sha256": "f8da791aa72a1d0b91cde2861f7d4702a41ff19370ee111e396271686a2a22ff"
+        },
+        {
+            "id": "to_graduate",
+            "sha256": "2fc18c79a23d963750c2ff9f6563705ea2355c34db9a249a3426342748574af1"
+        },
+        {
+            "id": "committee_chair",
+            "sha256": "22b2ef01ec7ab3a70bbb40fdbccdc708e1170cbe6522adc04b03d06dad72f6f1"
+        },
+        {
+            "id": "committee_examiner_a",
+            "sha256": "37b50b860d933ddf3060166f8694e2223ea0e2f2701203e473921ee3925f1698"
+        },
+        {
+            "id": "committee_examiner_b",
+            "sha256": "ca6f6ee2bdbdbe77f795fa460fdedd9855c6140d08d18e0e1efc68d443b3fef6"
+        },
+        {
+            "id": "committee_examiner_c",
+            "sha256": "6b24dde5c99fb6e741f53a2f96a9ff290e38f56318a8eb1233fdab143bc81458"
+        },
+        {
+            "id": "luon_presenting",
+            "sha256": "987b84c82eb35b5725bef0343099ce600468941659fbf3415187137f591ace46"
+        },
+        {
+            "id": "father_luon",
+            "sha256": "60a9c03b61df9657dc1134f5a9823784bd59012946b86cbc3991810517aab906"
+        },
+        {
+            "id": "mother_luon",
+            "sha256": "0b4335861c93c4a508bc0e20a2607c524833856d8c2a8914235c0d06771ddb1f"
+        },
+        {
+            "id": "luon_phone_happy",
+            "sha256": "74ffb47d7c996efce719efb549338d6840abd8ab8e8aa1c1f8ea8c2353dc1680"
+        },
+        {
+            "id": "luon_packing",
+            "sha256": "a13757c010eba11cadf295480bdf62b1405c05d0b5abefb68c9446b9e91cf4b3"
+        },
+        {
+            "id": "luon_shirt_sit",
+            "sha256": "836741465eff8f661c6cfa23ce1869339be4643799c128163a1421b90f046c23"
+        },
+        {
+            "id": "luon_reunion_arm",
+            "sha256": "e6d64258962f116c7fadfbef354b3c0cd5b9736371aa4b9f5d3e788a1ae21f93"
+        },
+        {
+            "id": "dam_reunion_arm",
+            "sha256": "c97dd7f385b12a48f5c177b541f66b180440c9212baae74625e001ed352f49a4"
+        },
+        {
+            "id": "long_reunion_arm",
+            "sha256": "9cd78cb7b49f9813aed1d2baf2ab5d22053e32c1d22419dbd1a6b6c53b6d543b"
+        },
+        {
+            "id": "to_reunion_arm",
+            "sha256": "a104ec22783c88e7299348350b7404df087e3665bee672ccec1a297ba03b9944"
+        },
+        {
+            "id": "nem_chua_box",
+            "sha256": "6498e4441fb715e75f4c5db44f0f372606b334b6dd86f8780aee3f7024803064"
+        },
+        {
+            "id": "cleaning_bucket",
+            "sha256": "37fce6978881d7942298253685e4ae28766866ea215b066a5c1b5537613ab34e"
+        },
+        {
+            "id": "cleaning_rag",
+            "sha256": "e4be65b72dc25ff1131f250c53b42e1b9cf315fa59be653e9b8d1579237a6229"
+        },
+        {
+            "id": "mini_fan",
+            "sha256": "b505dcebdd8a2eeadcb4b7366f4b62bbaa0ac9b8361af03e5824a31a167de8c6"
+        },
+        {
+            "id": "meal_tray",
+            "sha256": "396ed6b7dfd8cb323618a452d7d7d7ce3b6c96addcb85d0f724985407d9d3ece"
+        },
+        {
+            "id": "food_rice",
+            "sha256": "a77202973ac41c60d6a3b9e1a77b8c350bf612ada09fde6573e44dd84492e183"
+        },
+        {
+            "id": "food_meat",
+            "sha256": "b73e258ea708d8a099c455109d3d0869037bc417df7701dc160e6b12be5abbfc"
+        },
+        {
+            "id": "food_vegetables",
+            "sha256": "c102159a06ad00a9d425d80ee953513aaed7c39ecd76bf11b6a871c7394d98f2"
+        },
+        {
+            "id": "alarm_clock_blank",
+            "sha256": "91b4ce822d8e66964ea74fe96a4d5ff10dbbcdbac02cab61309239c120c6d6a0"
+        },
+        {
+            "id": "wardrobe_closed",
+            "sha256": "e1d90e4d05fc4709e178679f9b195bc9b77a32d4068e0a273a6e35b05eece6a7"
+        },
+        {
+            "id": "wardrobe_open_empty",
+            "sha256": "23f55792f68574eee640ef3c9c8b70e5494fc38daaecb81407475ef85555cce6"
+        },
+        {
+            "id": "keys_generic",
+            "sha256": "01d12be793e1eedbe5e8ac2fc367f1cde0f94c854f2da391be6897ceb52f28ab"
+        },
+        {
+            "id": "flashlight",
+            "sha256": "fb40dc974bd81409be0fb6c57775b21eda82f80ff3242ba2f5a99e10f3ecfde2"
+        },
+        {
+            "id": "toothbrush_cup",
+            "sha256": "af0d1a62e1439329ca802918c3428898cd3b7dfb52e45e7c14b33217e9949c59"
+        },
+        {
+            "id": "towel_folded",
+            "sha256": "37b238bc6918807f3948dd7f3776e1ba18b7c5e268d1208551d327a540a4b8f3"
+        },
+        {
+            "id": "usb_boot",
+            "sha256": "77d338d84c494f5b955930db68adde53986f3b8403cd26f83f8f88707f2dc410"
+        },
+        {
+            "id": "screwdriver_kit",
+            "sha256": "266ccbd92ece2e24eee7d9ee1ddaa6fb7ed5a4c2fedbbef7887f5125c016dbcc"
+        },
+        {
+            "id": "laptop_open_case",
+            "sha256": "d6787f54e6c0fb6d1e741919de31b42865636963a6f749fe45797709761fcccd"
+        },
+        {
+            "id": "savings_jar",
+            "sha256": "9d21d8e9c5803067ce5015c79eda0c6ab44db8a167ae5e7bd3598357306c1929"
+        },
+        {
+            "id": "cash_notes_blank",
+            "sha256": "89c8526c817ca4312eeac78e52e7c6a4fe34e8e27ebdf4e94830444a6753fdff"
+        },
+        {
+            "id": "service_sign_blank",
+            "sha256": "4a11e540f010920853296c076e45ede88706acd24e65e6196d60d30ecb1a66f3"
+        },
+        {
+            "id": "bread",
+            "sha256": "2f85aee1699f1a65a206a4d56b8efa9accf6e2444e8bf3d56dbbb733ad866e14"
+        },
+        {
+            "id": "technician_bag",
+            "sha256": "f80e767c854eb91992d704748a02ee774a4d8fc90121689c770b5352c1bc3377"
+        },
+        {
+            "id": "scooter_white",
+            "sha256": "94c0dca43002a71cb1607d0e77ab0ff021ac46eb8c2704bc04fcbce945c1dd9a"
+        },
+        {
+            "id": "lake_bench",
+            "sha256": "bea12a289f6c7d36641a2ffe428944fec8be87ae195dd4c5d81699de9adc3ee1"
+        },
+        {
+            "id": "tea_food_cart_blank",
+            "sha256": "f4b1d4ffeac767790d708a6aae482980b9764fb802dc6d06a1b682b2bcc1bf28"
+        },
+        {
+            "id": "street_lamp",
+            "sha256": "c51353bfbd75653457d28101c5f1a56f717173149ecd4c68eafec3f9ddc9ccd7"
+        },
+        {
+            "id": "peach_tea",
+            "sha256": "915e94caae0d71d10a1b2c80ca6623fc437c7a2ee89040463639e9aef2e97c2f"
+        },
+        {
+            "id": "rice_paper_snack",
+            "sha256": "54f442bf0a1c44f9bd5b93e2b6f037c76658e168a6920eefddd2feae56b4ceeb"
+        },
+        {
+            "id": "moving_box_blank",
+            "sha256": "6b87f8da6069679a76fc88d2d6428b9ff88b79ed837875dbd2f1d7ea05fd9144"
+        },
+        {
+            "id": "suitcase",
+            "sha256": "f44892a329a03f8a9ab11d1bad64ed976c1367e254063e969fec7458fbcfa881"
+        },
+        {
+            "id": "camera",
+            "sha256": "6b04eb75fd616c69e21cc13b6cecdf04b0fc15903b2c78f58f5ff30a18aa89d2"
+        },
+        {
+            "id": "bedding_freshman_a",
+            "sha256": "8fbab52bf68b84e27e6da55f96e16642d165a37e36d1d0e221df0cbee94e927e"
+        },
+        {
+            "id": "bedding_freshman_b",
+            "sha256": "ae2024789e58a84e6b705bbaee178d10bbc710f9528c2224b678065c504b7764"
+        },
+        {
+            "id": "bedding_freshman_c",
+            "sha256": "4985e00a2354306bb98eece1ed7d82438efcac8e3cab039b8d6f97c27173f4db"
+        },
+        {
+            "id": "dried_buffalo_meat",
+            "sha256": "c384cf4d67f910e40ea47948035dac1787cab171dc35962991dfc5af8b307dd9"
+        },
+        {
+            "id": "hotpot_supply_bag",
+            "sha256": "3d8f88abfac781a394feaa5ce14fe4ce249b31043b72cc587c7c77be1a609b02"
+        },
+        {
+            "id": "beer_supply",
+            "sha256": "f3d83ee8053cdafad194eb5c34bd8c473812fd37fe2df43a8beb9f790deaf6c2"
+        },
+        {
+            "id": "thesis_book_blank",
+            "sha256": "8adf02390b80d4631d91e24623ff9190dfaf82f8b4da0b0184e74895469533ce"
+        },
+        {
+            "id": "bouquet",
+            "sha256": "dff7311add31e122490c7f79c98c321ab377c67f0ea22f8df81f1dac0741ecc2"
+        },
+        {
+            "id": "podium",
+            "sha256": "c565c33be24b97b3df3fe77d0736803c5d8d96469eec26e83a7467f20d59baf4"
+        },
+        {
+            "id": "committee_table",
+            "sha256": "65a591abc479aafd380d2f5ee08817c360d16a277bfafe04ee9f954b83c43328"
+        },
+        {
+            "id": "projector_screen_blank",
+            "sha256": "b3f7509ef90926ab6855e66223438236a870dfb43de5f4ddef5298d3a64ad196"
+        },
+        {
+            "id": "graduation_backdrop_blank",
+            "sha256": "2afb890f5c54444b05556e2848314e734890dc2102791f0ec708fa68360fe9ac"
+        },
+        {
+            "id": "beer_table",
+            "sha256": "3f832dd9a5c4b31d75a927ec00805c964b1b25965bbe342be80cbd952a7b88d4"
+        },
+        {
+            "id": "drinking_glass",
+            "sha256": "83371488b9575bab0aa55177fc3b692a47c64dca456377e04a0ba1e45979aec4"
+        },
+        {
+            "id": "bus_station_background",
+            "sha256": "8080899e07f141c69ab90e185159415b8d671b1497af005eab967d01c3cefb68"
+        },
+        {
+            "id": "dorm_reception_background",
+            "sha256": "b2571d0cd999d50733d5c71840a888adcac3f2b8ade162dd6d8c30139b8667bf"
+        },
+        {
+            "id": "canteen_background",
+            "sha256": "8436dac01d6c31e5ef6e02f881239c05a2d265b3821012c8d5419bae84645b74"
+        },
+        {
+            "id": "lake_background",
+            "sha256": "e8214c1c45019d6bff5665744935c622e87600381ad7e22a264b72faa33f27c4"
+        },
+        {
+            "id": "drink_cafe_background",
+            "sha256": "d836667895da0bad1c6dc59462f89fe368047ab2ac8da6b16cfb06a9b79891c8"
+        },
+        {
+            "id": "research_lab_background",
+            "sha256": "c5eb4ebce480e49e2e8f7396f468ce7aba0cfc1552af4567767adf4a72bd3707"
+        },
+        {
+            "id": "vnu_photo_courtyard_background",
+            "sha256": "fab5a955c2c95e924f306fce56953134b14c3340315a0635f6b763760476212e"
+        },
+        {
+            "id": "advisor_office_background",
+            "sha256": "e7e1a59e60f6ef4518bf025ea298a240c688ba0109a5b3ad126f4c86cf5bd7f1"
+        },
+        {
+            "id": "library_background",
+            "sha256": "9a91c232e726dbf66cc997145253188727e8e4bd0a354a5bee2ecd35e1194915"
+        },
+        {
+            "id": "defense_room_background",
+            "sha256": "46ce6e155b79d9123846efb1e5f98f6ce578ffe729aff94d7cba4bc72c99226c"
+        },
+        {
+            "id": "a5_graduation_hall_background",
+            "sha256": "0a9525535cca720696c620f713f4f5832ae0b0b36cafbdc517bb27c6022b0164"
+        },
+        {
+            "id": "binh_dong_night_background",
+            "sha256": "1a3920be380b8a750fc393728ec8ded45f8e8cd871d5849e6f287c07e31c92d4"
+        },
+        {
+            "id": "luon_casual_front_idle",
+            "sha256": "d440cbb31607ad3e8996fd5463b15744ea9794adf2af9cd3b6ecf54b4734ac4a"
+        },
+        {
+            "id": "luon_casual_front_walk_0",
+            "sha256": "e505181cce051d853062f464139246b5d18914b1c2b1fcdb8b8684b7f2f28f0d"
+        },
+        {
+            "id": "luon_casual_front_walk_1",
+            "sha256": "36e4bcb422a65b6fdbf4ef4e56852068b16acf601dd4a7080207eb875381c5db"
+        },
+        {
+            "id": "luon_casual_front_walk_2",
+            "sha256": "6bcc6fe49037cef3fc375cb4e0013b3036c649ad169eb0c718243d76853a261a"
+        },
+        {
+            "id": "luon_casual_front_walk_3",
+            "sha256": "a2af991c782a31b86252c739f3c3548ce4a20ca02395404d54a073da5b8949ac"
+        },
+        {
+            "id": "luon_casual_back_idle",
+            "sha256": "a2b387c329da385d836793370fd66e8b0c03f1b09f3622e6b159f81e0e0d868a"
+        },
+        {
+            "id": "luon_casual_back_walk_0",
+            "sha256": "83706731d43614a3454d264594b8531ede0f396fc6257a8007096d50f288970f"
+        },
+        {
+            "id": "luon_casual_back_walk_1",
+            "sha256": "b129a670dbe83231fa0a6c10a2ed79d3d31bc3bf3605654eb8d6650162be83a2"
+        },
+        {
+            "id": "luon_casual_back_walk_2",
+            "sha256": "e2a9efdf1bb5f84bad184df2751adf26e7f5c20466a97801d02d0d7813c2fbea"
+        },
+        {
+            "id": "luon_casual_back_walk_3",
+            "sha256": "7a270fd3c20641112e49cfb02d9eebcf6ef1f22edb7ad1246b7cfc44ed912319"
+        },
+        {
+            "id": "luon_backpack_front_idle",
+            "sha256": "d772ca65d7b667fd9fe659922529cc7bdb3d1e462f71f7ac4d7c9115c9900281"
+        },
+        {
+            "id": "luon_backpack_front_walk_0",
+            "sha256": "a1db33ade7ec7aa97c7453e50c1d62b50cf16db56bdc85e97b8a4dc4e291d8ab"
+        },
+        {
+            "id": "luon_backpack_front_walk_1",
+            "sha256": "1f0dfca1d6ed2b374e3d41b39d87c4253bcf1452b8a2b58cb3d9bfd2fc92c01e"
+        },
+        {
+            "id": "luon_backpack_front_walk_2",
+            "sha256": "6df6397ed53de171e57b1575d551925790cf53adbbb246c550a841ea64ebe66b"
+        },
+        {
+            "id": "luon_backpack_front_walk_3",
+            "sha256": "5898c4b3296d4c26db4db3a18fa0ed953da832e911d81c9d57dd61b49d018d0a"
+        },
+        {
+            "id": "luon_backpack_back_idle",
+            "sha256": "174005cc9bfde7d4f95552512ac591acfd9879487a3b689275e0d26d55224ae8"
+        },
+        {
+            "id": "luon_backpack_back_walk_0",
+            "sha256": "57f83ff8992d2975cf735c572f316fdc93055b2c21ece68ad8701288efc4dde7"
+        },
+        {
+            "id": "luon_backpack_back_walk_1",
+            "sha256": "3ff4cedafa639504e155ef39d5aaa104bf7290e7e7a949c54d2eaea8060903a4"
+        },
+        {
+            "id": "luon_backpack_back_walk_2",
+            "sha256": "6042423c1f60f6ced0c627c843d71312356b51e6b3984d69cd09e743bc8debfd"
+        },
+        {
+            "id": "luon_backpack_back_walk_3",
+            "sha256": "d10f8e5181312836f876acf4a0c9a5afdacb2e8afddeafb71c23c9eaebe02f69"
+        },
+        {
+            "id": "luon_shirt_front_idle",
+            "sha256": "eed8fab9e4694ab3236a780e422942424a6729eee6e5dda11d522842c6e11206"
+        },
+        {
+            "id": "luon_shirt_front_walk_0",
+            "sha256": "3a1a426b417138442868820de903bc5e6bd2f66c03897cb2532ca5d94afc38d9"
+        },
+        {
+            "id": "luon_shirt_front_walk_1",
+            "sha256": "c220daf7e6d0e5da209a7c160ff9ec264dd0434f712013989a0e30932aad0c3b"
+        },
+        {
+            "id": "luon_shirt_front_walk_2",
+            "sha256": "05964f024d717c818077eb3ee2848111a43e867d2bfa323f81659e7c94a5cb40"
+        },
+        {
+            "id": "luon_shirt_front_walk_3",
+            "sha256": "8ca536383c8122635d07f8c5ac1c99deec4c71cc1df0b71a51522440e45dc12d"
+        },
+        {
+            "id": "luon_shirt_back_idle",
+            "sha256": "057d6484c0393602bbc8184a1c03026925346030ecd8aa897dba145b03cbf0d1"
+        },
+        {
+            "id": "luon_shirt_back_walk_0",
+            "sha256": "4651f3e3f7d22e8d48435b4c89324a2500b5fe31fd6e7aee63fa4570bfd221bc"
+        },
+        {
+            "id": "luon_shirt_back_walk_1",
+            "sha256": "3bbd4e08a2c2e3b74e67b191cb15b38bce7a0d0feab9b91c5718ea87af36739e"
+        },
+        {
+            "id": "luon_shirt_back_walk_2",
+            "sha256": "836bdfc89821910850e69d3a102bf31f6dfab803fc1fd2ee526997411a197ce1"
+        },
+        {
+            "id": "luon_shirt_back_walk_3",
+            "sha256": "fc5a02646627c7be66e4662d7004e974515fd064847a01fa48e5b0004d724f35"
+        },
+        {
+            "id": "luon_shirt_right_idle",
+            "sha256": "5dc6a347db2ad6d1ae5180ac2a6aa4d105b57a4b16a8951ae35d670ee9464d08"
+        },
+        {
+            "id": "luon_shirt_right_walk_0",
+            "sha256": "08c3349d7f629e298a17c4f559613a859d7cc29305ad5df8799f17ebf5c423d3"
+        },
+        {
+            "id": "luon_shirt_right_walk_1",
+            "sha256": "bfd84d25aaaa875b39e33deda424b9f5f1ed5b589adab4f12378b81696ad6875"
+        },
+        {
+            "id": "luon_shirt_right_walk_2",
+            "sha256": "f20db2c331a65aa3ddd4a3b835a0417a9be5b003b49efca83d366fd8949ce067"
+        },
+        {
+            "id": "luon_shirt_right_walk_3",
+            "sha256": "ac6b962fb9538069ecad3472f4221f23cd7f5e8ddaba94a6aaec0d5fea7ee270"
+        },
+        {
+            "id": "luon_robe_front_idle",
+            "sha256": "61bb49f4d5708aafd0558dd8ac3f14bf7bff10345c96692cd2fff9f89aa50b62"
+        },
+        {
+            "id": "luon_robe_front_walk_0",
+            "sha256": "28b02d74464f411074e7496577353794c36bda3d9b91a84e8323bc0f352e2ec7"
+        },
+        {
+            "id": "luon_robe_front_walk_1",
+            "sha256": "97fd7faec4064e7fdf1d1ec984167a12b8a7c52ced18e34e664f06a65f65a058"
+        },
+        {
+            "id": "luon_robe_front_walk_2",
+            "sha256": "72627bb4d68a9c6df91108f373de9d809d54adf00556b792747035520a5b69ef"
+        },
+        {
+            "id": "luon_robe_front_walk_3",
+            "sha256": "d8d415614f813237d3121d3da6fe524c018bcf0a86ef77537b4b8bb633b45b99"
+        },
+        {
+            "id": "luon_robe_back_idle",
+            "sha256": "7978f06e6d6e7e5809fc415b6f6f0bb4eca7ee9cfb89adc359ac8840575af2d0"
+        },
+        {
+            "id": "luon_robe_back_walk_0",
+            "sha256": "856d9b68800f237c9c3883b99a1e68c12550897bf4e8493956150d832059d8ac"
+        },
+        {
+            "id": "luon_robe_back_walk_1",
+            "sha256": "ea12e5cf0ca4ba548fab49f9f700eeb0f97e58127107ce630f6c1040faccc757"
+        },
+        {
+            "id": "luon_robe_back_walk_2",
+            "sha256": "041210fb56bf1db2c399d6ec50fe11e86ac1fc80a90611106e8e7f1de5288333"
+        },
+        {
+            "id": "luon_robe_back_walk_3",
+            "sha256": "c7c775d03157b6ba4e1e8f82208404daf1225b389467fc24bc1767c9e354db17"
+        },
+        {
+            "id": "luon_robe_right_idle",
+            "sha256": "de1813f7c107e6ba4adb34be6f8e91fce86793661eeb187ca5d846552a66367a"
+        },
+        {
+            "id": "luon_robe_right_walk_0",
+            "sha256": "47c4dbce7a47bbf8ad3594a94ea6c70745e3850417db8e9619db2da3e9a27dce"
+        },
+        {
+            "id": "luon_robe_right_walk_1",
+            "sha256": "4dcd12e4cce06c25be6408d05cce91f4cb7cc7cbe78ca7e711702ed5f763e818"
+        },
+        {
+            "id": "luon_robe_right_walk_2",
+            "sha256": "adbedeb1f54834c25314898e66059bb3760988b7c6d9d397eefaa78c2723ad98"
+        },
+        {
+            "id": "luon_robe_right_walk_3",
+            "sha256": "35ad2a39f7c275f4fd4c70d9852175b8bcc41e957f2d44690dfe9ec036704ede"
+        },
+        {
+            "id": "guard_right_walk_0",
+            "sha256": "ffb883eaf185926fa5985a8f480cd0eff87a38a2c16cd29676b9e253644e142c"
+        },
+        {
+            "id": "guard_right_walk_1",
+            "sha256": "6cd8b704b128938a54b472f0c7096b5f9639a6cdee19888071b177683428cacb"
+        },
+        {
+            "id": "guard_right_walk_2",
+            "sha256": "85cb188a64033551bb33daf62971830ef279c244c8e4f2059e297c5ac5a94a4c"
+        },
+        {
+            "id": "guard_right_walk_3",
+            "sha256": "703b94d93700720933dca59783bf7ecaaac178d5cc067511de501b0a5ea8151a"
+        },
+        {
+            "id": "luon_box_right_walk_0",
+            "sha256": "6952e3478f35d614dd37c1e2d27cc7c622379cd84e1fa33f6d492c5ec353e990"
+        },
+        {
+            "id": "luon_box_right_walk_1",
+            "sha256": "29c5189398ba43824ff973b05d963a77b77b58ff27d1d6c34683af7a2819f358"
+        },
+        {
+            "id": "luon_box_right_walk_2",
+            "sha256": "27c66850fb31a6be10991fe6454cdf04c20f726649f3abd979d78d3f64e3cb6a"
+        },
+        {
+            "id": "luon_box_right_walk_3",
+            "sha256": "ff55c34b8e7775e37dbf05a9ff5957d32522e83b9ba4cd0c678e48f6ea261b4b"
+        },
+        {
+            "id": "luon_pot_right_walk_0",
+            "sha256": "f9a337d423bd5115d11bf906877d3d50cb016da36d5160fc09f03b1711b001ec"
+        },
+        {
+            "id": "luon_pot_right_walk_1",
+            "sha256": "0483a94c4199be97b58c3d1c5ca4de179b0db613dbfb798e34cbd86ea71a445e"
+        },
+        {
+            "id": "luon_pot_right_walk_2",
+            "sha256": "a01753585ad05d0829c1bef4354a0ed3d836138a7bbbb619a0c5d52c6cda4666"
+        },
+        {
+            "id": "luon_pot_right_walk_3",
+            "sha256": "36f86647bdb42e7d592582bd2acac24754123ea4939802087170020e4acef995"
+        },
+        {
+            "id": "long_leave_right_walk_0",
+            "sha256": "ba504026f9433034e085ddfa1cbcf460271e1989b0cdebe7fb9fc40e7fe537a7"
+        },
+        {
+            "id": "long_leave_right_walk_1",
+            "sha256": "098f8780bd656c40472cf57575dea9f842250706bdc84b88b301d801881c59b5"
+        },
+        {
+            "id": "long_leave_right_walk_2",
+            "sha256": "1554a611486354b7e48aebde632d5d768b3a799a82a03cdad176966ce6e9de67"
+        },
+        {
+            "id": "long_leave_right_walk_3",
+            "sha256": "e2719f9441445198816323115c6c8012582f94f26ec8f5738df72a73ac37db05"
+        },
+        {
+            "id": "to_leave_right_walk_0",
+            "sha256": "fc00f909681abc6d380ccb0a0798cfe749451dcc8425b7bebec0115eb189c05a"
+        },
+        {
+            "id": "to_leave_right_walk_1",
+            "sha256": "d7f82c90bea462e6e08cc9aca00e8630c7431049d1b0366c8c864efd0148a5f7"
+        },
+        {
+            "id": "to_leave_right_walk_2",
+            "sha256": "4a296888e63f68a912b57be0ca74414509278d328d71ffaaa358ecd724c15fdc"
+        },
+        {
+            "id": "to_leave_right_walk_3",
+            "sha256": "70128025133fbd9329bb1363fbdbf17f5845021dae0397d5e2b9e6730a0e3339"
+        },
+        {
+            "id": "dam_leave_right_walk_0",
+            "sha256": "263d138f1d36d5d5a7c2998eac0948799ec8e70875c8de78427a9e2d63a673ef"
+        },
+        {
+            "id": "dam_leave_right_walk_1",
+            "sha256": "d8c74feee854d789dfa09f038b30dce5886dc93017aa82dd0b87d0aaec246fcf"
+        },
+        {
+            "id": "dam_leave_right_walk_2",
+            "sha256": "c4787bb5f04b22ae64b2e3768210c3973f66cfda6c4cd7a172269847c5f1feb5"
+        },
+        {
+            "id": "dam_leave_right_walk_3",
+            "sha256": "15956afc968a4ff16266491c92f3055ee3075ad8c51bfa8f8948187e3c12aefc"
+        }
+    ],
+    "checkedIds": [
+        "npc_dorm_manager",
+        "npc_station_tout",
+        "npc_canteen_vendor",
+        "npc_h6_classmate_writing",
+        "npc_repair_customer",
+        "npc_freshman_1",
+        "npc_freshman_2",
+        "npc_freshman_3",
+        "luon_tired_idle",
+        "luon_phone_sad",
+        "long_gaming_shout",
+        "luon_exam_worried",
+        "luon_exam_bite_pen",
+        "luon_carry_hotpot",
+        "guard_idle",
+        "guard_inspecting",
+        "crush_idle",
+        "crush_boyfriend_idle",
+        "luon_repair_laptop",
+        "luon_borrowed_jacket",
+        "luon_lake_sit",
+        "dam_lake_sit",
+        "long_lake_sit",
+        "to_lake_sit",
+        "dam_lab_pose",
+        "long_office",
+        "to_office",
+        "dam_travel",
+        "luon_carry_box",
+        "dam_graduate",
+        "long_graduate",
+        "to_graduate",
+        "committee_chair",
+        "committee_examiner_a",
+        "committee_examiner_b",
+        "committee_examiner_c",
+        "luon_presenting",
+        "father_luon",
+        "mother_luon",
+        "luon_phone_happy",
+        "luon_packing",
+        "luon_shirt_sit",
+        "luon_reunion_arm",
+        "dam_reunion_arm",
+        "long_reunion_arm",
+        "to_reunion_arm",
+        "nem_chua_box",
+        "cleaning_bucket",
+        "cleaning_rag",
+        "mini_fan",
+        "meal_tray",
+        "food_rice",
+        "food_meat",
+        "food_vegetables",
+        "alarm_clock_blank",
+        "wardrobe_closed",
+        "wardrobe_open_empty",
+        "keys_generic",
+        "flashlight",
+        "toothbrush_cup",
+        "towel_folded",
+        "usb_boot",
+        "screwdriver_kit",
+        "laptop_open_case",
+        "savings_jar",
+        "cash_notes_blank",
+        "service_sign_blank",
+        "bread",
+        "technician_bag",
+        "scooter_white",
+        "lake_bench",
+        "tea_food_cart_blank",
+        "street_lamp",
+        "peach_tea",
+        "rice_paper_snack",
+        "moving_box_blank",
+        "suitcase",
+        "camera",
+        "bedding_freshman_a",
+        "bedding_freshman_b",
+        "bedding_freshman_c",
+        "dried_buffalo_meat",
+        "hotpot_supply_bag",
+        "beer_supply",
+        "thesis_book_blank",
+        "bouquet",
+        "podium",
+        "committee_table",
+        "projector_screen_blank",
+        "graduation_backdrop_blank",
+        "beer_table",
+        "drinking_glass",
+        "bus_station_background",
+        "dorm_reception_background",
+        "canteen_background",
+        "lake_background",
+        "drink_cafe_background",
+        "research_lab_background",
+        "vnu_photo_courtyard_background",
+        "advisor_office_background",
+        "library_background",
+        "defense_room_background",
+        "a5_graduation_hall_background",
+        "binh_dong_night_background",
+        "luon_casual_front_idle",
+        "luon_casual_front_walk_0",
+        "luon_casual_front_walk_1",
+        "luon_casual_front_walk_2",
+        "luon_casual_front_walk_3",
+        "luon_casual_back_idle",
+        "luon_casual_back_walk_0",
+        "luon_casual_back_walk_1",
+        "luon_casual_back_walk_2",
+        "luon_casual_back_walk_3",
+        "luon_backpack_front_idle",
+        "luon_backpack_front_walk_0",
+        "luon_backpack_front_walk_1",
+        "luon_backpack_front_walk_2",
+        "luon_backpack_front_walk_3",
+        "luon_backpack_back_idle",
+        "luon_backpack_back_walk_0",
+        "luon_backpack_back_walk_1",
+        "luon_backpack_back_walk_2",
+        "luon_backpack_back_walk_3",
+        "luon_shirt_front_idle",
+        "luon_shirt_front_walk_0",
+        "luon_shirt_front_walk_1",
+        "luon_shirt_front_walk_2",
+        "luon_shirt_front_walk_3",
+        "luon_shirt_back_idle",
+        "luon_shirt_back_walk_0",
+        "luon_shirt_back_walk_1",
+        "luon_shirt_back_walk_2",
+        "luon_shirt_back_walk_3",
+        "luon_shirt_right_idle",
+        "luon_shirt_right_walk_0",
+        "luon_shirt_right_walk_1",
+        "luon_shirt_right_walk_2",
+        "luon_shirt_right_walk_3",
+        "luon_robe_front_idle",
+        "luon_robe_front_walk_0",
+        "luon_robe_front_walk_1",
+        "luon_robe_front_walk_2",
+        "luon_robe_front_walk_3",
+        "luon_robe_back_idle",
+        "luon_robe_back_walk_0",
+        "luon_robe_back_walk_1",
+        "luon_robe_back_walk_2",
+        "luon_robe_back_walk_3",
+        "luon_robe_right_idle",
+        "luon_robe_right_walk_0",
+        "luon_robe_right_walk_1",
+        "luon_robe_right_walk_2",
+        "luon_robe_right_walk_3",
+        "guard_right_walk_0",
+        "guard_right_walk_1",
+        "guard_right_walk_2",
+        "guard_right_walk_3",
+        "luon_box_right_walk_0",
+        "luon_box_right_walk_1",
+        "luon_box_right_walk_2",
+        "luon_box_right_walk_3",
+        "luon_pot_right_walk_0",
+        "luon_pot_right_walk_1",
+        "luon_pot_right_walk_2",
+        "luon_pot_right_walk_3",
+        "long_leave_right_walk_0",
+        "long_leave_right_walk_1",
+        "long_leave_right_walk_2",
+        "long_leave_right_walk_3",
+        "to_leave_right_walk_0",
+        "to_leave_right_walk_1",
+        "to_leave_right_walk_2",
+        "to_leave_right_walk_3",
+        "dam_leave_right_walk_0",
+        "dam_leave_right_walk_1",
+        "dam_leave_right_walk_2",
+        "dam_leave_right_walk_3"
+    ],
+    "checks": [
+        "npc_dorm_manager PPU100/Point/Uncompressed/no-mips",
+        "npc_dorm_manager expected pivot and FullRect mesh",
+        "npc_station_tout PPU100/Point/Uncompressed/no-mips",
+        "npc_station_tout expected pivot and FullRect mesh",
+        "npc_canteen_vendor PPU100/Point/Uncompressed/no-mips",
+        "npc_canteen_vendor expected pivot and FullRect mesh",
+        "npc_h6_classmate_writing PPU100/Point/Uncompressed/no-mips",
+        "npc_h6_classmate_writing expected pivot and FullRect mesh",
+        "npc_repair_customer PPU100/Point/Uncompressed/no-mips",
+        "npc_repair_customer expected pivot and FullRect mesh",
+        "npc_freshman_1 PPU100/Point/Uncompressed/no-mips",
+        "npc_freshman_1 expected pivot and FullRect mesh",
+        "npc_freshman_2 PPU100/Point/Uncompressed/no-mips",
+        "npc_freshman_2 expected pivot and FullRect mesh",
+        "npc_freshman_3 PPU100/Point/Uncompressed/no-mips",
+        "npc_freshman_3 expected pivot and FullRect mesh",
+        "luon_tired_idle PPU100/Point/Uncompressed/no-mips",
+        "luon_tired_idle expected pivot and FullRect mesh",
+        "luon_phone_sad PPU100/Point/Uncompressed/no-mips",
+        "luon_phone_sad expected pivot and FullRect mesh",
+        "long_gaming_shout PPU100/Point/Uncompressed/no-mips",
+        "long_gaming_shout expected pivot and FullRect mesh",
+        "luon_exam_worried PPU100/Point/Uncompressed/no-mips",
+        "luon_exam_worried expected pivot and FullRect mesh",
+        "luon_exam_bite_pen PPU100/Point/Uncompressed/no-mips",
+        "luon_exam_bite_pen expected pivot and FullRect mesh",
+        "luon_carry_hotpot PPU100/Point/Uncompressed/no-mips",
+        "luon_carry_hotpot expected pivot and FullRect mesh",
+        "guard_idle PPU100/Point/Uncompressed/no-mips",
+        "guard_idle expected pivot and FullRect mesh",
+        "guard_inspecting PPU100/Point/Uncompressed/no-mips",
+        "guard_inspecting expected pivot and FullRect mesh",
+        "crush_idle PPU100/Point/Uncompressed/no-mips",
+        "crush_idle expected pivot and FullRect mesh",
+        "crush_boyfriend_idle PPU100/Point/Uncompressed/no-mips",
+        "crush_boyfriend_idle expected pivot and FullRect mesh",
+        "luon_repair_laptop PPU100/Point/Uncompressed/no-mips",
+        "luon_repair_laptop expected pivot and FullRect mesh",
+        "luon_borrowed_jacket PPU100/Point/Uncompressed/no-mips",
+        "luon_borrowed_jacket expected pivot and FullRect mesh",
+        "luon_lake_sit PPU100/Point/Uncompressed/no-mips",
+        "luon_lake_sit expected pivot and FullRect mesh",
+        "dam_lake_sit PPU100/Point/Uncompressed/no-mips",
+        "dam_lake_sit expected pivot and FullRect mesh",
+        "long_lake_sit PPU100/Point/Uncompressed/no-mips",
+        "long_lake_sit expected pivot and FullRect mesh",
+        "to_lake_sit PPU100/Point/Uncompressed/no-mips",
+        "to_lake_sit expected pivot and FullRect mesh",
+        "dam_lab_pose PPU100/Point/Uncompressed/no-mips",
+        "dam_lab_pose expected pivot and FullRect mesh",
+        "long_office PPU100/Point/Uncompressed/no-mips",
+        "long_office expected pivot and FullRect mesh",
+        "to_office PPU100/Point/Uncompressed/no-mips",
+        "to_office expected pivot and FullRect mesh",
+        "dam_travel PPU100/Point/Uncompressed/no-mips",
+        "dam_travel expected pivot and FullRect mesh",
+        "luon_carry_box PPU100/Point/Uncompressed/no-mips",
+        "luon_carry_box expected pivot and FullRect mesh",
+        "dam_graduate PPU100/Point/Uncompressed/no-mips",
+        "dam_graduate expected pivot and FullRect mesh",
+        "long_graduate PPU100/Point/Uncompressed/no-mips",
+        "long_graduate expected pivot and FullRect mesh",
+        "to_graduate PPU100/Point/Uncompressed/no-mips",
+        "to_graduate expected pivot and FullRect mesh",
+        "committee_chair PPU100/Point/Uncompressed/no-mips",
+        "committee_chair expected pivot and FullRect mesh",
+        "committee_examiner_a PPU100/Point/Uncompressed/no-mips",
+        "committee_examiner_a expected pivot and FullRect mesh",
+        "committee_examiner_b PPU100/Point/Uncompressed/no-mips",
+        "committee_examiner_b expected pivot and FullRect mesh",
+        "committee_examiner_c PPU100/Point/Uncompressed/no-mips",
+        "committee_examiner_c expected pivot and FullRect mesh",
+        "luon_presenting PPU100/Point/Uncompressed/no-mips",
+        "luon_presenting expected pivot and FullRect mesh",
+        "father_luon PPU100/Point/Uncompressed/no-mips",
+        "father_luon expected pivot and FullRect mesh",
+        "mother_luon PPU100/Point/Uncompressed/no-mips",
+        "mother_luon expected pivot and FullRect mesh",
+        "luon_phone_happy PPU100/Point/Uncompressed/no-mips",
+        "luon_phone_happy expected pivot and FullRect mesh",
+        "luon_packing PPU100/Point/Uncompressed/no-mips",
+        "luon_packing expected pivot and FullRect mesh",
+        "luon_shirt_sit PPU100/Point/Uncompressed/no-mips",
+        "luon_shirt_sit expected pivot and FullRect mesh",
+        "luon_reunion_arm PPU100/Point/Uncompressed/no-mips",
+        "luon_reunion_arm expected pivot and FullRect mesh",
+        "dam_reunion_arm PPU100/Point/Uncompressed/no-mips",
+        "dam_reunion_arm expected pivot and FullRect mesh",
+        "long_reunion_arm PPU100/Point/Uncompressed/no-mips",
+        "long_reunion_arm expected pivot and FullRect mesh",
+        "to_reunion_arm PPU100/Point/Uncompressed/no-mips",
+        "to_reunion_arm expected pivot and FullRect mesh",
+        "nem_chua_box PPU100/Point/Uncompressed/no-mips",
+        "nem_chua_box expected pivot and FullRect mesh",
+        "cleaning_bucket PPU100/Point/Uncompressed/no-mips",
+        "cleaning_bucket expected pivot and FullRect mesh",
+        "cleaning_rag PPU100/Point/Uncompressed/no-mips",
+        "cleaning_rag expected pivot and FullRect mesh",
+        "mini_fan PPU100/Point/Uncompressed/no-mips",
+        "mini_fan expected pivot and FullRect mesh",
+        "meal_tray PPU100/Point/Uncompressed/no-mips",
+        "meal_tray expected pivot and FullRect mesh",
+        "food_rice PPU100/Point/Uncompressed/no-mips",
+        "food_rice expected pivot and FullRect mesh",
+        "food_meat PPU100/Point/Uncompressed/no-mips",
+        "food_meat expected pivot and FullRect mesh",
+        "food_vegetables PPU100/Point/Uncompressed/no-mips",
+        "food_vegetables expected pivot and FullRect mesh",
+        "alarm_clock_blank PPU100/Point/Uncompressed/no-mips",
+        "alarm_clock_blank expected pivot and FullRect mesh",
+        "wardrobe_closed PPU100/Point/Uncompressed/no-mips",
+        "wardrobe_closed expected pivot and FullRect mesh",
+        "wardrobe_open_empty PPU100/Point/Uncompressed/no-mips",
+        "wardrobe_open_empty expected pivot and FullRect mesh",
+        "keys_generic PPU100/Point/Uncompressed/no-mips",
+        "keys_generic expected pivot and FullRect mesh",
+        "flashlight PPU100/Point/Uncompressed/no-mips",
+        "flashlight expected pivot and FullRect mesh",
+        "toothbrush_cup PPU100/Point/Uncompressed/no-mips",
+        "toothbrush_cup expected pivot and FullRect mesh",
+        "towel_folded PPU100/Point/Uncompressed/no-mips",
+        "towel_folded expected pivot and FullRect mesh",
+        "usb_boot PPU100/Point/Uncompressed/no-mips",
+        "usb_boot expected pivot and FullRect mesh",
+        "screwdriver_kit PPU100/Point/Uncompressed/no-mips",
+        "screwdriver_kit expected pivot and FullRect mesh",
+        "laptop_open_case PPU100/Point/Uncompressed/no-mips",
+        "laptop_open_case expected pivot and FullRect mesh",
+        "savings_jar PPU100/Point/Uncompressed/no-mips",
+        "savings_jar expected pivot and FullRect mesh",
+        "cash_notes_blank PPU100/Point/Uncompressed/no-mips",
+        "cash_notes_blank expected pivot and FullRect mesh",
+        "service_sign_blank PPU100/Point/Uncompressed/no-mips",
+        "service_sign_blank expected pivot and FullRect mesh",
+        "bread PPU100/Point/Uncompressed/no-mips",
+        "bread expected pivot and FullRect mesh",
+        "technician_bag PPU100/Point/Uncompressed/no-mips",
+        "technician_bag expected pivot and FullRect mesh",
+        "scooter_white PPU100/Point/Uncompressed/no-mips",
+        "scooter_white expected pivot and FullRect mesh",
+        "lake_bench PPU100/Point/Uncompressed/no-mips",
+        "lake_bench expected pivot and FullRect mesh",
+        "tea_food_cart_blank PPU100/Point/Uncompressed/no-mips",
+        "tea_food_cart_blank expected pivot and FullRect mesh",
+        "street_lamp PPU100/Point/Uncompressed/no-mips",
+        "street_lamp expected pivot and FullRect mesh",
+        "peach_tea PPU100/Point/Uncompressed/no-mips",
+        "peach_tea expected pivot and FullRect mesh",
+        "rice_paper_snack PPU100/Point/Uncompressed/no-mips",
+        "rice_paper_snack expected pivot and FullRect mesh",
+        "moving_box_blank PPU100/Point/Uncompressed/no-mips",
+        "moving_box_blank expected pivot and FullRect mesh",
+        "suitcase PPU100/Point/Uncompressed/no-mips",
+        "suitcase expected pivot and FullRect mesh",
+        "camera PPU100/Point/Uncompressed/no-mips",
+        "camera expected pivot and FullRect mesh",
+        "bedding_freshman_a PPU100/Point/Uncompressed/no-mips",
+        "bedding_freshman_a expected pivot and FullRect mesh",
+        "bedding_freshman_b PPU100/Point/Uncompressed/no-mips",
+        "bedding_freshman_b expected pivot and FullRect mesh",
+        "bedding_freshman_c PPU100/Point/Uncompressed/no-mips",
+        "bedding_freshman_c expected pivot and FullRect mesh",
+        "dried_buffalo_meat PPU100/Point/Uncompressed/no-mips",
+        "dried_buffalo_meat expected pivot and FullRect mesh",
+        "hotpot_supply_bag PPU100/Point/Uncompressed/no-mips",
+        "hotpot_supply_bag expected pivot and FullRect mesh",
+        "beer_supply PPU100/Point/Uncompressed/no-mips",
+        "beer_supply expected pivot and FullRect mesh",
+        "thesis_book_blank PPU100/Point/Uncompressed/no-mips",
+        "thesis_book_blank expected pivot and FullRect mesh",
+        "bouquet PPU100/Point/Uncompressed/no-mips",
+        "bouquet expected pivot and FullRect mesh",
+        "podium PPU100/Point/Uncompressed/no-mips",
+        "podium expected pivot and FullRect mesh",
+        "committee_table PPU100/Point/Uncompressed/no-mips",
+        "committee_table expected pivot and FullRect mesh",
+        "projector_screen_blank PPU100/Point/Uncompressed/no-mips",
+        "projector_screen_blank expected pivot and FullRect mesh",
+        "graduation_backdrop_blank PPU100/Point/Uncompressed/no-mips",
+        "graduation_backdrop_blank expected pivot and FullRect mesh",
+        "beer_table PPU100/Point/Uncompressed/no-mips",
+        "beer_table expected pivot and FullRect mesh",
+        "drinking_glass PPU100/Point/Uncompressed/no-mips",
+        "drinking_glass expected pivot and FullRect mesh",
+        "bus_station_background PPU100/Point/Uncompressed/no-mips",
+        "bus_station_background expected pivot and FullRect mesh",
+        "dorm_reception_background PPU100/Point/Uncompressed/no-mips",
+        "dorm_reception_background expected pivot and FullRect mesh",
+        "canteen_background PPU100/Point/Uncompressed/no-mips",
+        "canteen_background expected pivot and FullRect mesh",
+        "lake_background PPU100/Point/Uncompressed/no-mips",
+        "lake_background expected pivot and FullRect mesh",
+        "drink_cafe_background PPU100/Point/Uncompressed/no-mips",
+        "drink_cafe_background expected pivot and FullRect mesh",
+        "research_lab_background PPU100/Point/Uncompressed/no-mips",
+        "research_lab_background expected pivot and FullRect mesh",
+        "vnu_photo_courtyard_background PPU100/Point/Uncompressed/no-mips",
+        "vnu_photo_courtyard_background expected pivot and FullRect mesh",
+        "advisor_office_background PPU100/Point/Uncompressed/no-mips",
+        "advisor_office_background expected pivot and FullRect mesh",
+        "library_background PPU100/Point/Uncompressed/no-mips",
+        "library_background expected pivot and FullRect mesh",
+        "defense_room_background PPU100/Point/Uncompressed/no-mips",
+        "defense_room_background expected pivot and FullRect mesh",
+        "a5_graduation_hall_background PPU100/Point/Uncompressed/no-mips",
+        "a5_graduation_hall_background expected pivot and FullRect mesh",
+        "binh_dong_night_background PPU100/Point/Uncompressed/no-mips",
+        "binh_dong_night_background expected pivot and FullRect mesh",
+        "luon_casual_front_idle PPU100/Point/Uncompressed/no-mips",
+        "luon_casual_front_idle expected pivot and FullRect mesh",
+        "luon_casual_front_walk_0 PPU100/Point/Uncompressed/no-mips",
+        "luon_casual_front_walk_0 expected pivot and FullRect mesh",
+        "luon_casual_front_walk_1 PPU100/Point/Uncompressed/no-mips",
+        "luon_casual_front_walk_1 expected pivot and FullRect mesh",
+        "luon_casual_front_walk_2 PPU100/Point/Uncompressed/no-mips",
+        "luon_casual_front_walk_2 expected pivot and FullRect mesh",
+        "luon_casual_front_walk_3 PPU100/Point/Uncompressed/no-mips",
+        "luon_casual_front_walk_3 expected pivot and FullRect mesh",
+        "luon_casual_back_idle PPU100/Point/Uncompressed/no-mips",
+        "luon_casual_back_idle expected pivot and FullRect mesh",
+        "luon_casual_back_walk_0 PPU100/Point/Uncompressed/no-mips",
+        "luon_casual_back_walk_0 expected pivot and FullRect mesh",
+        "luon_casual_back_walk_1 PPU100/Point/Uncompressed/no-mips",
+        "luon_casual_back_walk_1 expected pivot and FullRect mesh",
+        "luon_casual_back_walk_2 PPU100/Point/Uncompressed/no-mips",
+        "luon_casual_back_walk_2 expected pivot and FullRect mesh",
+        "luon_casual_back_walk_3 PPU100/Point/Uncompressed/no-mips",
+        "luon_casual_back_walk_3 expected pivot and FullRect mesh",
+        "luon_backpack_front_idle PPU100/Point/Uncompressed/no-mips",
+        "luon_backpack_front_idle expected pivot and FullRect mesh",
+        "luon_backpack_front_walk_0 PPU100/Point/Uncompressed/no-mips",
+        "luon_backpack_front_walk_0 expected pivot and FullRect mesh",
+        "luon_backpack_front_walk_1 PPU100/Point/Uncompressed/no-mips",
+        "luon_backpack_front_walk_1 expected pivot and FullRect mesh",
+        "luon_backpack_front_walk_2 PPU100/Point/Uncompressed/no-mips",
+        "luon_backpack_front_walk_2 expected pivot and FullRect mesh",
+        "luon_backpack_front_walk_3 PPU100/Point/Uncompressed/no-mips",
+        "luon_backpack_front_walk_3 expected pivot and FullRect mesh",
+        "luon_backpack_back_idle PPU100/Point/Uncompressed/no-mips",
+        "luon_backpack_back_idle expected pivot and FullRect mesh",
+        "luon_backpack_back_walk_0 PPU100/Point/Uncompressed/no-mips",
+        "luon_backpack_back_walk_0 expected pivot and FullRect mesh",
+        "luon_backpack_back_walk_1 PPU100/Point/Uncompressed/no-mips",
+        "luon_backpack_back_walk_1 expected pivot and FullRect mesh",
+        "luon_backpack_back_walk_2 PPU100/Point/Uncompressed/no-mips",
+        "luon_backpack_back_walk_2 expected pivot and FullRect mesh",
+        "luon_backpack_back_walk_3 PPU100/Point/Uncompressed/no-mips",
+        "luon_backpack_back_walk_3 expected pivot and FullRect mesh",
+        "luon_shirt_front_idle PPU100/Point/Uncompressed/no-mips",
+        "luon_shirt_front_idle expected pivot and FullRect mesh",
+        "luon_shirt_front_walk_0 PPU100/Point/Uncompressed/no-mips",
+        "luon_shirt_front_walk_0 expected pivot and FullRect mesh",
+        "luon_shirt_front_walk_1 PPU100/Point/Uncompressed/no-mips",
+        "luon_shirt_front_walk_1 expected pivot and FullRect mesh",
+        "luon_shirt_front_walk_2 PPU100/Point/Uncompressed/no-mips",
+        "luon_shirt_front_walk_2 expected pivot and FullRect mesh",
+        "luon_shirt_front_walk_3 PPU100/Point/Uncompressed/no-mips",
+        "luon_shirt_front_walk_3 expected pivot and FullRect mesh",
+        "luon_shirt_back_idle PPU100/Point/Uncompressed/no-mips",
+        "luon_shirt_back_idle expected pivot and FullRect mesh",
+        "luon_shirt_back_walk_0 PPU100/Point/Uncompressed/no-mips",
+        "luon_shirt_back_walk_0 expected pivot and FullRect mesh",
+        "luon_shirt_back_walk_1 PPU100/Point/Uncompressed/no-mips",
+        "luon_shirt_back_walk_1 expected pivot and FullRect mesh",
+        "luon_shirt_back_walk_2 PPU100/Point/Uncompressed/no-mips",
+        "luon_shirt_back_walk_2 expected pivot and FullRect mesh",
+        "luon_shirt_back_walk_3 PPU100/Point/Uncompressed/no-mips",
+        "luon_shirt_back_walk_3 expected pivot and FullRect mesh",
+        "luon_shirt_right_idle PPU100/Point/Uncompressed/no-mips",
+        "luon_shirt_right_idle expected pivot and FullRect mesh",
+        "luon_shirt_right_walk_0 PPU100/Point/Uncompressed/no-mips",
+        "luon_shirt_right_walk_0 expected pivot and FullRect mesh",
+        "luon_shirt_right_walk_1 PPU100/Point/Uncompressed/no-mips",
+        "luon_shirt_right_walk_1 expected pivot and FullRect mesh",
+        "luon_shirt_right_walk_2 PPU100/Point/Uncompressed/no-mips",
+        "luon_shirt_right_walk_2 expected pivot and FullRect mesh",
+        "luon_shirt_right_walk_3 PPU100/Point/Uncompressed/no-mips",
+        "luon_shirt_right_walk_3 expected pivot and FullRect mesh",
+        "luon_robe_front_idle PPU100/Point/Uncompressed/no-mips",
+        "luon_robe_front_idle expected pivot and FullRect mesh",
+        "luon_robe_front_walk_0 PPU100/Point/Uncompressed/no-mips",
+        "luon_robe_front_walk_0 expected pivot and FullRect mesh",
+        "luon_robe_front_walk_1 PPU100/Point/Uncompressed/no-mips",
+        "luon_robe_front_walk_1 expected pivot and FullRect mesh",
+        "luon_robe_front_walk_2 PPU100/Point/Uncompressed/no-mips",
+        "luon_robe_front_walk_2 expected pivot and FullRect mesh",
+        "luon_robe_front_walk_3 PPU100/Point/Uncompressed/no-mips",
+        "luon_robe_front_walk_3 expected pivot and FullRect mesh",
+        "luon_robe_back_idle PPU100/Point/Uncompressed/no-mips",
+        "luon_robe_back_idle expected pivot and FullRect mesh",
+        "luon_robe_back_walk_0 PPU100/Point/Uncompressed/no-mips",
+        "luon_robe_back_walk_0 expected pivot and FullRect mesh",
+        "luon_robe_back_walk_1 PPU100/Point/Uncompressed/no-mips",
+        "luon_robe_back_walk_1 expected pivot and FullRect mesh",
+        "luon_robe_back_walk_2 PPU100/Point/Uncompressed/no-mips",
+        "luon_robe_back_walk_2 expected pivot and FullRect mesh",
+        "luon_robe_back_walk_3 PPU100/Point/Uncompressed/no-mips",
+        "luon_robe_back_walk_3 expected pivot and FullRect mesh",
+        "luon_robe_right_idle PPU100/Point/Uncompressed/no-mips",
+        "luon_robe_right_idle expected pivot and FullRect mesh",
+        "luon_robe_right_walk_0 PPU100/Point/Uncompressed/no-mips",
+        "luon_robe_right_walk_0 expected pivot and FullRect mesh",
+        "luon_robe_right_walk_1 PPU100/Point/Uncompressed/no-mips",
+        "luon_robe_right_walk_1 expected pivot and FullRect mesh",
+        "luon_robe_right_walk_2 PPU100/Point/Uncompressed/no-mips",
+        "luon_robe_right_walk_2 expected pivot and FullRect mesh",
+        "luon_robe_right_walk_3 PPU100/Point/Uncompressed/no-mips",
+        "luon_robe_right_walk_3 expected pivot and FullRect mesh",
+        "guard_right_walk_0 PPU100/Point/Uncompressed/no-mips",
+        "guard_right_walk_0 expected pivot and FullRect mesh",
+        "guard_right_walk_1 PPU100/Point/Uncompressed/no-mips",
+        "guard_right_walk_1 expected pivot and FullRect mesh",
+        "guard_right_walk_2 PPU100/Point/Uncompressed/no-mips",
+        "guard_right_walk_2 expected pivot and FullRect mesh",
+        "guard_right_walk_3 PPU100/Point/Uncompressed/no-mips",
+        "guard_right_walk_3 expected pivot and FullRect mesh",
+        "luon_box_right_walk_0 PPU100/Point/Uncompressed/no-mips",
+        "luon_box_right_walk_0 expected pivot and FullRect mesh",
+        "luon_box_right_walk_1 PPU100/Point/Uncompressed/no-mips",
+        "luon_box_right_walk_1 expected pivot and FullRect mesh",
+        "luon_box_right_walk_2 PPU100/Point/Uncompressed/no-mips",
+        "luon_box_right_walk_2 expected pivot and FullRect mesh",
+        "luon_box_right_walk_3 PPU100/Point/Uncompressed/no-mips",
+        "luon_box_right_walk_3 expected pivot and FullRect mesh",
+        "luon_pot_right_walk_0 PPU100/Point/Uncompressed/no-mips",
+        "luon_pot_right_walk_0 expected pivot and FullRect mesh",
+        "luon_pot_right_walk_1 PPU100/Point/Uncompressed/no-mips",
+        "luon_pot_right_walk_1 expected pivot and FullRect mesh",
+        "luon_pot_right_walk_2 PPU100/Point/Uncompressed/no-mips",
+        "luon_pot_right_walk_2 expected pivot and FullRect mesh",
+        "luon_pot_right_walk_3 PPU100/Point/Uncompressed/no-mips",
+        "luon_pot_right_walk_3 expected pivot and FullRect mesh",
+        "long_leave_right_walk_0 PPU100/Point/Uncompressed/no-mips",
+        "long_leave_right_walk_0 expected pivot and FullRect mesh",
+        "long_leave_right_walk_1 PPU100/Point/Uncompressed/no-mips",
+        "long_leave_right_walk_1 expected pivot and FullRect mesh",
+        "long_leave_right_walk_2 PPU100/Point/Uncompressed/no-mips",
+        "long_leave_right_walk_2 expected pivot and FullRect mesh",
+        "long_leave_right_walk_3 PPU100/Point/Uncompressed/no-mips",
+        "long_leave_right_walk_3 expected pivot and FullRect mesh",
+        "to_leave_right_walk_0 PPU100/Point/Uncompressed/no-mips",
+        "to_leave_right_walk_0 expected pivot and FullRect mesh",
+        "to_leave_right_walk_1 PPU100/Point/Uncompressed/no-mips",
+        "to_leave_right_walk_1 expected pivot and FullRect mesh",
+        "to_leave_right_walk_2 PPU100/Point/Uncompressed/no-mips",
+        "to_leave_right_walk_2 expected pivot and FullRect mesh",
+        "to_leave_right_walk_3 PPU100/Point/Uncompressed/no-mips",
+        "to_leave_right_walk_3 expected pivot and FullRect mesh",
+        "dam_leave_right_walk_0 PPU100/Point/Uncompressed/no-mips",
+        "dam_leave_right_walk_0 expected pivot and FullRect mesh",
+        "dam_leave_right_walk_1 PPU100/Point/Uncompressed/no-mips",
+        "dam_leave_right_walk_1 expected pivot and FullRect mesh",
+        "dam_leave_right_walk_2 PPU100/Point/Uncompressed/no-mips",
+        "dam_leave_right_walk_2 expected pivot and FullRect mesh",
+        "dam_leave_right_walk_3 PPU100/Point/Uncompressed/no-mips",
+        "dam_leave_right_walk_3 expected pivot and FullRect mesh",
+        "luon_casual_front_walk native clip samples four frames at8fps and wraps to0",
+        "luon_casual_back_walk native clip samples four frames at8fps and wraps to0",
+        "luon_backpack_front_walk native clip samples four frames at8fps and wraps to0",
+        "luon_backpack_back_walk native clip samples four frames at8fps and wraps to0",
+        "luon_shirt_front_walk native clip samples four frames at8fps and wraps to0",
+        "luon_shirt_back_walk native clip samples four frames at8fps and wraps to0",
+        "luon_shirt_right_walk native clip samples four frames at8fps and wraps to0",
+        "luon_robe_front_walk native clip samples four frames at8fps and wraps to0",
+        "luon_robe_back_walk native clip samples four frames at8fps and wraps to0",
+        "luon_robe_right_walk native clip samples four frames at8fps and wraps to0",
+        "guard_right_walk native clip samples four frames at8fps and wraps to0",
+        "luon_box_right_walk native clip samples four frames at8fps and wraps to0",
+        "luon_pot_right_walk native clip samples four frames at8fps and wraps to0",
+        "long_leave_right_walk native clip samples four frames at8fps and wraps to0",
+        "to_leave_right_walk native clip samples four frames at8fps and wraps to0",
+        "dam_leave_right_walk native clip samples four frames at8fps and wraps to0"
+    ],
+    "errors": []
+}

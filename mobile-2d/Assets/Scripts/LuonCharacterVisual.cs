@@ -8,12 +8,126 @@ public class LuonCharacterVisual : MonoBehaviour
     public Sprite sitLaptopSprite;
     public Sprite lyingSprite;
     [SerializeField] private SpriteRenderer poseShadow;
+    [SerializeField] private Sprite backpackIdleSprite;
+    [SerializeField] private Sprite[] backpackWalkSprites;
+    private bool backpackEquipped;
+    public bool BackpackEquipped => backpackEquipped;
+    public void ConfigureBackpackSprites(Sprite idle, Sprite[] walk) { backpackIdleSprite = idle; backpackWalkSprites = walk; }
+    public void SetBackpackEquipped(bool equipped) { backpackEquipped = equipped; ResolveComponents(); if (interactionState == PlayerInteractionState.Standing && sr != null) sr.sprite = StandingIdle; }
+    public Sprite CurrentStandingSprite => StandingIdle;
+    private Sprite StandingIdle
+    {
+        get
+        {
+            if(productionCatalog!=null && TryProductionIdle(out var sprite))return sprite;
+            return backpackEquipped && backpackIdleSprite!=null?backpackIdleSprite:idleSprite;
+        }
+    }
+    public bool OwnsDirectionalFacing=>productionCatalog!=null;
+    private bool TryProductionIdle(out Sprite sprite)
+    {
+        if(productionFacing=="right" && productionOutfit==ProductionOutfit.Casual)
+        {sprite=backpackEquipped?productionBackpackSideIdle:productionSideIdle;return sprite!=null;}
+        string outfit=productionOutfit==ProductionOutfit.Shirt?"shirt":productionOutfit==ProductionOutfit.Robe?"robe":backpackEquipped?"backpack":"casual";
+        return productionCatalog.TryGet("luon_"+outfit+"_"+productionFacing+"_idle",out sprite);
+    }
+    private Sprite[] StandingWalk => backpackEquipped && backpackWalkSprites != null && backpackWalkSprites.Length > 0 ? backpackWalkSprites : walkSprites;
+
+    public enum ProductionOutfit { Casual, Shirt, Robe }
+    [SerializeField] private RemainingAssetCatalog productionCatalog;
+    [SerializeField] private Sprite productionSideIdle, productionBackpackSideIdle;
+    [SerializeField] private Sprite[] productionSideWalk, productionBackpackSideWalk;
+    private ProductionOutfit productionOutfit;
+    private string productionFacing="right", productionCycle="";
+    public void ConfigureProductionSprites(RemainingAssetCatalog catalog,Sprite sideIdle,Sprite[] sideWalk,Sprite packIdle,Sprite[] packWalk)
+    {productionCatalog=catalog;productionSideIdle=sideIdle;productionSideWalk=sideWalk;productionBackpackSideIdle=packIdle;productionBackpackSideWalk=packWalk;}
+    public void SetProductionOutfit(ProductionOutfit outfit){productionOutfit=outfit;productionCycle="";}
+    private bool UpdateProductionStanding(Vector2 velocity)
+    {
+        if(productionCatalog==null)return false;
+        bool moving=velocity.sqrMagnitude>.01f;
+        if(moving)
+        {
+            productionFacing=Mathf.Abs(velocity.y)>Mathf.Abs(velocity.x)?(velocity.y>0?"back":"front"):"right";
+            sr.flipX=productionFacing=="right" && velocity.x<0;
+        }
+        string outfit=productionOutfit==ProductionOutfit.Shirt?"shirt":productionOutfit==ProductionOutfit.Robe?"robe":backpackEquipped?"backpack":"casual";
+        string prefix="luon_"+outfit+"_"+productionFacing;
+        Sprite idle=null;Sprite[] walk=null;
+        if(productionFacing=="right" && productionOutfit==ProductionOutfit.Casual)
+        {idle=backpackEquipped?productionBackpackSideIdle:productionSideIdle;walk=backpackEquipped?productionBackpackSideWalk:productionSideWalk;}
+        else
+        {
+            productionCatalog.TryGet(prefix+"_idle",out idle);
+            if(productionCatalog.TryGetAnimation(prefix+"_walk",out var clip))walk=clip.frames;
+        }
+        if(idle==null || walk==null || walk.Length==0)return false;
+        if(productionCycle!=prefix){productionCycle=prefix;currentWalkFrame=0;animTimer=0;}
+        if(moving)
+        {
+            animTimer+=Time.deltaTime;
+            float interval=1f/Mathf.Max(1f,walkFrameRate);
+            while(animTimer>=interval){animTimer-=interval;currentWalkFrame=(currentWalkFrame+1)%walk.Length;}
+            sr.sprite=walk[currentWalkFrame];
+        }
+        else{animTimer=0;currentWalkFrame=0;sr.sprite=idle;}
+        return true;
+    }
 
     [Header("Bed Animation Sprites")]
     public Sprite[] bedEnterSprites;
     public Sprite[] bedIdleSprites;
     public Sprite bedSleepSprite;
     public Sprite[] bedExitSprites;
+
+    public enum DeskPoseState { None, SittingStudying, SittingTyping }
+    [SerializeField] private Sprite[] studyingSprites, typingSprites, studyingForeground, typingForeground, studyingLower, typingLower;
+    [SerializeField] private SpriteRenderer deskUpperBody;
+    private float deskTimer;
+    private int deskFrame;
+    private Color deskBaseColor;
+    [SerializeField] private Vector3 typingOffset;
+    private Vector3 deskPosition;
+    private bool deskFacing;
+    public void ConfigureTypingOffset(Vector3 offset)=>typingOffset=offset;
+    public DeskPoseState DeskPose { get; private set; }
+    public int DeskAnimationFrame=>deskFrame;
+    public void ConfigureDeskSprites(Sprite[] study, Sprite[] typing, Sprite[] studyFront, Sprite[] typingFront, Sprite[] studyBase, Sprite[] typingBase, SpriteRenderer upper)
+    { studyingSprites = study; typingSprites = typing; studyingForeground = studyFront; typingForeground = typingFront; studyingLower = studyBase; typingLower = typingBase; deskUpperBody = upper; }
+    public Sprite CurrentDeskActionFrame => deskUpperBody != null ? deskUpperBody.sprite : null;
+    private Sprite DeskBaseFrame(Sprite fallback)
+    {
+        var frames = DeskPose == DeskPoseState.SittingStudying ? studyingLower : typingLower;
+        return frames != null && frames.Length > 0 ? frames[deskFrame % frames.Length] : fallback;
+    }
+    private void UpdateDeskForeground()
+    {
+        if (deskUpperBody == null) return;
+        var frames = DeskPose == DeskPoseState.SittingStudying ? studyingForeground : typingForeground;
+        deskUpperBody.enabled = DeskPose != DeskPoseState.None && frames != null && frames.Length > 0;
+        if (!deskUpperBody.enabled) return;
+        deskUpperBody.sprite = frames[deskFrame % frames.Length];
+        deskUpperBody.flipX = sr.flipX; deskUpperBody.color = sr.color;
+    }
+    public void SetDeskPose(DeskPoseState pose)
+    {
+        ResolveComponents();
+        if (interactionState != PlayerInteractionState.Sitting) pose = DeskPoseState.None;
+        if (sr != null && DeskPose == DeskPoseState.None && pose != DeskPoseState.None) {deskBaseColor = sr.color;deskPosition=deskUpperBody!=null?deskUpperBody.transform.localPosition:Vector3.zero;deskFacing=sr.flipX;}
+        if(DeskPose!=DeskPoseState.None){if(deskUpperBody!=null)deskUpperBody.transform.localPosition=deskPosition;sr.flipX=deskFacing;}
+        if(pose==DeskPoseState.SittingTyping){if(deskUpperBody!=null)deskUpperBody.transform.position+=typingOffset;sr.flipX=false;}
+        if (sr != null && DeskPose != DeskPoseState.None && pose == DeskPoseState.None) sr.color = deskBaseColor;
+        DeskPose = pose; deskTimer = 0f; deskFrame = 0;
+        if (sr == null) return;
+        Sprite[] frames = pose == DeskPoseState.SittingStudying ? studyingSprites : typingSprites;
+        if (pose != DeskPoseState.None && frames != null && frames.Length > 0)
+        {
+            sr.sprite = DeskBaseFrame(frames[0]);
+            sr.color = pose == DeskPoseState.SittingTyping ? deskBaseColor * new Color(.9f,.97f,1f,1f) : deskBaseColor;
+        }
+        else if (interactionState == PlayerInteractionState.Sitting) sr.sprite = sitLaptopSprite;
+        UpdateDeskForeground();
+    }
 
     [Header("Animation Settings")]
     public float walkFrameRate = 8f; // frames per second
@@ -81,39 +195,45 @@ public class LuonCharacterVisual : MonoBehaviour
         ApplyInteractionState(sleep ? PlayerInteractionState.Sleeping : PlayerInteractionState.Lying);
     }
 
-    public System.Collections.IEnumerator PlayBedEnterRoutine(System.Action onComplete)
+    public System.Collections.IEnumerator PlayBedEnterRoutine(System.Action onComplete, System.Action<float> onProgress = null)
     {
-        ResolveComponents();
-        currentBedFrame = 0;
-        animTimer = 0f;
-        if (bedEnterSprites != null && bedEnterSprites.Length > 0 && sr != null)
-        {
-            while (currentBedFrame < bedEnterSprites.Length)
-            {
-                sr.sprite = bedEnterSprites[currentBedFrame];
-                float waitTime = 1f / Mathf.Max(1f, bedAnimFrameRate);
-                yield return new WaitForSeconds(waitTime);
-                currentBedFrame++;
-            }
-        }
-        onComplete?.Invoke();
+        yield return PlayBedFrames(bedEnterSprites, onComplete, onProgress);
     }
 
-    public System.Collections.IEnumerator PlayBedExitRoutine(System.Action onComplete)
+    public System.Collections.IEnumerator PlayBedExitRoutine(System.Action onComplete, System.Action<float> onProgress = null)
+    {
+        yield return PlayBedFrames(bedExitSprites, onComplete, onProgress);
+    }
+
+    private System.Collections.IEnumerator PlayBedFrames(Sprite[] frames, System.Action onComplete, System.Action<float> onProgress)
     {
         ResolveComponents();
         currentBedFrame = 0;
         animTimer = 0f;
-        if (bedExitSprites != null && bedExitSprites.Length > 0 && sr != null)
+        if (frames != null && frames.Length > 0 && sr != null)
         {
-            while (currentBedFrame < bedExitSprites.Length)
+            bool bedFacing = sr.flipX;
+            float frameDuration = 1f / Mathf.Max(1f, bedAnimFrameRate);
+            for (int frame = 0; frame < frames.Length; frame++)
             {
-                sr.sprite = bedExitSprites[currentBedFrame];
-                float waitTime = 1f / Mathf.Max(1f, bedAnimFrameRate);
-                yield return new WaitForSeconds(waitTime);
-                currentBedFrame++;
+                if (frames[frame] != null) sr.sprite = frames[frame];
+                // The first climbing pose braces toward the bed; the other poses face along its axis.
+                sr.flipX = bedEnterSprites != null && bedEnterSprites.Length > 0 && frames[frame] == bedEnterSprites[0]
+                    ? !bedFacing : bedFacing;
+                float elapsed = 0f;
+                while (elapsed < frameDuration)
+                {
+                    float progress = frames.Length == 1 ? 1f :
+                        Mathf.Clamp01((frame + elapsed / frameDuration) / (frames.Length - 1));
+                    onProgress?.Invoke(progress);
+                    elapsed += Time.deltaTime;
+                    yield return null;
+                }
             }
+            sr.flipX = bedFacing;
+            onProgress?.Invoke(1f);
         }
+        else onProgress?.Invoke(1f);
         onComplete?.Invoke();
     }
 
@@ -154,6 +274,7 @@ public class LuonCharacterVisual : MonoBehaviour
     internal void ApplyInteractionState(PlayerInteractionState state)
     {
         ResolveComponents();
+        if (state != PlayerInteractionState.Sitting) SetDeskPose(DeskPoseState.None);
         interactionState = state;
         animTimer = 0f;
         currentWalkFrame = 0;
@@ -170,8 +291,9 @@ public class LuonCharacterVisual : MonoBehaviour
             presentationCaptured = false;
         }
         Sprite pose = state == PlayerInteractionState.Sitting && sitLaptopSprite != null ? sitLaptopSprite :
+            state == PlayerInteractionState.Lying && bedSleepSprite != null ? bedSleepSprite :
             state == PlayerInteractionState.Lying && lyingSprite != null ? lyingSprite :
-            state == PlayerInteractionState.Sleeping && bedSleepSprite != null ? bedSleepSprite : idleSprite;
+            state == PlayerInteractionState.Sleeping && bedSleepSprite != null ? bedSleepSprite : StandingIdle;
         if (pose != null) sr.sprite = pose;
     }
 
@@ -179,10 +301,22 @@ public class LuonCharacterVisual : MonoBehaviour
     {
         if (sr == null) return;
 
-        if (interactionState == PlayerInteractionState.Lying && bedIdleSprites != null && bedIdleSprites.Length > 0)
+        if (interactionState == PlayerInteractionState.Sitting && DeskPose != DeskPoseState.None)
+        {
+            Sprite[] frames = DeskPose == DeskPoseState.SittingStudying ? studyingSprites : typingSprites;
+            deskTimer += Time.deltaTime;
+            float interval = DeskPose == DeskPoseState.SittingTyping ? DeskPoseTiming.Hold(deskFrame) : .35f;
+            if (frames != null && frames.Length > 0 && deskTimer >= interval)
+            {
+                deskTimer = 0f; deskFrame = (deskFrame + 1) % frames.Length; sr.sprite = DeskBaseFrame(frames[deskFrame]);
+                UpdateDeskForeground();
+            }
+            return;
+        }
+        if (interactionState == PlayerInteractionState.Lying && bedSleepSprite == null && bedIdleSprites != null && bedIdleSprites.Length > 0)
         {
             animTimer += Time.deltaTime;
-            if (animTimer >= 1.5f) // slow resting breathing / gentle pose shift
+            if (animTimer >= 0.9f) // registered breathing frames; no whole-body pose changes
             {
                 animTimer = 0f;
                 currentBedFrame = (currentBedFrame + 1) % bedIdleSprites.Length;
@@ -191,9 +325,17 @@ public class LuonCharacterVisual : MonoBehaviour
             return;
         }
 
+        if(interactionState==PlayerInteractionState.Sleeping ||
+            (interactionState==PlayerInteractionState.Lying && bedSleepSprite!=null))
+        {
+            animTimer+=Time.deltaTime;
+            transform.localScale=new Vector3(standingScale.x,standingScale.y*(1f+.006f*Mathf.Sin(animTimer*2.2f)),standingScale.z);
+            return;
+        }
         if (interactionState != PlayerInteractionState.Standing) return;
 
         Vector2 vel = rb != null ? rb.linearVelocity : Vector2.zero;
+        if(UpdateProductionStanding(vel))return;
         bool isMoving = vel.magnitude > 0.1f;
 
         if (isMoving)
@@ -202,14 +344,15 @@ public class LuonCharacterVisual : MonoBehaviour
             if (vel.x > 0.05f) sr.flipX = false;
             else if (vel.x < -0.05f) sr.flipX = true;
 
-            if (walkSprites != null && walkSprites.Length > 0)
+            Sprite[] activeWalk = StandingWalk;
+            if (activeWalk != null && activeWalk.Length > 0)
             {
                 animTimer += Time.deltaTime;
                 if (animTimer >= 1f / Mathf.Max(0.01f, walkFrameRate))
                 {
                     animTimer = 0f;
-                    currentWalkFrame = (currentWalkFrame + 1) % walkSprites.Length;
-                    sr.sprite = walkSprites[currentWalkFrame];
+                    currentWalkFrame = (currentWalkFrame + 1) % activeWalk.Length;
+                    sr.sprite = activeWalk[currentWalkFrame];
                 }
             }
         }
@@ -217,9 +360,9 @@ public class LuonCharacterVisual : MonoBehaviour
         {
             currentWalkFrame = 0;
             animTimer = 0f;
-            if (idleSprite != null)
+            if (StandingIdle != null)
             {
-                sr.sprite = idleSprite;
+                sr.sprite = StandingIdle;
             }
         }
     }

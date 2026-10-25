@@ -1,0 +1,3 @@
+2026-10-25T13:29:08.0223350Z
+passed=146 routines=3
+Homeward bus faces return direction

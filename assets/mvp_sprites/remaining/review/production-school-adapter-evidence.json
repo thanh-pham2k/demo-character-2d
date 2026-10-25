@@ -1,0 +1,103 @@
+{
+  "scope": "Reusable production bus wallet/commit and WC callback adapters in isolated Play Mode fixture; M06-M08 authored route not wired or accepted",
+  "success": true,
+  "finishedUtc": "2026-10-25T13:10:39.1678690Z",
+  "model_assertions": 91,
+  "playmode_checks": 59,
+  "files": [
+    {
+      "path": "mobile-2d/Assets/Scripts/ICommuteProgress.cs",
+      "sha256": "23589224d47c1220f65523ebaef86904e7a65907791cb7b86c1a54fb19aaf491"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionCommuteProgress.cs",
+      "sha256": "fcf06c070f0cb3085b6e61e12cdcbeed7d3f750944e0b700ef7033bba6a1bdee"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/CampusCommuteController.cs",
+      "sha256": "f730b6dfdf48798a4d74443ab7498d877388b10d0bab32f46676fbd525b4cfe4"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/DormJourneyController.cs",
+      "sha256": "88ef625c8c3f7c8469005835d9b4e0dd6cd45c6523b65a50effbfdb3978a0d56"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/YearOneTravelPresentation.cs",
+      "sha256": "ad710c76692d95cba95996d9f9e469bb5b6d8eef4b9224e122caf697b6bbcea6"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/YearOneCampaignFlow.cs",
+      "sha256": "f229661a69d657cbbf9f156752186eca1bafaae26b2b40519ba9c7953d697bdf"
+    },
+    {
+      "path": "mobile-2d/Assets/Editor/ProductionCommuteChecks.cs",
+      "sha256": "10f7eaea3c721400ead9996184b4ca8932e6cb78d15758867bc91a6624d98944"
+    },
+    {
+      "path": "mobile-2d/Assets/Editor/ProductionCommutePlayChecks.cs",
+      "sha256": "a354016c54e1315714004503152bd51f82b3007fbc86a47b73cb6a242af54bbf"
+    },
+    {
+      "path": "mobile-2d/Assets/Editor/YearOneProgressChecks.cs",
+      "sha256": "bdb4dfbe98c2e9971cd0e0f2bfafb1b7fc5ff72a8793ebd04e2f37dea49741b4"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/production-commute-host.json",
+      "sha256": "bd84299fa05fc72a6fe27793eadd2566748acbd26fd5846284df8036ef3a6efc"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/year-one-progress-next-bus.json",
+      "sha256": "990d6027420c080413138a91dc692d6fadb13867d81bb266d731f550ebe1ae9d"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/commute-playmode/report.json",
+      "sha256": "9869ef2cf21ea8e20a63c927e603179ed08290800a32e84cdd42ef4abab76454"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/commute-playmode/host-bus-parked.png",
+      "sha256": "aff713840d89dbd8d6723b3b34d4ae9ec0ad5ef16b61e700fc506a657b639546"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ICommuteProgress.cs.meta",
+      "sha256": "e2be9b04c68eb30a7f453be5ff09dc7cf415af2196ccd60203256f471d6ab7f7"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionCommuteProgress.cs.meta",
+      "sha256": "e4bc923170de9691a2a3246de58039913183666b1b11efc9f8630964047eee00"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/CampusCommuteController.cs.meta",
+      "sha256": "d5bd9d3cd57265707a176d14aa5ad18ec35933cd0823f970cc90b3915904da15"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/DormJourneyController.cs.meta",
+      "sha256": "4d13a3083bb6b46055d725a8c26a4fc3bc57739392ddd57f1021585f10d2b307"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/YearOneTravelPresentation.cs.meta",
+      "sha256": "8590ea4b141c6ac4112f37c8b1f284fad600b1586b96c534fb37735a84d1e670"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/YearOneCampaignFlow.cs.meta",
+      "sha256": "a07f9134e12471ce3616efc7d6552071e9aed60fcbb0f56a9247bcceb1ca3663"
+    },
+    {
+      "path": "mobile-2d/Assets/Editor/ProductionCommuteChecks.cs.meta",
+      "sha256": "de43e31121328f11dc0d69d660e1f87352df079e2e3e33dad61f3cf7469f1a03"
+    },
+    {
+      "path": "mobile-2d/Assets/Editor/ProductionCommutePlayChecks.cs.meta",
+      "sha256": "979a852ff9d5825916331913b3d1b5e6aa620b9996313e6e9a1a3b559dcfadc6"
+    },
+    {
+      "path": "mobile-2d/Assets/Editor/YearOneProgressChecks.cs.meta",
+      "sha256": "b797339d86fa626afa6ec33f83334e1bcdc01be2131985c51fddcff5c4da99d6"
+    }
+  ],
+  "remaining": [
+    "Wire M06 physical backpack/WC/travel/class/return/dorm reaction into production scene",
+    "Implement M07 morning deadline, interactive school montage and academic ledger",
+    "Implement M08 hotpot and sleep transition to M09",
+    "Full production route, audio, touch/device/build gates"
+  ]
+}

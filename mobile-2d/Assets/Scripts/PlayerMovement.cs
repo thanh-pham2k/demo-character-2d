@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private SpriteRenderer spriteRenderer;
 
+    private LuonCharacterVisual directionalVisual;
     private Vector2 inputVector;
     private Vector2 simulatedInputVector;
     private Vector2 lastMoveDirection = Vector2.right;
@@ -34,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
     private void ResolveComponents()
     {
         if (rb == null) rb = GetComponent<Rigidbody2D>();
+        if(directionalVisual==null)directionalVisual=GetComponentInChildren<LuonCharacterVisual>();
         if (spriteRenderer == null)
         {
             var visual = GetComponentInChildren<LuonCharacterVisual>();
@@ -58,12 +60,13 @@ public class PlayerMovement : MonoBehaviour
         simulatedInputVector = simInput;
     }
 
+    public float MoveSpeed=>moveSpeed;
     private void Update()
     {
         if (dodgeCooldownTimer > 0)
             dodgeCooldownTimer -= Time.deltaTime;
 
-        if (interactionMovementLocked)
+        if (interactionMovementLocked || YearOneRuntimeUI.CapturesMovement)
         {
             inputVector = Vector2.zero;
             if (rb != null) rb.linearVelocity = Vector2.zero;
@@ -114,7 +117,7 @@ public class PlayerMovement : MonoBehaviour
         if (inputVector != Vector2.zero)
         {
             lastMoveDirection = inputVector;
-            if (spriteRenderer != null)
+            if (spriteRenderer != null && (directionalVisual==null || !directionalVisual.OwnsDirectionalFacing))
             {
                 if (inputVector.x > 0.05f)
                     spriteRenderer.flipX = false;
@@ -132,7 +135,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         if (rb == null) return;
-        if (interactionMovementLocked)
+        if (interactionMovementLocked || YearOneRuntimeUI.CapturesMovement)
         {
             rb.linearVelocity = Vector2.zero;
             return;

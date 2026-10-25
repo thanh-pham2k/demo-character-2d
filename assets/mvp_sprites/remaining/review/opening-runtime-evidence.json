@@ -1,0 +1,1189 @@
+{
+  "scope": "M01-M09 prototype physical route, both bed choices and reviewed staging captures; M10-M45 runtime and device/audio/detail animation gates remain pending",
+  "success": true,
+  "finishedUtc": "2026-10-25T15:21:45.4415010Z",
+  "checks": 819,
+  "report": "assets/mvp_sprites/remaining/review/opening-playmode/report.json",
+  "files": [
+    {
+      "path": "assets/mvp_sprites/remaining/derived-existing/manifest.json",
+      "sha256": "04f456c805f05f57cb68ab6f3b109f8a3c00333890cde0d0ba75d83365fcf89b"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/canteen-staging-crops.json",
+      "sha256": "f796687c54c61f8faa0d391259a11a9a26d2006f3de22ec54c53cc563de8c511"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/opening-lifecycle-playmode/report.json",
+      "sha256": "c3683743e693a9382e6eac740b4c6fcb96bc812faa522aee480b71ca521e1945"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/opening-playmode/registration-before-open.png",
+      "sha256": "9964c2a58228197f41ed278c92d33abaccf8f96b0984d7889f9dc5de0d32101e"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/opening-playmode/registration-classes.png",
+      "sha256": "537da1df00800fca0cadfbd8a01f4f8a3796e87565dbdf94fa372227dfd60b6d"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/opening-playmode/registration-m10-ready.png",
+      "sha256": "54722c0b6f53cdd3079b7f5a5dfca9b57cbe87f931aae5885aa5650124b5b9fa"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/opening-playmode/registration-schedule.png",
+      "sha256": "cbcf5c748eb2ed9ed81610261ee2a6df4be4560f09de64f179f6c8ff3109ecf6"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/opening-playmode/registration-typing-world.png",
+      "sha256": "b3caf5b68647a67441ff0a38d9c1f477071739b6ea8f81e60d3d87897e1a88f1"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/opening-playmode/report.json",
+      "sha256": "8422a7b56e721b0c4b3f276f8f34a7d6023a293ba999c74f742091ba715ea6a7"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/opening-playmode/school-classroom-world.png",
+      "sha256": "0551ec57eb51fda8c61d4ad437f31f80e4fd26a2fdcd7145880fd641fe466fd2"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/opening-playmode/school-m06-complete.png",
+      "sha256": "47991f7177f4aa265be3e8dcf422af18d09e9281d5cd03c0981700a1193100ef"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/opening-playmode/school-outbound-bus.png",
+      "sha256": "b1f5fe7e019f2010a88b0a98c180b4c770b78402e31ea57c3b3ec093a93aa88d"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/opening-playmode/school-seated-world.png",
+      "sha256": "6bf8641b06f0cb0ff82d2ec23952ba446d8639c2b21943d895499a39f46edc04"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/opening-playmode/school-warmup.png",
+      "sha256": "c6e7f6364c2ea3920a2881603e9da3c4a76133f13db978899123d2cccbca6602"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/opening-playmode/school-washing.png",
+      "sha256": "d426c697baad2d8950685128cb3bd9345c58c1fd6f33ec112ede67ce4e64b508"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/opening-playmode/year1-commute-ledger.png",
+      "sha256": "21857dc8fc1b5cba4e4aad7dd64e166e00683d41c8739e3cfdc6a3abb0a3eb31"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/opening-playmode/year1-first-exam.png",
+      "sha256": "d717bab9d4784fb9290beedce35bb22121824fbbe438c6c0cbb99b7ffca00793"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/opening-playmode/year1-hotpot-dialogue.png",
+      "sha256": "5e50345dd2f706f7af9f554c8764fed05ecf032befe3f90d560a612192e30aba"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/opening-playmode/year1-hotpot-world.png",
+      "sha256": "aa9316d75f8c5006f8e68fe2a00de856e719caadacfeb40f14c5938f1b41eabc"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/opening-playmode/year1-late-queue.png",
+      "sha256": "84a11f63d3a493820ea8f810aa39799051a771d2fbc3f2695074b077123f83dd"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/opening-playmode/year1-next-bus.png",
+      "sha256": "746c798688b6d894b17221a5ae6eee61b075a4fb31bd2a806e6d9ba72c7f1ab6"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/opening-playmode/year1-on-time-bus.png",
+      "sha256": "96fb3969052fdbfca6369cb0c22c7b52c217d91612d490b4bf0c6b6961fa4d85"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/opening-playmode/year1-on-time-queue.png",
+      "sha256": "5e3e6f1377136e0f80b3776a1dd783ca7579580fb2f62bdc463548036e2bc2d1"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/opening-playmode/year1-registration-ready.png",
+      "sha256": "1c5884d8dd68f1477382a950dcd44c260e30e6bf6da0694a88c5be0170a40ef7"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/opening-playmode/year1-results.png",
+      "sha256": "74f0e52f8482e3a3d440d9637b5a04468496d519745625e3b46622e95dd4f489"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/production-year-one-data.json",
+      "sha256": "0df41ee55cdde21ac1da4c6db3e92f6eca8f61414520fa182fd9fcfccb2a2a0f"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/registration-playmode/registration-before-open.png",
+      "sha256": "6825f8c43a2278b98ca0429c380d6a21194bae67b61dc7d253ea84606e351110"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/registration-playmode/registration-classes.png",
+      "sha256": "a0df2abbc6cc4ce0da6c507a829f87004158263d88fc8a320f5afce84d6e3c13"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/registration-playmode/registration-m10-ready.png",
+      "sha256": "9f5d416cf5fb5df7679fed9d09a9befd758a0a757882c52cde44b03fbef09d12"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/registration-playmode/registration-schedule.png",
+      "sha256": "1eaa14adab0e0b32003086bc54bd0a7f268b92bdaf254ae9c031b5183d558bfd"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/registration-playmode/registration-typing-world.png",
+      "sha256": "48074e9d08551a8b4dc4ea7697a8f681b78d71ff1b90be9a8b2973ef2d792114"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/registration-playmode/report.json",
+      "sha256": "5a296ceb36eb34b4ed2428ce83f93821a50cd09a30f184793462fd70c9b77c27"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/year-one-production-playmode/report.json",
+      "sha256": "3713e13e6082c7d97a9be5c2cd910e070255e81360a7e61314a986690ca6b35c"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/year-one-production-playmode/year1-commute-ledger.png",
+      "sha256": "3f0b0c3eeb23247231856c47dbe35fd9a62bd09d46400933c98228a4952258a6"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/year-one-production-playmode/year1-expired-bus-departing.png",
+      "sha256": "8f973ef00d035d84219dc2d825ccf03ac7332e276d8c60773b41a9977668375f"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/year-one-production-playmode/year1-first-exam.png",
+      "sha256": "d4d3c2862446343a6b49dd10df155578e08c8093947becc70f60eac18b6325ff"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/year-one-production-playmode/year1-hotpot-dialogue.png",
+      "sha256": "464e5dde04c5d482cfdd12ed30115c3e500aec9db2ead0c2c3b1cb767e13f299"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/year-one-production-playmode/year1-hotpot-world.png",
+      "sha256": "4e7695c3516718ff2d4c01d75255b47462e9d1cb613b8bfcdeba2425c83e8d87"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/year-one-production-playmode/year1-late-queue.png",
+      "sha256": "15b115a33e94dfaf59602e5c19fde8db110b50722db4e7637a51cb1df99d1dd3"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/year-one-production-playmode/year1-next-bus.png",
+      "sha256": "4f266b001b0a395c8a3c221bb23b853b6a8a0732443b6e55ea4f982040b9a80f"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/year-one-production-playmode/year1-on-time-bus.png",
+      "sha256": "615afa717a654c3a399ec762a95ad0111fa3da0656c0603568714c314dd1fd3c"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/year-one-production-playmode/year1-on-time-queue.png",
+      "sha256": "aa8fa7ada7ae8aa0fdb77204180ba8e0df66a691a9a6e3c4236d3af5f4106fd7"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/year-one-production-playmode/year1-registration-ready.png",
+      "sha256": "a78e0a1df524ded2b3360aa3b753415989f45eb2585d93c342734eb9c697baed"
+    },
+    {
+      "path": "assets/mvp_sprites/remaining/review/year-one-production-playmode/year1-results.png",
+      "sha256": "6bbed056ea3b29e0f4ce27ca1fd34e0e0edccbc82ad8b3155274000334bce60d"
+    },
+    {
+      "path": "mobile-2d/Assets/AssetProduction/CanteenCounterV2.asset",
+      "sha256": "daa43b6c29d681b8b2b44414ffd07335f4eb30c4920993d5f4878b25c04d1938"
+    },
+    {
+      "path": "mobile-2d/Assets/AssetProduction/CanteenCounterV2.asset.meta",
+      "sha256": "6b4d97439c29f731a5b3892d82edd2dd131d5da4a6b7f5f1b688b773afd845bb"
+    },
+    {
+      "path": "mobile-2d/Assets/AssetProduction/CanteenTableTop.asset",
+      "sha256": "d2a8be9877ca533c0665b7b8516be056bf8f0cdc6e1ff8237b686ae0ae778a8f"
+    },
+    {
+      "path": "mobile-2d/Assets/AssetProduction/CanteenTableTop.asset.meta",
+      "sha256": "0de48a58ecbdd2c6abb6fbe6b7399646b2db443ba72fb8860fbca0c900aa6052"
+    },
+    {
+      "path": "mobile-2d/Assets/AssetProduction/HotpotCord.mat",
+      "sha256": "c8f80683389c87d929c4c9e886934954e18304d6229026244989396122de63cc"
+    },
+    {
+      "path": "mobile-2d/Assets/AssetProduction/HotpotCord.mat.meta",
+      "sha256": "2022049ff9e837ca94f3fb1725f6fb934743b0c8f75d9d9e7c07a732b7bb88b8"
+    },
+    {
+      "path": "mobile-2d/Assets/Editor/ProductionCampaignChecks.cs",
+      "sha256": "675646c3a7c8e5f1d7c6eda17b95285fc44d23468966d4e485ca941efdfbb160"
+    },
+    {
+      "path": "mobile-2d/Assets/Editor/ProductionCampaignChecks.cs.meta",
+      "sha256": "584f16f148c28e36d14ac05f999d84be69b067d8e0f172816d5647b61de850c8"
+    },
+    {
+      "path": "mobile-2d/Assets/Editor/ProductionOpeningHousekeepingBuilder.cs",
+      "sha256": "461f9b9073feeab3db8e374250e26ace8334dbb10dd3c6e1d7c697c90af2d01a"
+    },
+    {
+      "path": "mobile-2d/Assets/Editor/ProductionOpeningHousekeepingBuilder.cs.meta",
+      "sha256": "e6e38b7a34cf05e945bbd6aa80166d83701209f1996c69d572e098761c643d5a"
+    },
+    {
+      "path": "mobile-2d/Assets/Editor/ProductionOpeningPlayChecks.cs",
+      "sha256": "b143a35eba7f1d8d33e74dbd86d1d3143c7badb81f8effbdfe1633e5e2951e80"
+    },
+    {
+      "path": "mobile-2d/Assets/Editor/ProductionOpeningPlayChecks.cs.meta",
+      "sha256": "812f4c51293608c3f175b94ac334d84d1199c0a6fd879ab398237e3710f8924d"
+    },
+    {
+      "path": "mobile-2d/Assets/Editor/ProductionOpeningRegistrationBuilder.cs",
+      "sha256": "865207d05532dd90f874acdd72528b965e8c7daa40a335dd449bb4bbc4055daf"
+    },
+    {
+      "path": "mobile-2d/Assets/Editor/ProductionOpeningRegistrationBuilder.cs.meta",
+      "sha256": "ec0accb5e164065e82340287b3b9c5b869260513e9e11c417e3acd4cf7f5dd9e"
+    },
+    {
+      "path": "mobile-2d/Assets/Editor/ProductionOpeningRegistrationPlayChecks.cs",
+      "sha256": "4ea0ef52b5b7717141539ad48dba71de80210c15dc9cac6f92d27bf820cb597a"
+    },
+    {
+      "path": "mobile-2d/Assets/Editor/ProductionOpeningRegistrationPlayChecks.cs.meta",
+      "sha256": "b23828d5a99cfe1502439db34e0071fe716d18d6b89117ab43158599651c1dc3"
+    },
+    {
+      "path": "mobile-2d/Assets/Editor/ProductionOpeningSceneBuilder.cs",
+      "sha256": "22241715193b6a6267ffa203dc294499a670970a1468e1cdf90c5d58a831db69"
+    },
+    {
+      "path": "mobile-2d/Assets/Editor/ProductionOpeningSceneBuilder.cs.meta",
+      "sha256": "af1003b0e3bbe390fe8789665bc008a35da064580f7639d56d74cc169ca01af9"
+    },
+    {
+      "path": "mobile-2d/Assets/Editor/ProductionOpeningSchoolBuilder.cs",
+      "sha256": "f61a42b809552048e60979aa41d28c851653192ed5a9c11c39551e1258942e04"
+    },
+    {
+      "path": "mobile-2d/Assets/Editor/ProductionOpeningSchoolBuilder.cs.meta",
+      "sha256": "fff918383c27a8c9a9d62727c0869c1dd68608793787a83253f24040de4e6b56"
+    },
+    {
+      "path": "mobile-2d/Assets/Editor/ProductionOpeningSchoolPlayChecks.cs",
+      "sha256": "f4dfe9bcac04196cb68e831418afda4f5289e2b2d631f1fd6f4c425dbcb7e3c6"
+    },
+    {
+      "path": "mobile-2d/Assets/Editor/ProductionOpeningSchoolPlayChecks.cs.meta",
+      "sha256": "85deebe6e1c10aa93ea3fcc29637c767a691b0d8b3e9599f4539f8cdc503c032"
+    },
+    {
+      "path": "mobile-2d/Assets/Editor/ProductionOpeningYearOneBuilder.cs",
+      "sha256": "6c8723002ed09e91e07cfe2deb16e533223c304ce4c1e63c0e12f6d10c6d767b"
+    },
+    {
+      "path": "mobile-2d/Assets/Editor/ProductionOpeningYearOneBuilder.cs.meta",
+      "sha256": "0742cb340c9977cc8a8d27923f07193200b116a3fd96f5c92976bb27f26c4c95"
+    },
+    {
+      "path": "mobile-2d/Assets/Editor/ProductionOpeningYearOnePlayChecks.cs",
+      "sha256": "efb2a9b592f8778a5b8d13fe2d09726e805c6d47e4bd6128a1ea8ee2002e16fb"
+    },
+    {
+      "path": "mobile-2d/Assets/Editor/ProductionOpeningYearOnePlayChecks.cs.meta",
+      "sha256": "a809659828f5ba96e125b4866b5ccfb0794bd23cddea38e718a798e719b20115"
+    },
+    {
+      "path": "mobile-2d/Assets/Editor/ProductionYearOneChecks.cs",
+      "sha256": "69ac08f3b41924bba2aac9f6f1cc3dc1a71608c3842ef0f7bc28c84c22e55342"
+    },
+    {
+      "path": "mobile-2d/Assets/Editor/ProductionYearOneChecks.cs.meta",
+      "sha256": "355a69279fb4e762e502d59039e59e957717c34f792eb57c6f3fc32d4578a6bf"
+    },
+    {
+      "path": "mobile-2d/Assets/Resources/ProductionCampaign/missions.json",
+      "sha256": "bc2f724ac87a4c0df6486bdcfc3ba86190ef748ab082a354da7afb0ff6553d4a"
+    },
+    {
+      "path": "mobile-2d/Assets/Resources/ProductionCampaign/missions.json.meta",
+      "sha256": "702d1710f66e47bc82a105f1e2fd05957c4be25edc7a601bc03a46a113538015"
+    },
+    {
+      "path": "mobile-2d/Assets/Resources/ProductionCampaign/year-one-courses.json",
+      "sha256": "e78c80ade2a760c6a6e2551cec5202fcbf9e8a040bdb34f6f84303331e486af3"
+    },
+    {
+      "path": "mobile-2d/Assets/Resources/ProductionCampaign/year-one-courses.json.meta",
+      "sha256": "9ef93bf42d2ee2e99b89700b5536d7b5cb40e60b5f13399a5ee795d274c74aa9"
+    },
+    {
+      "path": "mobile-2d/Assets/Room404Layout/DoorOpeningSprite.asset",
+      "sha256": "ecff5f0554bc353a865bc99860ca2feec348f88a53fbf786d332d79d8545354e"
+    },
+    {
+      "path": "mobile-2d/Assets/Room404Layout/DoorOpeningSprite.asset.meta",
+      "sha256": "10ae0f9794d3865e888ef6377058c3a33f5ef43171539d300a6fde394ff983da"
+    },
+    {
+      "path": "mobile-2d/Assets/Room404Layout/H6_DeskForegroundV2.asset",
+      "sha256": "7ca869bad0a3366d6f9403151cb8a982d5563e3709d6aa7799a02ec91f738218"
+    },
+    {
+      "path": "mobile-2d/Assets/Room404Layout/H6_DeskForegroundV2.asset.meta",
+      "sha256": "1cc06a3ab0c94da258a160c0ce16a2f4ec16abeee7ad512ed14c136a058f8099"
+    },
+    {
+      "path": "mobile-2d/Assets/Scenes/Production_Opening.unity",
+      "sha256": "7f6474b9f19e657fefc44572ac1d880ba8f0c79e22d0969563dff2329e252435"
+    },
+    {
+      "path": "mobile-2d/Assets/Scenes/Production_Opening.unity.meta",
+      "sha256": "48eda6c486ab384b023acb24c197b8f6cab1cc1d2a2711778fb0f30eee6ca1f8"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/BusStopInteractable.cs",
+      "sha256": "1b809ebe55a53a597e8305da5f3616fbf4cb3b59ef14655e0a919db0612c2039"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/BusStopInteractable.cs.meta",
+      "sha256": "463cb2869de68cb85c865a7eb130e76297552fe62b14850d3d182b235778a866"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/CalculusPuzzleModal.cs",
+      "sha256": "c06c1c345dd0f5e16a31e7a5c61f0308339523a358f6344807e05f74a9451e64"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/CalculusPuzzleModal.cs.meta",
+      "sha256": "98476350f6886c19e75a3c575539d325a781ff035b4b7e79592c2e66eefb0fad"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/CampusCommuteController.cs",
+      "sha256": "657d6994566f0c50e88fa21632a29484ad9e9c3fcaf01cf8c7aa3464ca8a40da"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/CampusCommuteController.cs.meta",
+      "sha256": "d5bd9d3cd57265707a176d14aa5ad18ec35933cd0823f970cc90b3915904da15"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/DormJourneyController.cs",
+      "sha256": "4cc76c8060f77d5b24652f9b0197810d533e510e1bb87e3b74f6b61e0cb079ce"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/DormJourneyController.cs.meta",
+      "sha256": "4d13a3083bb6b46055d725a8c26a4fc3bc57739392ddd57f1021585f10d2b307"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ICommuteProgress.cs",
+      "sha256": "23589224d47c1220f65523ebaef86904e7a65907791cb7b86c1a54fb19aaf491"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ICommuteProgress.cs.meta",
+      "sha256": "e2be9b04c68eb30a7f453be5ff09dc7cf415af2196ccd60203256f471d6ab7f7"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/LuonCharacterVisual.cs",
+      "sha256": "65056af55f75b8d1ae99c47bab744e692fd9108a633310a815ad95c576b098fd"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/LuonCharacterVisual.cs.meta",
+      "sha256": "928e913ed4879a37bdc4bc9a64e9037c8bcaf76b009e849803fb9a57c10d674b"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/PlayerInteractionDetector.cs",
+      "sha256": "97d19d5d61fec6bb52772a1d530156b0488b00ce91e8775b99f63a530e990ae4"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/PlayerInteractionDetector.cs.meta",
+      "sha256": "e547ece80784aec1bbae8fe8e03d481a02dddfed0c0616c11305691d5b085368"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/PlayerInteractionStateController.cs",
+      "sha256": "13552d9b4f4f646f63c5794edfc2cf225cb6c41211eef3cb122b20b725ca30d9"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/PlayerInteractionStateController.cs.meta",
+      "sha256": "2894d57635fc676dd4fa50809f8380f145cb5faae5acfde2089b8129ed3b0cac"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/PlayerMovement.cs",
+      "sha256": "e504378fa1b95152914d1006e41543575a6b01f34903f3f01052af05ea019b6a"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/PlayerMovement.cs.meta",
+      "sha256": "2006dcd98ad7a769a6574bbea633f9d638210789affc66936aa89899cc8f6060"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionCampaignDefinition.cs",
+      "sha256": "a64ab654c2fb4b64acf6afcd3d79c3c922942722fa7990d50d2e4c76b5ce1727"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionCampaignDefinition.cs.meta",
+      "sha256": "c0d0ebab5464fe3ac76161a5d41073632f84b5bda10df7f10d178e17b354aafb"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionCampaignProgress.cs",
+      "sha256": "8d08fdb4443d85d7a8d586a9215a9b469b006571f58fc94fffc25a83ec86d0cb"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionCampaignProgress.cs.meta",
+      "sha256": "cf2b3b94ff1ad75834f9d1e1686f9f72f7357cb1b4adb2bc1ebfc00c6799c79c"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionCampaignStore.cs",
+      "sha256": "120525fd7b32bd335f33166819b552115eafc31a3de9b6e101de591b915b18b7"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionCampaignStore.cs.meta",
+      "sha256": "62bae7d39d9219573107fd90cf2baca02704aacb1e158176b3116c3e7382c787"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionCleaningSpot.cs",
+      "sha256": "5a14001ab5556023357130d71a7c69065d477ae40ff74d9b9a29e6b6d93307d8"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionCleaningSpot.cs.meta",
+      "sha256": "fa94e2918ff5767560b681fe8ed94e7e24acc9d66744d7208d9dd10de9edbd19"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionCommuteProgress.cs",
+      "sha256": "63dbae2a9ec50247fbc7bee9b1a6c5def1363fcebea812224f5a0d4ac99e77be"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionCommuteProgress.cs.meta",
+      "sha256": "e4bc923170de9691a2a3246de58039913183666b1b11efc9f8630964047eee00"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionDocumentCard.cs",
+      "sha256": "2a488dfa7e045942ecf2afb10d5ca1bf1eb5f8eecbd372afca0b69bb41265921"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionDocumentCard.cs.meta",
+      "sha256": "dddbe0178f1433898840c6e47783b113d0759db475fd80acab6a8e5247beae4e"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionDocumentDrop.cs",
+      "sha256": "3797f2ab9c00e80f67488066e04e82e7a9f6e439db6cf7609dcb7ef6ef4f9e1f"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionDocumentDrop.cs.meta",
+      "sha256": "e0b4350169b66f5a3bdf5994853d1f5f1353a74108cb08ea5a9260ed84aa5c3a"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionHoldButton.cs",
+      "sha256": "ebd3d412d4be6fc118af2c9bda2fee92c148292cf2f37572c1a9a5d2fe741fb4"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionHoldButton.cs.meta",
+      "sha256": "1eb73e3f3207f813ae6ea320185e30f4059a9be9984854c9c0cddbb6e845182e"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionMorningClock.cs",
+      "sha256": "22489db3fc53aef0baf2d99d00b9767fb5788347e6e23160aaabc199dc18b561"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionMorningClock.cs.meta",
+      "sha256": "2c96a821b7c1762902816a373d39e8fc49e102b202261067cdbe669c50facd49"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionOpeningAction.cs",
+      "sha256": "111fb07f8512a14343a4b02c2e0ac235752df85ef56a75caf8b104cfe5bfe4de"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionOpeningAction.cs.meta",
+      "sha256": "ba602fc61e98bd04f7a86d2d2f05c4023a0d403677efcddfa9349debaa9176cb"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionOpeningController.cs",
+      "sha256": "4845701e115c04431cd54ca6e078199be9c8d43b085bcbd900f98a39e292425d"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionOpeningController.cs.meta",
+      "sha256": "c3211a0cdd3c1d58f953f6b4e7b7bef779f750716bc4cb0d5c9639995183f277"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionOpeningHousekeeping.cs",
+      "sha256": "e340dc4b96c2d09bf1a8a371c6d462f6006c536661eb6063d3de09a70a04aba7"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionOpeningHousekeeping.cs.meta",
+      "sha256": "6b1f2006626c365bac689fe94091c2a2f8a279ee64612d507256999af7f1de05"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionOpeningRegistration.cs",
+      "sha256": "08cd53e6fc8eb662ede098700c2d591717ca5bcbdb9327a5b03d214820fc1b62"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionOpeningRegistration.cs.meta",
+      "sha256": "c86ce7fc42cef62e744e34d3457394b6da984db94d8d0d4abda50e9f27bfeb32"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionOpeningSchool.cs",
+      "sha256": "5b5e309030699c2b69f313a611fcaeea316f5b5a8e860aeed1ef6f7fca2e812b"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionOpeningSchool.cs.meta",
+      "sha256": "0bfb31a0164ac44c5f25d0136736af45d6fd588300ea67f0d7008dff1e07c87d"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionOpeningYearOne.cs",
+      "sha256": "1af65aab0b1a7947f1f3febdc6ba161413ad36e694868239b5173145675888b0"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionOpeningYearOne.cs.meta",
+      "sha256": "729eaa036a63e4fd5a75d6e544a73e3024d726ba2c609647a7f019798e2ba32a"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionSchoolLink.cs",
+      "sha256": "98bfe4934f45a1ee426b098f7424c97c098f1646cbf0e8c2857a50416895bfe3"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionSchoolLink.cs.meta",
+      "sha256": "4ff21546817062f51c9bbd24dcc3db5398701c461b3f56b4ce8a42caf846c4eb"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionYearOneCurriculum.cs",
+      "sha256": "c8ad4b48726313baed08797642583ff69d794c9ad89a09d6be04b6ffd9ddaf6c"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/ProductionYearOneCurriculum.cs.meta",
+      "sha256": "8c7306552e5c90280d3e2016b146cd84a96f5b8aa7a056b4fe00229a19bd2d66"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/RestroomInteractable.cs",
+      "sha256": "cba52eadbbdf4d07e125af01c2d05f2285ca7c1b1b2b73a96306aca319fbc393"
+    },
+    {
+      "path": "mobile-2d/Assets/Scripts/RestroomInteractable.cs.meta",
+      "sha256": "53a763a2006ab09709aa8cada5161212287a1a35c4ee6b2730b41bf615ae965f"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/commute/bus_33.png",
+      "sha256": "95632d786ad31c8ff4706a545d12e462aff23cb2ff64cbe129a153c2e0f61cbd"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/commute/bus_33.png.meta",
+      "sha256": "c27ac40b9216eca29255a92cf33a1e5f191be024feb5b8409afae8f46b8d4a60"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/commute/bus_sign.png",
+      "sha256": "738fd8130bb27fad40809301b88c9a89d62272e1b3e55b344796baf450b56416"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/commute/bus_sign.png.meta",
+      "sha256": "9857d8999a69093d3917e69d24508464d54aeadecb22578a7d0b8858f8e92c32"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/commute/campus.png",
+      "sha256": "4c67ad38690720b29c042815ca342240b620d83339c06dcccf563a32cf260c70"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/commute/campus.png.meta",
+      "sha256": "c1e9212d8d4bf866ce3d2bf3387b89ec55c7b11d1db720e448b3b246b180c3f5"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/commute/study_0.png",
+      "sha256": "ec4f7236bafc93da098d1b601b54547a20bf74c394736353f4daa31b51a6802e"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/commute/study_0.png.meta",
+      "sha256": "8b109c4adb3ae226acc3183bb5bd2dbe0279ec67e1579c30e12574243be42ee6"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/commute/typing_0.png",
+      "sha256": "d549d46c1441a613097a26b4462f9e49a72f7f1acfd489b20231d4d938c8c2a7"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/commute/typing_0.png.meta",
+      "sha256": "991d97ef68d707513231e35201e1d03e5371f647ac92bdada77c8a3cca2a4ed8"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/commute/typing_1.png",
+      "sha256": "9583c088691ab54fe16af8425c5ac306e69ce340eddb2f3d8324c1f8113fd2ca"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/commute/typing_1.png.meta",
+      "sha256": "d2c60904dc0c8c34b9212de169900939a6f9088e41dff02fd312b56b046cf29e"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/dorm_journey/hallway.png",
+      "sha256": "878ae3fc21ef047a489bb1fec445686ca566c21973b34a20d4189b3998aaffba"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/dorm_journey/hallway.png.meta",
+      "sha256": "4d4f3d75d675b9e2b86be8abbb19ccf5f871c051c80e5c189c4a2d2116f377c8"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/dorm_journey/wc_female.png",
+      "sha256": "9a12c421a99eb966fcdb02fc087b30580d07345630bb50511ad9e383d04b3352"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/dorm_journey/wc_female.png.meta",
+      "sha256": "c250f7de8d9aa5028a9ba4110f2719f07aebc580b2aa06ee39c458e117472b7b"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/dorm_journey/wc_male.png",
+      "sha256": "d11dbc3cd270dc0deebb04848c86fa3d6986557abccf1dbbde32a262311ea2d5"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/dorm_journey/wc_male.png.meta",
+      "sha256": "36b3a9144b468ce9c5c745b6aa030939f6c1500df95a5949d2bc11c33306956c"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/environment/bunk_bed_lengthwise.png",
+      "sha256": "980f0851f64fbb295ffb13f904f27c43063d553751fd2889f62270134a8e5c98"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/environment/bunk_bed_lengthwise.png.meta",
+      "sha256": "781a68a72ab9f6ebf074d54b091bd1267a8157b42076bf7576c7b4ce7a044fdb"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/environment/light_switch_socket.png",
+      "sha256": "c8affd94bd029ceefb494554042e9fedc273f6413f57ad8c5051cfeee04ced14"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/environment/light_switch_socket.png.meta",
+      "sha256": "9a33ba7d49e53553a28397b1905de067a22627a696e6f863087e6d42ff02c15c"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/environment/room_404_backdrop.png",
+      "sha256": "cd3871cf759691538798a9c9778e48a03a69112e67c311aff0f393e5dc490e96"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/environment/room_404_backdrop.png.meta",
+      "sha256": "963833a8a5026f82de84b1bc20a3f749ead2f5dc9904015f7ab7587c2203e661"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/environment/study_desk_chairs.png",
+      "sha256": "2853600363d4f0a8fba604fa4c90776934f4d0e0f53b157322e294d448fd6d43"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/environment/study_desk_chairs.png.meta",
+      "sha256": "bfbbee1c9d8098c9b3d8bd849123d946e072d26fb50f830dafd3b7694273d0c7"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/props/laptop_open.png",
+      "sha256": "f02043e7290e8cb16c9e56d961aa1a98dbd322b33d5663f141092922bd735603"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/props/laptop_open.png.meta",
+      "sha256": "d19ff29393c491754ed53761c4e7b3629f922c65879734153a309db6a6d12863"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/props/luon_backpack.png",
+      "sha256": "50d5a1f3ed1159ca15beba79df345cc2166d843c805593fce85deb8838ad8a25"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/props/luon_backpack.png.meta",
+      "sha256": "28fa5bf94ee4c8f57728430b7d9c50f526e8081d3e5eba9d4ece8944b5735b4b"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/props/trash_bags.png",
+      "sha256": "2a623763928c05fd7496a7cada70cba65261a103a35a63fe259803c5e327ebe0"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/props/trash_bags.png.meta",
+      "sha256": "174348845cbc5d05f55fd464f6656967ca9a0a1e5981db596681c99a74124c4e"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/props/trash_cans.png",
+      "sha256": "1b30817b744bfcf0d135eeb7a4d3f776968bb818fae185b1818d30c249a7bcdb"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/props/trash_cans.png.meta",
+      "sha256": "a937b8b18c6bc6bd0d4ec42fdc2902ecdf449683aeb6004ef978df7a9a5e873d"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/props/trash_noodles.png",
+      "sha256": "1ec4a1c780a3dca2b92f6bd89549f7270f69b0a1f7db3953a719df2f898ba43a"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/props/trash_noodles.png.meta",
+      "sha256": "082a45d238b5ad3cd8d8f1636409de64cb8aec887269dd3ff755752d35b419b6"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/props/trash_small_0.png",
+      "sha256": "514fb77b7b89161c429aca1fd81344d6e90894fd25da390ffbc0dc7103a227f4"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/props/trash_small_0.png.meta",
+      "sha256": "d7242750658bc1bd54da6171e90ccb8c5a44a4757e8dc4b4cbff23c4b539f5c6"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/C00/npc_canteen_vendor.png",
+      "sha256": "385d4b27c6cad529c1ea564784a06323d81ab9d8452ccc7c0d49b104086fe4e0"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/C00/npc_canteen_vendor.png.meta",
+      "sha256": "a23046a65c5c9ca23f8556656ce3c78175ae1755e562c30ce598661717861acc"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/C00/npc_dorm_manager.png",
+      "sha256": "f0ab6e64917a120644ea3c04c65add06b2e588c58cc91a6f6901959837ef4d72"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/C00/npc_dorm_manager.png.meta",
+      "sha256": "861f71b0c33f9c364807d6ec7c515547150a85382ef6ec87333cb1ed52ebfada"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/C00/npc_freshman_1.png",
+      "sha256": "4d69802291aca9120abe5544b23e4831b7d7e33d62dfc3556ca0bd1f152d0fc5"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/C00/npc_freshman_1.png.meta",
+      "sha256": "9c8172a38c4a46c7d4a35172aab113f68ac6ed1ff3f7235058395a417eee3850"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/C00/npc_freshman_2.png",
+      "sha256": "9ed81f2fa8bee935e5029031e666773ce7cc86794a18c9f1db8fc0e47edf0087"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/C00/npc_freshman_2.png.meta",
+      "sha256": "88fb99e374868a1a650f00383ddecdc3be4c9dbb07f5c2de375e4209e4d572fd"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/C00/npc_freshman_3.png",
+      "sha256": "53e9934e6e9923b70c05e2af4a43e535116ae3fcd8a7ed694f13f591b9b02ee1"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/C00/npc_freshman_3.png.meta",
+      "sha256": "2255897131cd1bce18a2358a105fae761be4a07e0d4f185afa3da3f08fcbcd67"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/C00/npc_h6_classmate_writing.png",
+      "sha256": "8e17baed6210624994db64d14f6d898fab72651edf95d894dc7d1d5ab5e183e0"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/C00/npc_h6_classmate_writing.png.meta",
+      "sha256": "0fed716ba704731f401e7998f4ef25d426bc5a225d6e33dc3a83acc6e7348cec"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/C00/npc_station_tout.png",
+      "sha256": "6f1d042c094f4db2c30cfa4061438a9e2ad115d7be8915ea5ceab10f2eff240e"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/C00/npc_station_tout.png.meta",
+      "sha256": "298beb80f1ff040fff1ffb9ef0dd983c8064a8e8e020a2d2211f60903e590c1c"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/C02/dam_lake_sit.png",
+      "sha256": "9a878d6c2a53f3e71fee072223babc59db846c2c6fd84afe99e0babc1958beea"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/C02/dam_lake_sit.png.meta",
+      "sha256": "053c229ef2b5223bbe442f4b000a38ac60a97862e5273e753a20e4f54b5a6325"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/C02/long_lake_sit.png",
+      "sha256": "96ddb78fc49b721462c5f15026bec2146f1f213e198a18db3646dc579107bb8f"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/C02/long_lake_sit.png.meta",
+      "sha256": "7065f2a5f8292367e7e689b15e97a07d5f76164f720fb87fb274430db326f80f"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/C02/luon_lake_sit.png",
+      "sha256": "e58b0ea56d890986d74114511f3ea9d62da63e73a7bde7092e3206289246b3bc"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/C02/luon_lake_sit.png.meta",
+      "sha256": "1c70f36b66b483bdba7a5ba5b79e372360496d6a2cbb0652dc36e8d16994504e"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/C02/to_lake_sit.png",
+      "sha256": "b824e4abb1753027a45c74b572078e5c4299fe13b1e75606da7ecfb25c8edae7"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/C02/to_lake_sit.png.meta",
+      "sha256": "a2ef34bcdfda60b5c44df23006a0d556baddf6b289fcad1f49e94a59a892b313"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/backpack_right_idle.png",
+      "sha256": "d7d8e86ae9e2bb72b1002790f761b8117bd08f48cdcb9b39d826edba54a41dc2"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/backpack_right_idle.png.meta",
+      "sha256": "4911002d59ffe47f437be955507f5b124e8ff679a5eeeb243721b8eeabeb6057"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/backpack_right_idle.sprite.json",
+      "sha256": "525e226f19fb6bd124091dfadd24ea16ac13f033d12a28b8c92c646bfb90ad61"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/backpack_right_idle.sprite.json.meta",
+      "sha256": "da7cba53a9a57d4242487fb45fddfd0d1db946c1c6c8e8320d792691fc42ac65"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/backpack_right_walk_0.png",
+      "sha256": "1466d838828efdbdf7f5f6684aea3c9b99beca91f9fa39bcac8e72b181d28209"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/backpack_right_walk_0.png.meta",
+      "sha256": "ba2106791870df5730fddc4b3181bbfbe55c291eb8d359bfc53a615844ae9e39"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/backpack_right_walk_0.sprite.json",
+      "sha256": "525e226f19fb6bd124091dfadd24ea16ac13f033d12a28b8c92c646bfb90ad61"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/backpack_right_walk_0.sprite.json.meta",
+      "sha256": "970ff68460f869ac4a0abb798cdf9a4172ad1d653e5f13f6565b4c69c2e04434"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/backpack_right_walk_1.png",
+      "sha256": "2377ab32679fa1d21b0f0b4e497271a0e8154b21b1437855ce17cc380f68646a"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/backpack_right_walk_1.png.meta",
+      "sha256": "f72cebb0c9bc5565ab26e2fe7de3c532959b3206f9933108164ba0655033ef0a"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/backpack_right_walk_1.sprite.json",
+      "sha256": "525e226f19fb6bd124091dfadd24ea16ac13f033d12a28b8c92c646bfb90ad61"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/backpack_right_walk_1.sprite.json.meta",
+      "sha256": "9dbf7d61100f69b672ff77a67fd1c326a609c800fbb351fc4d41677ffd918721"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/backpack_right_walk_2.png",
+      "sha256": "3ad2048f70ee37fa7ea265d3ad4b3a3166f6a2194634df811c740e5a091346bd"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/backpack_right_walk_2.png.meta",
+      "sha256": "0f15efdffc003a916a7f48ebdc866a4341d907c9646005c3032e85cc59ea6338"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/backpack_right_walk_2.sprite.json",
+      "sha256": "525e226f19fb6bd124091dfadd24ea16ac13f033d12a28b8c92c646bfb90ad61"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/backpack_right_walk_2.sprite.json.meta",
+      "sha256": "ac8ecb9d53b96b0de5724c21240a3456b3e9a2f9f9d580de2a80991cbf61b704"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/casual_right_idle.png",
+      "sha256": "5c255e083627a7f896331287b1ebd31522aa62cc405125db196d4346f7f71cef"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/casual_right_idle.png.meta",
+      "sha256": "edaf44ecb908df397b7e2ff0467c151920227d14d282ce81e5acb8175a3a7822"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/casual_right_idle.sprite.json",
+      "sha256": "525e226f19fb6bd124091dfadd24ea16ac13f033d12a28b8c92c646bfb90ad61"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/casual_right_idle.sprite.json.meta",
+      "sha256": "4c8b3d7a4cdd6cf7bfeb9cb42b4943005262268e3470386fc90027a0851eef47"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/casual_right_walk_0.png",
+      "sha256": "ac17cbf52c6a8f6f3edfbe0b7d1eef8ccf9f8300dbccf8b785b405dc8e8cdaed"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/casual_right_walk_0.png.meta",
+      "sha256": "6f2dfd4de4005988f3c2927f15fb57562aec26067e386ad3d1ac789b26c49b49"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/casual_right_walk_0.sprite.json",
+      "sha256": "525e226f19fb6bd124091dfadd24ea16ac13f033d12a28b8c92c646bfb90ad61"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/casual_right_walk_0.sprite.json.meta",
+      "sha256": "5bc908bae4db72131967ffc410a6240774b863b0422861232cdac21767971ca7"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/casual_right_walk_1.png",
+      "sha256": "7eed09a554e83ff6baccc5bbec0eabb1c5b8ab2e4938b536c6619240ff9996fc"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/casual_right_walk_1.png.meta",
+      "sha256": "d9fd3715688415997e475051e587e66c7612caa6a93cd11c643e6604a379d81d"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/casual_right_walk_1.sprite.json",
+      "sha256": "525e226f19fb6bd124091dfadd24ea16ac13f033d12a28b8c92c646bfb90ad61"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/casual_right_walk_1.sprite.json.meta",
+      "sha256": "6288028ade7506f2f89a45cb17cd566e42360e7749838e8f2f15479b596ace69"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/casual_right_walk_2.png",
+      "sha256": "a481b0bc54a1b27166b9a486cc4659be6538a3617260f6c1bc9c9c0b22c9a535"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/casual_right_walk_2.png.meta",
+      "sha256": "44b5c61bf9e95b505fb1f8c7c6167353bb594f3fe3d3166376e6d0fdb96479e5"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/casual_right_walk_2.sprite.json",
+      "sha256": "525e226f19fb6bd124091dfadd24ea16ac13f033d12a28b8c92c646bfb90ad61"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/casual_right_walk_2.sprite.json.meta",
+      "sha256": "0778d4dd54cd5966697e5b00e1599ab8796edfe907407ae28a6108fe0477833b"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/casual_right_walk_3.png",
+      "sha256": "d755fbec526db161cdf5719b62264cc21a07ba80291198fffaea3c0cec5d95df"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/casual_right_walk_3.png.meta",
+      "sha256": "a87e9ff6c0fa80d3ebc9c12493b7b58366b4ee59f070b7e0f502399bc4ff540b"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/casual_right_walk_3.sprite.json",
+      "sha256": "525e226f19fb6bd124091dfadd24ea16ac13f033d12a28b8c92c646bfb90ad61"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/casual_right_walk_3.sprite.json.meta",
+      "sha256": "e8707b72b351451f6d4b09c18894af42b5be33f13fabdbe542ab6b929fdddf90"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/dam_right_idle.png",
+      "sha256": "fc4854598656a466758eb2bddc914d0b672417578a975ff991f0fd454cb112e7"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/dam_right_idle.png.meta",
+      "sha256": "3e939d57428763ae14e481fbce257f20b6e43021a4b1b3d37c3466730cff4e15"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/dam_right_idle.sprite.json",
+      "sha256": "525e226f19fb6bd124091dfadd24ea16ac13f033d12a28b8c92c646bfb90ad61"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/dam_right_idle.sprite.json.meta",
+      "sha256": "eee8abf9bceedb9e0d0a2eb2cb4fa65352564dec92679e578429e47c8d5e58a5"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/long_right_idle.png",
+      "sha256": "0e12dfe2c3fc31d3ade062e1ceb6aeb58d50b21ce875ec395645184711672344"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/long_right_idle.png.meta",
+      "sha256": "52b51e6ee1dc8e38baf358e38f9180377359851078b4489423269c9069949d41"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/long_right_idle.sprite.json",
+      "sha256": "525e226f19fb6bd124091dfadd24ea16ac13f033d12a28b8c92c646bfb90ad61"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/long_right_idle.sprite.json.meta",
+      "sha256": "9e71e8d00cc234625d955767ebdbe290f8327eb16a6e11747775f7fc81a926d6"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/to_right_idle.png",
+      "sha256": "eff5934c6197a95cecd7bccef0f5754e3d697a0442701c5fec63a485d2f5f21e"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/to_right_idle.png.meta",
+      "sha256": "0503ff1191b2b763b071ff09074eff2251646af97e0d030712ad47ae9c9c510b"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/to_right_idle.sprite.json",
+      "sha256": "525e226f19fb6bd124091dfadd24ea16ac13f033d12a28b8c92c646bfb90ad61"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/DerivedExisting/to_right_idle.sprite.json.meta",
+      "sha256": "d7bb142e1406b87dbccbb955143c9e61d64c5219c07ccb78ceca96f885c12124"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/E00/bus_station_background.png",
+      "sha256": "8080899e07f141c69ab90e185159415b8d671b1497af005eab967d01c3cefb68"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/E00/bus_station_background.png.meta",
+      "sha256": "f5f0efaebc5223a41daaf6088f03b3850c60192f7463b63d332652fa5e5ce72c"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/E00/dorm_reception_background.png",
+      "sha256": "b2571d0cd999d50733d5c71840a888adcac3f2b8ade162dd6d8c30139b8667bf"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/E00/dorm_reception_background.png.meta",
+      "sha256": "3e208832eed03e7396c691912b5da681c672f62b1be9f2841a9246c2b5f81fc8"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/E01/canteen_background.png",
+      "sha256": "8436dac01d6c31e5ef6e02f881239c05a2d265b3821012c8d5419bae84645b74"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/E01/canteen_background.png.meta",
+      "sha256": "02c15f0cd68ba8f4fa3ff3bdf3e0f594c95ff2bf2cd6101046ab30ebcfb83d39"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/P00/cleaning_bucket.png",
+      "sha256": "37fce6978881d7942298253685e4ae28766866ea215b066a5c1b5537613ab34e"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/P00/cleaning_bucket.png.meta",
+      "sha256": "ce7af11d470b71e260bf0a1126ea07d6bebf6b5193a3a8d22f27a6e424e3d56c"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/P00/cleaning_rag.png",
+      "sha256": "e4be65b72dc25ff1131f250c53b42e1b9cf315fa59be653e9b8d1579237a6229"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/P00/cleaning_rag.png.meta",
+      "sha256": "a96d6d0c6dcc381a2f6a7b81251e33b4ab1ae5aa8dc2965c87ca87b37db4dfbf"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/P00/food_meat.png",
+      "sha256": "b73e258ea708d8a099c455109d3d0869037bc417df7701dc160e6b12be5abbfc"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/P00/food_meat.png.meta",
+      "sha256": "1dbe9246d302164ac97eb90e7d2ea0d84ac4261bf5ff0a1f8653391169feed0e"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/P00/food_rice.png",
+      "sha256": "a77202973ac41c60d6a3b9e1a77b8c350bf612ada09fde6573e44dd84492e183"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/P00/food_rice.png.meta",
+      "sha256": "fb38b7d1595fface9a25187300954a2d94d575add196f00040f9210aa421c3c2"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/P00/food_vegetables.png",
+      "sha256": "c102159a06ad00a9d425d80ee953513aaed7c39ecd76bf11b6a871c7394d98f2"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/P00/food_vegetables.png.meta",
+      "sha256": "76dd609cb79cc47b1cd2232ee01a9b455119bb6b95d4bd8f74a4c0275740ec57"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/P00/meal_tray.png",
+      "sha256": "396ed6b7dfd8cb323618a452d7d7d7ce3b6c96addcb85d0f724985407d9d3ece"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/P00/meal_tray.png.meta",
+      "sha256": "07670a1f2f37360bc681b6101560d2eea220dd490b4f99ebf6cc24a384ae7c0f"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/P00/mini_fan.png",
+      "sha256": "b505dcebdd8a2eeadcb4b7366f4b62bbaa0ac9b8361af03e5824a31a167de8c6"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/P00/mini_fan.png.meta",
+      "sha256": "5dec7e5be91c592d10a1550b78dc6d9bdf870e23c7d8ad0a51b608c826407958"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/P01/toothbrush_cup.png",
+      "sha256": "af0d1a62e1439329ca802918c3428898cd3b7dfb52e45e7c14b33217e9949c59"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/P01/toothbrush_cup.png.meta",
+      "sha256": "83a9802eaa4fab0958729a6d17c3a67b60c0c8061152b81cd109f1956144e715"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/P01/towel_folded.png",
+      "sha256": "37b238bc6918807f3948dd7f3776e1ba18b7c5e268d1208551d327a540a4b8f3"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/P01/towel_folded.png.meta",
+      "sha256": "6602694e062984e3b0ade78f41e5b5b86c8e85d15b2e5344631aa7e2b55f4644"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/P03/peach_tea.png",
+      "sha256": "915e94caae0d71d10a1b2c80ca6623fc437c7a2ee89040463639e9aef2e97c2f"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/P03/peach_tea.png.meta",
+      "sha256": "fdd43354a900e5e40b354004f4371762bfb665999d07d9d6a7ed25a0fe91ae1d"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/P04/dried_buffalo_meat.png",
+      "sha256": "c384cf4d67f910e40ea47948035dac1787cab171dc35962991dfc5af8b307dd9"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/P04/dried_buffalo_meat.png.meta",
+      "sha256": "81a26be4d05347b37106cccafb8792a4e8cccb90aebc02971128f0271be06a01"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/P05/drinking_glass.png",
+      "sha256": "83371488b9575bab0aa55177fc3b692a47c64dca456377e04a0ba1e45979aec4"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/remaining/P05/drinking_glass.png.meta",
+      "sha256": "da165824419558867a83d5018902109c211740e331e44bc0a2d922b48126a33c"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/year1/dam_floor.png",
+      "sha256": "bc6a0bd0071734c53ccb40e03fcad7fe856129ffed0f85435ea84dc77c69e606"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/year1/dam_floor.png.meta",
+      "sha256": "2afea72a69ed892116aa824f428c3fb6e354735572e010402b55005a999de6de"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/year1/h6_classroom_v2.png",
+      "sha256": "209aeb41f2cd27f4a5e6b6a6046555200e859d5e7803de5166019d138f107518"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/year1/h6_classroom_v2.png.meta",
+      "sha256": "397ad795a6d1860fcb68c6477fda87bcc0273634070c43964f900590b330a499"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/year1/h6_gate_v2.png",
+      "sha256": "124a486602179c9475d7223334d69dd4d965d608c4d7849adf21d4d336fedc32"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/year1/h6_gate_v2.png.meta",
+      "sha256": "c028fffa7fe5172820e48e194ef779203d8e207702a38ec5332e335e211bb056"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/year1/long_floor.png",
+      "sha256": "0467ebc5d0d99d491f28e2153a3a6f58426e835d26d5b1683a2cb7c7d654e238"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/year1/long_floor.png.meta",
+      "sha256": "81dc2f6bb969012ba7e5c0505774005e0bb66672ed078ab02b737fceb8967944"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/year1/luon_floor.png",
+      "sha256": "6b4ca8c9a61f875cb0c6612f7c7a42e5bfd3f916bc2aee315e9d45185f1eb2cf"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/year1/luon_floor.png.meta",
+      "sha256": "885655e4976430d6540543f4c232c4920f3bcdc54d2d6121db5cd5bf7aa43ea1"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/year1/pot_0.png",
+      "sha256": "d7edeea9cacf9045c5440952fbb26fad2df436a86363997a6df58778033fb9c3"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/year1/pot_0.png.meta",
+      "sha256": "c4380d7eaf3a831417a791b6fa1d5c4bde0e67c2cc90438f410c79238e6769b8"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/year1/pot_1.png",
+      "sha256": "fd4c4cb9fb89d54579090920c3b3e7b89a39d5bbcec8013076fbb289143cdafd"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/year1/pot_1.png.meta",
+      "sha256": "065df1fa3b4555a442efb2281ddc4c2afeaaf28ff3812d1df7d16beba820926e"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/year1/teacher.png",
+      "sha256": "b5331a7841d80aa3c8a44847d95c275c7b9eb64124511a793b390a41325af4b6"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/year1/teacher.png.meta",
+      "sha256": "b100705dd8a34c57bb3c87c81f790b350ad147747e55f78065d70fda123595da"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/year1/to_floor.png",
+      "sha256": "88c4c57aa575a0bfc86d12f9b57fdda399b3dce17cf7271a394a74e3d9adcc1c"
+    },
+    {
+      "path": "mobile-2d/Assets/Sprites/MVP/year1/to_floor.png.meta",
+      "sha256": "5753c1ae2911f053ad35c786b81d77ca5e7d11ae0033c87467bd2d017fdb81dd"
+    }
+  ],
+  "visual_review": "M01-M09 prototype: reviewed registration course rows/final schedule/typing-laptop staging and M08 authored meat/glass placement. WC brush-cup/towel binding and active UI verified in both full routes.819fullchecks/87registrationfixturechecks. Toast hand contact, M10night matte/window polish, artistic motion/audio/device/build and M10-M45 remain pending.",
+  "missions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ]
+}

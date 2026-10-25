@@ -24,7 +24,7 @@ public class PlayerInteractionStateController : MonoBehaviour
                 movement != null && movement.isActiveAndEnabled && !movement.IsDodging;
         }
     }
-    public IInteractable ActiveInteractable => InteractionTargetUtility.IsAvailable(interactionOwner) ? interactionOwner : null;
+    public IInteractable ActiveInteractable => InteractionTargetUtility.IsAlive(interactionOwner) ? interactionOwner : null;
     public LuonCharacterVisual CharacterVisual { get { ResolveComponents(); return characterVisual; } }
     public bool IsInteractingWith(IInteractable target) => CurrentState != PlayerInteractionState.Standing &&
         object.ReferenceEquals(interactionOwner, target);
@@ -56,9 +56,10 @@ public class PlayerInteractionStateController : MonoBehaviour
             object.ReferenceEquals(interactionOwner, target));
     }
 
-    public bool TryEnterState(PlayerInteractionState state, Transform poseMarker = null, IInteractable owner = null)
+    public bool TryEnterState(PlayerInteractionState state, Transform poseMarker = null, IInteractable owner = null, bool snapToMarker = true)
     {
         ResolveComponents();
+        if (!System.Enum.IsDefined(typeof(PlayerInteractionState), state)) return false;
         if (state == PlayerInteractionState.Standing)
         {
             ExitInteraction();
@@ -71,7 +72,8 @@ public class PlayerInteractionStateController : MonoBehaviour
 
         if (!isNewSession && !isContinuingSession) return false;
         if (isNewSession && !CanInteract) return false;
-        if (!object.ReferenceEquals(owner, null) && !InteractionTargetUtility.IsAvailable(owner)) return false;
+        if (!object.ReferenceEquals(owner, null) &&
+            !(isContinuingSession ? InteractionTargetUtility.IsAlive(owner) : InteractionTargetUtility.IsAvailable(owner))) return false;
 
         CurrentState = state;
         if (isNewSession)
@@ -88,7 +90,7 @@ public class PlayerInteractionStateController : MonoBehaviour
                 body.simulated = false;
             }
         }
-        if (poseMarker != null) MoveToMarker(poseMarker);
+        if (poseMarker != null && snapToMarker) MoveToMarker(poseMarker);
         if (characterVisual != null) characterVisual.ApplyInteractionState(state);
         return true;
     }
@@ -123,9 +125,14 @@ public class PlayerInteractionStateController : MonoBehaviour
         transform.position = position;
     }
 
+    public void UpdatePosePosition(Vector3 position, IInteractable owner)
+    {
+        if (IsInteractingWith(owner)) MoveToPosition(position);
+    }
+
     private void Update()
     {
-        if (hasInteractionOwner && !InteractionTargetUtility.IsAvailable(interactionOwner)) ExitInteraction();
+        if (hasInteractionOwner && !InteractionTargetUtility.IsAlive(interactionOwner)) ExitInteraction();
     }
 
     private void OnDisable()

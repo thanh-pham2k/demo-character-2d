@@ -1,8 +1,10 @@
-# 🎓 MASTER GAME DESIGN & MISSION FLOW: 6 NĂM ĐẠI HỌC BÁCH KHOA
+# 🎓 STORY MANUSCRIPT & MISSION NARRATIVE: 6 NĂM ĐẠI HỌC BÁCH KHOA
+
+> Tài liệu được tách theo [story/README.md](README.md). Khi có mâu thuẫn về canon/transition, dùng [PRODUCTION_FLOW_BASELINE.md](PRODUCTION_FLOW_BASELINE.md) và [GAMEPLAY_TRANSITIONS_PLAN.md](GAMEPLAY_TRANSITIONS_PLAN.md). Tiến độ asset không đồng nghĩa gameplay đã hoàn thành.
 ### "Từ Tân Sinh Viên Ngơ Ngác Đến Tấm Bằng Kỹ Sư Sau 6 Năm Đầy Sẹo"
 * **Nhân vật chính (Player Controller):** Lê Văn Lươn (Thanh Hóa – Bách Khoa HCMUT)  
-* **Thể loại:** Narrative Mission-Driven Adventure / Life-Sim RPG (Top-down 2D / 2.5D)  
-* **Thời lượng trải nghiệm:** 60 – 90 phút (Nhịp độ liền mạch, gameplay-driven 100%, không cutscene thụ động)
+* **Thể loại:** Narrative adventure cô đọng với yếu tố life-sim (Top-down 2D / 2.5D)
+* **Thời lượng trải nghiệm:** 60–90 phút (ưu tiên gameplay; montage/chuyển thời gian ngắn có chủ đích)
 
 ---
 
@@ -208,7 +210,7 @@ Không dùng màn hình đen ghi *"6 tháng sau..."* gây đứt gãy cảm xúc
 * **Mission 26: [Tộ đi làm full-time]**
   * *Nguyên nhân:* Tộ được nhận vào làm chính thức cho tòa soạn báo.
   * *Mục tiêu:* Tiễn Tộ đi làm ca sáng.
-  * *Hành động gameplay:* Ban ngày trong phòng 404 từ 4 người ➔ 3 người ➔ 2 người ➔ chỉ còn trơ trọi một mình Lươn ngồi ôm đống linh kiện máy tính cũ.
+  * *Hành động gameplay:* Lươn tiễn Tộ đi ca sáng; các bạn khác cũng vắng phòng vì lịch học/việc. Ban ngày phòng có lúc chỉ còn Lươn, nhưng cả ba bạn vẫn đang ở KTX và chưa chuyển đi.
 
 ### HỌC KỲ 8: TỤT LẠI HOÀN TOÀN & BỊ CẤM LÀM ĐỒ ÁN CÙNG KHÓA
 * **Mission 27: [Kiểm tra điều kiện làm đồ án tốt nghiệp]**
@@ -238,13 +240,14 @@ Không dùng màn hình đen ghi *"6 tháng sau..."* gây đứt gãy cảm xúc
   * *Mục tiêu:* Tiễn Tộ rời KTX.
   * *Hành động gameplay:* Tộ ôm tạm biệt Lươn, để lại tảng thịt trâu gác bếp cuối cùng. Chiếc giường thứ hai đón tiếp một người lạ khác.
 * **Mission 31: [Đạm là người cuối cùng]**
-  * *Nguyên nhân:* Đạm hoàn thành thủ tục du học, dọn hết sách vở.
-  * *Mục tiêu:* Đối thoại lần cuối với Đạm tại cửa phòng 404.
-  * *Hành động gameplay:* Đạm kéo vali đứng trước cửa, quay lại nhìn Lươn:  
+  * *Nguyên nhân:* Đạm hoàn tất thủ tục du học và báo kế hoạch chuyển đi sau lần tiếp tế cuối.
+  * *Mục tiêu:* Đối thoại với Đạm tại cửa phòng 404 trước ngày rời KTX.
+  * *Hành động gameplay:* Đạm đứng ở cửa với giấy tờ/vali chuẩn bị, nhưng vẫn ở lại phòng sau cuộc nói chuyện:
+
     * Đạm: *"Mày định học tới bao giờ?"*  
     * Lươn: *"Tao tự lo được."*  
     * Đạm: *"Tao biết."* (Im lặng 3 giây) *"Vì tao biết mày làm được nên tao mới tức!"*.  
-    Đạm bước đi. Căn phòng 404 giờ đây toàn những khuôn mặt tân sinh viên xa lạ. **404 vẫn đông, nhưng không còn là 404 của bốn thằng ngày xưa nữa!**
+    Đạm hẹn ngày đi sau lần tiếp tế M34. Hai người mới đã vào hai giường trống của Long và Tộ; người mới thứ ba chưa được xếp vào phòng khi Đạm vẫn còn ở đó.
 
 ### HỌC KỲ 9: CÚ CLICK "UNINSTALL" & THỨC TỈNH
 * **Mission 32: [Khoảnh khắc Uninstall Game]**
@@ -258,7 +261,7 @@ Không dùng màn hình đen ghi *"6 tháng sau..."* gây đứt gãy cảm xúc
 * **Mission 34: [Bữa lẩu tiếp tế lúc nửa đêm]**
   * *Nguyên nhân:* Lươn cày bài kiệt sức trong phòng KTX xa lạ.
   * *Mục tiêu:* Nhận sự tiếp sức từ những người bạn cũ.
-  * *Hành động gameplay:* Đang ngồi giải thuật toán lúc 1h sáng, có tiếng gõ cửa cộc cộc. Mở cửa: Đạm, Long, Tộ xách lẩu bò và bia sang tiếp tế: *"Nghe nói phòng này còn người chưa tốt nghiệp?"* → Đạm lẳng lặng đưa tệp tài liệu tóm tắt công thức cho Lươn: *"Ăn nhanh rồi học tiếp con chó"*.
+  * *Hành động gameplay:* Đang ôn lúc 1h sáng, Lươn nghe tiếng gõ cửa. Long, Tộ và Đạm mang đồ ăn đã chuẩn bị sẵn cùng tài liệu sang; cả nhóm nói chuyện ngắn ở khu sinh hoạt chung/hành lang để không đánh thức hai người mới trong phòng. Đạm đưa tài liệu cho Lươn: *"Ăn nhanh rồi học tiếp con chó"*. Đạm vẫn rời KTX vào sáng hôm sau; người mới thứ ba chỉ được chuyển vào khi giường đã trống.
 
 ### HỌC KỲ 10: XÓA SẠCH NỢ NẦN & MỞ KHÓA ĐỒ ÁN
 * **Mission 35: [Kỳ thi trả nợ cuối cùng]**
@@ -319,7 +322,7 @@ Không dùng màn hình đen ghi *"6 tháng sau..."* gây đứt gãy cảm xúc
   * *Hành động gameplay:*
     1. Bước ra hành lang giảng đường, điện thoại rung: `MẸ`. Bắt máy. Mẹ: *"Xong chưa con?"* → Lươn nghẹn ngào: *"Xong rồi mẹ ơi, con tốt nghiệp rồi!"*.
     2. Về phòng 404 thu dọn đồ đạc cá nhân vào chiếc balo rách: laptop, cuốn giáo trình cũ, cây tuốc-nơ-vít mòn vẹt.
-    3. Đứng trước cửa phòng nhìn vào không gian trơ trọi lần cuối.
+    3. Giữ nguyên đồ đạc của ba người mới; Lươn chỉ dọn phần đồ của mình rồi nhìn lại góc phòng 404 lần cuối.
     4. Prompt hiện lên: **`[ E ] Tắt đèn`**. Player bấm phím **E**. Bóng đèn tuýp phụt tắt cái *tách*. Lươn kéo cánh cửa sắt khép lại.
 * **Mission 45: [Lễ tốt nghiệp & Chầu nhậu Bến Bình Đông (Happy Ending)]**
   * *Nguyên nhân:* Ngày hội ngộ sau 6 năm thanh xuân.
@@ -327,7 +330,7 @@ Không dùng màn hình đen ghi *"6 tháng sau..."* gây đứt gãy cảm xúc
   * *Hành động gameplay:*
     * Bước xuống sảnh hội trường A5 Bách Khoa. Bố mẹ từ quê Thanh Hóa lặn lội vào ôm chầm lấy Lươn, tự hào nhìn con trai mặc áo cử nhân.
     * Phía sau, Đạm, Long, Tộ mặc đồ công sở chỉnh tề bất ngờ xuất hiện cầm bó hoa to tướng hò reo ăn mừng.
-    * Cả nhóm kéo nhau về bờ kênh Bến Bình Đông nhà Long uống bia tới sáng, nhắc lại chuyện cũ: thằng nào từng cúp học, thằng nào từng rớt môn, chuyện nấu lẩu trộm bị bảo vệ KTX rượt.
+    * Sau lễ, cả nhóm đi từ khuôn viên trường tới bờ kênh Bến Bình Đông bằng một đoạn montage di chuyển. Họ uống bia tới sáng, nhắc lại chuyện cũ: thằng nào từng cúp học, thằng nào từng rớt môn, chuyện nấu lẩu trộm bị bảo vệ KTX rượt.
     * Objective cuối cùng: **`ĐI CÙNG ANH EM`**. Player điều khiển Lươn chạy lại khoác vai 3 người bạn. Màn hình mờ dần (Fade to black) trong tiếng cười nói rộn rã.
 
 ---

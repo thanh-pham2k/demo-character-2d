@@ -1,0 +1,386 @@
+{
+  "batch": "C01",
+  "provenance": "generated_composite_batch",
+  "source_file": "assets/mvp_sprites/remaining/C01/source.png",
+  "source_sha256": "9f64804ec22442f41b923b96434d395afd66258575ccdee0f3b316e008580b15",
+  "source_dimensions": [
+    1774,
+    887
+  ],
+  "grid": [
+    4,
+    2
+  ],
+  "crop_format": "x_y_width_height_top_left",
+  "tool": "built_in_imagegen",
+  "outputs": [
+    {
+      "id": "luon_tired_idle",
+      "missions": [
+        10,
+        11,
+        19
+      ],
+      "source_crop_xywh": [
+        0,
+        0,
+        463,
+        466
+      ],
+      "normalization": {
+        "source_bbox": [
+          140,
+          76,
+          334,
+          455
+        ],
+        "scale": 0.633245382585752,
+        "paste_xy": [
+          66,
+          80
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C01/luon_tired_idle.png",
+      "alpha_bounds": [
+        140,
+        76,
+        334,
+        455
+      ],
+      "touches_cell_edge": false,
+      "sha256": "c236af15810edb54efdebff5ab5a6e8134a9ca91ad4ab0968972b7776ad07cff",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "luon_phone_sad",
+      "missions": [
+        16
+      ],
+      "source_crop_xywh": [
+        463,
+        0,
+        426,
+        466
+      ],
+      "normalization": {
+        "source_bbox": [
+          117,
+          62,
+          301,
+          456
+        ],
+        "scale": 0.6091370558375635,
+        "paste_xy": [
+          72,
+          80
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C01/luon_phone_sad.png",
+      "alpha_bounds": [
+        117,
+        62,
+        301,
+        456
+      ],
+      "touches_cell_edge": false,
+      "sha256": "761d77d9e3611a470f30dff6eac3e128baf4c60dbd17cf70261b65ff099a523e",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "long_gaming_shout",
+      "missions": [
+        10
+      ],
+      "source_crop_xywh": [
+        889,
+        0,
+        446,
+        466
+      ],
+      "normalization": {
+        "source_bbox": [
+          90,
+          81,
+          340,
+          456
+        ],
+        "scale": 0.5066666666666667,
+        "paste_xy": [
+          64,
+          130
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C01/long_gaming_shout.png",
+      "alpha_bounds": [
+        90,
+        81,
+        340,
+        456
+      ],
+      "touches_cell_edge": false,
+      "sha256": "e2c07bcb487417ad6a86b495a4e24d9deecaa21bdc83a53b3e3e3f886ec02b19",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "luon_exam_worried",
+      "missions": [
+        14
+      ],
+      "source_crop_xywh": [
+        1335,
+        0,
+        439,
+        466
+      ],
+      "normalization": {
+        "source_bbox": [
+          116,
+          103,
+          324,
+          457
+        ],
+        "scale": 0.536723163841808,
+        "paste_xy": [
+          72,
+          130
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C01/luon_exam_worried.png",
+      "alpha_bounds": [
+        116,
+        103,
+        324,
+        457
+      ],
+      "touches_cell_edge": false,
+      "sha256": "03b1fa866763f1a8386f4611f78138d6d2f0dba1b5b5af5dd6a57171ec918b55",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "luon_exam_bite_pen",
+      "missions": [
+        14
+      ],
+      "source_crop_xywh": [
+        0,
+        466,
+        463,
+        421
+      ],
+      "normalization": {
+        "source_bbox": [
+          138,
+          52,
+          348,
+          404
+        ],
+        "scale": 0.5397727272727273,
+        "paste_xy": [
+          71,
+          130
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C01/luon_exam_bite_pen.png",
+      "alpha_bounds": [
+        138,
+        52,
+        348,
+        404
+      ],
+      "touches_cell_edge": false,
+      "sha256": "3161aa90540c9db136bc806c144c39aacf8ca6a6ade9dd8e40ad0840bb05cd79",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "luon_carry_hotpot",
+      "missions": [
+        12
+      ],
+      "source_crop_xywh": [
+        463,
+        466,
+        426,
+        421
+      ],
+      "normalization": {
+        "source_bbox": [
+          122,
+          10,
+          337,
+          402
+        ],
+        "scale": 0.6122448979591837,
+        "paste_xy": [
+          62,
+          80
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C01/luon_carry_hotpot.png",
+      "alpha_bounds": [
+        122,
+        10,
+        337,
+        402
+      ],
+      "touches_cell_edge": false,
+      "sha256": "98fc7e04d73511006a41fd868096c5c857e0bebf87c61ad2b92be48ab59d538c",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "guard_idle",
+      "missions": [
+        12
+      ],
+      "source_crop_xywh": [
+        889,
+        466,
+        446,
+        421
+      ],
+      "normalization": {
+        "source_bbox": [
+          124,
+          14,
+          305,
+          411
+        ],
+        "scale": 0.6045340050377834,
+        "paste_xy": [
+          73,
+          80
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C01/guard_idle.png",
+      "alpha_bounds": [
+        124,
+        14,
+        305,
+        411
+      ],
+      "touches_cell_edge": false,
+      "sha256": "1db77d7eab191ac3429f6a7d7212a0abdfdab6411009ef70fc6972c8f9f43efa",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    },
+    {
+      "id": "guard_inspecting",
+      "missions": [
+        12
+      ],
+      "source_crop_xywh": [
+        1335,
+        466,
+        439,
+        421
+      ],
+      "normalization": {
+        "source_bbox": [
+          108,
+          39,
+          373,
+          408
+        ],
+        "scale": 0.6504065040650406,
+        "paste_xy": [
+          42,
+          80
+        ],
+        "canvas": [
+          256,
+          320
+        ],
+        "feet_baseline": 320
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "ppu": 100,
+      "output_file": "mobile-2d/Assets/Sprites/MVP/remaining/C01/guard_inspecting.png",
+      "alpha_bounds": [
+        108,
+        39,
+        373,
+        408
+      ],
+      "touches_cell_edge": false,
+      "sha256": "1b5c905cdacb5a3e97296b609adcfd9d64bb4e96dad321944086676b572adc38",
+      "visual_qa": "pass_source_and_sliced_preview_review"
+    }
+  ],
+  "qa": {
+    "slice_bounds": "pass",
+    "visual": "pass_source_and_sliced_preview_review",
+    "unity_import": "pass_current_hashes",
+    "integration": "pending"
+  }
+}
