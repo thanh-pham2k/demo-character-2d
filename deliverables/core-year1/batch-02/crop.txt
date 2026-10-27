@@ -1,0 +1,6 @@
+Original: (1672, 941); RGB; grid 2x2, row-major; exterior black margin 7 px, central divider approximately x=831..839, y=466..474.
+01-canteen.png: (7, 7, 831, 466)
+02-bus-stop.png: (840, 7, 1665, 466)
+03-h6-gate.png: (7, 475, 831, 934)
+04-classroom.png: (840, 475, 1665, 934)
+Pivot: background canvas; PPU: chưa xác định. Không resize.

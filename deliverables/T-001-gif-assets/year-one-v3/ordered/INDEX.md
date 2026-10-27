@@ -1,5 +1,7 @@
 # Danh mục ảnh tham chiếu Năm 1
 
+> **Bố cục mới:** mỗi người dùng giường gác xép với bàn bên dưới, không có nệm dưới. Các ảnh nhánh 04B, ảnh bổ sung giường dưới và những cảnh thể hiện giường hai nệm không còn phù hợp; chưa được thay thế toàn bộ. Quy tắc chọn giường mới chưa author.
+
 40 ảnh chính theo thứ tự spec; ảnh lặp là chủ ý khi cùng layout đại diện nhiều mốc. Mã nguồn `bNN-XX` chỉ ô XX trong sheet batch NN; các bản cắt trùng đã được dọn, ảnh chọn vẫn nằm trong thư mục này. Các bước bổ sung trong `bo-sung/` cần ghép vào sequence tương ứng. Chữ, giờ, lựa chọn và kết quả được thêm khi dựng GIF; ảnh không chứa UI chính xác.
 
 | ID | Nội dung | Nguồn |

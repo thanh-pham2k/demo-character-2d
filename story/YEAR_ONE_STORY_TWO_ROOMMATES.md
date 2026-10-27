@@ -11,7 +11,7 @@ Tài liệu cốt truyện nhiều năm và scene/runtime hiện hành vẫn có
 - **Luồn:** tân sinh viên, người chơi điều khiển; tự chọn cách dùng thời gian giữa học tập, sinh hoạt và bạn bè.
 - **Long:** bạn cùng phòng duy nhất của Luồn trong bản này; vui vẻ, thích chơi game, đồng thời có lịch học và nhu cầu nghỉ ngơi riêng. Lời rủ của Long tạo lựa chọn, không biến Long thành nhân vật xấu.
 - **Đạm và Tộ:** bạn của nhóm, gặp ở trường hoặc tới thăm 404; có thể cùng dự bữa lẩu cuối năm. Không yêu cầu họ xuất hiện trong mọi cảnh.
-- **404:** nơi hai người ngủ, học, chơi và trở về sau giờ học. Mỗi người có chỗ ngủ, bàn và laptop riêng. Hai người chơi cùng dùng hai máy. Bố cục cụ thể và lựa chọn dãy/tầng giường còn phải đối chiếu scene hiện có.
+- **404:** nơi hai người ngủ, học, chơi và trở về sau giờ học. Mỗi người có một giường gác xép phía trên và bàn/laptop riêng phía dưới; không có giường tầng dưới. Hai người chơi cùng dùng hai máy. Quy tắc chọn chỗ ngủ mới chưa được author; T-001 cũ vẫn mô tả lựa chọn tầng trên/dưới.
 
 ## Câu chuyện theo 12 mốc
 
@@ -33,5 +33,5 @@ Tài liệu cốt truyện nhiều năm và scene/runtime hiện hành vẫn có
 - Luồn và Long có ngoại hình nhất quán; tránh thêm một bản sao Luồn hoặc một người ở thứ ba.
 - Một không gian 404 xuyên suốt; ánh sáng và vật dụng thay đổi dần, không đổi căn phòng ở mỗi mốc.
 - Tách các thời điểm chơi game, trao đổi về đèn, tắt đèn và ngủ. Giữ hai laptop khi cả hai chơi.
-- Khi có nhánh, thể hiện từng kết quả riêng: giường trên/dưới, chơi/đi học, kịp/lỡ bus và nghỉ/ngủ.
+- Khi có nhánh, thể hiện từng kết quả riêng: chơi/đi học, kịp/lỡ bus và nghỉ/ngủ. Bỏ ảnh giường dưới khỏi bản theo bố cục mới; quy tắc chọn chỗ ngủ còn chờ author.
 - Không dùng ảnh minh họa làm bằng chứng rằng UI, state hoặc animation đã implement. Logic gameplay và giờ cụ thể theo [T-001](../tasks/active/T-001-year-one-gameplay-plan.md); chi tiết khung theo [storyboard](../YEAR_ONE_STORYBOARD_FRAME_SPEC.md).

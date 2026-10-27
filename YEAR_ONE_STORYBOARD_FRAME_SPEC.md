@@ -4,7 +4,7 @@
 
 Bộ ảnh là reference để duyệt không gian, trình tự và lựa chọn trước khi dựng GIF. Mỗi ảnh là một trạng thái có thể nhận biết trong game, không phải sprite hoặc animation hoàn chỉnh. Không coi ảnh là bằng chứng flow đã chạy đúng trong Unity.
 
-**Bối cảnh storyboard Năm 1 đã chọn:** phòng 404 có hai người ở là Luồn và Long. Đạm và Tộ là bạn, có thể ghé phòng hoặc tham gia ăn lẩu; không được mặc định là người ở cùng trong bản storyboard này. Tóm tắt câu chuyện: [YEAR_ONE_STORY_TWO_ROOMMATES.md](story/YEAR_ONE_STORY_TWO_ROOMMATES.md). Đây là hướng cho storyboard Năm 1, chưa thay thế canon nhiều năm hoặc thay đổi runtime; các tài liệu gốc vẫn mô tả phòng bốn người và cần quyết định/migration riêng nếu mở rộng thay đổi.
+**Bối cảnh storyboard Năm 1 đã chọn:** phòng 404 có hai người ở là Luồn và Long, mỗi người một giường gác xép với bàn học ở dưới; không có giường tầng dưới. Đạm và Tộ là bạn, có thể ghé phòng hoặc tham gia ăn lẩu. Tóm tắt câu chuyện: [YEAR_ONE_STORY_TWO_ROOMMATES.md](story/YEAR_ONE_STORY_TWO_ROOMMATES.md). Nhánh giường dưới trong bản storyboard cũ không còn phù hợp; lựa chọn gameplay thay thế chưa được author. T-001 cũ vẫn quy định chọn tầng trên/dưới, nên cần cập nhật riêng khi thiết kế lại gameplay; không xem bản storyboard này là thay đổi runtime hoặc canon nhiều năm.
 
 Nguồn gameplay: [T-001](tasks/active/T-001-year-one-gameplay-plan.md). Khi spec này và T-001 khác nhau, T-001 quyết định logic hiện tại. Các tình huống dưới đây là ví dụ cho storyboard, không tự tạo luật gameplay mới. Những đề xuất môi trường, bố cục và thời điểm chỉ là định hướng hình ảnh, cần duyệt trước khi implement.
 
@@ -32,11 +32,11 @@ Mỗi frame ghi **bối cảnh → hành động → thông tin cần overlay �
 
 **02 — Hành lang tầng 4.** Luồn đứng trước cửa 404, chìa khóa trong tay; cửa và số phòng rõ. Overlay: mở khóa → bước vào. → 03.
 
-**03 — Khám phá phòng và chọn giường.** Luồn và Long tìm hiểu căn phòng hai người; thể hiện lựa chọn tầng trên/tầng dưới và chỗ của Long rõ ràng, không vẽ thêm người ở. Nếu dùng hai dãy giường như T-001 hiện tại, highlight dãy và tầng có thể chọn; đây là điểm cần chốt khi chuyển bản storyboard sang scene hai người. → 04A/04B.
+**03 — Khám phá phòng.** Luồn và Long tìm hiểu hai khu gác xép và bàn phía dưới; không vẽ thêm người ở. Nếu có lựa chọn chỗ ngủ, UI và quy tắc phải được author riêng. → 04A.
 
-**04A — Giường trên.** Luồn tới thang, leo và kiểm tra chỗ nằm; thấy rõ giường đã chọn. → 05.
+**04A — Giường gác xép.** Luồn tới thang, leo và kiểm tra chỗ nằm phía trên bàn; thấy rõ khu ngủ. → 05.
 
-**04B — Giường dưới.** Luồn đi tới giường dưới và nằm thử, không leo thang. → 05. Đây là nhánh thay thế 04A.
+**04B — Bỏ khỏi bản phòng mới.** Ảnh giường dưới thuộc phương án cũ, không phù hợp phòng gác xép; không thay bằng nhánh gameplay mới khi chưa author.
 
 **05 — Ổn định phòng.** Sau lựa chọn, balo được đặt tại chỗ đã chọn, Luồn dọn đồ và làm quen Long. Overlay: đặt balo → dọn đồ → trò chuyện. → 06.
 
@@ -106,7 +106,7 @@ Mỗi frame ghi **bối cảnh → hành động → thông tin cần overlay �
 
 **29B — Đèn đã tắt.** Biến thể không có xung đột bật đèn, tùy state. → 30. Không đặt lựa chọn “chơi thêm 30 phút” như luật đã chốt.
 
-**30 — Nghỉ tại giường.** Ánh sáng phù hợp state, Luồn và Long tới đúng giường; Luồn leo thang nếu đã chọn tầng trên. Có thể nằm nghỉ rồi trở lại hoạt động hoặc chọn ngủ/preview Day 204. → 31.
+**30 — Nghỉ tại giường.** Ánh sáng phù hợp state, Luồn và Long tới đúng khu của mình và leo thang lên giường gác xép. Có thể nằm nghỉ rồi trở lại hoạt động hoặc chọn ngủ/preview Day 204. → 31.
 
 ### Day 204 — Học và chuẩn bị HK2
 

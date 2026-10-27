@@ -1,0 +1,12 @@
+Source (1655, 950); rectangles (left, top, right, bottom), pixels:
+background: (8, 3, 756, 461)
+reference: (8, 468, 756, 711)
+bed_blue: (773, 72, 1057, 267)
+bed_green: (1224, 77, 1499, 267)
+desk_left: (776, 339, 993, 466)
+desk_right: (1009, 339, 1211, 466)
+chair: (1557, 347, 1652, 473)
+books: (1236, 375, 1302, 421)
+laptop: (1321, 366, 1422, 433)
+plant: (1461, 344, 1524, 417)
+Checkerboard and labels may be baked in. Draft only.
