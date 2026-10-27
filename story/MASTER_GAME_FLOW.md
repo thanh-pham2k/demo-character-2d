@@ -46,9 +46,9 @@ Không dùng màn hình đen ghi *"6 tháng sau..."* gây đứt gãy cảm xúc
 │ NĂM 1   │ Kỳ 1 & Kỳ 2   │ BÌNH THƯỜNG (Normal)         │ Nhập học, đậu hết môn cơ bản, 4 đứa gắn kết thành bạn thân KTX 404.    │
 │ NĂM 2   │ Kỳ 3 & Kỳ 4   │ CHẬM TIẾN ĐỘ (Behind)        │ Rớt Giải Tích 1 & Vật Lý 1 → Mất Prerequisite → Khóa toàn bộ môn sau! │
 │ NĂM 3   │ Kỳ 5 & Kỳ 6   │ NỢ ĐỌNG / MƯU SINH (Debt)    │ Vừa cày Win kiếm tiền vừa học lại, nợ cũ giảm nhưng nợ mới phát sinh.   │
-│ NĂM 4   │ Kỳ 7 & Kỳ 8   │ BỊ TỤT LẠI (Left Behind)     │ Bạn bè tốt nghiệp; Lươn thiếu tín chỉ → BỊ CẤM ĐĂNG KÝ ĐỒ ÁN CÙNG KHÓA!│
-│ NĂM 5   │ Kỳ 9 & Kỳ 10  │ SỬA HẬU QUẢ (Recovery)       │ Phòng đón người mới; Lươn xóa game cày sạch nợ, cuối năm 5 ĐỦ ĐIỀU KIỆN│
-│ NĂM 6   │ Kỳ 11 & Kỳ 12 │ VỀ ĐÍCH (Graduation Arc)     │ Toàn bộ năm 6 chỉ làm Đồ án: Gặp GVHD → Code → Demo → Báo cáo → Bảo vệ!│
+│ NĂM 4   │ Kỳ 7 & Kỳ 8   │ ÁP LỰC / BỊ TỤT LẠI         │ Học + tiền + môn nợ + đồ án nhỏ; chưa đủ đăng ký đồ án tốt nghiệp.     │
+│ NĂM 5   │ Kỳ 9 & Kỳ 10  │ ÁP LỰC CAO NHẤT              │ Trả CTDL, chuẩn bị đồ án/internship, sửa máy, thiếu tiền, bạn bè rời đi.│
+│ NĂM 6   │ Kỳ 11 & Kỳ 12 │ GIẢI QUYẾT / PAYOFF          │ Môn cuối → đủ điều kiện → đồ án/bảo vệ → học phí → rời 404 → tốt nghiệp│
 └─────────┴───────────────┴──────────────────────────────┴────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -227,8 +227,8 @@ Không dùng màn hình đen ghi *"6 tháng sau..."* gây đứt gãy cảm xúc
 
 ---
 
-## 🟣 NĂM 5 — NGƯỜI Ở LẠI: "KHÔNG THỂ TIẾP TỤC THẾ NÀY!" (BƯỚC NGOẶT)
-*Mục tiêu cốt lõi:* Đối mặt với sự chia ly và nỗi cô đơn; thức tỉnh bản thân xóa game; cày sạch nợ môn để cuối năm 5 đủ điều kiện làm đồ án.
+## 🟣 NĂM 5 — "MÌNH CÓ KỊP TỐT NGHIỆP KHÔNG?"
+*Mục tiêu cốt lõi:* Giai đoạn áp lực nhất: nợ môn + chuẩn bị đồ án + internship nếu hợp lệ + sửa laptop + tiền + gia đình, trong lúc bạn bè rời KTX. Chưa tốt nghiệp; không mở đời nhân viên full-time. Đồ án chính thức vẫn chờ M36. Chi tiết task/cơ hội internship/thu nhập CẦN AUTHOR, không dựng company hoặc offer của Lươn từ công việc Long/Tộ.
 
 ### ĐẦU NĂM 5: CHIA LY & CĂN PHÒNG ĐÔNG NHƯNG LẠ LẪM
 * **Mission 29: [Long dọn đồ rời KTX]**
@@ -263,23 +263,17 @@ Không dùng màn hình đen ghi *"6 tháng sau..."* gây đứt gãy cảm xúc
   * *Mục tiêu:* Nhận sự tiếp sức từ những người bạn cũ.
   * *Hành động gameplay:* Đang ôn lúc 1h sáng, Lươn nghe tiếng gõ cửa. Long, Tộ và Đạm mang đồ ăn đã chuẩn bị sẵn cùng tài liệu sang; cả nhóm nói chuyện ngắn ở khu sinh hoạt chung/hành lang để không đánh thức hai người mới trong phòng. Đạm đưa tài liệu cho Lươn: *"Ăn nhanh rồi học tiếp con chó"*. Đạm vẫn rời KTX vào sáng hôm sau; người mới thứ ba chỉ được chuyển vào khi giường đã trống.
 
-### HỌC KỲ 10: XÓA SẠCH NỢ NẦN & MỞ KHÓA ĐỒ ÁN
-* **Mission 35: [Kỳ thi trả nợ cuối cùng]**
-  * *Nguyên nhân:* Cơ hội cuối cùng để hoàn thành toàn bộ môn tiên quyết trước khi hết hạn đào tạo.
-  * *Mục tiêu:* Đạt điểm Pass toàn bộ môn nợ cũ.
-  * *Hành động gameplay:* Bước vào phòng thi với tâm thế ôn tập kỹ lưỡng. Minigame giải đề toán và lập trình: Thanh tiến độ hoàn thành đạt 100%.
-* **Mission 36: [Cổng đào tạo bật đèn xanh]**
-  * *Nguyên nhân:* Đã trả hết toàn bộ nợ nần học tập của 4 năm trước.
-  * *Mục tiêu:* Kiểm tra tư cách làm đồ án tốt nghiệp.
-  * *Hành động gameplay:* Đăng nhập portal. Màn hình bật sáng dòng chữ xanh lá rực rỡ:  
-    **`ĐÃ HOÀN THÀNH TOÀN BỘ MÔN TIÊN QUYẾT - TÍCH LŨY 136/150 TÍN CHỈ`**  
-    **`ĐỦ ĐIỀU KIỆN ĐĂNG KÝ ĐỒ ÁN TỐT NGHIỆP NĂM 6!`**.  
-    Lươn cuối cùng đã san phẳng toàn bộ hậu quả, sẵn sàng cho trận đánh cuối cùng!
+### CUỐI NĂM 5 → ĐẦU NĂM 6: MÔN CUỐI VÀ ĐIỀU KIỆN ĐỒ ÁN
+* **Mission 35: [Trả nợ môn cuối — trải qua hai năm]**
+  * Cuối Năm 5 học/ôn/thi CTDL kỳ 9/10; kết quả PASS thực mới mở HĐH kỳ 11. Đầu Năm 6 đăng ký/học/assignment/ôn/thi HĐH theo lịch CẦN AUTHOR. Không gộp hai môn vào một attempt hoặc cấp PASS vì thanh progress 100%.
+  * Routine/bus/H6/eligibility/attempt/submit/portal và recovery theo evidence. Nếu còn FAIL giữ reason và đường học/thi lại hợp lệ; không ép đạt để chạy câu chuyện. Save đã PASS không thi lại để kéo dài năm.
+  * Cuối Năm 5 bàn giao toàn bộ chuẩn bị đồ án, internship history, ca khách, học phí/nợ, quan hệ và phòng 404; không reset hoặc tự tốt nghiệp.
 
----
+## 🔵 NĂM 6 — "6 NĂM VỪA RỒI CÓ Ý NGHĨA GÌ?"
+*Mục tiêu cốt lõi:* Hội tụ hậu quả năm trước, hoàn thành môn cuối và đồ án, thanh toán nghĩa vụ, rời 404, tốt nghiệp và nhìn lại hành trình. Dùng lại các hệ thống, không thêm một năm đi làm khó hơn.
 
-## 🔵 NĂM 6 — VỀ ĐÍCH: "LÀM CHO XONG THỨ MÌNH BẮT ĐẦU"
-*Mục tiêu cốt lõi:* Trải nghiệm trọn vẹn quy trình làm đồ án tốt nghiệp kỹ sư thực thụ từ nghiên cứu, code, debug đến bảo vệ trước hội đồng; khép lại 6 năm thanh xuân.
+* **Mission 36: [Cổng đào tạo bật đèn xanh — sau môn cuối, đầu Năm 6]**
+  * Đăng nhập portal, đối soát course facts và reasons. Khi thật sự đủ 136/150 và hết nợ tiên quyết mới nhận form/lịch GVHD M37. Đây là quyền đăng ký đồ án, chưa phải công nhận tốt nghiệp. Mapping 118→136→150 CẦN AUTHOR, không tự sinh môn/tín chỉ.
 
 ### HỌC KỲ 11: ĐỒ ÁN TỐT NGHIỆP — NGHIÊN CỨU & BỊ BÁC BỎ
 * **Mission 37: [Đăng ký đồ án & Gặp GVHD]**
@@ -315,23 +309,24 @@ Không dùng màn hình đen ghi *"6 tháng sau..."* gây đứt gãy cảm xúc
   * *Hành động gameplay:* Lươn mặc áo sơ mi trắng thẳng thớm, cắm dây máy chiếu. Bấm phím chuyển slide đúng nhịp. Trả lời các câu hỏi vặn vẹo hiểm hóc của hội đồng bằng kiến thức thực chiến vững vàng.
   * *Kết quả:* Thầy chủ tịch hội đồng mỉm cười gật đầu:  
     **`KẾT QUẢ: ĐẠT (ĐIỂM A)`**.  
-    Lê Văn Lươn chính thức được công nhận tốt nghiệp Kỹ sư Bách Khoa sau 6 năm ròng rã!
+    Lươn đã đạt phần bảo vệ; còn phải đối soát kết quả học vụ và học phí cuối trước xác nhận đủ điều kiện nhận bằng. A chỉ ghi khi thực đạt tiêu chí, không tự cấp từ lượt tập dượt.
 * **Mission 44: [Cuộc gọi cho mẹ & TẮT ĐÈN PHÒNG 404 (Cú Chốt Cảm Xúc)]**
   * *Nguyên nhân:* Hoàn thành mọi nghĩa vụ học tập, kết thúc cuộc sống sinh viên KTX.
   * *Mục tiêu:* Báo tin cho mẹ và bàn giao lại phòng KTX.
   * *Hành động gameplay:*
-    1. Bước ra hành lang giảng đường, điện thoại rung: `MẸ`. Bắt máy. Mẹ: *"Xong chưa con?"* → Lươn nghẹn ngào: *"Xong rồi mẹ ơi, con tốt nghiệp rồi!"*.
-    2. Về phòng 404 thu dọn đồ đạc cá nhân vào chiếc balo rách: laptop, cuốn giáo trình cũ, cây tuốc-nơ-vít mòn vẹt.
+    1. Bước ra hành lang giảng đường, điện thoại rung: `MẸ`. Bắt máy. Mẹ: *"Xong chưa con?"* → Lươn báo đúng state: *"Con bảo vệ xong rồi mẹ ơi"*; chỉ nói đã tốt nghiệp sau khi có xác nhận đầy đủ.
+    2. Đối soát/đóng học phí cuối nếu còn nghĩa vụ có thật, xử lý ca/đồ khách tồn. Không tự cộng tiền hoặc sinh khoản nợ; số tiền/điều kiện CẦN AUTHOR. Về 404, tháo đồ của mình khỏi tường, gấp chăn, cất laptop/giáo trình/tuốc-nơ-vít vào balo.
     3. Giữ nguyên đồ đạc của ba người mới; Lươn chỉ dọn phần đồ của mình rồi nhìn lại góc phòng 404 lần cuối.
-    4. Prompt hiện lên: **`[ E ] Tắt đèn`**. Player bấm phím **E**. Bóng đèn tuýp phụt tắt cái *tách*. Lươn kéo cánh cửa sắt khép lại.
-* **Mission 45: [Lễ tốt nghiệp & Chầu nhậu Bến Bình Đông (Happy Ending)]**
+    4. Nhìn góc phòng lần cuối; “404 trống” là góc Lươn hoặc ký ức phòng cũ, không xóa đồ ba người mới. Bạn cũ đã chuyển đi Năm 5; Năm 6 là hội ngộ/tạm biệt, không dọn đi lần nữa.
+    5. Prompt hiện lên: **`[ E ] Tắt đèn`**. Player bấm phím **E**. Bóng đèn tuýp phụt tắt cái *tách*. Lươn kéo cánh cửa sắt khép lại rồi tự tay trả chìa khóa KTX; không tắt đèn sinh hoạt của người mới đang sử dụng.
+* **Mission 45: [Lễ tốt nghiệp & Nhìn lại sáu năm]**
   * *Nguyên nhân:* Ngày hội ngộ sau 6 năm thanh xuân.
   * *Mục tiêu:* Nhận bằng kỹ sư và sum họp cùng gia đình, bạn bè.
   * *Hành động gameplay:*
     * Bước xuống sảnh hội trường A5 Bách Khoa. Bố mẹ từ quê Thanh Hóa lặn lội vào ôm chầm lấy Lươn, tự hào nhìn con trai mặc áo cử nhân.
-    * Phía sau, Đạm, Long, Tộ mặc đồ công sở chỉnh tề bất ngờ xuất hiện cầm bó hoa to tướng hò reo ăn mừng.
-    * Sau lễ, cả nhóm đi từ khuôn viên trường tới bờ kênh Bến Bình Đông bằng một đoạn montage di chuyển. Họ uống bia tới sáng, nhắc lại chuyện cũ: thằng nào từng cúp học, thằng nào từng rớt môn, chuyện nấu lẩu trộm bị bảo vệ KTX rượt.
-    * Objective cuối cùng: **`ĐI CÙNG ANH EM`**. Player điều khiển Lươn chạy lại khoác vai 3 người bạn. Màn hình mờ dần (Fade to black) trong tiếng cười nói rộn rã.
+    * Long, Tộ và Đạm hội ngộ theo lịch có mặt đã author; Đạm cần cầu nối về từ du học, không teleport. Chưa author lịch về thì không giả đã có mặt. Hội thoại/flashback dựa trên history thực.
+    * Sau lễ, cả nhóm đi từ khuôn viên trường tới bờ kênh Bến Bình Đông bằng một đoạn montage di chuyển. Họ uống bia tới sáng, nhắc lại chuyện cũ: thằng nào từng cúp học, thằng nào từng rớt môn, chuyện lẩu KTX và kết quả thực sự đã xảy ra trong save; không kể một nhánh chưa chơi như ký ức thật.
+    * Objective cuối cùng: **`ĐI CÙNG ANH EM`**. Player điều khiển Lươn chạy lại khoác vai 3 người bạn. Màn hình mờ dần trong tiếng cười nói. Hồi tưởng Năm 1→6 từ event thật, trở lại góc Lươn đã trống, rồi thông điệp/credits. Chỉ lưu Finished sau khi hoàn thành tuyến tốt nghiệp. Sau credits có thể hiện tin “Ngày mai đi làm nhớ tới sớm nhé” nếu save có lời hẹn nhận việc hợp lệ; không tự tạo offer hoặc mở gameplay đi làm.
 
 ---
 
@@ -346,5 +341,8 @@ Không dùng màn hình đen ghi *"6 tháng sau..."* gây đứt gãy cảm xúc
 
                    Không quan trọng bạn đi nhanh hay đi chậm,
                      quan trọng là bạn đã không bỏ cuộc...
+
+              Tưởng mình đến đây để học một ngành.
+                    Cuối cùng lại học cách sống.
 ══════════════════════════════════════════════════════════════════════════════
 ```

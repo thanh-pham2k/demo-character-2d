@@ -1,0 +1,39 @@
+# Audit M01–M09 theo design mới
+
+- **Ngày audit:** 2026-10-26
+- **Runtime mục tiêu:** `mobile-2d/Assets/Scenes/Production_Opening.unity`
+- **Phạm vi bằng chứng:** đọc design/baseline, mission definition và các review runtime đã lưu. Không chạy Unity/test lại; không có playtest người mới trong dữ liệu hiện có.
+- **Quy ước verdict:** `đạt` = có bằng chứng runtime cho cơ chế được mô tả; `sửa` = review ghi nhận gap cụ thể; `chưa kiểm chứng` = trải nghiệm/khả năng người chơi hiểu chưa có bằng chứng. `đạt` không đồng nghĩa đã nghiệm thu trải nghiệm.
+
+## Kết quả
+
+| Mission | Gameplay verb | Choice / trade-off | Hậu quả state/story | Recovery | Transition | Bằng chứng runtime | Verdict |
+|---|---|---|---|---|---|---|---|
+| M01 | Từ chối người mời xe, đi mua vé, lên xe | Có thể từ chối chèo kéo; tiền vé 7.000đ là chi phí bắt buộc. Nếu thiếu tiền có hỗ trợ vừa đủ | Vé bị trừ một lần khi tới KTX; hành động thành công mới ghi event | Hỗ trợ bù đúng phần thiếu cho chuyến hiện tại; không farm tiền | Bến xe → sảnh KTX; chuyển vùng sau khi lên xe | `PRODUCTION_OPENING_REVIEW.md`; review M01–M05 ghi full route 271 checks, cả hai lựa chọn giường | **chưa kiểm chứng** — flow runtime có; trade-off và tín hiệu của hỗ trợ chưa có playtest |
+| M02 | Nộp giấy, nhận chìa khóa, đi lên tầng 4 | Giấy nhập học phải nộp trước; kéo nhầm balo bị từ chối. Không có trade-off dài hạn | Khóa chỉ cấp sau giấy; khóa mở cửa phòng 404 | Sai item không commit, có thể thử lại | Sảnh → cầu thang/tầng 4 → cửa 404 | `PRODUCTION_OPENING_REVIEW.md`; thao tác giấy đúng/sai nằm trong route M01–M05 | **đạt** — gate và recovery kỹ thuật có bằng chứng; readability chưa có playtest |
+| M03 | Chọn giường, đặt balo, siết ốc và cắm quạt | Chọn giường trái/phải là khác biệt bố trí, chưa thấy trade-off gameplay | Lưu giường; balo và các tương tác tiếp theo dùng đúng vị trí đã chọn | Thả nút/hủy/pause không commit; tiếp tục từ checkpoint an toàn | Mở khóa và vào phòng → objective dọn phòng M04 | `PRODUCTION_OPENING_REVIEW.md`; hai lựa chọn giường và hold/cancel có trong báo cáo M01–M05 | **chưa kiểm chứng** — chưa có hệ quả đáng kể cho lựa chọn giường; cần xác nhận đây là flavor có chủ ý |
+| M04 | Mua dụng cụ, lau bốn điểm trong 60 giây | Mua bộ vệ sinh 5.000đ; phần dọn chạy timer, chưa ghi nhận trade-off chiến lược | Tiền chỉ trừ khi mua; dọn đủ mới mở tiếp diễn bạn cùng phòng | Hết giờ chỉ retry phần dọn, không lặp mua sắm/tiến trình trước đó | Phòng → căn tin mua đồ → phòng; bạn cùng phòng tới sau khi dọn | `PRODUCTION_HOUSEKEEPING_REVIEW.md`; timeout, pause, reload và retry có trong 271 checks | **sửa** — bốn lần lau dưới timer có nguy cơ thành thao tác lặp; rút gọn hoặc làm rõ kỹ năng/quyết định theo systems plan |
+| M05 | Chọn bữa, ăn cùng nhóm, xem lịch rồi ngủ | Chọn món theo ngân sách; menu 6 lựa chọn và có thể mua trà; lựa chọn ảnh hưởng số dư tiền | Lựa chọn bữa lưu vào event; hỗ trợ đầu kỳ 100.000đ chỉ nhận một lần; tín chỉ vẫn 0 | Không đủ tiền thì bị chặn mua; còn hỗ trợ một lần theo ledger | Căn tin → phòng/qua đêm → chuẩn bị M06 | `PRODUCTION_HOUSEKEEPING_REVIEW.md`; menu, chặn vượt ví, hỗ trợ một lần, resume có trong 271 checks | **chưa kiểm chứng** — state/budget có thật; chưa biết người chơi nhận ra trade-off hoặc cảm thấy lựa chọn có ý nghĩa |
+| M06 | Lấy balo, xếp hàng/rửa mặt, đi xe, giải warm-up, học và kể lại | Thời gian buổi sáng và fare; WC Nam là tuyến hợp lệ; warm-up là thử thách ngắn. Đạm phản ứng khi Lươn kể chuyện | Tín chỉ chưa tăng trước thi; event học/kể mở sáng M07; Đạm là phản ứng story ở KTX | Sai câu hỏi có retry; bỏ puzzle không ghi pass; có checkpoint ở mốc an toàn | Phòng → WC/hành lang → trạm → H6 → về 404/Đạm → sáng khác | `PRODUCTION_SCHOOL_REVIEW.md`; full M01–M06 390 checks; save/load, puzzle sai/retry/cancel/đúng, chuyến về và phản ứng Đạm | **chưa kiểm chứng** — gameplay/state được kiểm tra; trade-off thời gian và độ rõ của hậu quả cần playtest |
+| M07 | Xếp hàng WC, chọn/chờ chuyến xe, điểm danh, học và thi | Có giờ giới hạn 120s; kịp chuyến hoặc lỡ xe rồi đón chuyến sau. Fare 7.000đ; điểm danh phản ứng theo route | On-time/next-bus được ghi; chuỗi 6 môn/thi cộng tối đa 32 tín chỉ theo kết quả; montage ngày đại diện | Chuyến sau ghé thật; retry bài/thi; checkpoint lưu timer và kết quả từng môn | 07:20 tại 404 → hàng/WC → trạm/H6 → các ngày đại diện → tổng kết năm | `PRODUCTION_YEAR_ONE_REVIEW.md`; full M01–M08 739 checks, gồm hai nhánh xe, timer/reload, 6 môn và ledger | **chưa kiểm chứng** — runtime có nhánh chuyến sau, fare và phản ứng điểm danh; người chơi có đọc được chi phí/hậu quả trước lựa chọn hay không chưa được playtest. |
+| M08 | Lấy bếp, cắm điện, thêm đồ, nấu/ăn/cụng ly, ngủ | Chọn dành buổi tối cho nhóm; hiện không có trade-off rõ ngoài thời gian/đồ ăn | Không thêm khoản ăn chưa author; ngủ mở kỳ 3 và registration M09; không cấp Finished | Có thể hủy hold trước khi event lưu; retry thao tác cắm/nấu theo interaction | 404 → ăn cùng nhóm → ngủ/ thẻ chuyển kỳ → sáng M09 | `PRODUCTION_YEAR_ONE_REVIEW.md`; M08 thuộc full route 739 checks; `PRODUCTION_REGISTRATION_REVIEW.md` ghi M09 mở đúng sau ngủ | **sửa** — chuỗi hold/cắm/nấu có nguy cơ là thao tác thủ tục; quyết định/feedback của bữa lẩu cần rõ hơn. Animation tiếp xúc/cụng ly chưa được nghiệm thu riêng. |
+| M09 | Mở laptop, refresh, chọn lớp, xác nhận lịch | GT2-0900 hết chỗ; chọn ba lớp còn chỗ với giờ khác nhau, phải review lịch và chốt | Lịch lưu; không đổi tiền/tín chỉ; mở tuần học đại diện và entry M10, không nhảy mission | Chưa đủ lựa chọn thì không commit; draft chưa chốt bị bỏ; sau commit load khôi phục lịch | Ngủ M08 → 08:59 portal → tuần học đại diện → M10 tối 23:40 | `PRODUCTION_REGISTRATION_REVIEW.md`; fixture 87 checks và full M01–M09 819 checks; UI capture đã review | **chưa kiểm chứng** — lịch và gate có runtime evidence; mức độ trade-off khi lớp hết chỗ và ý nghĩa lịch 06:45 cần playtest |
+
+## Ba vấn đề ưu tiên đưa vào T-007
+
+1. **Đọc được trade-off trước khi chọn:** M05 và M09 có lựa chọn ngân sách/lịch, nhưng chưa có bằng chứng người mới nhận ra giá phải trả hoặc hệ quả về sau. Trong slice, kiểm tra lựa chọn đi học/chơi với Long, attendance/relationship và phản ứng sáng hôm sau.
+2. **Recovery và chi phí khi trễ:** M07 có tuyến chuyến sau nhưng cần làm rõ người chơi biết giờ/fare/hậu quả trước khi commit; kiểm tra họ có hiểu recovery mà không thấy game phạt vòng lặp.
+3. **Nhịp activity và transition:** M04 lau bốn điểm có timer; M08 cắm/nấu/ăn có nhiều bước hold nhưng ít quyết định; M07–M09 dựa vào ngày đại diện/tuần học. Slice nên kiểm tra độ dài 8–12 phút, rút ngắn thao tác lặp và preview rõ thời gian/hậu quả trước transition.
+
+## Kết luận về bằng chứng
+
+- Có bằng chứng prototype/runtime cho các flow M01–M09; các mốc cuối lần lượt là 271 checks (M01–M05), 390 (M01–M06), 739 (M01–M08), 819 (M01–M09), theo các review ngày 2026-10-25. Đây là evidence kỹ thuật đã lưu, không phải phép đo design acceptance.
+- Chưa có playtest với người mới, số liệu hiểu trade-off, khả năng truy nguyên hậu quả, ý muốn chơi tiếp, hoặc đánh giá đầy đủ animation/contact/audio/touch/device/build. Không kết luận các pillar đã đạt chỉ từ số checks.
+- Audit này không đổi canon hay thêm content. Timestamps campaign ngoài giờ runtime cụ thể 07:20/08:59 chưa được author đầy đủ; T-006 (trước đây là T-003) vẫn cần giải quyết cho campaign dài, còn slice T-007 phải dùng transition sandbox rõ nguồn/đích.
+
+## Nguồn
+
+- Design: `story/GAME_DESIGN_PILLARS.md`, `story/GAMEPLAY_SYSTEMS_PLAN.md`, `story/GAMEPLAY_TRANSITIONS_PLAN.md`, `story/PLAYTEST_AND_ACCEPTANCE_PLAN.md`.
+- Canon: `story/PRODUCTION_FLOW_BASELINE.md`.
+- Runtime reviews: `story/PRODUCTION_OPENING_REVIEW.md`, `story/PRODUCTION_HOUSEKEEPING_REVIEW.md`, `story/PRODUCTION_SCHOOL_REVIEW.md`, `story/PRODUCTION_YEAR_ONE_REVIEW.md`, `story/PRODUCTION_REGISTRATION_REVIEW.md`, `story/PRODUCTION_CAMPAIGN_IMPLEMENTATION.md`.
+- Mission data: `mobile-2d/Assets/Resources/ProductionCampaign/missions.json`.

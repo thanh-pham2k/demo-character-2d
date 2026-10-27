@@ -1,5 +1,7 @@
 # Năm 1 v2 — 10 milestone và hậu quả học tập
 
+> **Tài liệu lịch sử v2.** T-001 đã chuyển source sang lịch 12 mốc/save v3; xem [YEAR_ONE_T001_IMPLEMENTATION.md](YEAR_ONE_T001_IMPLEMENTATION.md). Kết quả kiểm tra ghi dưới đây chỉ thuộc bản v2 cũ, không nghiệm thu thay đổi T-001.
+
 ## Phạm vi
 
 Áp dụng cho scene đang dùng `Room404_MVP`. Mở rộng `YearOneProgress`, `YearOneSchedule`, controller và store hiện có. Không thay pipeline truyện riêng `Production_Opening`, không sinh ảnh mới và không triển khai học lại Năm 2.

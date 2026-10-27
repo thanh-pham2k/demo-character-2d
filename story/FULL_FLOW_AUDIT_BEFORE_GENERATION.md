@@ -4,6 +4,8 @@ Ngày: 25/10/2026. Phạm vi: toàn bộ Mission 01–45, transition, hệ thố
 Trạng thái: phân tích tĩnh source/kịch bản, đề xuất thiết kế; chưa sửa gameplay, chưa generate ảnh.
 Không coi báo cáo test cũ là bằng chứng full game đã hoàn thành. Không chạy Play Mode mới cho bản rà soát này.
 
+> Ghi chú 26/10/2026: đây là audit lịch sử. Lịch HĐH kỳ 10/M36 cuối Năm 5 trong bản này đã được thay bằng [baseline mới](PRODUCTION_FLOW_BASELINE.md): môn cuối và M36 đầu Năm 6; payoff theo [plan Năm 6](YEAR_SIX_PAYOFF_PLAN.md). Không dùng bảng cũ làm lịch author hiện hành.
+
 ## 1. Kết luận
 
 Cốt truyện có arc rõ: tài năng/chủ quan → hậu quả → mưu sinh → chia ly → chủ động sửa sai → trưởng thành.

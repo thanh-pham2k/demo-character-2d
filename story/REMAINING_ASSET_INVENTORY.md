@@ -163,8 +163,10 @@ Các ID N dẫn tới mục 5–7; R ở mục 3; U ở mục 8. Animation batch
 | M32 | R_LAPTOP, R_TYPE | Không | Không | U_UNINSTALL | Giữ đúng nút; chưa được nhận đồ án hay A |
 | M33 | R_BED, R_WC, R_H6, R_BACKPACK | npc_freshman_1, npc_freshman_2, npc_freshman_3, alarm_clock_blank, toothbrush_cup, towel_folded, bedding_freshman_a, bedding_freshman_b, bedding_freshman_c | AN00, AN01 | U_WAKE, U_TRAVEL, U_ACADEMIC | 06:30 dậy ngay; học/trả nợ, không đổi thành06:00 |
 | M34 | R_ROOM, R_POT, R_FLOOR, R_STUDY | long_office, to_office, dam_travel, hotpot_supply_bag, beer_supply, drinking_glass | Không | U_DIALOGUE, U_VFX, U_PHONE | Trước khi Đạm bay; pose sàn gắn khuôn mặt/áo công sở bằng rig/crop nếu cần |
-| M35 | R_H6, R_STUDY | Không | AN00 | U_EXAM, U_ACADEMIC | Kỳ9passCTDL rồi kỳ10HĐH; không thi lại GT2 đãpass |
-| M36 | R_LAPTOP | Không | Không | U_ACADEMIC | 136/150, đủ tiên quyết; mới mởform đăng ký đồ án |
+| M35 | R_H6, R_STUDY | Không | AN00 | U_EXAM, U_ACADEMIC | CTDL kỳ9/10 → PASS mới mở HĐH kỳ11 Năm6; không thi lại GT2 đãpass |
+| M36 | R_LAPTOP | Không | Không | U_ACADEMIC | Đầu Năm6 sau điểm môn cuối: 136/150, đủ tiên quyết; mới mở form đồ án |
+
+M35-B/M36 chuyển sang đầu Năm 6 theo baseline 26/10/2026; nhóm asset theo module không phải ranh giới năm narrative. Reuse asset thi/portal hiện có.
 
 ### M5 — Năm 6
 

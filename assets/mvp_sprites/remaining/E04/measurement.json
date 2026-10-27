@@ -1,9 +1,0 @@
-{
-  "method": "visual_panel_boundary_verified_in_panel-boundary-review.jpg",
-  "source_size": [
-    1254,
-    1254
-  ],
-  "split_y": 627,
-  "rejected": "Largest global row difference can be an internal ceiling/floor edge; not a sufficient automatic boundary test."
-}

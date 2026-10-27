@@ -1,9 +1,0 @@
-Create ONE NEW transparent game PROP BATCH SHEET for Room404. Attached prop sheet is STYLE REFERENCE ONLY: match outlined warm pixel-art-inspired2.5D painterly objects, slightly elevated front-three-quarter view, crisp readable shading. Do not copy its items. True transparent alpha background, no glow/fog/halos/floor/shadows/text/logos/labels/borders/gridlines. Each object fully isolated inside its assigned invisible square cell with at least15% blank margin on every side; do NOT crop object parts. Objects can have different real-world sizes, runtime scales them individually. EXACTLY3columns x2rows,SIX equal square cells (target1536x1024), not8cells. TOP ROW:
-1 A modest dark wooden presentation podium with a small gooseneck microphone attached. No presenter, emblem, writing or screen.
-2 A VERY LONG committee table for5people, dark wood legs, simple dark-red tablecloth, a few small water bottles and BLANK nameplates on top. No chairs or people. Broad table proportion about4:1 so it can seat5 separate committee sprites.
-3 A plain rectangular pull-down projector screen with slim metal frame/stand, screen face blank white, no projected picture/text.
-BOTTOM ROW:
-4 A modest freestanding graduation backdrop panel with burgundy fabric border and plain cream central area, no letters, emblem or words, ready for runtime title; no stage or people.
-5 A round/oval stainless-steel Vietnamese sidewalk dinner/beer table, a few shared food dishes on top, NO beer bottles/cans/glasses or people; those are separate props. All table legs visible.
-6 A single clear drinking glass with ice and light amber beverage, isolated, no hands/logo, ready for clink animation.
-Exactly6isolated prop groups with full safety margins and true alpha, no glow or background.

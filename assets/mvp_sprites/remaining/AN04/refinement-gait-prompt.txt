@@ -1,7 +1,0 @@
-Edit the ENTIRE12-sprite4column x3row sheet in reference1. Preserve ALL identities, faces, hairstyles, costumes, upper-body poses and cell order. Change ONLY the leg/foot gait phases to follow the FOUR STICK-POSES in reference2 for EVERY row. Reference2 red=near leg and blue=far leg are POSE GUIDES ONLY: do NOT color the final legs red/blue, do not draw skeletons/lines.
-Column1 WIDE CONTACT: near leg goes forward toRIGHT, far leg back toLEFT.
-Column2 CLOSED PASSING: supporting near leg straight DOWN under hip; other leg bends behind with raised foot close to supporting ankle. Both foot x-positions close together under torso, NOT a wide stride.
-Column3 OPPOSITE WIDE CONTACT: NEAR leg goes BACK toLEFT and FAR leg forwardRIGHT; reverse which trouser leg/foot is in front.
-Column4 OPPOSITE CLOSED PASSING: far leg straight down supporting, near leg bent behind raised; feet close under torso, NOT wide stride.
-Thus silhouettes alternate WIDE, NARROW, WIDE, NARROW in each row. Currently columns2/4 remain too wide: correct that clearly. Keep feet on common ground line, body same scale/head position. Keep Luon's carry arms fixed and EMPTY in rows2/3; do not draw box/pot.
-True transparent alpha, no floor, shadow, glow, fog, labels, border or text. Generous transparent gaps, complete feet/head/hands within cells. Exactly same12characters on ONE4x3sheet.

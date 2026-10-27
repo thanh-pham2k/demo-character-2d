@@ -67,14 +67,14 @@ Chỉ cần **1 bộ khung xương/kích thước chuẩn (32x48px pixel hoặc 
 * **Ninh Đạm:** Áo sơ mi cài kín cổ, kính cận dày cộp, tay ôm cặp sách.
 * **Trần Gia Bảo Long:** Áo khoác da sành điệu, tóc vuốt bóng, phụ kiện dây chuyền.
 * **Phùng Canh Tộ:** Áo hoa nhí/thổ cẩm vintage, túi đeo chéo.
-* **NPCs dùng chung (Generic):** Bác bảo vệ KTX (áo xanh), Cô quản lý KTX, Giảng viên Bách Khoa (áo vest, kính), Bạn nữ Crush, 2 Tân sinh viên năm nhất (thay thế giường năm 5).
+* **NPCs dùng chung (Generic):** Bác bảo vệ KTX (áo xanh), Cô quản lý KTX, Giảng viên Bách Khoa (áo vest, kính), Bạn nữ Crush, 3 người mới (mỗi người nhận giường sau chủ cũ rời, Đạm sau M34).
 * **Animation chung cho tất cả nhân vật:** `Idle`, `Walk` (4 hướng), `Sit` (ngồi học/ngồi ăn lẩu), `Sleep` (nằm giường).
 
 ### 2.2. Background & Môi trường (Environments):
 Game gói gọn trong **4 Bản đồ (Scenes/Rooms)**:
 1. **Phòng KTX 404 (Main Hub - 70% game):**
    * Kích thước 20m², tường vôi cũ, sàn gạch men, 2 giường tầng sắt đôi, 2 bàn học gỗ ép, quạt trần, cửa sổ nhìn ra Làng Đại học, cửa sắt có biển số 404.
-   * *Biến đổi theo năm:* Năm 1 sạch sẽ; Năm 2 ngập rác mì tôm; Năm 3 dán biển `CÀI WIN 404`; Năm 5 đồ đạc của 3 người bạn biến mất, thay bằng đồ của người lạ; Năm 6 trống trơn hoàn toàn khi Lươn tắt đèn.
+   * *Biến đổi theo năm:* Năm 1 sạch sẽ; Năm 2 ngập rác mì tôm; Năm 3 dán biển `CÀI WIN 404`; Năm 5 đồ đạc của 3 người bạn biến mất, thay bằng đồ của người lạ; Năm 6 chỉ góc Lươn trống khi bàn giao; giữ đồ ba người mới, hình phòng cũ trống chỉ dùng trong ký ức.
 2. **Hành lang & Sảnh KTX Khu B:**
    * Dãy phòng kéo dài, cầu thang bộ tầng 4, bảng thông báo KTX, góc ban công gọi điện thoại về quê.
 3. **Giảng đường Bách Khoa (H6 & Phòng Hội Đồng):**
@@ -123,7 +123,7 @@ MILESTONE 3: Năm 3 — Mưu Sinh Cài Win & Tình Cảm (Tuần 5)
      ↓
 MILESTONE 4: Năm 4 & Năm 5 — Tụt Lại, Người Ở Lại & Thức Tỉnh (Tuần 6)
      ↓
-MILESTONE 5: Năm 6 — Đồ Án Tốt Nghiệp, Bảo Vệ & Hạ Màn (Tuần 7)
+MILESTONE 5: Năm 6 — Môn Cuối, Đồ Án, Học Phí, Rời 404 & Tốt Nghiệp (Tuần 7)
      ↓
 MILESTONE 6: Polish, Sound, Balance & Release (Tuần 8)
 ```
@@ -188,7 +188,7 @@ MILESTONE 6: Polish, Sound, Balance & Release (Tuần 8)
   * Cơ chế thay đổi NPC phòng 404: Long, Tộ, Đạm rời KTX ➔ Spawn tân sinh viên lạ mặt dọn vào.
   * **Cơ chế giữ chuột UNINSTALL:** Bắt người chơi đè chuột trái chạy thanh % từ 0 đến 100%.
   * Chuyển trạng thái Lươn: 06:30 báo thức reo ➔ Bấm `[ W ]` bật dậy ngay (Không còn nút Snooze).
-  * Chuỗi thi trả nợ môn: Pass Giải Tích 2 ➔ Mở khóa điều kiện đồ án năm 6.
+  * Chuỗi trả nợ: CTDL PASS cuối Năm 5 → HĐH kỳ 11 Năm 6 → M36 xét điều kiện đồ án; GT2 đã PASS không thi lại.
 * **Asset:**
   * Biến thể phòng 404 năm thứ 5: Giường của bạn bè có chăn màn lạ, không khí xa lạ.
   * UI thanh tiến trình Uninstall game.

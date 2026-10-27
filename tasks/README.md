@@ -1,17 +1,23 @@
 # Task tracker — Phòng 404
 
+> **Reset 27/10/2026:** Gameplay, scene `Room404_MVP` và `Production_Opening` cùng editor cũ đã được đưa ra khỏi project theo yêu cầu làm lại. Các trạng thái và mô tả runtime bên dưới là lịch sử, không phản ánh project hiện tại. T-001 cần được lập lại theo UI/asset mới trước khi triển khai.
+
 Trang này là nơi duy nhất để xác định **việc kế tiếp**. Tài liệu thiết kế nói game nên trở thành gì; tài liệu implementation/review nói runtime nào đã được kiểm tra; task tracker chuyển chúng thành thứ tự công việc.
 
 ## Việc kế tiếp
 
 | ID | Task | Phạm vi | Trạng thái |
 |---|---|---|---|
-| T-001 | Audit M01–M09 theo design mới | `Production_Opening` | **Kế tiếp** |
-| T-002 | Làm vertical slice 8–12 phút và playtest | Fixture cô lập, production | Chờ T-001 |
-| T-003 | Author thời điểm sự kiện và làm transition event-driven | Production campaign | Chờ T-001, T-002 |
-| T-004 | Nối tiếp M10–M45 theo baseline | Production campaign | Chờ các gate trước |
+| T-001 | Hoàn thiện flow gameplay Năm 1 | `Room404_MVP` | **Đang triển khai và rà flow — chưa nghiệm thu thủ công** |
+| T-002 | Hoàn thiện flow gameplay Năm 2 | M09–M16, bàn giao Năm 1 → Năm 3 | Chờ T-001 và gate T-007 |
+| T-003 | Hoàn thiện flow gameplay Năm 3 | M17–M23, bridge M24 | Chờ T-002, T-006 và gate T-007 |
+| T-006 | Author thời điểm sự kiện và làm transition event-driven | Production campaign | Chờ T-007 |
+| T-004 | Hoàn thiện flow gameplay Năm 4 | M24–M28 → M29; học/tiền/môn nợ/đồ án nhỏ, chưa tốt nghiệp | Chờ T-002, T-003, T-006 và gate T-007 |
+| T-005 | Hoàn thiện flow gameplay Năm 5 | M29–M35-A; áp lực sinh viên, internship/repair; bàn giao môn cuối Năm 6 | Chờ T-004, T-006 và gate T-007 |
+| T-007 | Vertical slice 8–12 phút và playtest | Fixture cô lập, production | Chờ T-001 |
 
-Mở [T-001](active/T-001-audit-m01-m09.md) để bắt đầu; xem [T-002](backlog/T-002-vertical-slice-playtest.md), [T-003](backlog/T-003-event-driven-transitions.md) và [T-004](backlog/T-004-expand-m10-m45.md).
+Mở [T-001](active/T-001-year-one-gameplay-plan.md) để bắt đầu task kế tiếp; xem thêm [T-002 — Năm 2](backlog/T-002-year-two-gameplay-plan.md), [T-003 — Năm 3](backlog/T-003-year-three-gameplay-plan.md), [T-006 — transition](backlog/T-006-event-driven-transitions.md), [T-004 — Năm 4](backlog/T-004-year-four-gameplay-plan.md), [T-005 — Năm 5](backlog/T-005-year-five-gameplay-plan.md) và [T-007 — slice/playtest](backlog/T-007-vertical-slice-playtest.md).
+Audit production M01–M09 đã hoàn thành và được lưu riêng: [task](done/audit-m01-m09.md) · [kết quả](done/audit-m01-m09-results.md).
 
 ## Nguồn chuẩn và phạm vi
 
@@ -21,7 +27,7 @@ Mở [T-001](active/T-001-audit-m01-m09.md) để bắt đầu; xem [T-002](back
 - **Gates/playtest:** `story/PLAYTEST_AND_ACCEPTANCE_PLAN.md`.
 - **Runtime đã triển khai:** `story/PRODUCTION_CAMPAIGN_IMPLEMENTATION.md` và review mới nhất theo phạm vi mission.
 
-Thứ tự này khớp production gates: audit M01–M09 → slice và playtest → mở rộng M10–M45 → nghiệm thu tuyến đầy đủ.
+Thứ tự triển khai: T-001 Năm 1 → gate T-007 slice/playtest → T-002 Năm 2 → T-003 Năm 3; T-006 timestamp hỗ trợ các năm → T-004 Năm 4 → T-005 Năm 5. Năm 6 theo [payoff plan](../story/YEAR_SIX_PAYOFF_PLAN.md): M35-B/M36 → M37–M45; việc làm chỉ epilogue sau credits. Triển khai phần campaign còn lại cần task riêng; T-004 không còn là task mở rộng M10–M45. T-002 kế thừa Năm 1 đã triển khai; task card Năm 2 hiện là plan, chưa phải bằng chứng runtime.
 
 ## Tình trạng đã xác minh trong tài liệu
 

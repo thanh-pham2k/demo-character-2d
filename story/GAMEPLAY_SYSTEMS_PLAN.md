@@ -66,3 +66,12 @@ Trước khi duyệt activity, trả lời:
 4. Activity thay đổi state, quan hệ hoặc hiểu biết của người chơi thế nào?
 
 Nếu chỉ có giao diện khác mà động từ/thử thách vẫn giống activity trước, rút ngắn hoặc thiết kế lại.
+
+## 7. Vai trò hệ thống trong sáu năm — canon 26/10/2026
+
+- Năm 1 làm quen; Năm 2 trả giá; Năm 3 repair kiếm sống và cứu việc học; Năm 4 học/tiền/môn nợ/đồ án nhỏ; Năm 5 tải cao nhất với học nợ, chuẩn bị đồ án, internship có điều kiện, repair, gia đình và chia tay; Năm 6 giải quyết và payoff.
+- Năm 5 internship chỉ có task đại diện đủ requirement/clarification/code/test/review/feedback, có lịch và eligibility. Không tự tạo company/NPC/offer/thu nhập; không payroll/production incident/promotion/job hopping thành loop chính. Công việc sau tốt nghiệp chỉ là epilogue sau credits.
+- CTDL PASS mới mở HĐH; lịch mới đặt HĐH môn cuối ở đầu Năm 6, M36 xét đủ điều kiện rồi M37 đăng ký đồ án. Chuẩn bị/research/prototype từ Năm 5 được thẩm định lại, không auto hoàn thành đồ án. Không ép học lại môn đã PASS, không xóa kết quả để kéo dài năm.
+- Năm 6 reuse academic/time/repair/ledger/project/social/room. Ca repair cuối chỉ mở khi có ca tồn/khách và điều kiện được author, không tự spawn phần thưởng cứu học phí. Bảo vệ đạt khác với đủ điều kiện nhận bằng; học phí còn thực nợ được đối soát/đóng theo ledger trước lễ, không invent khoản nợ.
+- Dọn phòng là gameplay tháo đồ của mình/gấp chăn/đặt laptop và dụng cụ vào balo/nhìn lại/trả khóa. Giữ người mới và đồ của họ; “phòng trống” là góc Lươn hoặc hồi tưởng. Quan hệ và flashback lấy từ history; không một final choice ghi đè sáu năm.
+- Chỉ mở lễ/ending khi đủ conditions thật. Thiếu điểm, tiền hoặc đồ án chưa đạt cần recovery có thời gian/cost; không ép A/PASS hoặc Finished sớm. Save cũ khác canon cần mapping/migration bảo toàn bản gốc trước triển khai.

@@ -18,6 +18,8 @@ Theo dõi thứ tự thực hiện và task kế tiếp tại [Task tracker](../
 
 ## Tài liệu tham khảo
 
+- [Payoff Năm 6](YEAR_SIX_PAYOFF_PLAN.md): môn cuối, đồ án, học phí, bàn giao 404, lễ tốt nghiệp và epilogue; theo canon sáu năm đã chốt ngày 26/10/2026.
+
 - [Master Game Flow](MASTER_GAME_FLOW.md) là bản thảo truyện dài. Khi khác baseline về thứ tự/transition/canon, dùng baseline.
 - [Characters](characters/members.md) lưu hồ sơ nhân vật.
 - `PRODUCTION_*_REVIEW.md`, `YEAR_ONE_*_IMPLEMENTATION.md` và `REMAINING_ASSET_INVENTORY.md` lưu review/tiến độ cụ thể; đọc theo ngày và phạm vi của từng báo cáo.

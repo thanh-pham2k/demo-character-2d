@@ -1,9 +1,0 @@
-{
-  "raw_generated_sheet": "source-white.png",
-  "transparent_sheet": "source.png",
-  "method": "edge_connected_white_flood_fill_then_one_pixel_white_unmatte",
-  "threshold": 240,
-  "channel_range": 14,
-  "removed_background_pixels": 940875,
-  "preserved_interior_white": true
-}

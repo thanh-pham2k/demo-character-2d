@@ -29,6 +29,7 @@ Choice quan trọng phải có trade-off dễ nhận ra, hậu quả truy đư�
 ## 4. Giới hạn scope
 
 - Không mô phỏng từng ngày, mọi tiết học, mọi chuyến xe hay toàn bộ đời sống sinh viên.
+- Đời sinh viên phòng 404 kết thúc ở tốt nghiệp Năm 6. Năm 5 là áp lực học nợ/chuẩn bị đồ án/internship/repair, Năm 6 là giải quyết và payoff; đi làm chỉ tease sau credits, không mở simulator nghề nghiệp hoặc tốt nghiệp Năm 4.
 - Không thiết kế retention live-service.
 - Không thêm resource, HUD bar, side job hay minigame nếu nó không tạo lựa chọn mới.
 - Không thay đổi campaign canon tại đây; đề xuất đổi canon phải cập nhật baseline, mission graph và dữ liệu campaign cùng nhau.

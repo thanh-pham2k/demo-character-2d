@@ -1,4 +1,4 @@
-# Production flow baseline — 25/10/2026
+# Production flow baseline — cập nhật canon 26/10/2026
 
 Đây là baseline dùng để thực thi plan asset sau FULL_FLOW_AUDIT_BEFORE_GENERATION.md.
 Các mô tả chi tiết trong MASTER_GAME_FLOW.md vẫn là tài liệu cốt truyện; khi mâu thuẫn về transition, môn, trang phục hoặc asset, áp dụng baseline này và REMAINING_ASSET_INVENTORY.md.
@@ -12,14 +12,37 @@ Các mô tả chi tiết trong MASTER_GAME_FLOW.md vẫn là tài liệu cốt t
 - Sau lẩu M08 mở đăng ký M09, sau đó mới M10. Không dùng nhánh demo tự nhảy năm để xác nhận hoàn thành game.
 - Graph game: KTLT→CTDL→HĐH. Năm3 có bước passKTLT để mởCTDL trước khi nợCTDL. GT2 đãpass thì không thi trả nợ lại năm5.
 - Credits cân bằng hư cấu:32/50/78/118/136/150. M27 thiếu18 so với136 để được làm đồ án, không thiếu18 so với150 để tốt nghiệp. Không trình bày đây là quy định thật của trường.
-- M35 trả nợCTDL kỳ9 rồi HĐH kỳ10, không vi phạm môn tiên quyết. M36 mới mở đăng ký đồ án M37.
+- M35 trải qua cuối Năm 5 → đầu Năm 6: CTDL kỳ 9/10, có kết quả đạt rồi mới đăng ký/học/thi HĐH ở kỳ 11. M36 xét 136/150 sau kết quả môn cuối, mới mở đăng ký đồ án M37. Lịch lớp/thi cụ thể CẦN AUTHOR; không tự cấp PASS hoặc ép trượt để kéo dài năm.
 - Một đề tài xuyên suốt: hệ thống tự động hóa và chẩn đoán lỗi thiết bị mạng.
 - Đạm chưa bay trước lần tiếp tế M34. Ba người mới thay ba bạn. Cuối M44 giữ đồ người mới và chỉ dọn góc Lươn.
 - Hội đồng5người: visualGVHD reuse teacher +4 giám khảo mới. Không cấp A trước khi hoàn thành bảo vệ.
-- M44 gọi mẹ→gói đồ→tắt đèn→trả khóa. M45 nhận bằngA5→hội ngộBìnhĐông→đi cùng anh em→credits mới Finished.
+- Sau bảo vệ phải đối soát kết quả học vụ, học phí cuối và ca/đồ khách tồn trước khi xác nhận đủ điều kiện nhận bằng. M44 gọi mẹ→đóng khoản còn phải trả bằng ledger hợp lệ→dọn góc Lươn→nhìn lại→tắt đèn/khép cửa→trả khóa; M45 nhận bằng A5→hội ngộ Bình Đông→đi cùng anh em→hồi tưởng sáu năm→credits mới Finished. Chi phí/điều kiện cụ thể CẦN AUTHOR; không sinh nợ hoặc tự cộng tiền để ép flow.
 - M13 hạn23:59:59, submit mẫu23:59:41. M42 bắt đầu22:45/hạn23:45, receipt mẫu23:44:32; số giờ dùng data, không bake ảnh.
 - M05 và M22 dùng chung4pose ngồi ghế C02; các pose ngồi sàn cũ chỉ dùng khi phù hợp.
 - Cài đặt/job/tín chỉ không lặp vô hạn để bù thời gian:3job đại diện + montage có ledger qua nhiều tuần; ví/năng lượng có recovery.
+
+## Mạch sáu năm đã chốt
+
+```text
+Năm 1: làm quen đại học / KTX / bạn bè
+ → Năm 2: sa sút / lựa chọn / nợ môn
+ → Năm 3: sửa laptop kiếm sống + cứu việc học
+ → Năm 4: học + tiền + môn nợ + đồ án nhỏ, chưa tốt nghiệp
+ → Năm 5: áp lực cao nhất — học nợ + internship có điều kiện + chuẩn bị
+           đồ án + repair + tài chính/gia đình + bạn bè rời KTX
+ → Năm 6: trả môn cuối → đủ quyền đăng ký đồ án → hoàn thiện/bảo vệ
+           → kết quả/học phí cuối → dọn góc 404/trả khóa → lễ tốt nghiệp
+           → nhìn lại sáu năm → ENDING
+ → Sau credits: tease công việc nếu history có lời hẹn/offer hợp lệ
+```
+
+- Năm 5 — **“Mình có kịp tốt nghiệp không?”** Không phải mô phỏng đời sống nhân viên full-time. Internship là nhánh sinh viên ngắn, không thay việc học, không tự bảo đảm offer/lương. Company/NPC/task/điều kiện/thu nhập CẦN AUTHOR; không bắt buộc nhận internship khi chưa có cơ hội hợp lệ.
+- Năm 6 — **“6 năm vừa rồi có ý nghĩa gì?”** Dùng lại học vụ/repair/time/ledger/quan hệ/project; không thêm workday, payroll, production incident, performance review, promotion hoặc job hopping làm loop chính.
+- Đồ án nhỏ Năm 4 và phần chuẩn bị Năm 5 không cấp quyền đồ án tốt nghiệp. Ghi chú yêu cầu/research/prototype có thể tái dùng sau GVHD duyệt, nhưng phải kiểm tra lại chất lượng; không coi đồ án đã xong hay cấp tín chỉ trước M36–M37. Đề tài tốt nghiệp duy nhất vẫn là hệ thống tự động hóa và chẩn đoán lỗi thiết bị mạng.
+- M36 chuyển sang đầu Năm 6, sau môn cuối M35. Năm 6 không ép người đã PASS học/thi lại; recovery chỉ xử lý debt thật. 118→136→150 cần course/result mapping CẦN AUTHOR, không sinh môn/credits để vừa con số.
+- Thứ tự bạn bè vẫn M29/M30 chuyển Long/Tộ, M31 Đạm báo đi, M34 tiếp tế rồi sáng sau Đạm rời. Năm 6 là gặp lại/tạm biệt đời sinh viên; Đạm về dự lễ cần mốc đi lại/khả năng có mặt được author, không teleport từ du học.
+- “404 trống” ở đoạn kết là góc Lươn đã bàn giao hoặc hình ảnh ký ức căn phòng cũ, không xóa người mới/đồ của họ. Flashback chọn event thực từ save; chi tiết chưa trải qua không được dựng như ký ức thật.
+- Ending hội tụ ở tốt nghiệp Năm 6 nhưng chỉ mở sau điều kiện thật; failure có recovery, không ép PASS/A hoặc xóa nợ. Việc làm là epilogue sau credits, không năm chơi mới. Tin “Ngày mai đi làm nhớ tới sớm nhé” chỉ xuất hiện nếu có lịch nhận việc hợp lệ; nếu chưa có thì kết thúc ở payoff 404, không bịa offer.
 
 ## Graph mission
 
@@ -59,17 +82,19 @@ Các mô tả chi tiết trong MASTER_GAME_FLOW.md vẫn là tài liệu cốt t
 | M32 | Chọn laptop | Uninstall, giữ đúng nút, hoàn tất | Đặt báo thức 06:30 và lịch trả nợ; chưa mở đồ án |
 | M33 | Ngày mới 06:30 | Bật dậy, WC, đi học đúng giờ | Chuỗi ngày học đại diện; khuya có tiếng gõ cửa |
 | M34 | Đang ôn lúc 01:00 | Bạn cũ tiếp tế lẩu/tài liệu; Đạm vẫn ở phòng trong đêm đó | Sáng sau Đạm thực sự rời; người mới 3 chỉ vào sau khi giường trống; montage sang kỳ thi |
-| M35 | Đã ôn, đúng học kỳ | Kỳ 9 pass CTDL; kỳ 10 học/thi HĐH; hết nợ | Kết quả cập nhật; portal xét điều kiện |
-| M36 | Portal có đủ điểm | Xác nhận 136/150 và hết nợ tiên quyết | Form đề tài và lịch GVHD đầu năm 6 |
+| M35 | Cuối Năm 5 → đầu Năm 6, lịch hợp lệ | CTDL kỳ 9/10 → PASS mới mở HĐH kỳ 11; học/thi môn cuối, recovery theo evidence | Điểm môn cuối cập nhật mới mở M36 |
+| M36 | Đầu Năm 6, sau điểm M35 | Đối soát 136/150 và hết nợ tiên quyết; chưa tốt nghiệp | Form đề tài và lịch GVHD M37 |
 | M37 | Lịch hẹn GVHD | Gặp thầy, chọn đề tài, đăng ký | Checklist nghiên cứu và nguồn tài liệu |
 | M38 | Đề tài duyệt | Tra cứu, ghép sơ đồ, xác nhận thiết kế | Backlog module trên laptop |
 | M39 | Backlog code | Sửa code/chạy test; demo đầu chạy được | Đặt lịch demo 1; ngủ và tới GVHD |
 | M40 | Demo 1 | Chạy demo, nhận feedback, ghi việc sửa bảo mật | Về sửa sơ đồ/code; test mới pass để mở demo 2 |
 | M41 | Demo 2 đạt | Duyệt, format 120 trang, in và đóng bìa | Nhắc hạn nộp; kiểm thử trước khi upload |
 | M42 | Crash trước hạn | Tái hiện lỗi, đọc log, patch, test, submit | Receipt và backup; nhận lịch bảo vệ sau đó |
-| M43 | Receipt và lịch hội đồng | Sơ mi, cắm máy chiếu, thuyết trình, Q&A, đạt A | Sai thì retry tại checkpoint/tập dượt; đạt mới mở M44 |
-| M44 | Kết quả đạt | Gọi mẹ, gói đồ riêng, tắt đèn, khép cửa, trả khóa | Thư mời chuyển tới ngày lễ; chưa đánh Finished |
-| M45 | Thư mời lễ | Nhận bằng A5, gặp gia đình/bạn; đi Bình Đông, khoác vai | Fade, credits, lưu hoàn thành, quay menu |
+| M43 | Receipt và lịch hội đồng | Chuẩn bị, setup, demo/Q&A; kết quả dựa evidence, A chỉ khi đủ tiêu chí | Chưa đạt có recovery được author; đạt → đối soát học vụ/học phí M44 |
+| M44 | Kết quả bảo vệ đạt | Gọi mẹ đúng trạng thái; đối soát/đóng học phí cuối nếu còn; trả ca/đồ khách; tháo đồ riêng, gấp chăn, gói balo, nhìn góc phòng, tắt đèn/khép cửa/trả khóa | Đủ điều kiện nhận bằng mới mở ngày lễ; chưa Finished |
+| M45 | Thư mời lễ và điều kiện đã đủ | Nhận bằng A5, hội ngộ gia đình/bạn, Bình Đông; flashback từ history sáu năm | Credits → lưu Finished → epilogue công việc có điều kiện → menu |
+
+Chi tiết gameplay và checkpoint kết thúc: [Payoff Năm 6](YEAR_SIX_PAYOFF_PLAN.md).
 
 ## Trạng thái triển khai
 

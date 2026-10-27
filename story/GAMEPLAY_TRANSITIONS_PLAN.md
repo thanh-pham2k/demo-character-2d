@@ -68,10 +68,10 @@ TỪ: [thời điểm hiện tại] • 23:40
 | M15→M19 | Cuộc gọi mẹ gắn với hóa đơn sau khi có kết quả; khách sửa máy xuất hiện vào ngày sau, không spawn ngay giữa cuộc gọi. Ba job đại diện và ledger được tóm tắt qua học kỳ 5–6. |
 | M19→M28 | Dùng thẻ kết quả học kỳ 5/6, ngày nhắn crush, cuộc hẹn, Hồ Đá, rồi mốc năm 4. Những câu “vài ngày sau” cần có ngày hoặc nhãn montage; không cho CV/job/friend departures diễn ra như cùng một buổi. |
 | M29→M34 | Mỗi người chuyển đi rồi mới lấp giường đó. Sau M30 phòng còn Lươn, Đạm và hai người mới. M31 là Đạm báo sắp đi, chưa rời và chưa có người mới thứ ba. M34 là lần tiếp tế cuối của bạn cũ; Đạm rời vào sáng sau đó, người mới thứ ba chỉ vào sau khi giường trống. |
-| M32→M35 | M32 kết thúc đêm uninstall; M33 là sáng kế tiếp. Montage học đại diện tới lúc tiếp tế 01:00. M35 tách thẻ kỳ 9/thi CTDL và kỳ 10/thi HĐH; kết quả kỳ 9 mở đúng môn kỳ 10. |
-| M35→M37 | Chờ portal cập nhật kết quả, xác nhận 136 tín chỉ/đủ tiên quyết, rồi thẻ năm 6 và lịch gặp GVHD. Không đăng ký đồ án trước M36. |
+| M32→M35 | M32 đêm uninstall → M33 sáng kế tiếp → các ngày học/repair/chuẩn bị đồ án và internship nếu hợp lệ → tiếp tế 01:00. M35-A CTDL kỳ 9/10; preview riêng cuối Năm 5 → kỳ 11 Năm 6, rồi M35-B đăng ký/học/thi HĐH chỉ sau CTDL PASS. Không ép trượt/thi lại môn đã PASS. |
+| M35→M37 | Đã ở đầu Năm 6: chờ điểm môn cuối → M36 xét 136/150 + đủ tiên quyết → lịch GVHD M37. Có thời gian học, ôn, thi và chờ điểm thật trước đăng ký đồ án; chưa đủ thì recovery, không skip để nhận form. |
 | M37→M43 | Ghi rõ tuần/tháng trôi qua giữa nghiên cứu, code, demo 1, sửa, demo 2 và nộp báo cáo. M39 time-lapse 22:43–05:26 là một đêm; M40/41 là các mốc hẹn riêng. M42 dùng deadline 22:45–23:45 theo baseline; receipt mở lịch bảo vệ sau vài ngày. |
-| M43→M45 | Bảo vệ và kết quả trước; M44 gọi mẹ, chỉ thu dọn đồ của Lươn, tắt đèn và trả khóa. M45 có thẻ ngày lễ sau đó; sau lễ dùng montage đi từ A5 tới Bến Bình Đông, không teleport giữa hai địa điểm. |
+| M43→M45 | Bảo vệ → kết quả → đối soát học vụ/học phí cuối/ca và đồ khách → M44 gọi mẹ đúng trạng thái, dọn riêng góc Lươn, nhìn lại, khép cửa/trả khóa. Thiếu tiền/điều kiện thì recovery có nguồn, không tự mở nhận bằng. M45 ngày lễ riêng → A5 → Bình Đông có travel → flashback history → credits/Finished → tease công việc chỉ nếu đã có lời hẹn hợp lệ. |
 
 ## 5. Ràng buộc continuity
 
@@ -85,3 +85,7 @@ TỪ: [thời điểm hiện tại] • 23:40
 ## 6. Kiểm tra mỗi transition
 
 Trước khi đưa transition vào scene, xác nhận: nguồn, trigger, thời gian trôi, kiểu biểu diễn, hậu quả bị bỏ lỡ, điểm đến, state sau chuyển và checkpoint. Các đoạn dài cần cho người chơi biết điều gì đã thay đổi; không chỉ đổi cảnh và cập nhật objective.
+
+## 7. Giới hạn arc cuối
+
+Năm 4 không có tốt nghiệp; Năm 5 không mở đời nhân viên full-time. Đồ án nhỏ/chuẩn bị không thay đăng ký đồ án sau M36. Năm 6 nối môn cuối → bảo vệ → học phí còn nợ → rời 404 → tốt nghiệp. Xem [payoff Năm 6](YEAR_SIX_PAYOFF_PLAN.md). Bạn cũ đã rời KTX Năm 5 nên ở lễ là hội ngộ; Đạm cần lịch về dự được author. Flashback không thay gameplay đóng phí/dọn phòng/trả khóa và không xóa đồ của người mới.

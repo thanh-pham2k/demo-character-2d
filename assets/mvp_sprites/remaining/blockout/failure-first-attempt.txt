@@ -1,5 +1,0 @@
-System.InvalidOperationException: This cannot be used during play mode, please use SceneManager.CreateScene() instead.
-  at (wrapper managed-to-native) UnityEditor.SceneManagement.EditorSceneManager.NewScene_Injected(UnityEditor.SceneManagement.NewSceneSetup,UnityEditor.SceneManagement.NewSceneMode,UnityEngine.SceneManagement.Scene&)
-  at UnityEditor.SceneManagement.EditorSceneManager.NewScene (UnityEditor.SceneManagement.NewSceneSetup setup, UnityEditor.SceneManagement.NewSceneMode mode) [0x00000] in <9e5c912800234bbe96b75a092fa805df>:0 
-  at AssetProductionBlockout.Build () [0x00025] in mobile-2d/Assets/Editor/AssetProductionBlockout.cs:52
-  at AssetProductionBlockout.Poll () [0x00025] in mobile-2d/Assets/Editor/AssetProductionBlockout.cs:24
