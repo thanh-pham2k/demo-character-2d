@@ -1,0 +1,131 @@
+{
+  "name": "dorm_room",
+  "reference": {
+    "file": "reference/room_reference.png",
+    "width_px": 1644,
+    "height_px": 957,
+    "description": "Ảnh phòng do người dùng cung cấp; ảnh tổng thể, chưa tách lớp."
+  },
+  "principle": "Một asset là một cụm có thể đặt, di chuyển hoặc tương tác độc lập; không tách chi tiết nếu không cần chuyển động hoặc tương tác độc lập.",
+  "status": "structure_specification_only",
+  "assets": [
+    {
+      "id": "room_shell",
+      "path": "background/room_shell.png",
+      "description": "Trần, ba tường và len tường.",
+      "status": "not_created"
+    },
+    {
+      "id": "floor",
+      "path": "background/floor.png",
+      "description": "Sàn phòng.",
+      "status": "not_created"
+    },
+    {
+      "id": "outdoor_view",
+      "path": "background/outdoor_view.png",
+      "description": "Cảnh ngoài cửa sổ.",
+      "status": "not_created"
+    },
+    {
+      "id": "window",
+      "path": "fixtures/window.png",
+      "description": "Cửa sổ có thể tương tác.",
+      "status": "not_created"
+    },
+    {
+      "id": "ceiling_light",
+      "path": "fixtures/ceiling_light.png",
+      "description": "Đèn trần có thể bật hoặc tắt.",
+      "status": "not_created"
+    },
+    {
+      "id": "light_switch",
+      "path": "fixtures/light_switch.png",
+      "description": "Công tắc đèn.",
+      "status": "not_created"
+    },
+    {
+      "id": "door_frame",
+      "path": "fixtures/door/door_frame.png",
+      "description": "Khung cửa cố định.",
+      "status": "not_created"
+    },
+    {
+      "id": "door",
+      "path": "fixtures/door/door.png",
+      "description": "Cánh cửa riêng để mở và đóng.",
+      "status": "not_created"
+    },
+    {
+      "id": "left_bed",
+      "path": "furniture/left_bed.png",
+      "description": "Giường trái gồm khung, nệm, chăn, gối và thang.",
+      "status": "not_created"
+    },
+    {
+      "id": "right_bed",
+      "path": "furniture/right_bed.png",
+      "description": "Giường phải gồm khung, nệm, chăn, gối và thang.",
+      "status": "not_created"
+    },
+    {
+      "id": "left_desk",
+      "path": "furniture/left_desk.png",
+      "description": "Bàn trái.",
+      "status": "not_created"
+    },
+    {
+      "id": "right_desk",
+      "path": "furniture/right_desk.png",
+      "description": "Bàn phải.",
+      "status": "not_created"
+    },
+    {
+      "id": "left_chair",
+      "path": "furniture/left_chair.png",
+      "description": "Ghế trái có thể di chuyển hoặc ngồi.",
+      "status": "not_created"
+    },
+    {
+      "id": "right_chair",
+      "path": "furniture/right_chair.png",
+      "description": "Ghế phải có thể di chuyển hoặc ngồi.",
+      "status": "not_created"
+    },
+    {
+      "id": "laptop_left",
+      "path": "props/laptop_left.png",
+      "description": "Laptop trái có thể tương tác.",
+      "status": "not_created"
+    },
+    {
+      "id": "laptop_right",
+      "path": "props/laptop_right.png",
+      "description": "Laptop phải có thể tương tác.",
+      "status": "not_created"
+    },
+    {
+      "id": "books",
+      "path": "props/books.png",
+      "description": "Cụm sách.",
+      "status": "not_created"
+    },
+    {
+      "id": "plant",
+      "path": "props/plant.png",
+      "description": "Chậu cây.",
+      "status": "not_created"
+    }
+  ],
+  "layout": {
+    "path": "metadata/layout.json",
+    "status": "not_created",
+    "description": "Metadata vị trí, kích thước, pivot và sorting sẽ được xác định sau khi có asset đã tách và kiểm chứng."
+  },
+  "notes": [
+    "Không coi ảnh reference là các sprite đã tách.",
+    "Cánh cửa tách khỏi khung để hỗ trợ animation.",
+    "Bed là một cụm; chỉ tách thêm nếu gameplay thực sự cần lớp che."
+  ]
+}
