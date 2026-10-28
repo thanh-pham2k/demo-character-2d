@@ -1,0 +1,78 @@
+{
+  "reference": "../reference/room_reference.png",
+  "image_size_px": [
+    1536,
+    1024
+  ],
+  "origin": "top_left",
+  "bounds_convention": "[left,top,right,bottom], approximate, not validated",
+  "landmarks": {
+    "window": [
+      479,
+      126,
+      796,
+      335
+    ],
+    "switch": [
+      820,
+      225,
+      852,
+      266
+    ],
+    "door": [
+      871,
+      128,
+      1070,
+      386
+    ],
+    "left_bed_area": [
+      68,
+      132,
+      411,
+      600
+    ],
+    "right_bed_area": [
+      1126,
+      132,
+      1466,
+      600
+    ],
+    "left_desk_area": [
+      90,
+      389,
+      340,
+      593
+    ],
+    "right_desk_area": [
+      1197,
+      389,
+      1444,
+      593
+    ],
+    "left_chair": [
+      168,
+      470,
+      264,
+      615
+    ],
+    "right_chair": [
+      1268,
+      470,
+      1368,
+      615
+    ],
+    "back_wall_floor_boundary_y": 382,
+    "central_open_area_approx": [
+      420,
+      388,
+      1115,
+      771
+    ]
+  },
+  "status": "approximate_visual_estimates_not_approved",
+  "notes": [
+    "Room and furniture overlap; bounds are approximate, not segmentation masks.",
+    "Central rug and table occupy foreground.",
+    "2D coordinates do not determine unique 3D depth."
+  ]
+}

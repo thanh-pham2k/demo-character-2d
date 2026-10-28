@@ -1,0 +1,14 @@
+{
+  "status": "draft",
+  "interactions": [
+    {
+      "asset_id": "door",
+      "actions": [
+        "open",
+        "close"
+      ],
+      "implementation": "not_implemented"
+    }
+  ],
+  "note": "Các tương tác khác chưa được xác định trong yêu cầu này."
+}

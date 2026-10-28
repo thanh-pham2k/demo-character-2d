@@ -1,0 +1,5 @@
+# Sleep and slippers atlas
+
+Built-in OpenAI image generation: one 2 × 2 transparent batch using `unified-v1/plain_0.png` as character reference. Prompt requested two frames of the same boy sleeping with his head on a white pillow, body under a blue plaid blanket and no visible shoes, plus two isolated pairs of his green slippers. `sheet.png` is 1536 × 1024; `slice.py` documents the nonuniform crop boxes used to accommodate the taller sleep row. Alpha bounds were inspected and do not touch cell edges. Outputs are `sleep_0`–`1` and `slippers_0`–`1` PNG and SVG, plus `_tight.svg` horizontal variants. The traced SVGs are quantized color paths, not separated editable character layers. Normalized canvas pivot is bottom center; pixels per unit is not applicable to web.
+
+`head_0.svg` and `head_1.svg` clip the sleeping head from the existing traced frames. The preview overlays it on the original room pillow and blanket; no second blanket is displayed. The clip is an approximation and should be checked against the background at both beds.

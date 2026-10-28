@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="130" viewBox="0 0 100 130">
+  <g stroke="#25211e" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M27 91 Q20 96 20 108 L18 121 Q18 125 25 125 H34 L39 106 L49 99 L57 106 L63 124 H75 Q80 124 78 119 L73 105 Q71 95 66 91 Z" fill="#536046"/>
+    <path d="M17 121 Q17 117 24 117 L34 119 L34 126 H17 Z M63 119 L74 117 Q81 117 82 122 L82 126 H63 Z" fill="#4c952e"/>
+    <path d="M29 42 Q20 44 16 52 L8 66 Q7 69 10 71 Q14 74 17 71 L27 62 L28 86 Q29 94 36 96 Q50 100 66 95 Q72 93 72 86 L73 62 L83 71 Q87 74 90 70 Q92 67 89 64 L82 52 Q78 44 69 42 Z" fill="#edeae2"/>
+    <path d="M10 65 Q6 64 5 68 Q5 73 10 75 L15 72 Z M85 66 Q90 63 93 67 Q95 72 90 75 L85 72 Z" fill="#dba67e"/>
+    <path d="M25 27 Q25 13 37 9 Q52 4 66 10 Q75 14 75 27 L73 42 Q70 51 61 54 L39 54 Q30 51 27 43 Z" fill="#c98960"/>
+    <path d="M24 30 Q20 22 23 15 L28 16 Q27 9 35 8 L39 9 Q42 3 48 6 Q53 1 59 6 Q67 4 70 10 Q78 12 78 21 L75 34 Q69 32 67 27 Q62 32 56 28 Q50 33 45 29 Q38 32 34 27 Q30 31 24 30 Z" fill="#2d211c"/>
+    <path d="M35 15 Q41 10 46 11 M55 10 Q63 9 68 16 M28 20 L33 16" fill="none" stroke="#574037" stroke-width="2"/>
+  </g>
+<g stroke="#282320" stroke-width="2" stroke-linejoin="round"><path d="M69 47 L83 43 L91 47 L91 59 L79 56 L69 59 Z" fill="#f4e6c8"/><path d="M79 46 V56 M72 49 L77 48 M82 48 L88 49" fill="none" stroke="#9e8c74" stroke-width="1"/><path d="M74 58 L82 47" stroke="#e5a52e" stroke-width="3"><animateTransform attributeName="transform" type="rotate" values="-8 74 58;8 74 58;-8 74 58" dur=".7s" repeatCount="indefinite"/></path></g></svg>

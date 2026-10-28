@@ -1,0 +1,5 @@
+# Action sheet v2
+
+Generated using the built-in OpenAI image generator with `unified-v1/plain_0.png` as identity reference and `provided-atlas/source.png` as pose and room perspective reference. Prompt: create one transparent 4 × 2 sheet with four rear-view seated-at-desk typing poses with an integrated blue chair, and four front three-quarter standing tablet poses; preserve the boy's hair, dinosaur shirt, olive shorts, green shoes and illustrated game style; no desk, room or backpack.
+
+Source: `sheet.png`, 1536 × 1024. Eight cells of 384 × 512, no fixed margins; crop rectangles are listed in `slice.py` (left to right, top to bottom). `slice.py` trims the transparent margin and exports `study_0`–`study_3` and `tablet_0`–`tablet_3` as PNG and traced SVG paths, bottom-center pivot, 150 × 230 SVG viewBox. Pixels per unit: not applicable in this web preview. No figure is cropped by its cell; the tablet figures have little top margin. These SVGs are color-quantized traces, not layered vector artwork. Backpack-equipped action poses were not generated; the action frames do not show the backpack.

@@ -1,0 +1,3 @@
+# Side-view hallway background
+
+Built-in OpenAI image generation, one 2-row × 1-column sheet, source `sheet.png` (1942 × 809), from `assets/journey/hallway.png`. Prompt: Vietnamese fourth-floor dorm corridor matching the warm textured game style, straight-on horizontal camera, restroom doorway, neighboring dorm door, 404 door, stairwell from left to right, clear floor, no people or text; identical day and night variants. Slicing coordinates in `slice.py`: day (0, 0, 1942, 394), night (0, 411, 1942, 809); black divider 17 px. Both scenes occupy their complete cells with no crossing into the other scene. Output `day.png` and `night.png` are raster backgrounds; pivot/PPU not applicable to the web preview. The night variant is retained but not connected to the room clock.

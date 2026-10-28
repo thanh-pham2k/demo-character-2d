@@ -1,5 +1,7 @@
 # Phòng 404 — Game design documents
 
+Kế hoạch đã chốt cho prototype ký túc xá 2.5D và ảnh chuẩn hiện tại: [Dorm Room 2.5D Plan](DORM_ROOM_2_5D_PLAN.md).
+
 Bộ tài liệu được chia theo câu hỏi cần trả lời. Bắt đầu ở [Player Experience Plan](PLAYER_EXPERIENCE_PLAN.md), sau đó mở đúng tài liệu chi tiết.
 
 Theo dõi thứ tự thực hiện và task kế tiếp tại [Task tracker](../tasks/README.md). Tracker điều phối công việc, không thay nguồn chuẩn thiết kế bên dưới.
