@@ -184,19 +184,20 @@ const washFaceButton = document.querySelector('#wash-face');
 const brushCloseup = document.querySelector('#brush-closeup');
 const brushCharacter = document.querySelector('#brush-closeup-character');
 const journeyZones = {
-  hallway: { title: 'Hành lang tầng 4', image: 'hallway-v2/day.webp', points: [
+  hallway: { title: 'Hành lang tầng 4', image: 'new-scenes-v1/hallway.webp', points: [
     { id: 'washroom', label: 'WC Nam', x: .259 }, { id: 'neighbor', label: 'Phòng kế bên', x: .466 },
     { id: 'room', label: 'Phòng 404', x: .606 }, { id: 'stairs', label: 'Cầu thang xuống sảnh', x: .91 }
   ] },
   washroom: { title: 'WC Nam', image: 'interiors-v2/wc-day.webp', points: [
     { id: 'exit-wc', label: 'Cửa ra hành lang', x: .135 }, { id: 'sink', label: 'Bồn rửa', x: .82 }
   ] },
-  lobby: { title: 'Sảnh KTX', image: 'lobby.webp', points: [
-    { id: 'upstairs', label: 'Lên tầng 4', x: .87 }, { id: 'outdoor', label: 'Ra KTX đến trạm bus', x: .35 }
+  lobby: { title: 'Sảnh KTX', image: 'new-scenes-v1/lobby.webp', points: [
+    { id: 'upstairs', label: 'Lên tầng 4', x: .87 }, { id: 'outdoor', label: 'Trạm xe buýt', x: .25 }, { id: 'canteen', label: 'Căn tin', x: .65 }
   ] },
-  bus: { title: 'Trạm xe buýt', image: 'bus-stop.webp', points: [ { id: 'back-lobby', label: 'Về sảnh KTX', x: .15 } ] }
+  cafeteria: { title: 'Căn tin', image: 'new-scenes-v1/cafeteria.webp', points: [{ id: 'back-lobby', label: 'Về sảnh KTX', x: .15 }] },
+  bus: { title: 'Trạm xe buýt', image: 'new-scenes-v1/bus-stop.webp', points: [ { id: 'back-lobby', label: 'Về sảnh KTX', x: .15 } ] }
 };
-const hallwayScale = 3.28;
+const hallwayScale = 1;
 function hallwayCamera() { return Math.max(0, Math.min(hallwayScale - 1, position.x * hallwayScale - .5)); }
 function isStairTravel() { return ['stairs', 'upstairs'].includes(actionSession?.journeyAction?.kind); }
 function journeyDisplayX(x) { return journeyZone === 'hallway' && !isStairTravel() ? x * hallwayScale - hallwayCamera() : x; }
@@ -209,7 +210,7 @@ function drawJourneyMap() {
   journeyScene.classList.toggle('side-hallway', hall);
   journeyScene.classList.toggle('washroom', journeyZone === 'washroom');
   document.querySelector('#bus-preview').hidden = journeyZone !== 'bus';
-  hallDownStairs.hidden = !hall;
+  hallDownStairs.hidden = true;
   if (hall) {
     hallDownStairs.style.left = `${journeyDisplayX(.822) * 100}%`;
     hallDownStairs.style.width = `${.16 * hallwayScale * 100}%`;
@@ -231,6 +232,8 @@ function drawJourneyMap() {
   }
 }
 function setJourneyZone(zone, startX = 0.5, notice = '') {
+  document.querySelector('#scene-select').value = zone;
+  mouseTarget = null;
   journeyZone = zone; onBalcony = true; keys.clear();
   actionSession.phase = 'balcony'; actionSession.time = 0;
   position.x = startX; position.y = .88; walkingTime = 0;
@@ -244,7 +247,7 @@ function setJourneyZone(zone, startX = 0.5, notice = '') {
     button.textContent = point.label; button.dataset.id = point.id;
     button.addEventListener('click', () => {
       if (Math.abs(position.x - point.x) <= journeyReach()) activateJourneyPoint(point);
-      else journeyNotice.textContent = 'Dùng A / D đến gần địa điểm, rồi bấm E.';
+      else journeyNotice.textContent = 'Click đến gần địa điểm, rồi bấm E.';
     });
     journeyHotspots.append(button);
   }
@@ -260,7 +263,7 @@ function startJourneyAction(kind) {
   actionSession.journeyAction = { kind, time: 0, previousY: position.y };
   if (kind === 'brush' || kind === 'wash') { position.x = .82; position.y = .86; }
   if (kind === 'stairs' || kind === 'upstairs') {
-    journeyImage.src = `assets/journey/interiors-v2/stairs-${kind === 'stairs' ? 'down' : 'up'}.webp`;
+    journeyImage.src = 'assets/journey/new-scenes-v1/stairs.webp';
     journeyTitle.textContent = kind === 'stairs' ? 'Cầu thang · Đi xuống' : 'Cầu thang · Đi lên';
     position.x = kind === 'stairs' ? .12 : .35;
     position.y = kind === 'stairs' ? .34 : .85;
@@ -280,12 +283,13 @@ function activateJourneyPoint(point) {
   if (point.id === 'stairs') { startJourneyAction('stairs'); return; }
   if (point.id === 'upstairs') { startJourneyAction('upstairs'); return; }
   if (point.id === 'outdoor') { setJourneyZone('bus', .15, 'Trạm xe buýt · Hành trình xe đến H6 chưa có trong bản preview.'); return; }
+  if (point.id === 'canteen') { setJourneyZone('cafeteria', .15, 'Căn tin · Nội dung tương tác sẽ được bổ sung.'); return; }
   if (point.id === 'back-lobby') setJourneyZone('lobby', .35);
 }
 function leaveJourneyZone() {
   if (journeyZone === 'hallway') finishAction();
   else if (journeyZone === 'washroom') setJourneyZone('hallway', .259);
-  else if (journeyZone === 'bus') setJourneyZone('lobby', .35);
+  else if (journeyZone === 'bus' || journeyZone === 'cafeteria') setJourneyZone('lobby', .35);
   else setJourneyZone('hallway', .91);
 }
 
@@ -308,6 +312,7 @@ function doorSprite(frame = 0) { return `assets/luon/door-v2/${wearingBackpack ?
 function sleepSprite(frame = 0) { return `assets/luon/sleep-v1/head_${frame}.webp`; }
 function climbSprite(frame = 0) { return `assets/luon/climb-socks-v2/${wearingBackpack ? 'bag' : 'plain'}_${frame % 2}.webp`; }
 function startAction(kind, item) {
+  mouseTarget = null;
   const id = item.object.id;
   actionSession = { kind, id, previous: { ...position }, time: 0, phase: 'acting' };
   if (kind === 'backpack') actionSession.pickingUp = !wearingBackpack;
@@ -321,12 +326,47 @@ function startAction(kind, item) {
   updateNearby();
 }
 function finishAction() {
+  document.querySelector('#scene-select').value = 'room';
   position.x = actionSession.previous.x; position.y = actionSession.previous.y;
   actionSession = null; onBalcony = false; journeyZone = null; journeyScene.hidden = true; keys.clear(); updateLights(); drawLuon(); updateNearby();
 }
 const keys = new Set();
 const spawn = { x: 0.50, y: 0.67 };
 const position = { ...spawn };
+let mouseTarget = null;
+
+// Convert screen coordinates to the scene's normalized coordinates.
+room.addEventListener('click', event => {
+  if (event.button !== 0 || !checkpoint.hidden || seat || tabletSession ||
+      (actionSession && actionSession.phase !== 'balcony') || actionSession?.journeyAction ||
+      event.target.closest('.journey-point, .wash-actions, .desk-panel, .checkpoint')) return;
+  const rect = room.getBoundingClientRect();
+  const x = (event.clientX - rect.left) / rect.width;
+  const y = (event.clientY - rect.top) / rect.height;
+  const hall = journeyZone === 'hallway';
+  mouseTarget = {
+    x: Math.max(hall ? .04 : onBalcony ? .08 : .06, Math.min(hall ? .96 : onBalcony ? .92 : .94,
+      hall ? (x + hallwayCamera()) / hallwayScale : x)),
+    y: hall ? .88 : Math.max(journeyZone === 'washroom' ? .84 : onBalcony ? .68 : .40,
+      Math.min(journeyZone === 'washroom' ? .92 : onBalcony ? .94 : .91, y))
+  };
+  keys.clear();
+});
+function mouseDirection() {
+  if (!mouseTarget) return null;
+  const dx = mouseTarget.x - position.x, dy = mouseTarget.y - position.y;
+  if (Math.abs(dx) < .002 && Math.abs(dy) < .002) { mouseTarget = null; return null; }
+  const length = Math.hypot(dx, dy);
+  return { x: dx / length, y: dy / length };
+}
+function stopAtMouseTarget(previousX, previousY) {
+  if (!mouseTarget) return;
+  if ((mouseTarget.x - previousX) * (mouseTarget.x - position.x) <= 0) position.x = mouseTarget.x;
+  if ((mouseTarget.y - previousY) * (mouseTarget.y - position.y) <= 0) position.y = mouseTarget.y;
+  if (Math.abs(mouseTarget.x - position.x) < .01 && Math.abs(mouseTarget.y - position.y) < .01) {
+    position.x = mouseTarget.x; position.y = mouseTarget.y; mouseTarget = null;
+  }
+}
 function walkCycle(variant) {
   return [
     `assets/luon/walk-v3/${variant}_0.webp`,
@@ -375,7 +415,8 @@ function drawLuon() {
   document.querySelector('#backpack-floor-right').hidden = coveredBackpack !== 'backpack_right';
 }
 function resetCheckpoint(target = spawn, options = {}) {
-  keys.clear();
+  document.querySelector('#scene-select').value = 'room';
+  mouseTarget = null; keys.clear();
   deskGame = null; deskPanel.hidden = true; sessionStats.minutes = 8 * 60; sessionStats.study = 0; sessionStats.fun = 0; renderStats();
   seat = null; tabletSession = null; actionSession = null; onBalcony = false; journeyZone = null; journeyScene.hidden = true; brushed = false; refreshed = false; roomLight = true; lampLights.left = true; lampLights.right = true; updateLights(); wearingBackpack = Boolean(options.backpack);
   carriedBackpackId = wearingBackpack ? 'backpack_left' : null; studying = false;
@@ -428,7 +469,7 @@ function updateNearby() {
     if (onBalcony) {
       const point = nearbyJourneyPoint();
       const label = point?.id === 'sink' ? (!brushed || refreshed ? 'Đánh răng' : 'Rửa mặt') : point?.label;
-      interactionHint.textContent = point && Math.abs(position.x - point.x) <= journeyReach() ? `E · ${label}   Q · Quay lại` : 'A / D · Di chuyển   Q · Quay lại';
+      interactionHint.textContent = point && Math.abs(position.x - point.x) <= journeyReach() ? `E · ${label}   Q · Quay lại` : 'Click · Di chuyển   Q · Quay lại';
     } else interactionHint.textContent = 'Q · Xuống giường';
     return;
   }
@@ -463,6 +504,7 @@ function updateNearby() {
   }
 }
 function sitDown(item) {
+  mouseTarget = null;
   const object = item.object;
   seat = { previous: { ...position }, id: object.id };
   studying = false; keys.clear();
@@ -578,12 +620,15 @@ function animateLuon(now) {
     } else {
       let x = Number(keys.has('d')) - Number(keys.has('a'));
       let y = journeyZone === 'hallway' ? 0 : Number(keys.has('s')) - Number(keys.has('w'));
+      const mouse = mouseDirection(); if (mouse) { x = mouse.x; y = mouse.y; }
       if (x || y) {
         const length = Math.hypot(x, y); x /= length; y /= length;
         const hall = journeyZone === 'hallway';
+        const previousX = position.x, previousY = position.y;
         position.x = Math.max(hall ? 0.04 : 0.08, Math.min(hall ? 0.96 : 0.92, position.x + x * (hall ? 0.66 / hallwayScale : 0.66) * dt));
         position.y = hall ? 0.88 : journeyZone === 'washroom' ? Math.max(0.84, Math.min(0.92, position.y + y * 0.99 * dt)) : Math.max(0.68, Math.min(0.94, position.y + y * 0.99 * dt));
         if (x) facingLeft = x < 0;
+        stopAtMouseTarget(previousX, previousY);
         walkingTime += dt;
         const frames = wearingBackpack ? backpackWalkFrames : walkFrames;
         setSprite(frames[Math.floor(walkingTime * 18) % frames.length]);
@@ -607,12 +652,14 @@ function animateLuon(now) {
   }
   let x = Number(keys.has('d')) - Number(keys.has('a'));
   let y = Number(keys.has('s')) - Number(keys.has('w'));
+  const mouse = mouseDirection(); if (mouse) { x = mouse.x; y = mouse.y; }
   if (x || y) {
     const length = Math.hypot(x, y); x /= length; y /= length;
     const previousX = position.x, previousY = position.y;
     position.x = Math.max(0.06, Math.min(0.94, position.x + x * 0.66 * dt));
     position.y = Math.max(0.40, Math.min(0.91, position.y + y * 0.99 * dt));
     if (x) facingLeft = x < 0;
+    stopAtMouseTarget(previousX, previousY);
     const moved = position.x !== previousX || position.y !== previousY;
     if (moved) walkingTime += dt;
     const frames = wearingBackpack ? backpackWalkFrames : walkFrames;
@@ -626,7 +673,7 @@ function animateLuon(now) {
   requestAnimationFrame(animateLuon);
 }
 window.addEventListener('keydown', event => {
-  if (event.key === 'F8') { event.preventDefault(); keys.clear(); checkpoint.hidden = !checkpoint.hidden; return; }
+  if (event.key === 'F8') { event.preventDefault(); mouseTarget = null; keys.clear(); checkpoint.hidden = !checkpoint.hidden; return; }
   if (!checkpoint.hidden) {
     const target = { '1': spawn, '2': { x: 0.26, y: 0.60 }, '3': { x: 0.63, y: 0.42 }, '4': { x: 0.139, y: 0.64 }, '5': { x: 0.861, y: 0.64 }, '6': { x: 0.09, y: 0.77 }, '7': { x: 0.139, y: 0.64 }, '8': { x: 0.53, y: 0.91 } }[event.key];
     if (target) { event.preventDefault(); resetCheckpoint(target, event.key === '7' ? { backpack: true, seated: 'chair_left', deskGame: 'study' } : {}); }
@@ -644,7 +691,7 @@ window.addEventListener('keydown', event => {
   if (actionSession && actionSession.phase !== 'balcony') return;
   if (actionSession && actionSession.phase === 'balcony') {
     if (key === 'e' && !event.repeat) { event.preventDefault(); activateJourneyPoint(nearbyJourneyPoint()); return; }
-    if ('wasd'.includes(key) && key.length === 1) { event.preventDefault(); keys.add(key); }
+    if ('wasd'.includes(key) && key.length === 1) { event.preventDefault(); mouseTarget = null; keys.add(key); }
     return;
   }
   if ((key === 'q' || key === 'e') && !event.repeat && tabletSession) {
@@ -688,7 +735,7 @@ window.addEventListener('keydown', event => {
       return;
     }
   }
-  if ('wasd'.includes(key) && key.length === 1) { event.preventDefault(); keys.add(key); }
+  if ('wasd'.includes(key) && key.length === 1) { event.preventDefault(); mouseTarget = null; keys.add(key); }
 });
 window.addEventListener('keyup', event => keys.delete(event.key.toLowerCase()));
 window.addEventListener('blur', () => keys.clear());
@@ -710,6 +757,12 @@ for (const [id, options] of [
   ['checkpoint-desk-game', { seated: 'chair_left', deskGame: 'game' }]
 ]) document.querySelector(`#${id}`).addEventListener('click', () => resetCheckpoint({ x: 0.139, y: 0.64 }, options));
 renderStats();
+const sceneSelect = document.querySelector('#scene-select');
+sceneSelect.addEventListener('change', () => {
+  const scene = sceneSelect.value;
+  if (scene === 'stairs') resetCheckpoint(spawn, { balcony: true, zone: 'hallway', journeyAction: 'stairs' });
+  else resetCheckpoint(spawn, scene === 'room' ? {} : { balcony: true, zone: scene });
+});
 document.querySelector('#checkpoint-center').addEventListener('click', () => resetCheckpoint(spawn));
 document.querySelector('#checkpoint-ladder').addEventListener('click', () => resetCheckpoint({ x: 0.26, y: 0.60 }));
 document.querySelector('#checkpoint-door').addEventListener('click', () => resetCheckpoint({ x: 0.63, y: 0.42 }));
