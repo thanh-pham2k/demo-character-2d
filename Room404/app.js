@@ -184,17 +184,17 @@ const washFaceButton = document.querySelector('#wash-face');
 const brushCloseup = document.querySelector('#brush-closeup');
 const brushCharacter = document.querySelector('#brush-closeup-character');
 const journeyZones = {
-  hallway: { title: 'Hành lang tầng 4', image: 'hallway-v2/day.png', points: [
+  hallway: { title: 'Hành lang tầng 4', image: 'hallway-v2/day.webp', points: [
     { id: 'washroom', label: 'WC Nam', x: .259 }, { id: 'neighbor', label: 'Phòng kế bên', x: .466 },
     { id: 'room', label: 'Phòng 404', x: .606 }, { id: 'stairs', label: 'Cầu thang xuống sảnh', x: .91 }
   ] },
-  washroom: { title: 'WC Nam', image: 'interiors-v2/wc-day.png', points: [
+  washroom: { title: 'WC Nam', image: 'interiors-v2/wc-day.webp', points: [
     { id: 'exit-wc', label: 'Cửa ra hành lang', x: .135 }, { id: 'sink', label: 'Bồn rửa', x: .82 }
   ] },
-  lobby: { title: 'Sảnh KTX', image: 'lobby.png', points: [
+  lobby: { title: 'Sảnh KTX', image: 'lobby.webp', points: [
     { id: 'upstairs', label: 'Lên tầng 4', x: .87 }, { id: 'outdoor', label: 'Ra KTX đến trạm bus', x: .35 }
   ] },
-  bus: { title: 'Trạm xe buýt', image: 'bus-stop.png', points: [ { id: 'back-lobby', label: 'Về sảnh KTX', x: .15 } ] }
+  bus: { title: 'Trạm xe buýt', image: 'bus-stop.webp', points: [ { id: 'back-lobby', label: 'Về sảnh KTX', x: .15 } ] }
 };
 const hallwayScale = 3.28;
 function hallwayCamera() { return Math.max(0, Math.min(hallwayScale - 1, position.x * hallwayScale - .5)); }
@@ -260,7 +260,7 @@ function startJourneyAction(kind) {
   actionSession.journeyAction = { kind, time: 0, previousY: position.y };
   if (kind === 'brush' || kind === 'wash') { position.x = .82; position.y = .86; }
   if (kind === 'stairs' || kind === 'upstairs') {
-    journeyImage.src = `assets/journey/interiors-v2/stairs-${kind === 'stairs' ? 'down' : 'up'}.png`;
+    journeyImage.src = `assets/journey/interiors-v2/stairs-${kind === 'stairs' ? 'down' : 'up'}.webp`;
     journeyTitle.textContent = kind === 'stairs' ? 'Cầu thang · Đi xuống' : 'Cầu thang · Đi lên';
     position.x = kind === 'stairs' ? .12 : .35;
     position.y = kind === 'stairs' ? .34 : .85;
@@ -302,11 +302,11 @@ function updateLights() {
   room.classList.toggle('balcony-open', onBalcony);
   room.classList.toggle('door-opening', actionSession?.kind === 'door' && ['entering', 'crossing'].includes(actionSession.phase));
 }
-function actionSprite(name, frame = 0) { return `assets/luon/actions-v3/${name}_${frame}.svg`; }
-function journeySprite(kind) { return `assets/luon/journey-v1/${wearingBackpack ? 'bag' : 'plain'}_${kind}.svg`; }
-function doorSprite(frame = 0) { return `assets/luon/door-v2/${wearingBackpack ? 'bag' : 'plain'}_${frame}.svg`; }
-function sleepSprite(frame = 0) { return `assets/luon/sleep-v1/head_${frame}.svg`; }
-function climbSprite(frame = 0) { return `assets/luon/climb-socks-v2/${wearingBackpack ? 'bag' : 'plain'}_${frame % 2}.svg`; }
+function actionSprite(name, frame = 0) { return `assets/luon/actions-v3/${name}_${frame}.webp`; }
+function journeySprite(kind) { return `assets/luon/journey-v1/${wearingBackpack ? 'bag' : 'plain'}_${kind}.webp`; }
+function doorSprite(frame = 0) { return `assets/luon/door-v2/${wearingBackpack ? 'bag' : 'plain'}_${frame}.webp`; }
+function sleepSprite(frame = 0) { return `assets/luon/sleep-v1/head_${frame}.webp`; }
+function climbSprite(frame = 0) { return `assets/luon/climb-socks-v2/${wearingBackpack ? 'bag' : 'plain'}_${frame % 2}.webp`; }
 function startAction(kind, item) {
   const id = item.object.id;
   actionSession = { kind, id, previous: { ...position }, time: 0, phase: 'acting' };
@@ -329,17 +329,17 @@ const spawn = { x: 0.50, y: 0.67 };
 const position = { ...spawn };
 function walkCycle(variant) {
   return [
-    `assets/luon/walk-v3/${variant}_0.svg`,
-    `assets/luon/walk-v2/${variant}_1.svg`,
-    `assets/luon/walk-v3/${variant}_1.svg`,
-    `assets/luon/walk-v2/${variant}_3.svg`
+    `assets/luon/walk-v3/${variant}_0.webp`,
+    `assets/luon/walk-v2/${variant}_1.webp`,
+    `assets/luon/walk-v3/${variant}_1.webp`,
+    `assets/luon/walk-v2/${variant}_3.webp`
   ];
 }
 const walkFrames = walkCycle('plain');
 const backpackWalkFrames = walkCycle('bag');
-function idleSprite() { return `assets/luon/unified-v1/${wearingBackpack ? 'bag' : 'plain'}_0.svg`; }
-function seatedSprite(frame = 0) { return wearingBackpack ? `assets/luon/desk-bag-v1/study_${frame % 2}.svg` : `assets/luon/actions-v2/study_${frame}.svg`; }
-function tabletSprite(frame = 0) { return wearingBackpack ? `assets/luon/desk-bag-v1/tablet_${frame % 2}.svg` : `assets/luon/actions-v2/tablet_${frame}.svg`; }
+function idleSprite() { return `assets/luon/unified-v1/${wearingBackpack ? 'bag' : 'plain'}_0.webp`; }
+function seatedSprite(frame = 0) { return wearingBackpack ? `assets/luon/desk-bag-v1/study_${frame % 2}.webp` : `assets/luon/actions-v2/study_${frame}.webp`; }
+function tabletSprite(frame = 0) { return wearingBackpack ? `assets/luon/desk-bag-v1/tablet_${frame % 2}.webp` : `assets/luon/actions-v2/tablet_${frame}.webp`; }
 let lastFrame = 0;
 let walkingTime = 0;
 let sprite = '';
@@ -353,7 +353,7 @@ function drawLuon() {
   room.classList.toggle('is-brush-closeup', Boolean(brush));
   if (brush) {
     const frame = Math.floor(brush.time * 4) % 2;
-    const path = `assets/luon/brush-closeup-v1/${wearingBackpack ? 'bag' : 'plain'}_${frame}.svg`;
+    const path = `assets/luon/brush-closeup-v1/${wearingBackpack ? 'bag' : 'plain'}_${frame}.webp`;
     if (brushCharacter.getAttribute('src') !== path) brushCharacter.setAttribute('src', path);
     brushCloseup.style.opacity = String(Math.min(1, brush.time / .3, (3.2 - brush.time) / .3));
   }
@@ -487,7 +487,7 @@ function animateLuon(now) {
       if (action.phase === 'removing-slippers' || action.phase === 'putting-slippers') {
         const putting = action.phase === 'putting-slippers';
         const frame = action.time < .45 ? (putting ? 1 : 0) : (putting ? 0 : 1);
-        setSprite(`assets/luon/slippers-action-v1/${wearingBackpack ? 'bag' : 'plain'}_${frame}.svg`);
+        setSprite(`assets/luon/slippers-action-v1/${wearingBackpack ? 'bag' : 'plain'}_${frame}.webp`);
         if (action.time >= .9) {
           if (putting) finishAction();
           else { action.phase = 'acting'; action.time = 0; }
@@ -531,7 +531,7 @@ function animateLuon(now) {
     } else if (action.kind === 'backpack') {
       const variant = action.pickingUp ? 'pickup' : 'putdown';
       const frame = action.time < 0.6 ? 0 : 1;
-      setSprite(`assets/luon/backpack-action-v1/${variant}_${frame}.svg`);
+      setSprite(`assets/luon/backpack-action-v1/${variant}_${frame}.webp`);
       if (action.time >= 1.2) {
         wearingBackpack = action.pickingUp;
         carriedBackpackId = wearingBackpack ? action.id : null;
@@ -541,7 +541,7 @@ function animateLuon(now) {
     } else if (action.phase === 'acting') {
       const frame = Math.floor(action.time * 4) % 2;
       if (action.kind === 'door') setSprite(doorSprite(0));
-      else setSprite(`assets/luon/lights-v1/${wearingBackpack ? 'bag' : 'plain'}_${action.kind === 'lamp' ? 'lamp' : 'switch'}_${frame}.svg`);
+      else setSprite(`assets/luon/lights-v1/${wearingBackpack ? 'bag' : 'plain'}_${action.kind === 'lamp' ? 'lamp' : 'switch'}_${frame}.webp`);
       if (action.time >= 0.8) {
         if (action.kind === 'light') roomLight = !roomLight;
         if (action.kind === 'lamp') { const side = action.id.endsWith('left') ? 'left' : 'right'; lampLights[side] = !lampLights[side]; }
@@ -555,11 +555,11 @@ function animateLuon(now) {
       if (current.kind === 'exit-wc') setSprite(doorSprite(current.time < .6 ? 0 : 1));
       else if (current.kind === 'brush' || current.kind === 'wash') {
         const frame = Math.floor(current.time * 4) % 2;
-        setSprite(`assets/luon/washroom-v2/${wearingBackpack ? 'bag' : 'plain'}_${current.kind}_${frame}.svg`);
+        setSprite(`assets/luon/washroom-v2/${wearingBackpack ? 'bag' : 'plain'}_${current.kind}_${frame}.webp`);
       } else {
         const direction = current.kind === 'stairs' ? 'down' : 'up';
         const frame = Math.floor(current.time * 4) % 2;
-        setSprite(`assets/luon/stairs-v1/${wearingBackpack ? 'bag' : 'plain'}_${direction}_${frame}.svg`);
+        setSprite(`assets/luon/stairs-v1/${wearingBackpack ? 'bag' : 'plain'}_${direction}_${frame}.webp`);
         const t = Math.min(current.time / 2.2, 1);
         const descending = current.kind === 'stairs';
         position.x = descending ? .12 + .56 * t : .35 + .48 * t;
