@@ -1,8 +1,8 @@
 {
   "width": 768,
   "height": 512,
-  "background": "assets/room.svg",
-  "reference": "assets/reference.png",
+  "background": "assets/room.webp",
+  "reference": "assets/reference.webp",
   "objects": [
     {
       "id": "bed_left",
