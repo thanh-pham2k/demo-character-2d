@@ -1,7 +1,0 @@
-# Batch 02 — Căn tin và campus
-
-Generated as one 2×2 sheet using built-in imagegen; original `sheet.png`. Style reference: `deliverables/T-001-gif-assets/year-one-v3/b01-03.png`. Names, canvas and crop boxes are in `crop.txt`. Pivot: background canvas; PPU: chưa chốt.
-
-Prompt: Generate ONE game art background sheet exactly 2 columns by 2 rows, four equal independent landscape 16:9 cells divided by straight black #000000 lines, no outside margin. Reading left to right, top to bottom. Match provided room reference: warm aged yellow, tile floor, 2D hand-painted pixel game aesthetic and slightly elevated camera. No characters, no text, no movable furniture or vehicles baked in. Cell 1: Vietnamese student canteen architecture, tiled floor, service area and ample clear space for separate tables and serving counter assets. Cell 2: outdoor dorm bus stop architecture, space for a removable bus stop sign and bus; no bus or people. Cell 3: university H6 gate building and unobstructed path toward entry; no people and no text. Cell 4: empty university lecture classroom architecture, chalkboard, floor and windows, wide space for separate desks and chairs; can be used also as examination room. Four discrete scenes; scene content cannot cross the black lines.
-
-Review: no people, bus or classroom desks. Canteen serving area and lecture podium are baked into the background; separate any interactive pieces before implementation. Size per crop about 824×459 px, not the proposed 960×540; no upscaling. Preview only, no Unity integration or approved PPU.

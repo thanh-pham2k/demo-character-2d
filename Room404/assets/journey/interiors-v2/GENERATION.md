@@ -1,3 +1,0 @@
-# WC and stairs scene sheet
-
-Built-in OpenAI image generation produced one 2 × 2 batch, using `assets/journey/washroom.png` as visual reference. Prompt: same painterly game style; first row men's shared WC with an exit door on the left, window and reachable sink on the right, day and night; second row side-view stairwell descending toward the right and ascending toward the right; no people or UI. `sheet.png` is 1684 × 934. Black gutters separate the four scenes; exact crop rectangles are recorded in `slice.py`, which exports `wc-day.png`, `wc-night.png`, `stairs-down.png`, and `stairs-up.png`. Full scenes occupy their cells without crossing the separators. Pivots and pixels per unit are not applicable to web. The night scene is retained as an unused variant.

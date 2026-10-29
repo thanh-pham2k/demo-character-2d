@@ -1,1 +1,0 @@
-PASS: early exit; late/missed attendance; morning/noon/afternoon/night; prerequisites and makeup; save/load; frame-size independence; real seated Windows UI; all four games; real ticking and stop; canceled and completed real-time makeup; paused clock; stand cleanup; full six-day recovery to 32 credits.

@@ -1,1 +1,0 @@
-PASS floor marker geometry, nearest detector and generic Interact event. Position (0.80, -0.72, 0.00); target (0.85, -0.70, 0.00). Quest/E gating covered separately by full campaign suite.

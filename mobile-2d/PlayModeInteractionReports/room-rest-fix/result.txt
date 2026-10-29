@@ -1,1 +1,0 @@
-PASS: clean arrival, automatic campaign clean completion, both real bed enter/idle/exit routines, closed-eye rest persists beyond two breathing frames.

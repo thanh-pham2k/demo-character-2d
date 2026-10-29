@@ -1,6 +1,0 @@
-Original: (1672, 940); RGB; grid 2x2, row-major; exterior black margin 7 px, central divider approximately x=831..839, y=466..474.
-01-room-404.png: (7, 7, 831, 466)
-02-reception.png: (840, 7, 1665, 466)
-03-hallway.png: (7, 475, 831, 933)
-04-washroom.png: (840, 475, 1665, 933)
-Pivot: background canvas; PPU: chưa xác định. Không resize.

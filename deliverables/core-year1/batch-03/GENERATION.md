@@ -1,7 +1,0 @@
-# Batch 03 — Luồn và Long, preview
-
-Tạo bằng imagegen tích hợp; tham chiếu `mobile-2d/Assets/Sprites/MVP/characters/luon_idle_0.png` và `long_standing.png`. Sheet `sheet.png` là ảnh generate thực sự, 1774×887 RGBA, 4 cột × 2 hàng, không đường chia, nền yêu cầu alpha. Crop bằng chia đều và làm tròn: x=[0,444,887,1330,1774], y=[0,444,887]. Pivot dự kiến (0.5,0), PPU chưa chốt; không áp dụng import vào Unity.
-
-Prompt: Create a single 4-column by 2-row character animation sprite-sheet on a genuinely transparent background. Match the two supplied character images exactly in identity, outfit, pixel-art style and proportions. Row 1 is Luon in white dinosaur T-shirt, olive shorts and green sandals: column 1 idle facing right, columns 2–4 distinct successive rightward walking poses. Row 2 is Long in black hoodie, red headphones and dark pants: column 1 idle facing right, columns 2–4 successive rightward walking poses. Each of the 8 equally sized cells contains exactly one complete full-body character, centered, with a consistent foot baseline, fixed scale, and ample transparent padding. No ground, shadows, dividers, lettering, props, other characters or watermarks. Designed for slicing into frames; 3 walking poses are draft previews. Preserve sprite identity and crisp pixel-like rendering.
-
-Cảnh báo: crop sơ bộ chạm biên alpha tại đường chia hàng/cột; có khả năng dính ô hoặc cắt phần viền. Ba pose đi rất giống nhau và không chứng minh loop animation liên tục; chưa căn về 64×128 hoặc xác minh pivot, không đưa vào game. Cần xử lý/rà lại trước khi sử dụng.
