@@ -183,6 +183,32 @@ const washActions = document.querySelector('#wash-actions');
 const washFaceButton = document.querySelector('#wash-face');
 const brushCloseup = document.querySelector('#brush-closeup');
 const brushCharacter = document.querySelector('#brush-closeup-character');
+const busPreview = document.querySelector('#bus-preview');
+const busBoard = document.querySelector('#bus-board');
+const canteenMenu = document.querySelector('#canteen-menu');
+let pendingJourneyPoint = null;
+let busSession = null;
+function tickBus(dt) {
+  if (!busSession || journeyZone !== 'bus') return;
+  busSession.time += dt;
+  const t = busSession.time;
+  busPreview.hidden = t < 3 || t >= 15;
+  busBoard.hidden = t < 6 || t >= 11;
+  if (t >= 3 && t < 6) busPreview.style.transform = `translateX(${(6 - t) / 3 * 160}%)`;
+  else if (t >= 11 && t < 15) busPreview.style.transform = `translateX(${-(t - 11) / 4 * 160}%)`;
+  else busPreview.style.transform = '';
+  if (t >= 15) {
+    busSession.time = 0;
+    journeyNotice.textContent = 'Xe đã rời trạm. Hãy chờ chuyến tiếp theo.';
+  } else if (t >= 11) journeyNotice.textContent = 'Xe đang rời trạm.';
+  else if (t >= 6) journeyNotice.textContent = 'Xe đã dừng. Bấm Lên xe trước khi xe rời trạm.';
+  else if (t >= 3) journeyNotice.textContent = 'Xe buýt đang đến.';
+}
+busBoard.addEventListener('click', () => {
+  if (!busSession || busSession.time < 6 || busSession.time >= 11) return;
+  busSession = null; busBoard.hidden = true;
+  journeyNotice.textContent = 'Đã lên xe. Hành trình đến trường chưa có trong bản preview.';
+});
 const journeyZones = {
   hallway: { title: 'Hành lang tầng 4', image: 'new-scenes-v1/hallway.webp', points: [
     { id: 'washroom', label: 'WC Nam', x: .259 }, { id: 'neighbor', label: 'Phòng kế bên', x: .466 },
@@ -194,7 +220,7 @@ const journeyZones = {
   lobby: { title: 'Sảnh KTX', image: 'new-scenes-v1/lobby.webp', points: [
     { id: 'upstairs', label: 'Lên tầng 4', x: .87 }, { id: 'outdoor', label: 'Trạm xe buýt', x: .25 }, { id: 'canteen', label: 'Căn tin', x: .65 }
   ] },
-  cafeteria: { title: 'Căn tin', image: 'new-scenes-v1/cafeteria.webp', points: [{ id: 'back-lobby', label: 'Về sảnh KTX', x: .15 }] },
+  cafeteria: { title: 'Căn tin', image: 'new-scenes-v1/cafeteria.webp', points: [{ id: 'back-lobby', label: 'Về sảnh KTX', x: .15 }, { id: 'food-counter', label: 'Quầy ăn', x: .64 }] },
   bus: { title: 'Trạm xe buýt', image: 'new-scenes-v1/bus-stop.webp', points: [ { id: 'back-lobby', label: 'Về sảnh KTX', x: .15 } ] }
 };
 const hallwayScale = 1;
@@ -209,7 +235,7 @@ function drawJourneyMap() {
   journeyScene.classList.toggle('wc-exiting', actionSession?.journeyAction?.kind === 'exit-wc');
   journeyScene.classList.toggle('side-hallway', hall);
   journeyScene.classList.toggle('washroom', journeyZone === 'washroom');
-  document.querySelector('#bus-preview').hidden = journeyZone !== 'bus';
+  if (journeyZone !== 'bus') { busPreview.hidden = true; busBoard.hidden = true; }
   hallDownStairs.hidden = true;
   if (hall) {
     hallDownStairs.style.left = `${journeyDisplayX(.822) * 100}%`;
@@ -234,7 +260,9 @@ function drawJourneyMap() {
 function setJourneyZone(zone, startX = 0.5, notice = '') {
   document.querySelector('#scene-select').value = zone;
   mouseTarget = null;
-  journeyZone = zone; onBalcony = true; keys.clear();
+  journeyZone = zone; onBalcony = true; keys.clear(); pendingJourneyPoint = null; canteenMenu.hidden = true;
+  busSession = zone === 'bus' ? { time: 0 } : null;
+  busPreview.hidden = true; busBoard.hidden = true; busPreview.style.transform = '';
   actionSession.phase = 'balcony'; actionSession.time = 0;
   position.x = startX; position.y = .88; walkingTime = 0;
   journeyImage.src = `assets/journey/${journeyZones[zone].image}`;
@@ -247,7 +275,7 @@ function setJourneyZone(zone, startX = 0.5, notice = '') {
     button.textContent = point.label; button.dataset.id = point.id;
     button.addEventListener('click', () => {
       if (Math.abs(position.x - point.x) <= journeyReach()) activateJourneyPoint(point);
-      else journeyNotice.textContent = 'Click đến gần địa điểm, rồi bấm E.';
+      else { pendingJourneyPoint = point; mouseTarget = { x: point.x, y: position.y }; keys.clear(); journeyNotice.textContent = `Đang đi tới ${point.label}…`; }
     });
     journeyHotspots.append(button);
   }
@@ -258,6 +286,7 @@ function nearbyJourneyPoint() {
   return journeyZones[journeyZone].points.reduce((best, point) => Math.abs(position.x - point.x) < Math.abs(position.x - (best?.x ?? -10)) ? point : best, null);
 }
 function startJourneyAction(kind) {
+  pendingJourneyPoint = null; mouseTarget = null;
   if (!actionSession || actionSession.journeyAction) return;
   keys.clear();
   actionSession.journeyAction = { kind, time: 0, previousY: position.y };
@@ -282,11 +311,13 @@ function activateJourneyPoint(point) {
   if (point.id === 'sink') { startJourneyAction(!brushed || refreshed ? 'brush' : 'wash'); return; }
   if (point.id === 'stairs') { startJourneyAction('stairs'); return; }
   if (point.id === 'upstairs') { startJourneyAction('upstairs'); return; }
-  if (point.id === 'outdoor') { setJourneyZone('bus', .15, 'Trạm xe buýt · Hành trình xe đến H6 chưa có trong bản preview.'); return; }
-  if (point.id === 'canteen') { setJourneyZone('cafeteria', .15, 'Căn tin · Nội dung tương tác sẽ được bổ sung.'); return; }
+  if (point.id === 'outdoor') { setJourneyZone('bus', .15, 'Đang chờ xe buýt.'); return; }
+  if (point.id === 'canteen') { setJourneyZone('cafeteria', .15, 'Đến quầy ăn để chọn món.'); return; }
+  if (point.id === 'food-counter') { canteenMenu.hidden = false; journeyNotice.textContent = 'Chọn món tại quầy ăn.'; return; }
   if (point.id === 'back-lobby') setJourneyZone('lobby', .35);
 }
 function leaveJourneyZone() {
+  pendingJourneyPoint = null; mouseTarget = null;
   if (journeyZone === 'hallway') finishAction();
   else if (journeyZone === 'washroom') setJourneyZone('hallway', .259);
   else if (journeyZone === 'bus' || journeyZone === 'cafeteria') setJourneyZone('lobby', .35);
@@ -339,8 +370,9 @@ let mouseTarget = null;
 room.addEventListener('click', event => {
   if (event.button !== 0 || !checkpoint.hidden || seat || tabletSession ||
       (actionSession && actionSession.phase !== 'balcony') || actionSession?.journeyAction ||
-      event.target.closest('.journey-point, .wash-actions, .desk-panel, .checkpoint')) return;
+      event.target.closest('.journey-point, .wash-actions, .desk-panel, .checkpoint, .canteen-menu, .bus-board')) return;
   const rect = room.getBoundingClientRect();
+  pendingJourneyPoint = null;
   const x = (event.clientX - rect.left) / rect.width;
   const y = (event.clientY - rect.top) / rect.height;
   const hall = journeyZone === 'hallway';
@@ -416,7 +448,7 @@ function drawLuon() {
 }
 function resetCheckpoint(target = spawn, options = {}) {
   document.querySelector('#scene-select').value = 'room';
-  mouseTarget = null; keys.clear();
+  mouseTarget = null; pendingJourneyPoint = null; busSession = null; busBoard.hidden = true; busPreview.hidden = true; canteenMenu.hidden = true; keys.clear();
   deskGame = null; deskPanel.hidden = true; sessionStats.minutes = 8 * 60; sessionStats.study = 0; sessionStats.fun = 0; renderStats();
   seat = null; tabletSession = null; actionSession = null; onBalcony = false; journeyZone = null; journeyScene.hidden = true; brushed = false; refreshed = false; roomLight = true; lampLights.left = true; lampLights.right = true; updateLights(); wearingBackpack = Boolean(options.backpack);
   carriedBackpackId = wearingBackpack ? 'backpack_left' : null; studying = false;
@@ -523,6 +555,7 @@ function animateLuon(now) {
   const dt = lastFrame ? Math.min((now - lastFrame) / 1000, 0.05) : 0;
   lastFrame = now;
   if (actionSession) {
+    if (checkpoint.hidden) tickBus(dt);
     const action = actionSession;
     action.time += dt;
     if (action.kind === 'climb') {
@@ -629,6 +662,7 @@ function animateLuon(now) {
         position.y = hall ? 0.88 : journeyZone === 'washroom' ? Math.max(0.84, Math.min(0.92, position.y + y * 0.99 * dt)) : Math.max(0.68, Math.min(0.94, position.y + y * 0.99 * dt));
         if (x) facingLeft = x < 0;
         stopAtMouseTarget(previousX, previousY);
+        if (pendingJourneyPoint && !mouseTarget) { const point = pendingJourneyPoint; pendingJourneyPoint = null; activateJourneyPoint(point); }
         walkingTime += dt;
         const frames = wearingBackpack ? backpackWalkFrames : walkFrames;
         setSprite(frames[Math.floor(walkingTime * 18) % frames.length]);
@@ -691,7 +725,7 @@ window.addEventListener('keydown', event => {
   if (actionSession && actionSession.phase !== 'balcony') return;
   if (actionSession && actionSession.phase === 'balcony') {
     if (key === 'e' && !event.repeat) { event.preventDefault(); activateJourneyPoint(nearbyJourneyPoint()); return; }
-    if ('wasd'.includes(key) && key.length === 1) { event.preventDefault(); mouseTarget = null; keys.add(key); }
+    if ('wasd'.includes(key) && key.length === 1) { event.preventDefault(); mouseTarget = null; pendingJourneyPoint = null; keys.add(key); }
     return;
   }
   if ((key === 'q' || key === 'e') && !event.repeat && tabletSession) {
@@ -735,7 +769,7 @@ window.addEventListener('keydown', event => {
       return;
     }
   }
-  if ('wasd'.includes(key) && key.length === 1) { event.preventDefault(); mouseTarget = null; keys.add(key); }
+  if ('wasd'.includes(key) && key.length === 1) { event.preventDefault(); mouseTarget = null; pendingJourneyPoint = null; keys.add(key); }
 });
 window.addEventListener('keyup', event => keys.delete(event.key.toLowerCase()));
 window.addEventListener('blur', () => keys.clear());
@@ -743,6 +777,10 @@ document.addEventListener('visibilitychange', () => { if (document.hidden) keys.
 document.querySelector('#wash-brush').addEventListener('click', () => {
   if (journeyZone === 'washroom' && Math.abs(position.x - .82) <= journeyReach()) startJourneyAction('brush');
 });
+document.querySelectorAll('[data-meal]').forEach(button => button.addEventListener('click', () => {
+  canteenMenu.hidden = true; journeyNotice.textContent = `Đã chọn ${button.dataset.meal}.`;
+}));
+document.querySelector('#canteen-close').addEventListener('click', () => { canteenMenu.hidden = true; });
 washFaceButton.addEventListener('click', () => {
   if (journeyZone === 'washroom' && brushed && Math.abs(position.x - .82) <= journeyReach()) startJourneyAction('wash');
 });
@@ -790,6 +828,7 @@ for (const [id, target, options] of [
   ['checkpoint-wc-exit', actionAnchors.door_main, { balcony: true, zone: 'washroom' }],
   ['checkpoint-lobby', actionAnchors.door_main, { balcony: true, zone: 'lobby' }],
   ['checkpoint-bus-stop', actionAnchors.door_main, { balcony: true, zone: 'bus' }],
+  ['checkpoint-cafeteria', actionAnchors.door_main, { balcony: true, zone: 'cafeteria' }],
   ['checkpoint-walk-bag', spawn, { backpack: true }],
   ['checkpoint-tablet-bag', { x: .53, y: .91 }, { backpack: true }],
   ['checkpoint-backpack-putdown', { x: .09, y: .77 }, { backpack: true }],

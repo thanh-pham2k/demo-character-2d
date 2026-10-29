@@ -34,3 +34,7 @@
 .scene-selector{display:flex;align-items:center;gap:10px;margin:0 0 12px;color:#d5a35c;font-size:13px}.scene-selector label{font-weight:700}.scene-selector select{background:#202a35;color:#f3eee5;border:1px solid #54616d;border-radius:5px;padding:8px 12px;font:inherit}.scene-selector span{color:#9ca7b3;font-size:12px}@media(max-width:600px){.scene-selector{flex-wrap:wrap}.scene-selector span{flex-basis:100%}}
 /* Preserve proportions of square generated scenes within the 3:2 game view. */
 .journey-scene > img#journey-image[src*="/new-scenes-v1/"]{object-fit:cover;object-position:center bottom}
+
+.bus-board{position:absolute;z-index:45;left:50%;bottom:8%;transform:translateX(-50%);padding:8px 16px;background:#347548;color:white;border:1px solid #b5dfa7;border-radius:6px;font:inherit;font-weight:700;cursor:pointer}.bus-board[hidden]{display:none}
+
+.canteen-menu{position:absolute;z-index:50;top:32%;left:50%;transform:translateX(-50%);display:grid;gap:8px;padding:14px;background:#202a35f5;border:1px solid #d5a35c;border-radius:7px;color:#fff}.canteen-menu[hidden]{display:none}.canteen-menu button{padding:8px 12px;color:#fff;background:#70491f;border:1px solid #c99c5d;border-radius:5px;cursor:pointer}
